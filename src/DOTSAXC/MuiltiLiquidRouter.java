@@ -1,4 +1,4 @@
-package FHTI.world.blocks;
+package DOTSAXC;
 
 import static mindustry.Vars.content;
 
