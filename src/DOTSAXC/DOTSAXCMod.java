@@ -5,6 +5,7 @@ import static mindustry.type.ItemStack.with;
 import mindustry.type.Category;
 import mindustry.mod.Mod;
 import mindustry.content.Items;
+import mindustry.world.meta.BuildVisibility;
 
 public class DOTSAXCMod extends Mod {
     public DOTSAXCMod() {
