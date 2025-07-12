@@ -1,0 +1,104 @@
+{
+    "type": "ItemTurret",
+    "name": "多联式气旋",
+    "description": "？",
+    "details": "？",
+    "size": 4,
+    "health": 3520,
+    "ammoPerShot": 1,
+    "range": 450,
+    "reload": 30,
+    "inaccuracy": 3.5,
+    "rotateSpeed": 1.5,
+    "maxAmmo": 50,
+    "targetAir": true,
+    "targetGround": true,
+    "coolantMultiplier": 0.5,
+    "canOverdrive": false,
+    "shootCone": 24,
+    "shake": 1,
+    "ammoUseEffect": "casing3",
+    "shootSound": "shootBig",
+    "consumes": {
+        "coolant": {
+            "amount": 0.3,
+            "optional": true
+        }
+    },
+    "heatColor": "FBFF00FF",
+    "shoot": {
+        "type": "ShootAlternate",
+        "shots": 4,
+        "shotDelay": 2,
+        "barrels": 5,
+        "spread": 3.5
+    },
+    "ammoTypes": {
+        "metaglass": {
+            "lifetime": 43,
+            "damage": 31,
+            "speed": 10,
+            "width": 11,
+            "height": 18,
+            "splashDamageRadius": 36,
+            "splashDamage": 34
+        },
+        "plastanium": {
+            "lifetime": 43,
+            "damage": 49,
+            "speed": 10,
+            "width": 11,
+            "height": 18,
+            "splashDamageRadius": 36,
+            "splashDamage": 42,
+            "fragBullets": 3,
+            "fragBullet": {
+                "speed": 4,
+                "damage": 21,
+                "lifetime": 4
+            }
+        },
+        "surge-alloy": {
+            "lifetime": 43,
+            "damage": 103,
+            "speed": 10,
+            "width": 11,
+            "height": 18,
+            "splashDamageRadius": 40,
+            "splashDamage": 83,
+            "status": "shocked",
+            "lightningDamage": 24,
+            "lightning": 3,
+            "lightningLength": 7
+        },
+        "blast-compound": {
+            "lifetime": 43,
+            "damage": 78,
+            "speed": 10,
+            "width": 11,
+            "height": 18,
+            "splashDamageRadius": 36,
+            "splashDamage": 52,
+            "fragBullets": 4,
+            "fragBullet": {
+                "type": "PointBulletType",
+                "trailEffect": "none",
+                "hitEffect": "flakExplosion",
+                "despawnEffect": "flakExplosion",
+                "splashDamageRadius": 30,
+                "splashDamage": 35,
+                "status": "blasted",
+                "speed": 20,
+                "lifetime": 1
+            }
+        }
+    },
+    "requirements": [
+        "surge-alloy/120",
+        "plastanium/210",
+        "钢铁/225",
+        "硬化钢铁/150"
+    ],
+    "category": "turret",
+    "research": "cyclone"
+}

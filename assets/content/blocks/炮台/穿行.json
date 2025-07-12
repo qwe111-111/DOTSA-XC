@@ -1,0 +1,94 @@
+{
+    "type": "PowerTurret",
+    "size": 4,
+    "name": "穿行",
+    "health": 3180,
+    "description": "....",
+    "reload": 90,
+    "range": 600,
+    "recoilAmount": 0,
+    "targetAir": true,
+    "targetGround": true,
+    "shootCone": 25,
+    "restitution": 0.04,
+    "rotateSpeed": 3,
+    "shootSound": "laser",
+    "consumes": {
+        "power": 28
+    },
+    "hasPower": true,
+    "shootType": {
+        "type": "pointBulletType",
+        "damage": 0,
+        "speed": 600,
+        "trailEffect": "none",
+        "despawnEffect": "none",
+        "hitEffect": "none",
+        "fragBullets": 10,
+        "fragBullet": {
+            "speed": 6,
+            "height": 0.1,
+            "width": 0.1,
+            "lifetime": 30,
+            "collidesAir": false,
+            "collidesTiles": false,
+            "collidesGround": false,
+            "despawnEffect": {
+                "type": "WaveEffect",
+                "lifetime": 20,
+                "sizeFrom": 0,
+                "sizeTo": 30,
+                "strokeFrom": 2,
+                "strokeTo": 0,
+                "colorFrom": "BF92F9FF",
+                "colorTo": "665C9Fff"
+            },
+            "fragBullets": 1,
+            "fragRandomSpread": 23,
+            "fragVelocityMin": 1,
+            "fragVelocityMax": 1,
+            "fragSpread": 12,
+            "fragBullet": {
+                "type": "BasicBulletType",
+                "speed": 0,
+                "lifetime": 0,
+                "collides": false,
+                "fragBullets": 10,
+                "fragAngle": 180,
+                "fragRandomSpread": 0,
+                "backColor": "EAB678FF",
+                "frontColor": "EAB678FF",
+                "hitEffect": "none",
+                "despawnEffect": "none",
+                "fragBullet": {
+                    "type": "LaserBulletType",
+                    "damage": 110,
+                    "colors": [
+                        "FFD37FFF",
+                        "FFD37FFF",
+                        "EA8878FF"
+                    ],
+                    "lifetime": 16.00,
+                    "collidesAir": true,
+                    "length": 510.00,
+                    "width": 18,
+                    "homingPower": 1,
+                    "homingRange": 36
+                }
+            }
+        }
+    },
+    "requirements": [
+        "copper/750",
+        "titanium/500",
+        "silicon/600",
+        "钢铁/360",
+        "硬化钢铁/260",
+        "phase-fabric/380",
+        "plastanium/420",
+        "钢合金/155",
+        "surge-alloy/250"
+    ],
+    "category": "turret",
+    "research": "冰矛"
+}

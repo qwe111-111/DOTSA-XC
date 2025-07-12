@@ -1,0 +1,43 @@
+{
+	"type": "GenericCrafter",
+	"name": "净水器",
+	"health": 360,
+	"outputLiquid": {
+		"liquid": "water",
+		"amount": 0.1
+	},
+	"itemCapacity": 14,
+	"size": 1,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+				"type": "DrawLiquidTile",
+				"drawLiquid": "water"
+			},
+			"DrawDefault"
+		]
+	},
+	"hasItems": true,
+	"hasLiquids": true,
+	"outputsLiquid": true,
+	"hasPower": true,
+	"liquidCapacity": 60,
+	"craftTime": 60,
+	"updateEffect": "freezing",
+	"consumes": {
+		"power": 1,
+		"liquid": "锈蚀水/0.2"
+	},
+	"requirements": [
+		"thorium/150",
+		"metaglass/40",
+		"silicon/40",
+		"钢铁/20",
+	],
+	"category": "crafting",
+}

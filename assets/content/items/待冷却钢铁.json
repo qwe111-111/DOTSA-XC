@@ -1,0 +1,13 @@
+{
+    "name": "待冷却钢铁",
+    "description": "披萨)",
+    "details": "？",
+    "color": "BEDDE8FF",
+    "cost": 0,
+    "hardness": 5,
+    "explosiveness": 0,
+    "radioactivity": 0,
+    "charge": 0,
+    "flammability": 0,
+    "research": "钢铁"
+}

@@ -1,0 +1,60 @@
+{
+    "type": "GenericCrafter",
+    "health": 1400,
+    "name": "冷凝机床",
+    "description": "重塑厂的配套设施，将剔除杂志后的高温成型钢进行冷却",
+    "outputItem": "钢铁/6",
+    "itemCapacity": 60,
+    "liquidCapacity": 54,
+    "size": 3,
+    "hasPower": true,
+    "hasLiquids": true,
+    "hasItems": true,
+    "craftTime": 125,
+    "updateEffect": {
+        "type": "ParticleEffect",
+        "particles": 5,
+        "sizeFrom": 0,
+        "sizeTo": 8,
+        "region": "改进工业-渐变圆",
+        "length": 0,
+        "baseLength": 0,
+        "lifetime": 60,
+        "colorFrom": "486ACDFF",
+        "colorTo": "363F9AFF"
+    },
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            },
+            {
+                "type": "DrawLiquidTile",
+                "drawLiquid": "water"
+            },
+            "DrawDefault"
+        ]
+    },
+    "consumes": {
+        "power": 5,
+        "items": [
+            "待冷却钢铁/6"
+        ],
+        "liquids": [
+            "water/0.8"
+        ]
+    },
+    "requirements": [
+        "graphite/140",
+        "silicon/130",
+        "钢铁/114",
+        "硬化钢铁/79",
+        "plastanium/95",
+        "titanium/87"
+    ],
+    "category": "crafting",
+    "ambientSound": "smelter",
+    "research": "silicon-crucible"
+}

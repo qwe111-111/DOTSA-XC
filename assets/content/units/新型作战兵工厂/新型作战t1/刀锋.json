@@ -1,0 +1,92 @@
+{
+    "type": "mech",
+    "name": "刀剑",
+    "description": "？",
+    "details": "?",
+    "speed": 0.8,
+    "hitSize": 8,
+    "ammoType": {
+        "type": "PowerAmmoType",
+        "totalPower": 2200
+    },
+    "health": 1900,
+    "armor": 10,
+    "drag": 0.2,
+    "rotateSpeed": 2.5,
+    "itemCapacity": 30,
+    "targetAir": true,
+    "targetGround": true,
+    "weapons": [
+        {
+            "name": "刀锋1",
+            "x": 5,
+            "top": false,
+            "mirror": true,
+            "rotate": false,
+            "shootSound": "cannon",
+            "ejectEffect": "casing2",
+            "shootEffect": "shootBig",
+            "reload": 36,
+            "shake": 4,
+            "recoil": 1.5,
+            "bullet": {
+                "type": "BasicBulletType",
+                "damage": 28,
+                "splashDamage": 51,
+                "splashDamageRadius": 28,
+                "scaledSplashDamage": true,
+                "buildingDamageMultiplier": 1.5,
+                "speed": 8,
+                "lifetime": 25,
+                "knockback": 4,
+                "height": 16,
+                "width": 12,
+                "hitSize": 16,
+                "shrinkY": 0.1,
+                "trailChance": 0.8,
+                "trailEffect": {
+                    "type": "ParticleEffect",
+                    "length": 0,
+                    "particles": 1,
+                    "lifetime": 15,
+                    "interp": "sineIn",
+                    "sizeFrom": 2,
+                    "sizeTo": 0,
+                    "colorFrom": "f9c27a",
+                    "colorTo": "f9c27a"
+                },
+                "hitEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "WaveEffect",
+                            "lifetime": 10,
+                            "sizeFrom": 0,
+                            "sizeTo": 28,
+                            "strokeFrom": 4,
+                            "strokeTo": 0,
+                            "colorFrom": "ffffff",
+                            "colorTo": "B5FFECFF"
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "length": 24,
+                            "particles": 7,
+                            "lifetime": 20,
+                            "interp": "pow2Out",
+                            "sizeInterp": "sineIn",
+                            "sizeFrom": 6,
+                            "sizeTo": 0,
+                            "colorFrom": "B5FFECFF",
+                            "colorTo": "B5FFECFF"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "research": {
+        "parent": "新型作战兵工厂"
+    },
+    "researchCostMultiplier": 10
+}

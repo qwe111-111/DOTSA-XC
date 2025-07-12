@@ -1,0 +1,11 @@
+{
+    "name": "雪沙",
+    "itemDrop": "sand",
+    "type": "Floor",
+    "description": "居然不是冻沙",
+    "playerUnmineable": true,
+    "mapColor": "FFFFFF",
+    "isLiquid": false,
+    "useColor": true,
+    "variants": 3
+}

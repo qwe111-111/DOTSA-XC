@@ -1,0 +1,18 @@
+{
+    "type": "Wall",
+    "name": "大型钢墙",
+    "description": "前期十分抗打",
+    "armor": 20,
+    "lightningChance": 0,
+    "lightningDamage": 0,
+    "lightningLength": 0,
+    "health": 5400,
+    "size": 2,
+    "insulated": true,
+    "absorbLasers": true,
+    "requirements": [
+        "钢铁/15"
+    ],
+    "category": "defense",
+    "research": "钢墙"
+}

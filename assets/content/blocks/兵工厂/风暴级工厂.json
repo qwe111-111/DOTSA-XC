@@ -1,0 +1,33 @@
+{"type": "Reconstructor",
+	"name": "风暴级工厂",
+	"description": "[red]再升级",
+	"size": 5,
+	"health":2000
+	"constructTime": 300.0,
+	"consumes": {
+		"power": 4,
+		"items": {
+			"items": [
+        "silicon/70",
+        "thorium/55"
+        "钢铁/50"
+        "硬化钢铁/35"
+			]
+		}
+	},
+	"requirements": [
+        "copper/500",
+        "lead/500",
+        "silicon/450",
+        "titanium/245"
+        "钢铁/120"
+        "硬化钢铁/70"
+	],
+	"upgrades": [
+        ["责令","直撞"],
+        ["烈焰","无畏"]
+        ["袭击","亡空者"]
+	],
+	"category": "units",
+	"research": "铁血级工厂"
+}

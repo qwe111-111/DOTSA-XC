@@ -1,0 +1,41 @@
+{
+    "type": "Reconstructor",
+	"name": "天罚级兵工厂",
+	"description": "[red]将t5升至天罚级,需要大量资源",
+	"details": "越贵的越强\n贴图是简约版（doge）"
+	"size": 11
+	"health":22000
+	"constructTime": 30000.0,
+	"canOverdrive": false,
+	"consumes": {
+		"power": 155,
+		"items": {
+		"items": [
+        "surge-alloy/600"
+	    "phase-fabric/700"
+	    "plastanium/900"
+	    "silicon/2500"
+	    "thorium/1200"
+	    "钢合金/600"
+	    "钴/350"
+	    "钴钢/155"
+	    "高级协议许可证/3"
+			]
+		}
+	},
+	"requirements": [
+       "surge-alloy/5500"
+	    "phase-fabric/6500"
+	    "plastanium/7800"
+	    "silicon/9800"
+	    "thorium/9600"
+	    "钢合金/1600"
+	    "钴/1050"
+	    "钴钢/725"
+	    "高级协议许可证/20"
+	],
+	"upgrades": [
+	],
+	"category": "units",
+	"research": "tetrative-reconstructor"
+}

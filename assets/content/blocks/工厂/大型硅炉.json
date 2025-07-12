@@ -1,0 +1,39 @@
+{
+    "type": "AttributeCrafter",
+    "health": 1200,
+    "name": "大型硅炉",
+    "description": "终于不会硅零了！",
+    "outputItem": "silicon/6",
+    "itemCapacity": 100,
+    "size": 4,
+    "hasPower": true,
+    "hasLiquids": false,
+    "hasItems": true,
+    "craftTime": 90,
+    "updateEffect": "none",
+    "craftEffect": "smeltsmoke",
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            "DrawDefault",
+            "DrawFlame"
+        ]
+    },
+    "consumes": {
+        "power": 4,
+        "items": [
+            "coal/5",
+            "sand/6"
+        ]
+    },
+    "requirements": [
+        "graphite/90",
+        "copper/140",
+        "lead/150",
+        "silicon/75",
+        "钢铁/70"
+    ],
+    "category": "crafting",
+    "ambientSound": "smelter",
+    "research": "silicon-crucible"
+}

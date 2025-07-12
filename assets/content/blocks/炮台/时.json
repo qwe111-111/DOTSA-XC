@@ -1,0 +1,224 @@
+{
+    "type": "PowerTurret",
+    "name": "时",
+    "fogRadiusMultiplier": 0.25,
+    "targetAir": true,
+    "targetGround": true,
+    "armor": 6,
+    "health": 6000,
+    "size": 6,
+    "shake": 5,
+    "inaccuracy": 1.5,
+    "recoil": 6,
+    "cooldownTime": 120,
+    "liquidCapacity": 60,
+    "canOverdrive": false,
+    "recoilTime": 100,
+    "reload": 82,
+    "rotateSpeed": 2,
+    "range": 672,
+    "coolantMultiplier": 0.92,
+    "shootSound": "laser",
+    "shoot": {
+        "type": "ShootBarrel",
+        "shots": 2,
+        "shotDelay": 3
+    },
+    "shootEffect": {
+        "type": "ParticleEffect",
+        "particles": 5,
+        "sizeFrom": 4,
+        "sizeTo": 0,
+        "length": 24,
+        "baseLength": 0,
+        "lifetime": 15,
+        "colorFrom": "E8D174FF",
+        "colorTo": "E8D174FF",
+        "cone": 30
+    },
+    "velocityRnd": 0.1,
+    "shootType": {
+        "type": "BasicBulletType",
+        "damage": 346,
+        "status": "错误",
+        "statusDuration": 48,
+        "chargeEffect": {
+            "type": "MultiEffect",
+            "lifetime": 80,
+            "effects": [
+                {
+                    "type": "ParticleEffect",
+                    "particles": 1,
+                    "sizeFrom": 15,
+                    "sizeTo": 0,
+                    "length": 0,
+                    "baseLength": -0,
+                    "startDelay": 55,
+                    "lifetime": 21,
+                    "colorFrom": "E8D174FF80",
+                    "colorTo": "E8D174FF80"
+                },
+                {
+                    "type": "WaveEffect",
+                    "lifetime": 41,
+                    "sizeFrom": 120,
+                    "sizeTo": 0,
+                    "strokeFrom": 50,
+                    "strokeTo": 0,
+                    "colorFrom": "E8D174FF80",
+                    "colorTo": "E8D174FF80"
+                }
+            ]
+        },
+        "lifetime": 48,
+        "speed": 14,
+        "width": 10,
+        "height": 10,
+        "hitSize": 30,
+        "frontColor": "FFFFFF",
+        "backColor": "E8D174FF",
+        "trailLength": 8,
+        "trailWidth": 3.6,
+        "trailColor": "E8D174FF",
+        "ammoMultiplier": 1,
+        "hitSound": "lasercharge2",
+        "hitEffect": {
+            "type": "MultiEffect",
+            "effects": [
+                {
+                    "type": "ParticleEffect",
+                    "particles": 7,
+                    "sizeFrom": 0,
+                    "sizeTo": 5,
+                    "length": -66,
+                    "baseLength": 66,
+                    "lifetime": 15,
+                    "colorFrom": "E8D174FF80",
+                    "colorTo": "E8D174FF"
+                },
+                {
+                    "type": "ParticleEffect",
+                    "particles": 7,
+                    "sizeFrom": 21,
+                    "sizeTo": 0,
+                    "length": 120,
+                    "lifetime": 45,
+                    "lightOpacity": 0,
+                    "interp": "circleOut",
+                    "sizeInterp": "pow5In",
+                    "colorFrom": "E8D174FF80",
+                    "colorTo": "E8D174FF",
+                    "cone": 360
+                },
+                {
+                    "type": "WaveEffect",
+                    "interp": "circleIn",
+                    "lifetime": 20,
+                    "sizeFrom": 70,
+                    "sizeTo": 0,
+                    "strokeFrom": 3,
+                    "strokeTo": 0,
+                    "colorFrom": "E8D174FF",
+                    "colorTo": "E8D174FF"
+                }
+            ]
+        },
+        "despawnEffect": "none",
+        "smokeEffect": "smokeCloud",
+        "trailChance": 1,
+        "trailInterval": 25,
+        "trailEffect": {
+            "type": "ParticleEffect",
+            "particles": 2,
+            "length": 10,
+            "baseLength": 16,
+            "lifetime": 20,
+            "sizeFrom": 4,
+            "sizeTo": 0,
+            "colorFrom": "E8D174FF50",
+            "colorTo": "E8D174FF"
+        },
+        "fragLifeMin": 1,
+        "fragBullets": 1,
+        "fragBullet": {
+            "sprite": "circle-bullet",
+            "height": 2,
+            "width": 2,
+            "frontColor": "FFFFFF",
+            "backColor": "E8D174FF",
+            "shrinkX": 1.2,
+            "shrinkY": 1.2,
+            "lifetime": 15,
+            "speed": 0,
+            "collides": false,
+            "hittable": false,
+            "absorbable": false,
+            "status": "错误",
+            "statusDuration": 120,
+            "scaledSplashDamage": true,
+            "splashDamageRadius": 38,
+            "splashDamage": 347.5,
+            "hitShake": 5,
+            "hitSound": "plasmaboom",
+            "hitEffect": {
+                "type": "MultiEffect",
+                "effects": [
+                    {
+                        "type": "ParticleEffect",
+                        "particles": 4,
+                        "sizeFrom": 15,
+                        "sizeTo": 0,
+                        "length": 20,
+                        "baseLength": 32,
+                        "lifetime": 25,
+                        "colorFrom": "E8D174FF80",
+                        "colorTo": "E8D174FF00"
+                    },
+                    {
+                        "type": "ParticleEffect",
+                        "particles": 22,
+                        "line": true,
+                        "strokeFrom": 5,
+                        "strokeTo": 0,
+                        "lenFrom": 24,
+                        "lenTo": 0,
+                        "length": 83,
+                        "baseLength": 0,
+                        "lifetime": 20,
+                        "colorFrom": "E8D174FF",
+                        "colorTo": "E8D174FF"
+                    },
+                    {
+                        "type": "WaveEffect",
+                        "interp": "circleOut",
+                        "lifetime": 120,
+                        "sizeFrom": 0,
+                        "sizeTo": 126,
+                        "strokeFrom": 12,
+                        "strokeTo": 0,
+                        "colorFrom": "E8D174FF",
+                        "colorTo": "E8D174FF"
+                    }
+                ]
+            },
+            "despawnEffect": "none"
+        }
+    },
+    "consumes": {
+        "power": 120,
+        "coolant": {
+            "amount": 1.75,
+            "optional": true
+        }
+    },
+    "category": "turret",
+    "research": {
+        "parent": "冰矛"
+    },
+    "researchCostMultiplier": 0.35,
+    "requirements": [
+        "钢铁/350",
+        "硬化钢铁/150",
+        "钢合金/120"
+    ]
+}

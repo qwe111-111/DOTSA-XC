@@ -1,0 +1,41 @@
+{
+    "type": "LaunchPad",
+    "name": "发射中心",
+    "description": "性价比很高",
+    "health": 7000,
+    "size": 5,
+    "itemCapacity": 2000,
+    "launchTime": 600,
+    "hasPower": true,
+    "consumes": {
+        "power": 15
+    },
+    "requirements": [
+        {
+            "item": "plastanium",
+            "amount": 585
+        },
+        {
+            "item": "silicon",
+            "amount": 980
+        },
+        {
+            "item": "graphite",
+            "amount": 695
+        },
+        {
+            "item": "titanium",
+            "amount": 750
+        },
+        {
+            "item": "surge-alloy",
+            "amount": 420
+        },
+        {
+            "item": "metaglass",
+            "amount": 660
+        }
+    ],
+    "category": "effect",
+    "research": "launch-pad"
+}

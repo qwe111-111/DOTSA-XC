@@ -1,0 +1,81 @@
+{
+	"type":"TractorBeamTurret",
+	"name":"镭射"
+	"squareSprite": false,
+	"description":"差扰强化",
+	"size":2,
+	"armor":5,
+	"health":1200,
+	"force":0.8,
+	"scaledForce":0.8,
+	"range":360,
+	"damage":6,
+	//每帧伤害
+	"rotateSpeed":22,
+	//炮台转动速度
+	"targetAir":true,
+	//是否攻击空军
+	"targetGround":true,
+	"sprite": "改进工业-光束",
+	"consumes":{"power":2},
+	"status":"burning",
+	"statusDuration":90,
+	"requirements": [
+	    "钢铁/100",
+	    "silicon/50",
+	    "graphite/100"
+	],
+	/*"drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            {
+                "type": "DrawTurret",
+                "parts": [
+                    {
+                        "type": "RegionPart",
+                        "mirror":false,
+                        "x": 0,
+                        "y": 0,
+                        "suffix": "-炮管",
+                        "moveX":0,
+                        "moveY":5,
+                        "heatProgress": "reload",
+                        "heatColor": "FEEBB3FF"
+                    },
+                    {
+                        "type": "RegionPart",
+                        "mirror": true,
+                        "x": 0,
+                        "y": 0,
+                        "suffix": "-左",
+                        "moveX":1.5,
+                        "moveY":-1,
+                        "heatProgress": "reload",
+                        "heatColor": "FEEBB3FF"
+                    }
+                    {
+                        "type": "RegionPart",
+                        "mirror": true,
+                        "x": 0,
+                        "y": 0,
+                        "suffix": "-右",
+                        "moveX":-1.5,
+                        "moveY":-1,
+                        "heatProgress": "reload",
+                        "heatColor": "FEEBB3FF"
+                    }
+                ]
+            }
+        ]
+    }*/
+	"category":"turret",
+	"research": {
+		"parent": "重机枪",
+		"requirements":[
+		    "钢铁/120",
+		    "graphite/160",
+		    "titanium/80"
+		    "silicon/90"
+		    ]
+	},
+}

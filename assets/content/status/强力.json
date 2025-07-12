@@ -1,0 +1,13 @@
+{
+    "name": "强力",
+    "description": "强而有力 强而有力口牙!",
+    "details": "?",
+    "damageMultiplier": 3,
+    "healthMultiplier": 1,
+    "speedMultiplier": 1,
+    "reloadMultiplier": 1,
+    "damage": 0,
+    "permanent": true,
+    "reactive": false,
+    "color": "000000"
+}

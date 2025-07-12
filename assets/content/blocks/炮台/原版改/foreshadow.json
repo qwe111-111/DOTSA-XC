@@ -1,0 +1,409 @@
+{
+    "range": 720,
+    "rotateSpeed": 3,
+    "fogRadiusMultiplier": 0.6888,
+    "canOverdrive": false,
+    "coolantMultiplier": 1.5,
+    "consumes": {
+        "power": 18
+    },
+    "ammoTypes": {
+        "surge-alloy": {
+            "type": "PointBulletType",
+            "trailSpacing": 19,
+            "hitEffect": "instHit",
+            "smokeEffect": "smokeCloud",
+            "trailEffect": "instTrail",
+            "despawnEffect": "instBomb",
+            "damage": 2550,
+            "pierce": true,
+            "pierceBuilding": true,
+            "hitShake": 6,
+            "ammoMultiplier": 1,
+            "lightningDamage": 365,
+            "lightning": 4,
+            "lightningLength": 10,
+            "speed": 200,
+            "lifetime": 60,
+            "shootEffect": "instShoot",
+            "buildingDamageMultiplier": 0.5
+        },
+        "钢合金": {
+            "type": "PointBulletType",
+            "buildingDamageMultiplier": 0.7,
+            "shootEffect": {
+                "type": "WaveEffect",
+                "lifetime": 10,
+                "sizeFrom": 5,
+                "sizeTo": 80,
+                "strokeFrom": 3,
+                "strokeTo": 0,
+                "colorFrom": "EFE4CAFF",
+                "colorTo": "F3E979FF"
+            },
+            "despawnEffect": "instBomb",
+            "hitEffect": {
+                "type": "MultiEffect",
+                "effects": [
+                    {
+                        "type": "ParticleEffect",
+                        "particles": 9,
+                        "sizeFrom": 10,
+                        "sizeTo": 0,
+                        "length": 55,
+                        "baseLength": 20,
+                        "lifetime": 65,
+                        "colorFrom": "EFE4CAFF",
+                        "colorTo": "E8D174FF"
+                    },
+                    {
+                        "type": "ParticleEffect",
+                        "particles": 9,
+                        "sizeFrom": 10,
+                        "sizeTo": 0,
+                        "length": 55,
+                        "baseLength": 20,
+                        "lifetime": 45,
+                        "colorFrom": "EFE4CAFF",
+                        "colorTo": "E8D174FF"
+                    },
+                    {
+                        "type": "ParticleEffect",
+                        "particles": 15,
+                        "line": true,
+                        "lenFrom": 9,
+                        "lenTo": 0,
+                        "strokeFrom": 2,
+                        "strokeTo": 0,
+                        "length": -25,
+                        "baseLength": 20,
+                        "lifetime": 30,
+                        "colorFrom": "EFE4CAFF",
+                        "colorTo": "E8D174FF"
+                    },
+                    {
+                        "type": "WaveEffect",
+                        "interp": "circleOut",
+                        "lifetime": 60,
+                        "sizeFrom": 0,
+                        "sizeTo": 66,
+                        "strokeFrom": 42,
+                        "strokeTo": 0,
+                        "colorFrom": "E8D174FF",
+                        "colorTo": "E8D174FF"
+                    }
+                ]
+            },
+            "smokeEffect": "smokeCloud",
+            "trailEffect": {
+                "type": "ParticleEffect",
+                "particles": 13,
+                "baseLength": 0.1,
+                "length": 0.1,
+                "lifetime": 30,
+                "line": true,
+                "randLength": false,
+                "lenFrom": 11,
+                "lenTo": 11,
+                "strokeFrom": 8,
+                "strokeTo": 0,
+                "colorFrom": "EFE4CAFF",
+                "colorTo": "EFE4CAFF",
+                "cone": 0
+            },
+            "trailSpacing": 10,
+            "hitShake": 6,
+            "speed": 200,
+            "lifetime": 60,
+            "ammoMultiplier": 1,
+            "status": "错误",
+            "statusDuration": 30,
+            "hitSound": "能量炮",
+            "splashDamageRadius": 60,
+            "splashDamage": 2800,
+            "fragBullets": 15,
+            "fragBullet": {
+                "type": "PointBulletType",
+                "trailEffect": {
+                    "type": "ParticleEffect",
+                    "particles": 1,
+                    "baseLength": 0.1,
+                    "length": 0.1,
+                    "lifetime": 22,
+                    "line": true,
+                    "randLength": false,
+                    "lenFrom": 9,
+                    "lenTo": 9,
+                    "strokeFrom": 5,
+                    "strokeTo": 0,
+                    "colorFrom": "EFE4CAFF",
+                    "colorTo": "EFE4CAFF",
+                    "cone": 0
+                },
+                "hitEffect": {
+                    "type": "ParticleEffect",
+                    "particles": 8,
+                    "sizeFrom": 9,
+                    "sizeTo": 0,
+                    "length": -10,
+                    "baseLength": 10,
+                    "lifetime": 30,
+                    "colorFrom": "EFE4CAFF",
+                    "colorTo": "E8D174FF"
+                },
+                "trailSpacing": 8,
+                "despawnEffect": "instBomb",
+                "hitShake": 3,
+                "speed": 20,
+                "lifetime": 8,
+                "splashDamageRadius": 40,
+                "splashDamage": 1200
+            }
+        },
+        "亚金": {
+            "damage": 42845,
+            "ammoMultiplier": 18,
+            "sprite": "改进工业-竖",
+            "splashDamageRadius": 140,
+            "splashDamage": 26960,
+            "hitShake": 7,
+            "pierceCap": 18,
+            "trailColor": "EEC591",
+            "trailLength": 75,
+            "trailWidth": 12,
+            "trailChance": 1,
+            "trailInterval": 20,
+            "trailEffect": {
+                "type": "MultiEffect",
+                "effects": [
+                    {
+                        "type": "WaveEffect",
+                        "strokeFrom": 5,
+                        "strokeTo": 0,
+                        "sizeFrom": 0,
+                        "sizeTo": 50,
+                        "baseLength": 0,
+                        "lifetime": 40,
+                        "colorFrom": "EEC591",
+                        "colorTo": "EEC591"
+                    },
+                    {
+                        "type": "ParticleEffect",
+                        "particles": 1,
+                        "length": 40,
+                        "baseLength": 0,
+                        "lifetime": 60,
+                        "sizeFrom": 20,
+                        "sizeTo": 0,
+                        "region": "改进工业-星",
+                        "spin": 3,
+                        "colorFrom": "EEC591",
+                        "colorTo": "EEC591"
+                    }
+                ]
+            },
+            "chargeEffect": {
+                "type": "MultiEffect",
+                "effects": [
+                    {
+                        "type": "ParticleEffect",
+                        "particles": 33,
+                        "line": true,
+                        "strokeFrom": 10,
+                        "strokeTo": 0,
+                        "lenFrom": 40,
+                        "lenTo": 0,
+                        "length": -300,
+                        "baseLength": 300,
+                        "lifetime": 60,
+                        "colorFrom": "EEC591",
+                        "colorTo": "FFFFFF"
+                    },
+                    {
+                        "type": "ParticleEffect",
+                        "particles": 44,
+                        "line": true,
+                        "strokeFrom": 7,
+                        "strokeTo": 0,
+                        "lenFrom": 42,
+                        "lenTo": 0,
+                        "length": -250,
+                        "baseLength": 250,
+                        "lifetime": 50,
+                        "colorFrom": "EEC591",
+                        "colorTo": "FFFFFF"
+                    },
+                    {
+                        "type": "ParticleEffect",
+                        "particles": 54,
+                        "line": true,
+                        "strokeFrom": 11,
+                        "strokeTo": 0,
+                        "lenFrom": 66,
+                        "lenTo": 0,
+                        "length": -350,
+                        "baseLength": 350,
+                        "lifetime": 70,
+                        "colorFrom": "EEC591",
+                        "colorTo": "FFFFFF"
+                    }
+                ]
+            },
+            "width": 30,
+            "height": 300,
+            "hitSound": "explosionbig",
+            "hitSoundVolume": 12,
+            "speed": 24,
+            "shrinkX": 0,
+            "shrinkY": 0,
+            "lifetime": 30,
+            "hitEffect": {
+                "type": "MultiEffect",
+                "effects": [
+                    {
+                        "type": "ParticleEffect",
+                        "particles": 15,
+                        "length": 660,
+                        "baseLength": 0,
+                        "lifetime": 30,
+                        "interp": "pow5Out",
+                        "sizeInterp": "pow10In",
+                        "colorFrom": "EEC591",
+                        "colorTo": "EEC591",
+                        "sizeFrom": 16,
+                        "sizeTo": 0,
+                        "cone": 26
+                    },
+                    {
+                        "type": "ParticleEffect",
+                        "particles": 17,
+                        "length": 675,
+                        "baseLength": 0,
+                        "interp": "pow5Out",
+                        "sizeInterp": "pow10In",
+                        "lifetime": 35,
+                        "colorFrom": "EEC591",
+                        "colorTo": "EEC591",
+                        "sizeFrom": 20,
+                        "sizeTo": 0,
+                        "cone": 26
+                    },
+                    {
+                        "type": "ParticleEffect",
+                        "particles": 21,
+                        "length": 645,
+                        "baseLength": 0,
+                        "lifetime": 40,
+                        "colorFrom": "EEC591",
+                        "colorTo": "EEC591",
+                        "sizeFrom": 25,
+                        "sizeTo": 0,
+                        "cone": 26
+                    },
+                    {
+                        "type": "WaveEffect",
+                        "lifetime": 30,
+                        "colorFrom": "FFFFFF",
+                        "colorTo": "EEC591",
+                        "sizeFrom": 0,
+                        "sizeTo": 350
+                    }
+                ]
+            },
+            "fragBullets": 120,
+            "fragRandomSpread": 26,
+            "fragBullet": {
+                "speed": 40,
+                "lifetime": 20,
+                "shrinkX": 0,
+                "shrinkY": 0,
+                "width": 15,
+                "height": 75,
+                "damage": 18720,
+                "status": "毁灭",
+                "statusDuration": 600,
+                "sprite": "改进工业-竖",
+                "splashDamageRadius": 30,
+                "splashDamage": 19300,
+                "pierceCap": 8,
+                "hitSound": "artillery",
+                "trailColor": "EEC591",
+                "trailLength": 25,
+                "trailWidth": 4,
+                "despawnEffect": {
+                    "type": "WrapEffect",
+                    "effect": "dynamicSpikes",
+                    "color": "EEC591",
+                    "rotation": 50
+                },
+                "hitEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 6,
+                            "line": true,
+                            "strokeFrom": 2,
+                            "strokeTo": 0,
+                            "lenFrom": 45,
+                            "lenTo": 0,
+                            "length": 35,
+                            "baseLength": 0,
+                            "lifetime": 30,
+                            "colorFrom": "FFFFFF",
+                            "colorTo": "EEC591",
+                            "cone": 26
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 4,
+                            "line": true,
+                            "strokeFrom": 4,
+                            "strokeTo": 0,
+                            "lenFrom": 35,
+                            "lenTo": 0,
+                            "length": 55,
+                            "baseLength": 0,
+                            "lifetime": 40,
+                            "colorFrom": "FFFFFF",
+                            "colorTo": "EEC591",
+                            "cone": 26
+                        },
+                        {
+                            "type": "WaveEffect",
+                            "lifetime": 30,
+                            "colorFrom": "FFFFFF",
+                            "colorTo": "EEC591",
+                            "sizeFrom": 0,
+                            "sizeTo": 65
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 12,
+                            "length": 190,
+                            "baseLength": 0,
+                            "lifetime": 30,
+                            "colorFrom": "EEC591",
+                            "colorTo": "EEC591",
+                            "sizeFrom": 5,
+                            "sizeTo": 0,
+                            "cone": 26
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 17,
+                            "length": 175,
+                            "baseLength": 0,
+                            "lifetime": 35,
+                            "colorFrom": "EEC591",
+                            "colorTo": "EEC591",
+                            "sizeFrom": 7,
+                            "sizeTo": 0,
+                            "cone": 26
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

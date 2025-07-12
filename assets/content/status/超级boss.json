@@ -1,0 +1,12 @@
+{
+    "name": "超级boss",
+    "damageMultiplier": 1.65,
+    "healthMultiplier": 1.9,
+    "speedMultiplier": 1.25,
+    "reloadMultiplier": 1.65,
+    "damage": -1.5,
+    "permanent": true,
+    "reactive": false,
+    "color": "EDC346FF",
+    "effectChance": 1
+}

@@ -1,0 +1,11 @@
+{
+    "name": "武装",
+    "damageMultiplier": 1,
+    "healthMultiplier": 3,
+    "speedMultiplier": 1,
+    "reloadMultiplier": 2,
+    "damage": -3,
+    "permanent": false,
+    "reactive": false,
+    "color": "EDC346FF"
+}

@@ -1,0 +1,42 @@
+{
+    "type": "GenericCrafter",
+    "name": "电路制造机",
+    "description": "你认真？",
+    "details": "为毛会有这玩意儿（悲）",
+    "itemCapacity": "20",
+    "liquidCapacity": "30",
+    "health": "790",
+    "size": "3",
+    "hasPower": "true",
+    "hasLiquids": "true",
+    "hasItems": "true",
+    "craftTime": "60",
+    "updateEffect": "none",
+    "consumes": {
+        "power":4,
+        "items": [
+            "silicon/1"
+            "titanium/2"
+            "copper/4"
+        ],
+    },
+    "outputItem": {
+        "item": "电路",
+        "amount": "2"
+    },
+    "requirements": [
+        "钢铁/100"
+        "metaglass/130"
+        "graphite/140"
+        "titanium/120"
+    ],
+    "category": "crafting",
+    "research": {
+		"parent": "锻钢厂",
+		"objectives": [
+			"lead",
+        ]
+				"type": "SectorComplete",
+				"preset": "frozenforest"
+	}
+}

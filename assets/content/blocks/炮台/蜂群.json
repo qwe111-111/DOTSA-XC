@@ -1,0 +1,65 @@
+{
+    "type": "ItemTurret",
+    "name": "蜂巢",
+    "description": "射导弹",
+    "size": 4,
+    "health": 2100,
+    "ammoPerShot": 4,
+    "targetAir": true,
+    "targetGround": false,
+    "range": 580,
+    "reload": 160,
+    "inaccuracy": 80,
+    "rotateSpeed": 4,
+    "maxAmmo": 50,
+    "shootSound": "missileLaunch",
+    "category": "turret",
+    "research": "践行",
+    "consumes": {
+        "power": 2,
+        "coolant": {
+            "amount": 0.2,
+            "optional": true
+        }
+    },
+    "requirements": [
+        {
+            "item": "copper",
+            "amount": 180
+        },
+        {
+            "item": "lead",
+            "amount": 155
+        },
+        {
+            "item": "silicon",
+            "amount": 75
+        },
+        {
+            "item": "硬化钢铁",
+            "amount": 25
+        },
+        {
+            "item": "电路",
+            "amount": 25
+        }
+    ],
+    "shoot": {
+        "shots": 9,
+        "shotDelay": 6
+         "type": "ShootBarrel",
+        "barrels": [
+            -7.5,0,8,
+            7.5,0,-8
+        ],
+    },
+    "shake": 0.5,
+    "ammoTypes": {
+        "surge-alloy": {
+            "keepVelocity": false,
+            "shootEffect": "none",
+            "smokeEffect": "shootSmallFlame",
+            "spawnUnit": "绿导弹"
+        }
+    }
+}

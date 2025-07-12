@@ -1,0 +1,12 @@
+{
+    "name": "错误",
+    "damageMultiplier": 1,
+    "healthMultiplier": 1,
+    "speedMultiplier": 0.3,
+    "reloadMultiplier": 0.3,
+    "damage": 1,
+    "permanent": false,
+    "reactive": false,
+    "color": "EDC346FF",
+    "effectChance": 1
+}

@@ -1,0 +1,15 @@
+{
+    "name": "无敌墙",
+    "description": "不受到伤害",
+    "buildVisibility": "sandboxOnly",
+    "armor": 6,
+    "lightningChance": 0,
+    "lightningDamage": 0,
+    "lightningLength": 0,
+    "health": 9999,
+    "size": 2,
+    "insulated": true,
+    "absorbLasers": true,
+    "requirements": [],
+    "category": "defense"
+}

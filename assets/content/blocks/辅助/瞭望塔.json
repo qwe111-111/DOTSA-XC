@@ -1,0 +1,22 @@
+{
+    "type": "LightBlock",
+    "name": "瞭望塔",
+    "description": "范围更大，[red]but[white]亮度减弱",
+    "size": 2,
+    "health": 1000,
+    "brightness": 0.15,
+    "radius": 333,
+    "buildCostMultiplier": 0.5,
+    "consumes": {
+        "power": 1,
+    },
+    "requirements": [
+        "copper/12"
+        "lead/12",
+        "钢铁/30",
+        "metaglass/25"
+    ],
+    "category": "effect",
+    "research": "大型灯",
+    "buildVisibility": "lightingOnly"
+}

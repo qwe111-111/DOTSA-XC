@@ -1,0 +1,9 @@
+{
+    "itemCapacity": 70,
+    "outputItem": {
+        "item": "carbide",
+        "amount": 7
+    },
+    "size": 3,
+    "canOverdrive": true
+}

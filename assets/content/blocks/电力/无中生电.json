@@ -1,0 +1,30 @@
+{
+    "type": "ConsumeGenerator",
+    "name": "无中生电",
+    "description": "？",
+    "details": "？",
+    "category": "power",
+    "requirements": [
+        "钢铁/50",
+        "silicon/50",
+        "graphite/50"
+    ],
+    "size": 2,
+    "health": 500,
+    "itemCapacity": 0,
+    "hasLiquids": false,
+    "powerProduction": 6,
+    "itemDuration": 140,
+    "consumes": {},
+    "research": "自循环水电机",
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            "DrawDefault",
+            {
+                "type": "DrawWarmupRegion",
+                "color": "FDFF72FF"
+            }
+        ]
+    }
+}

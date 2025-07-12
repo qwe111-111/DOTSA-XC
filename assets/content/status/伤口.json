@@ -1,0 +1,11 @@
+{
+    "name": "伤口",
+    "damageMultiplier": 1,
+    "healthMultiplier": 1,
+    "speedMultiplier": 1,
+    "reloadMultiplier": 1,
+    "damage": 4,
+    "permanent": false,
+    "reactive": false,
+    "color": "EC7458FF"
+}

@@ -1,0 +1,51 @@
+{
+	"name": "恒星熔炉",
+	"type": "Separator",
+	"description": "科研部对废料的研究更加深入，回报也成倍增加"
+	"health": 16000,
+	"size": 5,
+	"canOverdrive": false,
+	"rebuildable": true,
+	"squareSprite": true,
+	"hasLiquids": true,
+	"researchCostMultiplier": 0.5,
+	"results": [
+		"copper/5",
+	    "lead/5",
+    	"graphite/4",
+    	"sand/6",
+    	"coal/6",
+    	"titanium/4",
+    	"thorium/4",
+    	"silicon/3",
+    	"surge-alloy/2",
+    	"pyratite/2",
+    	"phase-fabric/2",
+    	"plastanium/2",
+    	"钢铁/4",
+    	"硬化钢铁/2",
+    	"钢合金/1"
+	],
+	"itemCapacity": 500,
+	"liquidCapacity": 300,
+	"craftTime": 1,
+	"consumes": {
+		"power": 20,
+		"liquid": "slag/3.6"
+		"items": [
+				"scrap/5",
+			]
+	},
+	"requirements": [        
+	    "lead/150",
+		"graphite/75",
+		"metaglass/110",
+		"thorium/120",
+		"高级协议许可证/1",
+		"复合材料/100",
+		"钢合金/40"
+	],
+	"buildCostMultiplier": 1.5,
+	"category": "effect",
+	"research": "disassembler"
+}

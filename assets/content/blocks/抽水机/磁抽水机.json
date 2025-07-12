@@ -1,0 +1,35 @@
+{
+    "name": "磁抽水机",
+    "description": "？",
+    "type": "SolidPump",
+    "health": 1480,
+    "size": 2,
+    "floating": true,
+    "hasPower": true,
+    "hasLiquids": true,
+    "liquidCapacity": 600,
+    "requirements": [
+        {
+            "item": "surge-alloy",
+            "amount": 65
+        },
+        {
+            "item": "钴",
+            "amount": 25
+        },
+        {
+            "item": "钢合金",
+            "amount": 45
+        }
+    ],
+    "consumes": {
+        "power": 4
+    },
+    "pumpAmount": 1.31,
+    "rotateSpeed": 1,
+    "result": "water",
+    "baseEfficiency": 1,
+    "attribute": "water",
+    "category": "production",
+    "research": "water-extractor"
+}

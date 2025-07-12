@@ -1,0 +1,157 @@
+{
+    "name": "脉冲动能炮",
+    "description": "...",
+    "type": "ItemTurret",
+    "size": 3,
+    "range": 822,
+    "health": 950,
+    "reload": 150,
+    "rotateSpeed": 2,
+    "targetHealing": true,
+    "shootSound": "laser",
+    "inaccuracy": 15,
+    "shoot": {
+        "shots": 4,
+        "shotDelay": 0.3
+    },
+    "ammoTypes": {
+        "phase-fabric": {
+            "hitSound": "plasmaboom",
+            "type": "EmpBulletType",
+            "damage": 155,
+            "splashDamage": 180,
+            "splashDamageRadius": 40,
+            "healPercent": 2,
+            "unitDamageScl": 0.8,
+            "timeIncrease": 1.25,
+            "homingPower": 0.3,
+            "homingRange": 240,
+            "homingDelay": 30,
+            "timeDuration": 240,
+            "speed": 8,
+            "lifetime": 100,
+            "status": "electrified",
+            "width": 12,
+            "height": 12,
+            "shrinkY": 0,
+            "frontColor": "ffffff",
+            "backColor": "D1EFFFFF",
+            "lightColor": "D1EFFFFF",
+            "hitColor": "D1EFFFFF",
+            "trailWidth": 3,
+            "trailLength": 15,
+            "trailColor": "D1EFFFFF",
+            "despawnEffect": "none",
+            "despawnHit": true,
+            "hitEffect": {
+                "type": "MultiEffect",
+                "lifetime": 180,
+                "effects": [
+                    {
+                        "type": "ParticleEffect",
+                        "lifetime": 5,
+                        "particles": 1,
+                        "length": 0,
+                        "sizeFrom": 40,
+                        "sizeTo": 40,
+                        "colorFrom": "D1EFFFFF",
+                        "colorTo": "D1EFFFFF"
+                    },
+                    {
+                        "type": "WaveEffect",
+                        "lifetime": 70,
+                        "sizeFrom": 0,
+                        "sizeTo": 40,
+                        "strokeFrom": 2,
+                        "strokeTo": 0,
+                        "colorFrom": "D1EFFFFF",
+                        "colorTo": "D1EFFFFF"
+                    },
+                    {
+                        "type": "ParticleEffect",
+                        "lifetime": 70,
+                        "length": 0,
+                        "particles": 1,
+                        "sizeFrom": 4,
+                        "sizeTo": 0,
+                        "colorTo": "D1EFFFFF"
+                    }
+                ]
+            },
+            "fragBullets": 3,
+            "fragBullet": {
+                "type": "EmpBulletType",
+                "splashDamage": 80,
+                "splashDamageRadius": 40,
+                "healPercent": 2,
+                "unitDamageScl": 0.8,
+                "timeIncrease": 1.25,
+                "homingPower": 0.3,
+                "homingRange": 240,
+                "homingDelay": 30,
+                "timeDuration": 240,
+                "speed": 1,
+                "lifetime": 10,
+                "status": "electrified",
+                "width": 12,
+                "height": 12,
+                "frontColor": "ffffff",
+                "backColor": "D1EFFFFF",
+                "lightColor": "D1EFFFFF",
+                "hitColor": "D1EFFFFF",
+                "trailWidth": 3,
+                "trailLength": 15,
+                "trailColor": "D1EFFFFF",
+                "despawnEffect": "none",
+                "despawnHit": true,
+                "hitEffect": {
+                    "type": "MultiEffect",
+                    "lifetime": 180,
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 7,
+                            "sizeFrom": 12,
+                            "sizeTo": 0,
+                            "length": 40,
+                            "lifetime": 45,
+                            "lightOpacity": 0,
+                            "interp": "circleOut",
+                            "sizeInterp": "pow5In",
+                            "colorFrom": "D1EFFFFF",
+                            "colorTo": "D1EFFFFF",
+                            "cone": 360
+                        },
+                        {
+                            "type": "WaveEffect",
+                            "lifetime": 50,
+                            "sizeFrom": 0,
+                            "sizeTo": 20,
+                            "strokeFrom": 3,
+                            "strokeTo": 0,
+                            "colorFrom": "D1EFFFFF",
+                            "colorTo": "D1EFFFFF"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "consumes": {
+        "power": 8,
+        "coolant": {
+            "amount": 0.15,
+            "optional": true
+        }
+    },
+    "category": "turret",
+    "research": "lancer",
+    "requirements": [
+        "copper/225",
+        "lead/150",
+        "silicon/95",
+        "钢铁/225",
+        "硬化钢铁/175",
+        "phase-fabric/95"
+    ]
+}

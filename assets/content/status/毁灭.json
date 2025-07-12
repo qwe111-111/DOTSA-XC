@@ -1,0 +1,13 @@
+{
+    "name": "毁灭",
+    "description": "？",
+    "details": "？",
+    "damageMultiplier": 1,
+    "healthMultiplier": 1,
+    "speedMultiplier": 1,
+    "reloadMultiplier": 1,
+    "damage": 50,
+    "permanent": false,
+    "reactive": false,
+    "color": "C93B3BFF"
+}

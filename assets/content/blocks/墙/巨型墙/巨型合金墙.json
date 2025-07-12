@@ -1,0 +1,19 @@
+{
+  "type": "Wall",
+  "name": "巨型合金墙",
+  "description": "提高耐久",
+  "armor": 25,
+  "lightningChance": 0.5,
+  "lightningDamage": 50,
+  "lightningLength": 5,
+  "health": 10000,
+  "size": 4,
+  "insulated": true,
+  "absorbLasers": true,
+    "placeableLiquid": true,
+  "requirements": [
+    "surge-alloy/106"
+  ],
+  "category": "defense",
+  "research": "巨型相织布墙"
+}

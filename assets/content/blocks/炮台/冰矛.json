@@ -1,0 +1,120 @@
+{
+    "type": "PowerTurret",
+    "name": "冰矛",
+    "unitSort": "weakest",
+    "description": "射出几发速冰，适合用来缓解前线压力",
+    "details": "？？？",
+    "health": 2350,
+    "size": 4,
+    "reload": 80,
+    "range": 900,
+    "recoilTime": 180,
+    "recoil": 3,
+    "canOverdrive": false,
+    "xRand": 4,
+    "consumes": {
+        "power": 16,
+        "coolant": {
+            "amount": 0.55,
+            "optional": true
+        }
+    },
+    "shootY": 0,
+    "shoot": {
+        "shots": 6,
+        "type": "ShootBarrel",
+        "barrels": [
+            5,-10,0,
+            0,-15,0,
+            -5,-10,0,
+        ]
+    },
+    "shootSound": "FJ1",
+    "targetGround": true,
+    "targetAir": true,
+    "inaccuracy": 4,
+    "shake": 3,
+    "shootCone": 20,
+    "rotateSpeed": 3,
+    "shootType": {
+        "type": "BasicBulletType",
+        "damage": 85,
+        "splashDamageRadius": 15,
+        "splashDamage": 45,
+        "buildingDamageMultiplier": 0.2,
+        "trailLength": 40,
+        "trailWidth": 2,
+        "homingPower": 0.5,
+        "homingRange": 120,
+        "homingDelay": 10,
+        "width": 9,
+        "height": 18,
+        "pierceCap": 3,
+        "hitSound": "bang",
+        "status": "freezing",
+        "statusDuration": 60,
+        "speed": 30,
+        "lifetime": 30,
+        "trailColor": "A9D8FFFF",
+        "trailChance": 1,
+        "trailInterval": 16,
+        "trailEffect": {
+            "type": "ParticleEffect",
+            "particles": 3,
+            "length": 16,
+            "baseLength": 1,
+            "lifetime": 30,
+            "colorFrom": "A9D8FFFF",
+            "colorTo": "A9D8FFFF",
+            "sizeFrom": 3,
+            "sizeTo": 0
+        },
+        "hitEffect": {
+            "type": "MultiEffect",
+            "effects": [
+                {
+                    "type": "ParticleEffect",
+                    "particles": 9,
+                    "sizeFrom": 10,
+                    "sizeTo": 0,
+                    "length": 55,
+                    "baseLength": 20,
+                    "lifetime": 45,
+                    "colorFrom": "A9D8FFFF",
+                    "colorTo": "A9D8FFFF"
+                },
+                {
+                    "type": "WaveEffect",
+                    "lifetime": 15,
+                    "sizeFrom": 8,
+                    "sizeTo": 25,
+                    "strokeFrom": 3,
+                    "strokeTo": 0,
+                    "colorFrom": "A9D8FFFF",
+                    "colorTo": "A9D8FFFF"
+                }
+            ]
+        }
+    },
+    "requirements": [
+        "copper/260",
+        "lead/250",
+        "graphite/180",
+        "silicon/150",
+        "钢铁/160",
+        "硬化钢铁/65",
+        "titanium/200",
+        "thorium/120"
+    ],
+    "category": "turret",
+    "research": {
+        "parent": "闪烁",
+        "requirements": [
+            "silicon/4000",
+            "钢铁/2500",
+            "graphite/3500",
+            "titanium/2400",
+            "thorium/2000"
+        ]
+    }
+}

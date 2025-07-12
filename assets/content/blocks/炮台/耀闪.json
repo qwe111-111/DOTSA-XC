@@ -1,0 +1,135 @@
+{
+    "type": "PowerTurret",
+    "name": "耀闪",
+    "description": "射出一连串子弹",
+    "health": 2800,
+    "size": 4,
+    "category": "turret",
+    "research": "冰矛",
+    "shootSound": "laser",
+    "ammoPerShot": 1,
+    "heatColor": "ab3400",
+    "cooldownTime": 350,
+    "rotateSpeed": 1.8,
+    "range": 900,
+    "reload": 160,
+    "coolantMultiplier": 0.4,
+    "liquidCapacity": 60,
+    "targetAir": true,
+    "targetGround": true,
+    "canOverdrive": false,
+    "consumes": {
+        "power": 13,
+        "coolant": {
+            "amount": 0.3,
+            "optional": true
+        }
+    },
+    "hasPower": true,
+    "shoot": {
+        "type": "ShootAlternate",
+        "barrels": 2,
+        "shots": 12,
+        "shotDelay": 4,
+        "spread": 4
+    },
+    "requirements": [
+        "surge-alloy/150",
+        "silicon/125",
+        "thorium/140",
+        "钢铁/255",
+        "硬化钢铁/125"
+    ],
+    "shootType": {
+        "type": "BasicBulletType",
+        "sprite": "large-orb",
+        "shootSound": "cannon",
+        "reloadMultiplier": 1,
+        "speed": 11,
+        "damage": 180,
+        "pierce": true,
+        "splashDamageRadius": 36,
+        "splashDamage": 100,
+        "homingRange": 80,
+        "homingPower": 0.2,
+        "width": 10,
+        "status": "shocked",
+        "height": 16,
+        "lifetime": 80,
+        "shrinkX": 0,
+        "shrinkY": 0,
+        "ammoMultiplier": 20,
+        "trailEffect": "missileTrail",
+        "backColor": "D1EFFFFF",
+        "frontColor": "D1EFFFFF",
+        "trailInterval": 3,
+        "trailParam": 4,
+        "trailColor": "D1EFFFFF",
+        "trailLength": 12,
+        "trailWidth": 2.2,
+        "fragOnHit": true,
+        "bulletInterval": 6,
+        "intervalBullets": 2,
+        "intervalRandomSpread": 40,
+        "intervalSpread": 60,
+        "intervalAngle": 0,
+        "fragBullets": 20,
+        "fragVelocityMin": 0.5,
+        "fragVelocityMax": 1.5,
+        "fragLifeMin": 0.5,
+        "despawnSound": "dullExplosion",
+        "bullet": {
+            "damage": 50,
+            "speed": 10,
+            "lifetime": 60,
+            "fragOnHit": true,
+            "fragOnAbsorb": false,
+            "fragBullets": 1,
+            "fragBullet": {
+                "lifetime": 150,
+                "damage": 50,
+                "collides": false,
+                "speed": 3,
+                "homingPower": 1,
+                "homingRange": 8,
+                "bulletInterval": 30,
+                "intervalBullet": {
+                    "damage": 30,
+                    "lifetime": 1,
+                    "speed": 5
+                }
+            }
+        },
+        "hitEffect": {
+            "type": "multiEffect",
+            "effects": [
+                {
+                    "type": "ParticleEffect",
+                    "line": true,
+                    "particles": 15,
+                    "lifetime": 30,
+                    "interp": "circleOut",
+                    "offset": 30,
+                    "length": 50,
+                    "lightColor": "D1EFFFFF",
+                    "strokeFrom": 4,
+                    "strokeTo": 0,
+                    "lenFrom": 10,
+                    "lenTo": 10,
+                    "colorFrom": "D1EFFFFF",
+                    "colorTo": "D1EFFFFF"
+                },
+                {
+                    "type": "waveEffect",
+                    "lifetime": 30,
+                    "sizeFrom": 0,
+                    "sizeTo": 20,
+                    "strokeFrom": 2,
+                    "strokeTo": 0,
+                    "colorFrom": "D1EFFFFF",
+                    "colorTo": "D1EFFFFF"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+  "type": "PowerTurret",
+  "name": "离子电弧",
+  "description":"...",
+  "details": "...",
+  "size": 5,
+  "requirements":[
+    {
+    "item": "graphite",
+    "amount": 350
+    },
+    {
+    "item": "titanium",
+    "amount": 500
+    },
+    {
+    "item": "thorium",
+    "amount": 400
+    },
+    {
+    "item": "plastanium",
+    "amount": 500
+    }
+    {
+    "item": "钢铁",
+    "amount": 200
+    }
+  ],
+  "consumes":{"power":20},
+  "research": "laser",
+  "health": 5500,
+  "reload": 100,
+  "rotateSpeed": 3.5,
+  "inaccuracy": 0,
+  "shake":10,
+  "recoil": 4,
+  "recoilTime": 40,
+  "targetAir": true,
+  "targetGround": true,
+  "range": 540,
+  "shoot":{
+		"type":"ShootPattern",
+		"shots":9
+	},
+  "shootType": {
+    "type": "LightningBulletType",
+      "damage":630,
+      "lightningLength":20,
+      "ammoMultiplier":1,
+      "hitEffect":{
+      "type":"multiEffect",
+      "effects":[
+      {
+      "type":"particleEffect",
+      "lifetime":21,
+      "length":12,
+      "line":true,
+      "particles":8,
+      "lenFrom":8,
+      "lenTo":1,
+      "strokeFrom":1,
+      "strokeTo":0.25,
+      "colorFrom":"a9d8ff",
+      "colorTo":"a9d8ff"
+      },
+      {
+      "type":"waveEffect",
+      "lifetime":15,
+      "length":0,
+      "sizeFrom":2,
+      "sizeTo":0.5,
+      "strokeFrom":4,
+      "strokeTo":0.5,
+      "colorFrom":"a9d8ff",
+      "colorTo":"a9d8ff00"
+      }
+      ]},
+      "despawnEffect":"none",
+      "fragVelocityMin":0.8,
+      "fragLifeMin":0.1,
+      "fragBullets":6,
+      "fragRandomSpread":8,
+  	  "fragBullet":{
+  	  "splashDamage":235,
+  	  "splashDamageRadius":60
+  	  "lifetime":20,
+      "speed":26,
+  	  "collides":false,
+  	  "hittable":false,
+  	  "absorbable":false,
+      "hitShake":3,
+      "hitSound":"plasmaboom",
+  	  "width":0,
+  	  "height":0,
+  	  "lightning":1,
+  	  "lightningDamage":95,
+    	"lightningLength":46
+    	"lightningLengthRand":6,
+      "lightningColor":"a9d8ff",
+      "hitEffect":{
+  	  "type": "MultiEffect",
+  	  "effects": [
+  	  {
+  	  "type": "ParticleEffect",
+      "particles": 3,
+      "lifetime": 45,
+      "length": 60,
+      "interp":"pow2Out",
+      "sizeInterp":"linear",
+      "sizeFrom": 6,
+      "sizeTo": 0,
+      "colorFrom": "a9d8ff7f",
+      "colorTo": "a9d8ff7f"
+  	  },
+      {
+      "type": "WaveEffect",
+      "lifetime": 12,
+      "sizeFrom": 6,
+      "sizeTo": 48,
+      "strokeFrom": 12,
+      "strokeTo": 0,
+      "colorFrom": "a9d8ff",
+      "colorTo": "a9d8ff00"
+      }
+      ]},
+  	  "despawnEffect":"none"
+      }
+    },
+  "shootCone": 5,
+  "shootEffect":"none",
+  "shootSound": "boom",
+  "category": "turret"
+  "research":"电影"
+}

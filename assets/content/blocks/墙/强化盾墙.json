@@ -1,0 +1,25 @@
+{
+    "size": 4,
+    "description": "对比盾墙有着更好的数值",
+    "name": "强化盾墙",
+    "type": "ShieldWall",
+    "health": 6640,
+    "armor": 60,
+    "flashHit": true,
+    "chanceDeflect": 22,
+    "shieldHealth": 3500,
+    "regenSpeed": 5,
+    "breakCooldown": 300,
+    "crushDamageMultiplier": 0.3,
+    "deflect": true,
+    "requirements": [
+        "phase-fabric/80",
+        "surge-alloy/68",
+        "beryllium/68"
+    ],
+    "category": "defense",
+    "research": {
+        "parent": "shielded-wall"
+    },
+    "buildCostMultiplier": 0.6
+}

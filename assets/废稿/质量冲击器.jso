@@ -1,0 +1,114 @@
+{
+	"type": "ItemTurret",
+	"name": "质量冲击器",
+	"description": "？",
+	"details": ".......",
+	"health": 1560,
+	"size": 2,
+	"reload": 60,
+	"range": 400,
+	"maxAmmo": 10,
+	"recoilTime": 10,
+	"recoil": 1,
+	"unitSort": "weakest",
+	"shoot": {
+		"type": "ShootAlternate",
+		"barrels": 1,
+		"spread": 8
+	},
+	"shake": 0,
+	"liquidCapacity": 30,
+	"ammoPerShot": 5,
+	"ammoUseEffect": "casing2",
+	"targetGround": true,
+	"targetAir": false,
+	    "canOverdrive": false,
+	"inaccuracy": 0,
+	"shootSound": "冲击"
+	"rotateSpeed": 5,
+	"consumes": {
+		"coolant": {
+			"amount": 0.6,
+			"optional": true
+		}
+	},
+	"ammoTypes": {
+		"copper": {
+			"speed": 10,
+			"damage": 250,
+			 "knockback":1,
+			"knockback": 3,
+			"lifetime": 40,
+			"width": 21,
+			"height": 28,
+			"ammoMultiplier": 1
+		},
+		"lead": {
+			"speed": 10,
+			"damage": 270,
+			    "knockback":1,
+			"knockback": 1.8,
+			"lifetime": 40,
+			"width": 21,
+			"height": 28,
+			"ammoMultiplier": 1
+		},
+		"graphite": {
+			"speed": 10,
+			"damage": 300,
+			 "knockback":1,//击退
+			 "reloadMultiplier": 0.8
+			"knockback": 4,
+			"lifetime": 40,
+			"width": 21,
+			"height": 28,
+			"ammoMultiplier": 1
+		},
+		"titanium": {
+			"speed": 10,
+			"damage": 280,
+			"knockback": 4,
+			"knockback":1,//击退
+			"lifetime": 40,
+			"width": 21,
+			"height": 28,
+			"ammoMultiplier": 1
+			"fragBullets":2,//分裂子弹数量
+            "fragBullet":{
+            "speed":10,//速度
+            "damage":35,//伤害
+            "lifetime":1//存在时间
+		},
+		}
+		"钢铁": {
+			"speed": 10,
+			"damage": 350,
+			"reloadMultiplier": 0.2,//开火倍率
+		 "knockback":1,//击退
+			"knockback": 5,
+			"lifetime": 40,
+			"width": 21,
+			"height": 28,
+			"ammoMultiplier": 1
+				"lightningDamage":50,
+			//闪电伤害
+			"lightning":4,
+			//闪电数量
+            "lightningLength":6,
+            //闪电长度
+		},
+		}
+	"requirements": [
+		"copper/70",
+		"silicon/50",
+		"钢铁/40",
+		"titanium/50",
+	]
+	"category": "turret",
+	"research":{
+     "parent": "长管炮"
+}
+}
+/*唯一真神
+伤害爆炸
+可能会削？

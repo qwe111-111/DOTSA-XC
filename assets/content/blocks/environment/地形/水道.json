@@ -1,0 +1,26 @@
+{
+    "type": "floor",
+    "name": "水道",
+    "description": "可以让你在地上铺置水道，用来给海军通路",
+    "details": "海军:“太香辣了”",
+    "buildVisibility": "sandboxOnly",
+    "requiresWater": false,
+    "status": "wet",
+    "statusDuration": 90,
+    "cacheLayer": "water",
+    "albedo": 0.9,
+    "shallow": false,
+    "drownTime": 1,
+    "isLiquid": true,
+    "liquidDrop": "water",
+    "liquidMultiplier": 1,
+    "variants": 2,
+    "requirements": [
+        "graphite/100",
+        "copper/200",
+        "lead/100",
+        "silicon/30"
+    ],
+    "category": "effect",
+    "research": "浮桥"
+}

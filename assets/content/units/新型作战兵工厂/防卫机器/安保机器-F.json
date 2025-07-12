@@ -1,0 +1,95 @@
+{
+    "type": "mech",
+    "name": "安保机器",
+    "description": "射出一道无限穿透的激光",
+    "speed": 0.5,
+    "drag": 0.05,
+    "accel": 0.1,
+    "rotateSpeed": 3,
+    "ammoType": {
+        "type": "PowerAmmoType",
+        "totalPower": 100
+    },
+    "ammoCapacity": 150,
+    "hitSize": 20,
+    "flying": false,
+    "faceTarget": true,
+    "drawMinimap": true,
+    "health": 60000,
+    "research": {
+        "parent": "防卫兵工厂"
+    },
+    "researchCostMultiplier": 3,
+    "armor": 50,
+    "engineOffset": 8,
+    "engineSize": 2,
+    "itemCapacity": 5,
+    "immunities": [
+        "freezing",
+        "错误"
+    ],
+    "abilities": [
+        {
+            "type": "ShieldArcAbility",
+            "radius": 35,
+            "width": 15,
+            "max": 6000,
+            "regen": 15,
+            "cooldown": 160,
+            "angle": 130,
+            "angleOffset": 0
+        },
+        {
+            "type": "ShieldArcAbility",
+            "radius": 15,
+            "width": 10,
+            "max": 6000,
+            "regen": 15,
+            "cooldown": 160,
+            "angle": 130,
+            "angleOffset": 0
+        },
+        {
+            "type": "ForceFieldAbility",
+            "radius": "00",
+            "regen": 8,
+            "max": 15000,
+            "cooldown": 210
+        }
+    ],
+    "weapons": [
+        {
+            "name": "机器7",
+            "mirror": true,
+            "x": -12.5,
+            "y": -0.5,
+            "rotate": false,
+            "rotateSpeed": 0,
+            "shootSound": "laser",
+            "reload": 100,
+            "shake": 30,
+            "shoot": {
+                "shots": 3
+            },
+            "bullet": {
+                "type": "LaserBulletType",
+                "colors": [
+                    "a9d8ff",
+                    "CCFFFF",
+                    "000000"
+                ],
+                "hitSize": 12,
+                "lifetime": 70,
+                "collidesAir": true,
+                "ammoMultiplier": 1.00,
+                "status": "干涉",
+                "pierce": true,
+                "pierceBuilding": true,
+                "statusDuration": 120,
+                "length": 300,
+                "damage": 226,
+                "width": 15
+            }
+        }
+    ]
+}

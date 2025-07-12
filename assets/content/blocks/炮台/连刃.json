@@ -1,0 +1,138 @@
+{
+	"type": "ItemTurret",
+	"name": " 连刃",
+	"description": "快速射出多发子弹",
+	"health": 960,
+	"size": 3,
+	"reload": 3,
+	"range": 300,
+	"maxAmmo": 60,
+	"recoilTime": 10,
+	"recoil": 1,
+	"unitSort": "weakest",
+	"shoot": {
+		"type": "ShootAlternate",
+		"barrels": 1,
+		"spread": 2
+	},
+	"shake": 0,
+	"liquidCapacity": 30,
+	"ammoUseEffect": "casing2",
+	"targetGround": true,
+	"targetAir": true,
+	"inaccuracy": 5,
+	"rotateSpeed": 15,
+	"consumes": {
+		"coolant": {
+			"amount": 0.2,
+			"optional": true
+		}
+	},
+	"ammoTypes": {
+		"copper": {
+			"speed": 10,
+			"damage": 24,
+			"knockback": 0.5,
+			"lifetime": 30,
+			"width": 12,
+			"height": 19,
+			"ammoMultiplier": 4
+		},
+		"lead": {
+			"speed": 10,
+			"width": 12,
+			"height": 19,
+			"damage": 10,
+			"fragBullets": 3,
+			"fragBullet": {
+				"speed": 0.8,
+				"damage": 14,
+				"lifetime": 1
+			},
+			"lifetime": 30,
+			"width": 8,
+			"height": 9,
+			"ammoMultiplier": 4
+		},
+			"titanium": {
+			"speed": 10,
+			"damage": 32,
+			"knockback": 0.5,
+			"lifetime": 30,
+			"width": 12,
+			"height": 19,
+			"ammoMultiplier": 4
+		},
+			"thorium": {
+			"speed": 10,
+			"damage": 50,
+			"knockback": 0.5,
+			"lifetime": 30,
+			"width": 12,
+			"height": 19,
+			"ammoMultiplier": 4
+		},
+		"surge-alloy":{
+				"speed": 12,
+				"lifetime": 33,
+				"width": 15,
+				"height": 18,
+				"rangeChange":104,
+				 "reloadMultiplier": 1.2
+				"trailLength":3,
+				"trailWidth":4,
+				"lightningDamage": 12,
+				"lightning": 2.5,
+				"lightningLength": 10,
+				"damage": 25,
+				"splashDamageRadius": 45,
+				"splashDamage": 8,
+				"hitSound": "explosion",
+				"shootEffect": "shootBig2",
+				"smokeEffect": "shootBigSmoke",
+				"hitEffect": "flakExplosionBig",
+				"fragBullets": 3,
+				"fragBullet": {
+		"buildingDamageMultiplier": 0.01,
+					"speed": 8,
+					"lifetime": 3,
+					"trailLength":3,
+					"trailWidth":2,
+					"lightningDamage": 37,
+					"lightning": 1,
+					"lightningLength": 9,
+					"width": 8,
+					"height": 9,
+					"damage": 16,
+					"hitEffect": "flakExplosion",
+					"splashDamageRadius": 35,
+					"splashDamage": 35
+				}
+		}
+		"钢铁":{
+		"speed":10,
+		"damage":22,
+		"lightningDamage": 40,
+		"rangeChange":112,
+		"lightning": 2.5,
+			"width": 12,
+			"height": 19,
+		"lightningLength": 10,
+		}
+	}
+		"requirements": [
+		"copper/70",
+		"silicon/50",
+		"钢铁/40",
+		"titanium/50",
+	]
+	"category": "turret",
+	    "research": {
+	    "requirements": [//研究花费
+		"copper/400",
+		"lead/250",
+		"silicon/250"
+		"titanium/450"]
+    "parent": "重机枪",
+    },
+}

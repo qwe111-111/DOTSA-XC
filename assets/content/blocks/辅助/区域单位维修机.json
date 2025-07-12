@@ -1,0 +1,28 @@
+{
+    "name": "区域单位维修机",
+    "type": "RepairTower",
+    "description": "修复区域内的所有单位",
+    "size": 4,
+    "armor": 15,
+    "health": 4500,
+    "itemCapacity": 0,
+    "liquidCapacity": 0,
+    "range": 8000,
+    "healAmount": 33.333333333,
+    "circleColor": "73FFAE",
+    "glowColor": "73FFAE7B",
+    "circleSpeed": 10000,
+    "circleStroke": 1,
+    "squareRad": 1,
+    "squareSpinScl": 1000,
+    "glowMag": 1,
+    "glowScl": 1,
+    "requirements": [
+        "钢铁/500",
+        "钢合金/400",
+        "电路/400",
+        "钴/250"
+    ],
+    "category": "units",
+    "research": "作弊"
+}

@@ -1,0 +1,20 @@
+{
+  "type": "Wall",
+  "name": "专型合金墙",
+  "description": "更为坚固",
+  "armor": 20,
+  "lightningChance": 0.25,
+  "lightningDamage": 100,
+  "lightningLength": 5,
+  "chanceDeflect":25
+  "health": 6000,
+  "size": "3",
+  "insulated": true,
+  "absorbLasers": true,
+    "placeableLiquid": true,
+  "requirements": [
+    "surge-alloy/55"
+  ],
+  "category": "defense",
+  "research": "专型相织布墙"
+}

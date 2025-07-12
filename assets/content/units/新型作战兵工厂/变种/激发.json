@@ -1,0 +1,120 @@
+{
+    "type": "mech",
+    "name": "激发",
+    "description": "打出无限穿透的激光",
+    "details": "？",
+    "speed": 0.7,
+    "drag": 0.05,
+    "accel": 0.1,
+    "health":6000
+    "ammoCapacity": 150,
+    "hitSize": 6,
+    "flying": false,
+    "faceTarget": true,
+    "drawMinimap": true,
+    "engineOffset": 8,
+    "engineSize": 2,
+    "itemCapacity": 0,
+    "immunities": [
+        "wet"
+    ],
+    "weapons": [
+    {
+      "name": "激发1",/*武器名*/
+      "x": 4.5,
+      "y": 0.25,
+      "top": false,
+      "rotate": true,
+      "shootX": 6,
+      "shootY": -0.25,
+      "reload": 32,
+      "recoilTime": 25,/*复位时间*/
+      "rotateSpeed": 7,
+      "rotationLimit": 90,/*最大转角*/
+      "ejectEffect": "none",
+      "shootSound": "laser",
+      "shake": 3,/*射击震屏幅度*/
+      "recoil": 4,
+      "layerOffset": -0.002,/*图层偏移*/
+      "minWarmup": 0.9,/*最低预热，达到后才射击*/
+      "cooldownTime": 60,/*发热特效时长*/
+      "heatColor": "ffd37f",/*发热特效颜色*/
+      "parts": [
+        {
+          "type": "RegionPart",
+          "suffix": "-weapon",
+          "moveX": 5,
+          "moveY": -4,
+          "progress": "warmup",
+          "under": false,
+          "layerOffset": 0.001
+        }
+      ],/*这个parts可以删掉，整动画用的*/
+      "bullet": {
+        "type": "LaserBulletType",
+        "damage": 140,
+        "recoil": 0.01,/*对发射者的物理后坐力*/
+        "sideAngle": 30,/*分叉光束与前方夹角*/
+         "pierce":true
+         "pierceBuilding":true
+        "sideWidth": 0.9,/*分叉光束宽*/
+        "sideLength": 45,/*分叉光束长*/
+        "length": 215,/*长度*/
+        "colors": [ "90ECFFFF","90ECFFFF","90ECFFFF" ],/*从外到内的颜色，可用透明*/
+        "hitColor": "90ECFFFF",
+        "despawnColor": "90ECFFFF"
+      }
+    }
+{
+      "name": "激发2",/*武器名*/
+      "x": 6.5,
+      "y": 0.5,
+      "top": false,
+      "rotate": true,
+      "shootX": 6,
+      "shootY": -0.25,
+      "reload": 240,
+      "recoilTime": 25,/*复位时间*/
+      "rotateSpeed": 7,
+      "rotationLimit": 90,/*最大转角*/
+      "ejectEffect": "none",
+      "shootSound": "laser",
+      "shake": 3,/*射击震屏幅度*/
+      "recoil": 4,
+            "shoot": {
+        "shots": 4,
+        "shotDelay": 4
+      },
+      "layerOffset": -0.002,/*图层偏移*/
+      "minWarmup": 0.9,/*最低预热，达到后才射击*/
+      "cooldownTime": 60,/*发热特效时长*/
+      "heatColor": "ffd37f",/*发热特效颜色*/
+      "parts": [
+        {
+          "type": "RegionPart",
+          "suffix": "-weapon",
+          "moveX": 7.5,
+          "moveY": -4,
+          "progress": "warmup",
+          "under": false,
+          "layerOffset": 0.001
+        }
+      ],/*这个parts可以删掉，整动画用的*/
+      "bullet": {
+        "type": "LaserBulletType",
+        "damage": 240,
+        "recoil": 0.01,/*对发射者的物理后坐力*/
+        "sideAngle": 10,/*分叉光束与前方夹角*/
+         "pierce":true
+         "pierceBuilding":true
+        "sideWidth": 0.4,/*分叉光束宽*/
+        "sideLength": 45,/*分叉光束长*/
+        "length": 275,/*长度*/
+        "colors": [ "90ECFFFF","90ECFFFF","90ECFFFF" ],/*从外到内的颜色，可用透明*/
+        "hitColor": "90ECFFFF",
+        "despawnColor": "90ECFFFF"
+      }
+    }
+
+    ]
+}

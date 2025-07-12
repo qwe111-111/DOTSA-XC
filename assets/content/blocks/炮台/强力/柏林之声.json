@@ -1,0 +1,131 @@
+{
+    "type": "PowerTurret",
+    "name": "柏林之声",
+    "description": "？？？",
+    "details": "？？？",
+    "targetAir": true,
+    "targetGround": false,
+    "health": 7450,
+    "size": 6,
+    "canOverdrive": false,
+    "shootSound": "laser",
+    "shake": 1.5,
+    "inaccuracy": 1,
+    "recoil": 1,
+    "xRand": 0,
+    "recoilTime": 5,
+    "shoot": {
+        "type": "ShootBarrel",
+        "shots": 7,
+        "shotDelay": 4,
+        "barrels": [
+			15,-8,0,
+			6.5,-9,0,
+			-6.5,-9,0,
+			-15,-8,0,
+			]
+    },
+    "heatColor": "FF4040",
+    "shootEffect": {
+        "type": "ParticleEffect",
+        "particles": 7,
+        "sizeFrom": 3,
+        "sizeTo": 0,
+        "length": 40,
+        "line":true,
+        "baseLength": 0,
+        "lifetime": 30,
+        "colorFrom": "F2EBEBFF",
+        "colorTo": "F2EBEBFF",
+        "cone": 50
+    },
+    "shootType": {
+        "height": 55,
+        "width": 6,
+        "damage": 345,
+        "speed": 20,
+        "lifetime": 38,
+        "splashDamageRadius": 50,
+        "splashDamage": 195,
+        "statusDuration": 45,
+        "status": "错误",
+        "buildingDamageMultiplier": 0.05,
+        "frontColor": "FCF387FF",
+        "backColor": "FCF387FF",
+        "trailLength": 20,
+        "trailWidth": 1.5,
+        "trailColor": "FCF387FF",
+        "hitSound": "plasmaboom",
+        "despawnEffect": "none",
+        "hitEffect": {
+            "type": "MultiEffect",
+            "effects": [
+                {
+                    "type": "ParticleEffect",
+                    "particles": 5,
+                    "sizeFrom": 9,
+                    "sizeTo": 0,
+                    "length": 0,
+                    "baseLength": 48,
+                    "lifetime": 35,
+                    "colorFrom": "FCF387FF",
+                    "colorTo": "FCF387FF"
+                },
+                {
+                    "type": "ParticleEffect",
+                    "particles": 12,
+                    "line": true,
+                    "strokeFrom": 3,
+                    "strokeTo": 0,
+                    "lenFrom": 15,
+                    "lenTo": 0,
+                    "length": 53,
+                    "baseLength": 0,
+                    "lifetime": 15,
+                    "colorFrom": "FCF387FF",
+                    "colorTo": "FCF387FF"
+                },
+                {
+                    "type": "WaveEffect",
+                    "lifetime": 25,
+                    "sizeFrom": 0,
+                    "sizeTo": 44,
+                    "strokeFrom": 3,
+                    "strokeTo": 0,
+                    "colorFrom": "FCF387FF",
+                    "colorTo": "FCF387FF"
+                }
+            ]
+        }
+    },
+    "consumes": {
+        "power": 30,
+        "coolant": {
+            "amount": 0.3,
+            "optional": true
+        }
+    },
+    "reload": 10,
+    "rotateSpeed": 2.4,
+    "range": 800,
+    "category": "turret",
+    "research": {
+        "parent": "耀闪",
+        "objectives": [
+            {
+                "type": "SectorComplete",
+                "preset": "nuclearComplex"
+            }
+        ]
+    },
+    "researchCostMultiplier": 0.4,
+    "requirements": [
+        "钴/180",
+        "钴钢/120",
+        "silicon/340",
+        "钢合金/200",
+        "硬化钢铁/350",
+        "surge-alloy/420",
+        "高级协议许可证/1"
+    ]
+}

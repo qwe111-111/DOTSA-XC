@@ -1,0 +1,20 @@
+{
+    "type": "StackConveyor",
+    "name": "钢铁压缩带",
+    "requirements": [
+        {
+            "item": "钢铁",
+            "amount": "1"
+        }
+    ],
+    "speed": 0.3,
+    "displayedSpeed": 0.4,
+    "insulated": false,
+    "itemCapacity":20
+    "health":75
+    "placeableLiquid": true,
+    "displayFlow": true,
+    "absorbLasers": false,
+    "category": "distribution",
+    "research": "合成带"
+}

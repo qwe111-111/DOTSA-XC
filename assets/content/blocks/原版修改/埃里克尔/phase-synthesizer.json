@@ -1,0 +1,10 @@
+{
+    "itemCapacity": 80,
+    "canOverdrive": true,
+    "outputItem": {
+        "item": "phase-fabric",
+        "amount": 10
+    },
+    "heatRequirement": 3,
+    "category": "crafting"
+}

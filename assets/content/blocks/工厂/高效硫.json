@@ -1,0 +1,35 @@
+{
+    "type": "GenericCrafter",
+    "name": "高效硫化物厂",
+    "description": "...",
+    "details": "...",
+    "itemCapacity": 50,
+    "liquidCapacity": 30,
+    "health": 2000,
+    "size": 3,
+    "hasPower": true,
+    "hasLiquids": true,
+    "hasItems": true,
+    "craftTime": 45,
+    "updateEffect": "none",
+    "consumes": {
+        "items": [
+        "coal/6"
+        "lead/5"
+        "silicon/3"
+        ],
+    },
+    "outputItem": {
+        "item": "pyratite",
+        "amount": "6"
+    },
+    "requirements": [
+        "graphite/140",
+		"硬化钢铁/50",
+		"thorium/250",
+		"pyratite/100",
+		"钢铁/70"
+    ],
+    "category": "crafting",
+   "research": "pyratite-mixer"
+}

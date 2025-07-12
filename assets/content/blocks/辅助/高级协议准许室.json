@@ -1,0 +1,34 @@
+{
+	"name": "高级协议准许室",
+	"type": "Separator",
+	"health": 2800,
+	"size": 4,
+	"canOverdrive": false,
+	"rebuildable": true,
+	"squareSprite": true,
+	"hasLiquids": true,
+	"researchCostMultiplier": 0.5,
+	"results": [
+	    "中级协议许可证/1",
+    	"高级协议许可证/1",
+	],
+	"itemCapacity": 150,
+	"liquidCapacity": 100,
+	"craftTime": 185,
+	"consumes": {
+		"power": 250,
+		"liquid": "冷却液/3.6"
+	},
+	"requirements": [        
+	    "lead/150",
+		"graphite/75",
+		"metaglass/110",
+		"thorium/120",
+		"初级协议许可证/5",
+		"钴/100",
+		"surge-alloy/40"
+	],
+	"buildCostMultiplier": 2.5,
+	"category": "effect",
+	"research": "初级协议准许室"
+}

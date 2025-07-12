@@ -1,0 +1,9 @@
+{
+    "itemCapacity": 80,
+    "liquidCapacity": 90,
+    "canOverdrive": true,
+    "outputItem": {
+        "item": "oxide",
+        "amount": 8
+    }
+}

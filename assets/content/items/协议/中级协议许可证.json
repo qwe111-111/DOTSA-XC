@@ -1,0 +1,16 @@
+{
+    "name": "中级证协",
+    "description": "？",
+    "details": "？",
+    "color": "FFFFFFFF",
+    "cost": 2,
+    "hardness": 6,
+    "explosiveness": 0,
+    "radioactivity": 0,
+    "charge": 0,
+    "flammability": 0,
+    "frames": 8,
+    "transitionFrames": 2,
+    "frameTime": 4,
+    "research": "初级协议许可证"
+}

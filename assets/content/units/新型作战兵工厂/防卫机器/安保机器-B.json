@@ -1,0 +1,117 @@
+{
+    "type": "mech",
+    "name": "安保机器",
+    "description": "释放强力子弹",
+    "speed": 0.5,
+    "drag": 0.05,
+    "accel": 0.1,
+    "rotateSpeed": 3,
+    "ammoType": {
+        "type": "PowerAmmoType",
+        "totalPower": 100
+    },
+    "ammoCapacity": 150,
+    "hitSize": 20,
+    "flying": false,
+    "faceTarget": true,
+    "drawMinimap": true,
+    "health": 30000,
+    "research": {
+        "parent": "防卫兵工厂"
+    },
+    "researchCostMultiplier": 3,
+    "armor": 45,
+    "engineOffset": 8,
+    "engineSize": 2,
+    "itemCapacity": 5,
+    "immunities": [
+        "freezing",
+        "错误"
+    ],
+    "abilities": [
+        {
+            "type": "ShieldArcAbility",
+            "radius": 35,
+            "width": 15,
+            "max": 6000,
+            "regen": 15,
+            "cooldown": 160,
+            "angle": 130,
+            "angleOffset": 0
+        },
+        {
+            "type": "ShieldArcAbility",
+            "radius": 15,
+            "width": 10,
+            "max": 6000,
+            "regen": 15,
+            "cooldown": 160,
+            "angle": 130,
+            "angleOffset": 0
+        },
+        {
+            "type": "ForceFieldAbility",
+            "radius": "00",
+            "regen": 8,
+            "max": 7500,
+            "cooldown": 210
+        }
+    ],
+    "weapons": [
+        {
+            "name": "机器3",
+            "reload": 5.5,
+            "shake": 3,
+            "shootStatus": "能量爆发",
+            "shootStatusDuration": 86,
+            "recoil": 5,
+            "x": -12.5,
+            "y": -0.5,
+            "shootX": 0,
+            "shootY": 20,
+            "rotate": false,
+            "top": false,
+            "inaccuracy": 0.5,
+            "shootSound": "shootBig",
+            "alternate": true,
+            "ejectEffect": "casing4",
+            "shootCone": 15,
+            "bullet": {
+                "damage": 75,
+                "splashDamage": 45,
+                "splashDamageRadius": 32,
+                "pierce": true,
+                "pierceBuilding": true,
+                "pierceArmor": true,
+                "pierceCap": 4,
+                "speed": 28.6,
+                "lifetime": 14,
+                "hitSound": "explosion",
+                "shootEffect": "shootBig",
+                "smokeEffect": "shootBigSmoke",
+                "trailLength": 3.5,
+                "trailWidth": 3.3,
+                "trailColor": "B3FFFF",
+                "backColor": "CCFFFF",
+                "frontColor": "FFFFFF",
+                "width": 14,
+                "height": 33,
+                "hitEffect": {
+                    "type": "ParticleEffect",
+                    "particles": 15,
+                    "line": true,
+                    "strokeFrom": 3,
+                    "strokeTo": 0,
+                    "lenFrom": 16,
+                    "lenTo": 0,
+                    "length": 60,
+                    "baseLength": 0,
+                    "lifetime": 10,
+                    "colorFrom": "B3FFFF",
+                    "colorTo": "CCFFFF",
+                    "cone": 60
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "type": "Reconstructor",
+    "name": "铁血级工厂",
+    "description": "[red]升级",
+    "size": 4,
+    "health": 2000,
+    "constructTime": 300.0,
+    "consumes": {
+        "power": 3,
+        "items": {
+            "items": [
+                "silicon/30",
+                "titanium/45",
+                "graphite/40",
+                "钢铁/25"
+            ]
+        }
+    },
+    "requirements": [
+        "copper/500",
+        "lead/500",
+        "silicon/450",
+        "titanium/245",
+        "钢铁/120",
+        "硬化钢铁/70"
+    ],
+    "upgrades": [
+        [
+            "幸运",
+            "责令"
+        ],
+        [
+            "刀锋",
+            "烈焰"
+        ],
+        [
+            "突袭",
+            "袭击"
+        ]
+    ],
+    "category": "units",
+    "research": "新型作战兵工厂"
+}

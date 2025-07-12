@@ -1,0 +1,43 @@
+{
+    "type": "PointDefenseTurret",
+    "name": "逝去",
+    "description": "摧毁来袭的子弹或导弹",
+    "health": 1000,
+    "size": 3,
+    "rotateSpeed": 100,
+    "range": 500,
+    "reload": 0.1,
+    "bulletDamage": 300,
+    "hasPower": true,
+    "acceptCoolant": true,
+    "coolantMultiplier": 8,
+    "color": "FFFFFFFF",
+    "speed": 15,
+    "consumes": {
+        "power": 7.3
+    },
+    "requirements": [
+        {
+            "item": "titanium",
+            "amount": 60
+        },
+        {
+            "item": "thorium",
+            "amount": 90
+        },
+        {
+            "item": "silicon",
+            "amount": 100
+        },
+        {
+            "item": "phase-fabric",
+            "amount": 20
+        },
+        {
+            "item": "surge-alloy",
+            "amount": 20
+        }
+    ],
+    "category": "turret",
+    "research": "segment"
+}

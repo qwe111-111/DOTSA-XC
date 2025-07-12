@@ -1,0 +1,16 @@
+{
+    "name": "小型容器",
+    "description": "临时制成的，可以放在核心旁边的容器,虽然储存空间不大，但能用",
+    "details": "前期给你这种东西，你就偷着乐吧",
+    "type": "StorageBlock",
+    "itemCapacity": 120,
+    "hasItems": true,
+    "health": 120,
+    "size": 2,
+    "requirements": [
+        "copper/65",
+        "lead/95"
+    ],
+    "category": "effect",
+    "research": "低速卸载器"
+}

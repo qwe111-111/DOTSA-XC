@@ -1,0 +1,12 @@
+{
+    "name": "X号强化",
+    "damageMultiplier": 2,
+    "healthMultiplier": 1,
+    "speedMultiplier": 1,
+    "reloadMultiplier": 1.5,
+    "damage": 0,
+    "permanent": false,
+    "reactive": 60,
+    "color": "EDC346FF",
+    "effectChance": 1
+}

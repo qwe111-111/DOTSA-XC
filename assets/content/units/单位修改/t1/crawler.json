@@ -1,0 +1,73 @@
+{
+    "health": 200,
+    "canBoost": false,
+    "weapons": [
+        {
+            "name": "自杀",
+            "reload": 1,
+            "x": 0,
+            "y": 0,
+            "rotate": true,
+            "shootCone": 360,
+            "ejectEffect": "none",
+            "shootSound": "explosionbig",
+            "mirror": false,
+            "inaccuracy": 0,
+            "alternate": true,
+            "top": false,
+            "shootOnDeath": true,
+            "bullet": {
+                "killShooter": true,
+                "splashDamageRadius": 60,
+                "instantDisappear": true,
+                "collides": false,
+                "splashDamage": 180,
+                "speed": 1,
+                "lifetime": 1,
+                "hitEffect": "massiveExplosion",
+                "despawnEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 18,
+                            "sizeFrom": 6,
+                            "sizeTo": 0,
+                            "length": 45,
+                            "baseLength": 3,
+                            "lifetime": 35,
+                            "colorFrom": "737373FF",
+                            "colorTo": "737373FF",
+                            "cone": 360
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 32,
+                            "line": true,
+                            "sizeFrom": 9,
+                            "sizeTo": 0,
+                            "length": 53,
+                            "baseLength": 20,
+                            "lifetime": 22,
+                            "colorFrom": "FFFFFF",
+                            "colorTo": "FFE176FF",
+                            "cone": 360
+                        },
+                        {
+                            "type": "WaveEffect",
+                            "lifetime": 15,
+                            "sizeFrom": 0,
+                            "sizeTo": 60,
+                            "strokeFrom": 4,
+                            "strokeTo": 0,
+                            "colorFrom": "FFE176FF",
+                            "colorTo": "ffffff"
+                        }
+                    ]
+                },
+                "width": 0,
+                "height": 0
+            }
+        }
+    ]
+}

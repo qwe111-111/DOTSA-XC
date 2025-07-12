@@ -1,0 +1,124 @@
+{
+    "type": "flying",
+    "name": "西塔",
+    "description": "令人安心的音效",
+    "details": "激情互射吧boy♂oh yeah♂",
+    "itemCapacity": 90,
+    "hitSize": 8,
+    "canDrown": false,
+    "armor": 26,
+    "speed": 7,
+    "drag": 0.05,
+    "accel": 0.1,
+    "rotateSpeed": 6,
+    "health": 600,
+    "mineSpeed": 4,
+    "mineTier": 3,
+    "flying": true,
+    "faceTarget": true,
+    "buildSpeed": 1.5,
+    "ammoType": "copper",
+    "ammoCapacity": 120,
+    "engineOffset": 5,
+    "engineSize": 2,
+    "abilities": [
+        {
+            "type": "ForceFieldAbility",
+            "radius": 40,
+            "regen": 2,
+            "max": 300,
+            "cooldown": 20
+        }
+    ],
+    "weapons": [
+        {
+            "name": "none",
+            "reload": 6,
+            "x": 2.5,
+            "y": 0.5,
+            "rotate": false,
+            "top": false,
+            "inaccuracy": 0,
+            "shootSound": "老",
+            "alternate": true,
+            "ejectEffect": "casing2",
+            "shoot": {
+                "shots": 2,
+                "shotDelay": 1
+            },
+            "bullet": {
+                "damage": 22,
+                "speed": 8,
+                "lifetime": 40,
+                "width": 11,
+                "height": 16
+            }
+        },
+        {
+            "name": "none",
+            "reload": 60,
+            "x": 0,
+            "y": 1,
+            "shootY": 1,
+            "rotate": false,
+            "top": false,
+            "recoil": 3.25,
+            "inaccuracy": 0,
+            "mirror": false,
+            "shootSound": "老",
+            "continuous": true,
+            "shake": 2,
+            "bullet": {
+                "lifetime": 40,
+                "type": "LaserBulletType",
+                "recoil": 0.12,
+                "damage": 190,
+                "knockback": 12,
+                "sideAngle": 160,
+                "sideWidth": 1,
+                "sideLength": 25,
+                "status": "melting",
+                "statusDuration": 120,
+                "smokeEffect": "bigShockwave",
+                "hitEffect": {
+                    "type": "ParticleEffect",
+                    "particles": 5,
+                    "baseLength": 56,
+                    "length": 55,
+                    "lifetime": 57,
+                    "sizeInterp": "pow5In",
+                    "interp": "pow10Out",
+                    "spin": 6,
+                    "region": "改进工业-方",
+                    "sizeFrom": 7,
+                    "sizeTo": 2,
+                    "colorFrom": "ec7458",
+                    "colorTo": "ff9c5a"
+                },
+                "shootEffect": {
+                    "type": "ParticleEffect",
+                    "line": true,
+                    "particles": 9,
+                    "lenFrom": 10,
+                    "lenTo": 0,
+                    "strokeFrom": 2,
+                    "strokeTo": 1,
+                    "baseLength": 240,
+                    "length": 0,
+                    "sizeInterp": "pow3In",
+                    "lifetime": 20,
+                    "colorFrom": "ff9c5a",
+                    "colorTo": "ffffff",
+                    "cone": 0
+                },
+                "colors": [
+                    "ff9c5a",
+                    "ff9c5a",
+                    "FFFFFF"
+                ],
+                "width": 15,
+                "length": 300
+            }
+        }
+    ]
+}

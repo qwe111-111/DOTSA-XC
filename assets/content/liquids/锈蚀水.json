@@ -1,0 +1,23 @@
+{
+    "type": "CellLiquid",
+    "name": "锈蚀水",
+    "description": "恶心",
+    "details": "碰到的话会让人感觉很恶心",
+    "details": "[red]又玩生物科技",
+    "color": "FF9166FF",
+    "barColor": "43434FFF",
+    "lightColor": "D5975DFF",
+    "colorFrom": "D5975DFF",
+    "colorTo": "FF9166FF",
+    "gas": false,
+    "moveThroughBlocks": true,
+    "spreadTarget": "water",
+    "blockReactive": false,
+    "flammability": 0,
+    "temperature": 0.56,
+    "heatCapacity": 0.15,
+    "viscosity": 0.62,
+    "explosiveness": 0,
+    "boilPoint": 0.5,
+    "effect": "侵蚀"
+}

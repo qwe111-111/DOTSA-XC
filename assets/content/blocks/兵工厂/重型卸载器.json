@@ -1,0 +1,26 @@
+{
+    "type": "PayloadUnloader",
+    "name": "重型卸载器",
+    "description": "完全不懂阿拉为什么要在中间设计这个(思考)\n我们需要这个吗？",
+    "health": 1420,
+    "size": 4,
+    "canOverdrive": true,
+    "category": "units",
+    "itemCapacity": 500,
+    "liquidCapacity": 500,
+    "consumes": {
+        "power": 2
+    },
+    "requirements": [
+        "silicon/480",
+        "plastanium/160",
+        "titanium/345",
+        "钢铁/300",
+        "titanium/420",
+        "metaglass/280"
+    ],
+    "research": "新型作战兵工厂",
+    "regionSuffix": 3.21,
+    "consumePower": 2.14,
+    "fogRadius": 5.9
+}

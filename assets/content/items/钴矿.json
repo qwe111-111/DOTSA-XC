@@ -1,0 +1,13 @@
+{
+    "name": "钴矿",
+    "description": "？",
+    "details": "？",
+    "color": "FFFFFFFF",
+    "cost": 3,
+    "hardness": 8,
+    "explosiveness": 50,
+    "radioactivity": 0,
+    "charge": 10,
+    "flammability": 10,
+    "research": "钢合金"
+}

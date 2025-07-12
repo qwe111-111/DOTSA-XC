@@ -1,0 +1,123 @@
+{
+    "type": "mech",
+    "name": "安保机器",
+    "description": "快速的射出一串穿透子弹",
+    "speed": 0.5,
+    "drag": 0.05,
+    "accel": 0.1,
+    "rotateSpeed": 3,
+    "ammoType": {
+        "type": "PowerAmmoType",
+        "totalPower": 100
+    },
+    "ammoCapacity": 150,
+    "hitSize": 20,
+    "flying": false,
+    "faceTarget": true,
+    "drawMinimap": true,
+    "health": 28000,
+    "research": {
+        "parent": "防卫兵工厂"
+    },
+    "researchCostMultiplier": 3,
+    "armor": 25,
+    "engineOffset": 8,
+    "engineSize": 2,
+    "itemCapacity": 5,
+    "immunities": [
+        "freezing",
+        "错误"
+    ],
+    "abilities": [
+        {
+            "type": "ShieldArcAbility",
+            "radius": 35,
+            "width": 15,
+            "max": 6000,
+            "regen": 15,
+            "cooldown": 160,
+            "angle": 130,
+            "angleOffset": 0
+        },
+        {
+            "type": "ShieldArcAbility",
+            "radius": 15,
+            "width": 10,
+            "max": 6000,
+            "regen": 15,
+            "cooldown": 160,
+            "angle": 130,
+            "angleOffset": 0
+        },
+        {
+            "type": "ForceFieldAbility",
+            "radius": "00",
+            "regen": 8,
+            "max": 7500,
+            "cooldown": 210
+        }
+    ],
+    "weapons": [
+        {
+            "name": "机器5",
+            "x": -14.5,
+            "y": -0.5,
+            "mirror": true,
+            "reload": 22,
+            "rotate": true,
+            "shoot": {
+                "shots": 4,
+                "shotDelay": 3
+            },
+            "shootEffect": "shootSmall",
+            "shootSound": "2",
+            "inaccuracy": 1.5,
+            "bullet": {
+                "speed": 15,
+                "lifetime": 33,
+                "damage": 62,
+                "width": 8,
+                "height": 19,
+                "frontColor": "a9d8ff",
+                "backColor": "CCFFFF",
+                "trailLength": 4,
+                "trailWidth": 2,
+                "trailColor": "B3FFFF",
+                "pierce": true,
+                "pierceBuilding": true,
+                "pierceCap": 3
+            },
+                "hitEffect": {
+                 "type": "multiEffect",
+                 "effects": [
+                 {
+                 "type": "ParticleEffect",
+                 "line": true,
+                 "particles": 4,
+                 "lifetime": 30,
+                 "interp": "circleOut",
+                 "offset": 30,
+                 "length": 12,
+                 "lightColor": "a9d8ff",
+                 "strokeFrom": 2,
+                 "strokeTo": 0,
+                 "lenFrom": 3,
+                 "lenTo": 3,
+                 "colorFrom": "a9d8ff",
+                 "colorTo": "CCFFFF"
+                  },
+                  {
+                    "type": "waveEffect",
+                    "lifetime": 12,
+                    "sizeFrom": 12,
+                    "sizeTo": 12,
+                    "strokeFrom": 2,
+                    "strokeTo": 0,
+                    "colorFrom": "a9d8ff",
+                    "colorTo": "CCFFFF"
+                }
+                ]
+                }
+        }
+    ]
+}

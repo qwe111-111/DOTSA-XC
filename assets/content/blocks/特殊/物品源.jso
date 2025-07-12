@@ -1,0 +1,15 @@
+{
+    "type": "ItemSource",
+    "category": "distribution",
+    "alwaysUnlocked": true,
+    "name": "物品源",
+    "description": "[red]X的礼物",
+    "health": 2147483647,
+    "armor": 2147483647,
+    "destructible": true,
+    "targetable": true,
+    "research": {
+        "parent": ""
+    },
+    "requirements": []
+}

@@ -1,0 +1,46 @@
+{
+    "type": "naval",
+    "name": "海龟",
+    "description": "...",
+    "speed": 1.4,
+    "rotateSpeed": 1.6,
+    "ammoType": "surge-alloy",
+    "ammoCapacity": 60,
+    "trailLength": 24,
+    "waveTrailX": 0,
+    "waveTrailY": -6,
+    "trailScl": 2,
+    "hitSize": 10,
+    "health": 7000,
+    "armor": 25,
+    "faceTarget": false,
+    "weapons": [
+        {
+            "name": "海龟1",
+            "mirror": true,
+            "x": -8.5,
+            "y": -0.5,
+            "rotate": true,
+            "rotateSpeed": 3.2,
+            "shootSound": "laser",
+            "reload": 100,
+            "shake": 30,
+            "bullet": {
+                "type": "LaserBulletType",
+                "length": 180,
+                "damage": 240,
+                "colors": [
+                    "A9D8FFFF",
+                    "8CA9E8FF",
+                    "000000"
+                ],
+                "hitSize": 12,
+                "lifetime": 70,
+                "width": 8,
+                "despawnEffect": "hitLaser",
+                "hitEffect": "hitLancer",
+                "smokeEffect": "hitLaser"
+            }
+        }
+    ]
+}

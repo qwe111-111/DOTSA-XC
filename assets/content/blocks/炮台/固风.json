@@ -1,0 +1,168 @@
+{
+    "type": "ItemTurret",
+    "name": "固风",
+    "description": "...",
+    "size": 3,
+    "health": 1900,
+    "ammoPerShot": 4,
+    "range": 408,
+    "reload": 10,
+    "inaccuracy": 0,
+    "rotateSpeed": 4,
+    "maxAmmo": 50,
+    "shootSound": "shootBig",
+    "category": "turret",
+    "research": "践行",
+    "consumes": {
+        "coolant": {
+            "amount": 0.26,
+            "optional": true
+        }
+    },
+    "requirements": [
+        {
+            "item": "copper",
+            "amount": 90
+        },
+        {
+            "item": "lead",
+            "amount": 30
+        },
+        {
+            "item": "silicon",
+            "amount": 25
+        },
+        {
+            "item": "钢铁",
+            "amount": 40
+        }
+    ],
+    "recoil": 0.5,
+    "shoot": {
+        "shots": 2,
+        "type": "ShootAlternate",
+        "barrels": 2,
+        "spread": 6.5
+    },
+    "targetGround": true,
+    "ammoTypes": {
+        "titanium": {
+            "speed": 10,
+            "damage": 36,
+            "lifetime": 40,
+            "despawnHit": true,
+            "width": 6,
+            "height": 18,
+            "ammoMultiplier": 8,
+            "trailLength": 5,
+            "trailWidth": 1.5,
+            "trailColor": "A4B8FAFF",
+            "hitEffect": {
+                "type": "multiEffect",
+                "effects": [
+                    {
+                        "type": "ParticleEffect",
+                        "line": true,
+                        "particles": 4,
+                        "lifetime": 30,
+                        "interp": "circleOut",
+                        "offset": 30,
+                        "length": 32,
+                        "lightColor": "A4B8FAFF",
+                        "strokeFrom": 2,
+                        "strokeTo": 0,
+                        "lenFrom": 6,
+                        "lenTo": 0,
+                        "colorFrom": "A4B8FAFF",
+                        "colorTo": "A4B8FAFF"
+                    },
+                    {
+                        "type": "waveEffect",
+                        "lifetime": 30,
+                        "sizeFrom": 0,
+                        "sizeTo": 6,
+                        "strokeFrom": 2,
+                        "strokeTo": 0,
+                        "colorFrom": "A4B8FAFF",
+                        "colorTo": "A4B8FAFF"
+                    }
+                ]
+            },
+            "shootEffect": {
+                "type": "ParticleEffect",
+                "line": true,
+                "particles": 5,
+                "lifetime": 20,
+                "interp": "circleOut",
+                "offset": 30,
+                "length": 32,
+                "lightColor": "A4B8FAFF",
+                "strokeFrom": 2,
+                "strokeTo": 0,
+                "lenFrom": 5,
+                "lenTo": 0,
+                "colorFrom": "A4B8FAFF",
+                "colorTo": "A4B8FAFF"
+            }
+        },
+        "thorium": {
+            "speed": 10,
+            "damage": 51,
+            "lifetime": 40,
+            "width": 6,
+            "height": 18,
+            "despawnHit": true,
+            "ammoMultiplier": 8,
+            "trailLength": 5,
+            "trailWidth": 1.5,
+            "trailColor": "CB8EBFFF",
+            "hitEffect": {
+                "type": "multiEffect",
+                "effects": [
+                    {
+                        "type": "ParticleEffect",
+                        "line": true,
+                        "particles": 4,
+                        "lifetime": 30,
+                        "interp": "circleOut",
+                        "offset": 30,
+                        "length": 32,
+                        "lightColor": "CB8EBFFF",
+                        "strokeFrom": 2,
+                        "strokeTo": 0,
+                        "lenFrom": 6,
+                        "lenTo": 0,
+                        "colorFrom": "CB8EBFFF",
+                        "colorTo": "CB8EBFFF"
+                    },
+                    {
+                        "type": "waveEffect",
+                        "lifetime": 30,
+                        "sizeFrom": 0,
+                        "sizeTo": 6,
+                        "strokeFrom": 2,
+                        "strokeTo": 0,
+                        "colorFrom": "CB8EBFFF",
+                        "colorTo": "CB8EBFFF"
+                    }
+                ]
+            },
+            "shootEffect": {
+                "type": "ParticleEffect",
+                "line": true,
+                "particles": 5,
+                "lifetime": 20,
+                "interp": "circleOut",
+                "offset": 30,
+                "length": 32,
+                "lightColor": "CB8EBFFF",
+                "strokeFrom": 2,
+                "strokeTo": 0,
+                "lenFrom": 5,
+                "lenTo": 0,
+                "colorFrom": "CB8EBFFF",
+                "colorTo": "CB8EBFFF"
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+{
+	"type": "GenericCrafter",
+	"name": "冷却液混合器",
+	"description": "？"
+	"health": 1060,
+	"outputLiquid": {
+		"liquid": "冷却液",
+		"amount": 0.3
+	},
+	"itemCapacity": 14,
+	"size": 3,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+				"type": "DrawLiquidTile",
+				"drawLiquid": "冷却液"
+			},
+			"DrawDefault"
+		]
+	},
+	"hasItems": true,
+	"hasLiquids": true,
+	"outputsLiquid": true,
+	"hasPower": true,
+	"liquidCapacity": 60,
+	"craftTime": 60,
+	"updateEffect": "freezing",
+	"consumes": {
+		"power": 80,
+		"items": [
+				"titanium/8",
+				"钴/2"
+			]
+		"liquid": "cryofluid/0.4"
+	},
+	"requirements": [
+		"thorium/150",
+		"metaglass/40",
+		"钴/140",
+		"硬化钢铁/180",
+		"初级协议许可证/5"
+	],
+	"category": "crafting",
+	"research": "大型冷冻液混合器"
+}

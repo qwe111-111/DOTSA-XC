@@ -1,0 +1,36 @@
+{
+    "type": "GenericCrafter",
+    "name": "钴矿合成机",
+    "description": "...",
+    "details": "在没有原矿和自动钻井时使用",
+    "itemCapacity": 50,
+    "liquidCapacity": 30,
+    "health": 2000,
+    "size": 4,
+    "hasPower": true,
+    "hasLiquids": true,
+    "hasItems": true,
+    "craftTime": 50,
+    "updateEffect": "none",
+    "consumes": {
+        "items": [
+        "thorium/5"
+        "surge-alloy/3"
+        "silicon/4"
+        ],
+    },
+    "outputItem": {
+        "item": "钴矿",
+        "amount": "3"
+    },
+    "requirements": [
+        "graphite/140",
+		"硬化钢铁/50",
+		"thorium/250",
+		"phase-fabric/100",
+		"钢铁/70"
+		"surge-alloy/65"
+    ],
+    "category": "crafting",
+   "research": "大型合金制造厂"
+}

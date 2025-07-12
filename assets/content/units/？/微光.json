@@ -1,0 +1,82 @@
+{
+    "type": "mech",
+    "name": "微光",
+    "description": "轻型机",
+    "details": "?",
+    "speed": 0.8,
+    "hitSize": 8,
+    "ammoType": {
+        "type": "PowerAmmoType",
+        "totalPower": 2200
+    },
+    "health": 3400,
+    "armor": 10,
+    "drag": 0.01,
+    "rotateSpeed": 1.6,
+    "itemCapacity": 30,
+    "targetAir": true,
+    "targetGround": true,
+    "weapons": [
+        {
+            "name": "微光1",
+            "reload": 26,
+            "x": 5,
+            "y": 1,
+            "rotate": false,
+            "inaccuracy": 1.6,
+            "mirror": true,
+            "shootSound": "pew",
+            "alternate": true,
+            "ejectEffect": "casing1",
+            "bullet": {
+                "damage": 34,
+                "speed": 3,
+                "ignoreRotation": true,
+                "lifetime": 50,
+                "width": 4,
+                "height": 10,
+                "trailColor": "CCFFFFFF",
+                "trailWidth": 1.5,
+                "trailLength": 5,
+                "lightning": 3,
+                "lightningLength": 5,
+                "lightningDamage": 18,
+                "lightColor": "CCFFFFFF",
+                "frontColor": "CCFFFFFF",
+                "backColor": "4EDCF9FF",
+                "hitColor": "A9D8FFFF",
+                "hitEffect": {
+                    "type": "multiEffect",
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "line": true,
+                            "particles": 5,
+                            "lifetime": 30,
+                            "interp": "circleOut",
+                            "offset": 18,
+                            "length": 20,
+                            "lightColor": "ff7048",
+                            "strokeFrom": 3,
+                            "strokeTo": 0,
+                            "lenFrom": 6,
+                            "lenTo": 2,
+                            "colorFrom": "CCFFFFFF",
+                            "colorTo": "4EDCF9FF"
+                        },
+                        {
+                            "type": "waveEffect",
+                            "lifetime": 30,
+                            "sizeFrom": 0,
+                            "sizeTo": 12,
+                            "strokeFrom": 2,
+                            "strokeTo": 0,
+                            "colorFrom": "CCFFFFFF",
+                            "colorTo": "CCFFFFFF"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

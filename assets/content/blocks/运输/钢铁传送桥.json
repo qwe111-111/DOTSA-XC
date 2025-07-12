@@ -1,0 +1,19 @@
+{
+    "type": "ItemBridge",
+    "name": "钢铁传送桥",
+    "description": "范围更大",
+    "health": 120,
+    "range": 15,
+    "transportTime": 0.8,
+    "consumes": {
+        "power": 0.5
+    },
+    "requirements": [
+        {
+            "item": "钢铁",
+            "amount": 10
+        }
+    ],
+    "category": "distribution",
+    "research": "钢铁压缩带"
+}

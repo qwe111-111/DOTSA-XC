@@ -1,0 +1,159 @@
+{
+    "type": "PowerTurret",
+    "name": "双头龙",
+    "description": "射出两发准度极不准的攻击，可以靠堆来补其不足",
+    "details": "敌人:双头龙,可以战胜的",
+    "size": 3,
+    "health": 3490,
+    "ammoPerShot": 1,
+    "range": 414,
+    "minRange": 30,
+    "recoil": 3,
+    "reload": 8,
+    "inaccuracy": 30,
+    "velocityRnd": 0.2,
+    "targetAir": true,
+    "targetGround": true,
+    "canOverdrive": false,
+    "shootSound": "小炮",
+    "ammoUseEffect": "casing3Double",
+    "heatColor": "FFFFFF9A",
+    "shoot": {
+        "type": "ShootBarrel",
+        "shots": 2,
+        "barrels": [
+            -3,0,0,
+            3,0,0,
+        ]
+    },
+    "shootType": {
+        "type": "BasicBulletType",
+        "damage": 76,
+        "frontColor": "FFFFFF",
+        "backColor": "BC5452FF",
+        "width": 21,
+        "height": 28,
+        "trailLength": 8,
+        "trailWidth": 2,
+        "trailColor": "EA8878FF",
+        "pierce": true,
+        "status": "shocked",
+        "statusDuration": 180,
+        "speed": 30,
+        "splashDamageRadius": 36,
+        "splashDamage": 80,
+        "lightningColor": "EA8878FF",
+        "lifetime": 15,
+        "ammoMultiplier": 1,
+        "fragBullets": 4,
+        "fragBullet": {
+            "speed": 10,
+            "damage": 60,
+            "lifetime": 1
+        },
+        "lightningDamage": 40,
+        "lightning": 3,
+        "lightningLength": 6,
+        "hitEffect": {
+            "type": "multiEffect",
+            "effects": [
+                {
+                    "type": "ParticleEffect",
+                    "line": true,
+                    "particles": 15,
+                    "lifetime": 10,
+                    "interp": "circleOut",
+                    "offset": 30,
+                    "length": 50,
+                    "lightColor": "BC5452FF",
+                    "strokeFrom": 4,
+                    "strokeTo": 0,
+                    "lenFrom": 10,
+                    "lenTo": 10,
+                    "colorFrom": "BC5452FF",
+                    "colorTo": "EA8878FF"
+                },
+                {
+                    "type": "ParticleEffect",
+                    "particles": 16,
+                    "length": 55,
+                    "baseLength": 10,
+                    "lifetime": 48,
+                    "lightColor": "BC5452FF",
+                    "interp": "circleOut",
+                    "cone": 360,
+                    "colorFrom": "BC5452FF",
+                    "colorTo": "EA8878FF",
+                    "sizeFrom": 6,
+                    "sizeTo": 0
+                },
+                {
+                    "type": "WaveEffect",
+                    "lifetime": 20,
+                    "sizeFrom": 0,
+                    "sizeTo": 40,
+                    "strokeFrom": 3,
+                    "strokeTo": 0,
+                    "colorFrom": "BC5452FF",
+                    "colorTo": "BC5452FF"
+                }
+            ]
+        },
+        "despawnEffect": {
+            "type": "WaveEffect",
+            "lifetime": 8,
+            "sizeFrom": 0,
+            "sizeTo": 8,
+            "strokeFrom": 1,
+            "strokeTo": 0,
+            "colorFrom": "FFFFFF",
+            "colorTo": "BC5452FF"
+        }
+    },
+    "shootEffect": {
+        "type": "WaveEffect",
+        "lifetime": 8,
+        "sizeFrom": 0,
+        "sizeTo": 8,
+        "strokeFrom": 1,
+        "strokeTo": 0,
+        "colorFrom": "FFFFFF",
+        "colorTo": "BC5452FF"
+    },
+    "consumes": {
+        "power": 8,
+        "coolant": {
+            "amount": 0.2,
+            "optional": true
+        }
+    },
+    "rotateSpeed": 2.1,
+    "category": "turret",
+    "research": "冰矛",
+    "requirements": [
+        {
+            "item": "copper",
+            "amount": 90
+        },
+        {
+            "item": "钢铁",
+            "amount": 100
+        },
+        {
+            "item": "硬化钢铁",
+            "amount": 90
+        },
+        {
+            "item": "silicon",
+            "amount": 90
+        },
+        {
+            "item": "titanium",
+            "amount": 90
+        },
+        {
+            "item": "thorium",
+            "amount": 90
+        }
+    ]
+}

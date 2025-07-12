@@ -1,0 +1,215 @@
+{
+    "legSplashDamage": 320,
+    "legSplashRange": 26,
+    "stepShake": 10.5,
+    "fogRadius": 128,
+    "itemCapacity": 940,
+    "rotateSpeed": 0.48,
+    "health": 48000,
+    "speed": 0.23,
+    "armor": 20,
+    "lightColor": "98ffa9",
+    "lightOpacity": 0.7,
+    "lightRadius": 150,
+    "immunities": [
+        "shocked",
+        "wet",
+        "burning",
+        "overclock"
+    ],
+    "abilities": [
+        {
+            "type": "StatusFieldAbility",
+            "effect": "overclock",
+            "duration": 540,
+            "reload": 1080,
+            "range": 360
+        },
+        {
+            "type": "ShieldArcAbility",
+            "radius": 25,
+            "angle": 120,
+            "width": 8,
+            "y": -9,
+            "cooldown": 1290,
+            "regen": 3.2,
+            "max": 25000
+        },
+        {
+            "type": "ShieldRegenFieldAbility",
+            "range": 0,
+            "amount": 2500,
+            "reload": 900,
+            "max": 32000
+        },
+        {
+            "type": "RepairFieldAbility",
+            "reload": 300,
+            "amount": 500,
+            "range": 0
+        }
+    ],
+    "weapons": [
+        {
+            "name": "none",
+            "type": "PointDefenseWeapon",
+            "targetSwitchInterval": 18,
+            "targetInterval": 15,
+            "rotationLimit": 135,
+            "mirror": false,
+            "shadow": 9,
+            "x": 10,
+            "y": 1,
+            "reload": 9,
+            "shootSound": "lasershoot",
+            "bullet": {
+                "maxRange": 180,
+                "damage": 45,
+                "shootEffect": "sparkShoot",
+                "hitEffect": "pointHit"
+            }
+        },
+        {
+            "name": "corvus-weapon",
+            "inaccuracy": 0,
+            "mirror": false,
+            "shootY": 5,
+            "shake": 45,
+            "x": 0,
+            "y": 0,
+            "cooldownTime": 2000,
+            "reload": 1800,
+            "recoil": 0,
+            "shootStatusDuration": 500,
+            "shootStatus": "unmoving",
+            "shoot": {
+                "firstShotDelay": 300
+            },
+            "parentizeEffects": true,
+            "chargeEffect": [
+                {
+                    "type": "ParticleEffect",
+                    "region": "corvus-weapon-heat",
+                    "sizeFrom": 50,
+                    "length": 0,
+                    "lifetime": 45,
+                    "particles": 1,
+                    "colorFrom": "ffb380",
+                    "colorTo": "ffb380"
+                },
+                {
+                    "type": "ParticleEffect",
+                    "region": "corvus-weapon-heat",
+                    "sizeFrom": 50,
+                    "length": 0,
+                    "lifetime": 45,
+                    "particles": 1,
+                    "colorFrom": "ffb380",
+                    "colorTo": "ffb380"
+                },
+                {
+                    "type": "ParticleEffect",
+                    "region": "corvus-weapon-heat",
+                    "sizeFrom": 50,
+                    "length": 0,
+                    "lifetime": 45,
+                    "particles": 1,
+                    "colorFrom": "ffb380",
+                    "colorTo": "ffb380"
+                },
+                {
+                    "type": "ParticleEffect",
+                    "region": "corvus-weapon-heat",
+                    "sizeFrom": 50,
+                    "length": 0,
+                    "lifetime": 45,
+                    "particles": 1,
+                    "colorFrom": "ffb380",
+                    "colorTo": "ffb380"
+                },
+                {
+                    "type": "ParticleEffect",
+                    "region": "corvus-weapon-heat",
+                    "sizeFrom": 50,
+                    "length": 0,
+                    "lifetime": 45,
+                    "particles": 1,
+                    "colorFrom": "ffb380",
+                    "colorTo": "ffb380"
+                },
+                {
+                    "type": "ParticleEffect",
+                    "region": "corvus-weapon-heat",
+                    "sizeFrom": 50,
+                    "length": 0,
+                    "lifetime": 45,
+                    "particles": 1,
+                    "colorFrom": "ffb380",
+                    "colorTo": "ffb380"
+                },
+                {
+                    "type": "ParticleEffect",
+                    "region": "corvus-weapon-heat",
+                    "sizeFrom": 50,
+                    "length": 0,
+                    "lifetime": 45,
+                    "particles": 1,
+                    "colorFrom": "ffb380",
+                    "colorTo": "ffb380"
+                },
+                {
+                    "type": "ParticleEffect",
+                    "region": "corvus-weapon-heat",
+                    "sizeFrom": 50,
+                    "length": 0,
+                    "lifetime": 45,
+                    "particles": 1,
+                    "colorFrom": "ffb380",
+                    "colorTo": "ffb380"
+                },
+                {
+                    "type": "ParticleEffect",
+                    "region": "corvus-weapon-heat",
+                    "sizeFrom": 50,
+                    "length": 0,
+                    "lifetime": 45,
+                    "particles": 1,
+                    "colorFrom": "ffb380",
+                    "colorTo": "ffb380"
+                }
+            ],
+            "chargeSound": "lasercharge",
+            "shootSound": "laserblast",
+            "soundPitchMin": 1,
+            "bullet": {
+                "type": "LaserBulletType",
+                "collidesTeam": true,
+                "despawnShake": 21,
+                "largeHit": true,
+                "sideLength": 0,
+                "sideAngle": 15,
+                "sideWidth": 0,
+                "hitShake": 21,
+                "length": 970,
+                "width": 90,
+                "statusDuration": 1920,
+                "healPercent": 100,
+                "status": "melting",
+                "lifetime": 90,
+                "damage": 7500,
+                "lightningLengthRand": 25,
+                "lightningAngleRand": 50,
+                "lightningSpacing": 35,
+                "lightningDamage": 150,
+                "lightningDelay": 1.1,
+                "lightningLength": 5,
+                "colors": [
+                    "98ffa9",
+                    "ffffff"
+                ],
+                "lightningColor": "98ffa9",
+                "lightColor": "98ffa9"
+            }
+        }
+    ]
+}

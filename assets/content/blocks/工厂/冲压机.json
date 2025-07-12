@@ -1,0 +1,75 @@
+{
+    "type": "GenericCrafter",
+    "health": 1400,
+    "name": "重塑厂",
+    "description": "更复杂的工艺，更高效的工厂架构，使得生厂效率更加快速\n将矿渣液重塑，让矿渣“浴火焚身”",
+    "outputItem": "待冷却钢铁/6",
+    "itemCapacity": 50,
+    "size": 3,
+    "hasPower": true,
+    "hasLiquids": false,
+    "hasItems": true,
+    "craftTime": 125,
+    "updateEffect": {
+        "type": "MultiEffect",
+        "effects": [
+            {
+                "type": "WaveEffect",
+                "sizeFrom": 0,
+                "sizeTo": 0,
+                "colorFrom": "CDC67360",
+                "colorTo": "000000",
+                "strokeFrom": 10,
+                "strokeTo": 0,
+                "lifetime": 45,
+                "cone": 360
+            },
+            {
+                "type": "hitEmpSpark",
+                "particles": 10,
+                "sizeFrom": 3,
+                "sizeTo": 0,
+                "length": 20,
+                "baseLength": 15,
+                "colorFrom": "E8E8E860",
+                "colorTo": "ffffff",
+                "lifetime": 20,
+                "cone": 360
+            }
+        ]
+    },
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            },
+            {
+                "type": "DrawLiquidTile",
+                "drawLiquid": "slag"
+            },
+            "DrawDefault"
+        ]
+    },
+    "consumes": {
+        "power": 4,
+        "items": [
+            "silicon/7"
+        ],
+        "liquids": [
+            "slag/0.5"
+        ]
+    },
+    "requirements": [
+        "graphite/240",
+        "silicon/260",
+        "钢铁/270",
+        "硬化钢铁/155",
+        "titanium/340",
+        "电路/55"
+    ],
+    "category": "crafting",
+    "ambientSound": "smelter",
+    "research": "silicon-crucible"
+}

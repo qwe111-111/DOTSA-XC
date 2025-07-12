@@ -1,0 +1,21 @@
+{
+    "type": "LightBlock",
+    "name": "大型灯",
+    "description": "强于照明器",
+    "size": 2,
+    "health": 900,
+    "brightness": 0.3,
+    "radius": 200,
+    "buildCostMultiplier": 0.5,
+    "consumes": {
+        "power": 0.5
+    },
+    "requirements": [
+        "lead/30",
+        "钢铁/15",
+        "metaglass/20"
+    ],
+    "category": "effect",
+    "research": "克斯特World",
+    "buildVisibility": "lightingOnly"
+}

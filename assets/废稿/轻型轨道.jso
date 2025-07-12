@@ -1,0 +1,17 @@
+{
+    "type": "Duct",
+    "name": "轻型轨道",
+    "description": "为你提供一种新的传送带，容量为一",
+    "requirements": [
+        {
+            "item": "titanium",
+            "amount": 1
+        }
+    ],
+    "health": 100,
+    "speed": 2,
+    "alwaysUnlocked": false,
+    "category": "distribution",
+    "research": "合成带",
+    "bridgeReplacement": "轻型轨桥"
+}

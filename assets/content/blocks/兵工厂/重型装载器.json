@@ -1,0 +1,25 @@
+{
+    "type": "PayloadLoader",
+    "name": "重型装载器",
+    "description": "完全不懂阿拉为什么要在中间设计这个(思考)\n我们需要这个吗？",
+    "health": 1500,
+    "size": 4,
+    "canOverdrive": true,
+    "category": "units",
+    "itemCapacity": 320,
+    "liquidCapacity": 320,
+    "consumes": {
+        "power": 1
+    },
+    "requirements": [
+        "silicon/450",
+        "plastanium/150",
+        "titanium/60",
+        "钢铁/200",
+        "titanium/180",
+        "metaglass/260"
+    ],
+    "research": "新型作战兵工厂",
+    "consumePower": 0.12,
+    "fogRadius": 6.9
+}

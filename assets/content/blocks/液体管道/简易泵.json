@@ -1,0 +1,20 @@
+{
+    "type": "Pump",
+    "category": "liquid",
+    "name": "简易泵",
+    "description": "用简单的材料制成的泵，抽水速度慢，血量低",
+    "size": 1,
+    "health": 30,
+    "liquidCapacity": 10,
+    "hasLiquids": true,
+    "pumpAmount": 0.05,
+    "useTime": 30,
+    "haspower": false,
+    "alwaysUnlocked": false,
+    "requirements": [
+        "copper/20",
+        "lead/15"
+    ],
+    "attribute": "water",
+    "research": "mechanical-drill"
+}

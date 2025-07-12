@@ -1,0 +1,93 @@
+{
+    "type": "mech",
+    "name": "安保机器",
+    "description": "从武器口释放火焰",
+    "speed": 0.5,
+    "drag": 0.05,
+    "accel": 0.1,
+    "rotateSpeed": 3,
+    "ammoType": {
+        "type": "PowerAmmoType",
+        "totalPower": 100
+    },
+    "ammoCapacity": 150,
+    "hitSize": 20,
+    "flying": false,
+    "faceTarget": true,
+    "drawMinimap": true,
+    "health": 40000,
+    "research": {
+        "parent": "防卫兵工厂"
+    },
+    "researchCostMultiplier": 3,
+    "armor": 25,
+    "engineOffset": 8,
+    "engineSize": 2,
+    "itemCapacity": 5,
+    "immunities": [
+        "freezing",
+        "错误"
+    ],
+    "abilities": [
+        {
+            "type": "ForceFieldAbility",
+            "radius": "00",
+            "regen": 8,
+            "max": 7500,
+            "cooldown": 210
+        }
+    ],
+    "weapons": [
+        {
+            "name": "机器4",
+            "x": -14.5,
+            "y": -0.5,
+            "shootY": 0,
+            "mirror": true,
+            "rotate": false,
+            "alternate": false,
+            "top": false,
+            "under": true,
+            "recoil": 0,
+            "shootWarmupSpeed": 0.01,
+            "continuous": true,
+            "alwaysContinuous": true,
+            "shootStatus": "slow",
+            "shootStatusDuration": 2,
+            "shootSound": "laserbeam",
+            "shake": 0.7,
+            "bullet": {
+                "type": "ContinuousFlameBulletType",
+                "drawFlare": false,
+                "lifetime": 100,
+                "pierceCap": 2,
+                "length": 180,
+                "width": 6,
+                "damage": 45,
+                "statusDuration": 2,
+                "colors": [
+                    "B3FFFF",
+                    "CCFFFF",
+                    "a0aaf4aa",
+                    "d0d4f8dd",
+                    "ffffff"
+                ],
+                "hitEffect": {
+                    "type": "ParticleEffect",
+                    "length": 10,
+                    "particles": 2,
+                    "cone": 15,
+                    "line": true,
+                    "lifetime": 35,
+                    "lenFrom": 2,
+                    "lenTo": 0,
+                    "strokeFrom": 2,
+                    "strokeTo": 1,
+                    "interp": "pow3Out",
+                    "sizeInterp": "pow2In",
+                    "colorTo": "B3FFFF"
+                }
+            }
+        }
+    ]
+}

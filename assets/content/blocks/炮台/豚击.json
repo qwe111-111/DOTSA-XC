@@ -1,0 +1,153 @@
+{
+    "type": "PowerTurret",
+    "description": "江豚的攻击",
+    "details":"...",
+    "health": 960,
+    "name": "豚击",
+    "size": 2,
+    "category": "turret",
+    "research": "重机枪",
+    "rebuildable": true,
+    "solid": true,
+    "targetable": true,
+    "canOverdrive": false,
+    "heatColor": "ab3400",
+    "shootSound": "missile",
+    "shootEffect": "shootHeal",
+    "ammoPerShot": 1,
+    "range": 332,
+    "reload": 120,
+    "inaccuracy": 1,
+    "shoot": {
+        "shots": 3,
+        "firstShotDelay": 40
+    },
+    "ammoEjectBack": 3,
+    "rotateSpeed": 4,
+    "velocityRnd": 0.1,
+    "xRand": 0,
+    "maxAmmo": 30,
+    "targetAir": true,
+    "targetGround": true,
+    "consumes": {
+        "power": 6,
+        "coolant": {
+            "amount": 0.2,
+            "optional": true
+        }
+    },
+    "hasPower": true,
+    "requirements": [
+        {
+            "item": "titanium",
+            "amount": 45
+        },
+        {
+            "item": "graphite",
+            "amount": 40
+        },
+        {
+            "item": "metaglass",
+            "amount": 25
+        },
+        {
+            "item": "silicon",
+            "amount": 45
+        },
+        {
+            "item": "钢铁",
+            "amount": 35
+        }
+    ],
+    "shootType": {
+        "type": "FlakBulletType",
+        "weaveScale": 8,
+        "weaveMag": 1,
+        "ammoMultiplier": 1,
+        "drag": 0.003,
+        "homingRange": 60,
+        "keepVelocity": false,
+        "sprite": "missile-large",
+        "backColor": "#84F491",
+        "frontColor": "#FFFFFF",
+        "trailColor": "84F491",
+        "trailWidth": 4.5,
+        "trailLength": 29,
+        "width": 12,
+        "height": 12,
+        "shrinkY": 0,
+        "lightColor": "84F491",
+        "lightRadius": 60,
+        "lightOpacity": 0.7,
+        "collidesTiles": true,
+        "collidesAir": true,
+        "collidesGround": true,
+        "lifetime": 100,
+        "speed": 4,
+        "damage": 35,
+        "splashDamage": 25,
+        "splashDamageRadius": 30,
+        "hitEffect": {
+            "type": "ExplosionEffect",
+            "lifetime": 28,
+            "waveStroke": 6,
+            "waveLife": 10,
+            "waveRadBase": 7,
+            "waveColor": "84F491",
+            "waveRad": 30,
+            "smokes": 6,
+            "smokeColor": "FFFFFF",
+            "sparkColor": "84F491",
+            "sparks": 6,
+            "sparkRad": 35,
+            "sparkLen": 4,
+            "sparkStroke": 1.5
+        },
+        "fragBullets": 10,
+        "fragVelocityMin": 0.3,
+        "fragVelocityMax": 1.8,
+        "fragBullet": {
+            "type": "MissileBulletType",
+            "shootEffect": "shootHeal",
+            "smokeEffect": "hitLaser",
+            "hitSound": "none",
+            "homingPower": 0.2,
+            "weaveScale": 4,
+            "weaveMag": 4,
+            "trailColor": "84F491",
+            "trailWidth": 2.5,
+            "trailLength": 20,
+            "trailChance": -1,
+            "backColor": "#84F491",
+            "width": 12,
+            "height": 12,
+            "shrinkY": 0,
+            "despawnEffect": "none",
+            "lightColor": "84F491",
+            "lightRadius": 40,
+            "lightOpacity": 0.7,
+            "collidesTiles": true,
+            "collidesAir": true,
+            "collidesTeam": true,
+            "frontColor": "#FFFFFF",
+            "splashDamage": 30,
+            "splashDamageRadius": 30,
+            "damage": 42,
+            "lifetime": 90,
+            "hitEffect": {
+                "type": "ExplosionEffect",
+                "lifetime": 20,
+                "waveStroke": 2,
+                "waveColor": "84F491",
+                "waveRad": 12,
+                "smokeSize": 0,
+                "smokeSizeBase": 0,
+                "sparkColor": "84F491",
+                "sparks": 9,
+                "sparkRad": 35,
+                "sparkLen": 4,
+                "sparkStroke": 1.5
+            }
+        }
+    }
+}

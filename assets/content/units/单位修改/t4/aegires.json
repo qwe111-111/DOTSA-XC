@@ -1,0 +1,20 @@
+{
+    "health": 34000,
+    "abilities": [
+        {
+            "type": "StatusFieldAbility",
+            "effect": "overclock",
+            "duration": 550,
+            "reload": 420,
+            "range": 440
+        },
+        {
+            "type": "ForceFieldAbility",
+            "cooldown": 3500,
+            "radius": 180,
+            "regen": 1.25,
+            "max": 14500,
+            "sides": 36
+        }
+    ]
+}

@@ -1,0 +1,93 @@
+{
+    "type": "PowerTurret",
+    "name": "过往",
+    "description": "？",
+    "targetAir": true,
+    "targetGround": true,
+    "health": 1100,
+    "size": 2,
+    "heatColor": "turretHeat",
+    "shootSound": "laser",
+    "shake": 0.1,
+    "inaccuracy": 0,
+    "canOverdrive": false,
+    "recoil": 2,
+    "reload": 104,
+    "rotateSpeed": 4,
+    "range": 388,
+    "category": "turret",
+    "research": "duo",
+    "consumes": {
+        "power": 2,
+        "coolant": {
+            "amount": 0.2,
+            "optional": true
+        }
+    },
+    "requirements": [
+        {
+            "item": "copper",
+            "amount": 90
+        },
+        {
+            "item": "lead",
+            "amount": 30
+        },
+        {
+            "item": "silicon",
+            "amount": 25
+        }
+    ],
+    "recoilTime": 10,
+    "shootType": {
+        "type": "ArtilleryBulletType",
+        "trailEffect": "none",
+        "damage": 35,
+        "splashDamageRadius": 32,
+        "splashDamage": 95,
+        "frontColor": "F3E979FF",
+        "backColor": "F3E979FF",
+        "width": 8,
+        "height": 8,
+        "trailLength": 2.2,
+        "trailWidth": 1.9,
+        "trailColor": "F3E979FF",
+        "status": "shocked",
+        "statusDuration": 10,
+        "lightningColor": "F3E979FF",
+        "lightningDamage": 12,
+        "lightning": 5,
+        "lightningLength": 9,
+        "speed": 6.5,
+        "lifetime": 61,
+        "hitEffect": {
+            "type": "multiEffect",
+            "effects": [
+                {
+                    "type": "ParticleEffect",
+                    "particles": 6,
+                    "sizeFrom": 5,
+                    "sizeTo": 0,
+                    "sizeInterp": "pow5In",
+                    "interp": "pow10Out",
+                    "layer": 32,
+                    "length": 36,
+                    "baseLength": 5,
+                    "lifetime": 51,
+                    "colorFrom": "F3E979FF",
+                    "colorTo": "F3E979FF"
+                },
+                {
+                    "type": "waveEffect",
+                    "lifetime": 90,
+                    "sizeFrom": 0,
+                    "sizeTo": 38,
+                    "strokeFrom": 2,
+                    "strokeTo": 0,
+                    "colorFrom": "F3E979FF",
+                    "colorTo": "F3E979FF"
+                }
+            ]
+        }
+    }
+}

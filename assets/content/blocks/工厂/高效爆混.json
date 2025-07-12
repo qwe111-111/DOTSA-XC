@@ -1,0 +1,35 @@
+{
+    "type": "GenericCrafter",
+    "name": "高效爆炸混合物厂",
+    "description": "...",
+    "details": "...",
+    "itemCapacity": 60,
+    "liquidCapacity": 30,
+    "health": 2830,
+    "size": 3,
+    "hasPower": true,
+    "hasLiquids": true,
+    "hasItems": true,
+    "craftTime": 45,
+    "updateEffect": "none",
+    "consumes": {
+        "items": [
+        "coal/5"
+        "pyratite/4"
+        ],
+    },
+    "outputItem": {
+        "item": "blast-compound",
+        "amount": "5"
+    },
+    "requirements": [
+        "graphite/140",
+		"硬化钢铁/50",
+		"thorium/250",
+		"pyratite/100",
+		"blast-compound/55"
+		"钢铁/70"
+    ],
+    "category": "crafting",
+   "research": "blast-mixer"
+}

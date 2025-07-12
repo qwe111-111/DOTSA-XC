@@ -1,0 +1,12 @@
+{
+    "floating": true,
+    "hasPower": true,
+    "hasLiquids": true,
+    "liquidCapacity": 40,
+    "pumpAmount": 0.25,
+    "rotateSpeed": 1,
+    "result": "water",
+    "baseEfficiency": 1,
+    "attribute": "water",
+    "category": "production"
+}

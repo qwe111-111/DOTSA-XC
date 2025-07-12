@@ -1,0 +1,21 @@
+{
+    "type": "Pump",
+    "category": "liquid",
+    "name": "加强型抽水泵",
+    "description": "2.4K不纯金抽水泵",
+    "size": 3,
+    "health": 300,
+    "liquidCapacity": 300,
+    "hasLiquids": true,
+    "pumpAmount": 3.9,
+    "haspower": false,
+    "alwaysUnlocked": false,
+    "requirements": [
+        "钢铁/50",
+        "硬化钢铁/35",
+        "surge-alloy/20",
+        "plastanium/40"
+    ],
+    "attribute": "water",
+    "research": "简易泵"
+}

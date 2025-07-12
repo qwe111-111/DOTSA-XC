@@ -1,0 +1,54 @@
+{
+	"type": "GenericCrafter",
+	"name": "液态氮提取器",
+	"description": "经过复杂的工艺后，提取出液态氮……………"
+	"health": 2860,
+	"outputLiquid": {
+		"liquid": "液态氮",
+		"amount": 0.32
+	},
+	"itemCapacity": 14,
+	"size": 5,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+				"type": "DrawLiquidTile",
+				"drawLiquid": "液态氮"
+			},
+			"DrawDefault"
+		]
+	},
+	"hasItems": true,
+	"hasLiquids": true,
+	"outputsLiquid": true,
+	"hasPower": true,
+	"liquidCapacity": 60,
+	"craftTime": 60,
+	"updateEffect": "freezing",
+	"consumes": {
+		"power": 280,
+			"items": [
+			"钴/1"
+		],
+		"liquids": [
+		"冷却液/0.8"
+		"water/2.4"
+		"cryofluid/1.6"
+		]
+	},
+	"requirements": [
+		"thorium/550",
+		"metaglass/340",
+		"钴/240",
+		"钴钢/140",
+		"硬化钢铁/380",
+		"高级协议许可证/3"
+	],
+	"category": "crafting",
+	"research": "冷却液混合器"
+}

@@ -1,0 +1,48 @@
+{
+    "type": "GenericCrafter",
+    "health": 1200,
+    "name": "多重相织布制造机",
+    "description": "？",
+    "outputItem": "phase-fabric/7",
+    "itemCapacity": 100,
+    "size": 3,
+    "hasPower": true,
+    "hasLiquids": false,
+    "hasItems": true,
+    "craftTime": 240,
+    "updateEffect": "none",
+    "craftEffect": "smeltsmoke",
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            },
+            {
+                "type": "DrawMultiWeave",
+                "fadeWeave": false
+            },
+            "DrawDefault"
+        ]
+    },
+    "consumes": {
+        "power": 5,
+        "items": [
+            "thorium/13",
+            "sand/15"
+        ]
+    },
+    "requirements": [
+        "graphite/140",
+        "titanium/250",
+        "phase-fabric/100",
+        "silicon/80",
+        "lead/155",
+        "titanium/95",
+        "钢铁/125"
+    ],
+    "category": "crafting",
+    "ambientSound": "smelter",
+    "research": "phase-weaver"
+}

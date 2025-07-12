@@ -1,0 +1,35 @@
+{
+    "type": "Reconstructor",
+    "name": "天理级工厂",
+    "description": "[red]最终升级",
+    "size": 9,
+    "health": 9000,
+    "constructTime": 600.0,
+    "consumes": {
+        "power": 6,
+        "items": {
+            "items": [
+                "silicon/80",
+                "titanium/155",
+                "graphite/160",
+                "钢铁/85",
+                "硬化钢铁/30",
+                "thorium/125"
+            ]
+        }
+    },
+    "requirements": [
+        "copper/500",
+        "lead/500",
+        "silicon/450",
+        "thorium/195",
+        "titanium/245",
+        "钢铁/120",
+        "硬化钢铁/70"
+    ],
+    "upgrades": [
+        
+    ],
+    "category": "units",
+    "research": "荣王级工厂"
+}

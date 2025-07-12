@@ -1,0 +1,166 @@
+{
+    "abilities": [
+        {
+            "type": "StatusFieldAbility",
+            "duration": 300,
+            "reload": 500,
+            "range": 40,
+            "applyEffect": "none",
+            "activeEffect": "none",
+            "effect": "overclock"
+        },
+        {
+            "type": "StatusFieldAbility",
+            "duration": 300,
+            "reload": 500,
+            "range": 40,
+            "applyEffect": "none",
+            "activeEffect": "none",
+            "effect": "overdrive"
+        }
+    ],
+    "health": 31000,
+    "research": "zenith",
+    "weapons": [
+        {
+            "name": "月影0",
+            "reload": 480,
+            "shootY": 7,
+            "x": 0,
+            "y": -10,
+            "rotate": true,
+            "mirror": false,
+            "inaccuracy": 1,
+            "shoot": {
+                "shots": 35,
+                "shotDelay": 4
+            },
+            "rotateSpeed": 1,
+            "shootSound": "shootBig",
+            "shake": 1,
+            "ejectEffect": "casing3",
+            "bullet": {
+                "damage": 30,
+                "speed": 10,
+                "trailLength": 8,
+                "trailWidth": 2,
+                "trailColor": "D4816BFF",
+                "lifetime": 30,
+                "smokeEffect": "shootBig",
+                "width": 7,
+                "height": 20
+            }
+        },
+        {
+            "name": "日蚀2",
+            "reload": 7,
+            "shootY": 7,
+            "x": 10,
+            "y": 0,
+            "rotate": true,
+            "rotateSpeed": 1,
+            "shootSound": "shootBig",
+            "shake": 1,
+            "ejectEffect": "casing3",
+            "bullet": {
+                "damage": 80,
+                "speed": 8.5,
+                "status": "blasted",
+                "lifetime": 28,
+                "smokeEffect": "shootBig",
+                "width": 14,
+                "height": 20,
+                "lightningColor": "A9D8FFFF",
+                "lightning": 3,
+                "lightningLength": 10,
+                "lightningDamage": 25
+            }
+        },
+        {
+            "name": "日蚀2",
+            "reload": 7,
+            "shootY": 7,
+            "x": -10,
+            "y": 0,
+            "rotate": true,
+            "rotateSpeed": 1,
+            "shootSound": "shootBig",
+            "shake": 1,
+            "ejectEffect": "casing3",
+            "bullet": {
+                "damage": 80,
+                "speed": 8.5,
+                "status": "blasted",
+                "lifetime": 28,
+                "smokeEffect": "shootBig",
+                "width": 14,
+                "height": 20,
+                "lightningColor": "A9D8FFFF",
+                "lightning": 3,
+                "lightningLength": 10,
+                "lightningDamage": 25
+            }
+        },
+        {
+            "name": "日蚀4",
+            "reload": 50,
+            "x": 18,
+            "y": 8,
+            "shootY": 6,
+            "shoot": {
+                "shots": 5,
+                "shotDelay": 1
+            },
+            "rotate": true,
+            "inaccuracy": 10,
+            "alternate": true,
+            "shootSound": "missile",
+            "ejectEffect": "casing1",
+            "bullet": {
+                "type": "MissileBulletType",
+                "damage": 41,
+                "splashDamageRadius": 35,
+                "splashDamage": 57,
+                "status": "blasted",
+                "hitEffect": "flakExplosionBig",
+                "despawnEffect": "flakExplosionBig",
+                "smokeEffect": "none",
+                "speed": 5,
+                "lifetime": 40,
+                "width": 7,
+                "height": 8
+            }
+        },
+        {
+            "name": "日蚀4",
+            "reload": 75,
+            "x": -18,
+            "y": -9,
+            "shootY": 6,
+            "shoot": {
+                "shots": 5,
+                "shotDelay": 1
+            },
+            "rotate": true,
+            "inaccuracy": 10,
+            "alternate": true,
+            "shootSound": "missile",
+            "ejectEffect": "casing1",
+            "bullet": {
+                "type": "MissileBulletType",
+                "damage": 35,
+                "splashDamageRadius": 35,
+                "splashDamage": 62,
+                "status": "blasted",
+                "statusDuration": 60,
+                "hitEffect": "flakExplosionBig",
+                "despawnEffect": "flakExplosionBig",
+                "smokeEffect": "none",
+                "speed": 5,
+                "lifetime": 40,
+                "width": 7,
+                "height": 8
+            }
+        }
+    ]
+}

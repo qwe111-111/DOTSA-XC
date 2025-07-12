@@ -1,0 +1,11 @@
+{
+    "health": 500,
+    "size": 2,
+    "buildVisibility": "sandboxOnly",
+    "hasItems": true,
+    "confugurable": true,
+    "description": "将物品放入周围建筑",
+    "name": "资源卸载器",
+    "requirements": [],
+    "category": "effect"
+}

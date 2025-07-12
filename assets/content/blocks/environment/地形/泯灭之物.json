@@ -1,0 +1,10 @@
+{
+	"type": "TreeBlock",
+	"name": "泯灭之物",
+	"solid": true,
+	"breakable":false
+	"alwaysReplace":false;
+	"clipSize":0
+	"customShadow":false
+	"shadowOffset":0
+}

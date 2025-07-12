@@ -1,0 +1,72 @@
+{
+    "type":"ItemTurret",
+	"name":"长管炮",
+    "description":"四管它哥",
+	"size":1,//物品面积
+	"health":900,//建筑血量
+	"ammoPerShot":1,
+	"range":308,//攻击范围
+	"reload":30,//攻击速度
+	"inaccuracy":1.5,//误差
+	"ammoPerShot":1,
+    "ammoUseEffect": "casing2",
+	"rotatespeed":1.2,//旋转速度
+	"maxAmmo":45,//最大弹药
+	"targetAir":true//攻击天空
+	"targetGround":true,//攻击地面
+	"coolantMultiplier":2,
+	"heatColor":"#FF0000",
+	    "shoot": {
+        "shots": 1,//每发出子弹数
+        "shotDelay": 5,
+        "type": "ShootBarrel",
+        "barrels": [
+        -1,0,0,
+        1,0,0,
+        ]
+    },
+    "consumes": {
+        "coolant": {
+            "amount": 0.4,
+            "optional": true
+        }
+    },
+	"ammoTypes":{
+	"copper":{//铜子弹
+"type":"BasicBulletType",//基础子弹
+"width":7,//子弹宽
+"height":9,//子弹长
+"lifetime":60,//存在时间，帧
+"speed":5,//初速度
+"damage":31,//伤害
+"ammoMultiplier":2,
+}
+			"lead": {
+		                "pierceCap":1,
+		    "reloadMultiplier":1.3,//攻击速率
+			"speed": 5,
+			"damage": 19.5,//伤害
+			"lifetime":60
+			"fragBullets":2,
+            "fragBullet":{
+            "speed":0.8,
+            "damage":9.5,   
+            "lifetime":15
+        }
+        }
+        }
+      "requirements": [
+		"copper/55"
+		"lead/45"
+	],
+	"category": "turret",
+    "research": {
+        "requirements": [//研究花费
+		"copper/400",
+		"lead/350",
+		]
+    "parent": "duo",
+    "objectives": [
+    ]
+}
+}

@@ -1,0 +1,54 @@
+{
+	"type": "ConsumeGenerator",
+	"name": "自循环水电机",
+	 "description": "核电的原理是通过放射物质加热水源，再通过烧热的水进行发电，本发电机也运用了此原理，这些燃烧物质虽不如放射物质所带来的能量多，但也起到了中流砥柱的作用",
+    "details": "并~入~电~网~"
+	"size": 3,
+	"health": 2400,
+	"hasLiquids": true,
+	"hasItems": true,
+	"itemDuration": 90,
+	"powerProduction": 35,
+	"itemCapacity": 20,
+	"liquidCapacity": 40,
+	"generateEffect": "generatespark",
+	"consumes": {
+		"itemFlammable":{},
+		"itemExplode":{},
+		"liquid": "water/0.6"
+	},
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawRegion",
+				"suffix": "-旋转组件",
+				"rotateSpeed":11,
+				"rotate": true,
+				"rotation":45
+			},			
+			{
+			"type": "DrawLiquidRegion",
+			"drawLiquid": "water"
+			},
+			{
+				"type": "DrawRegion",
+				"suffix": "-顶部图层"
+			},
+			"DrawWarmupRegion",
+		]
+	},	
+	"buildCostMultiplier": 0.95,
+	"requirements": [
+		"lead/120",
+		"titanium/40",
+		"metaglass/60"
+		"silicon/45"
+		"graphite/23"
+	],
+	"ambientSound": "smelter",
+	"ambientSoundVolume": 0.06,
+	"category": "power",
+	"research": "steam-generator"
+}

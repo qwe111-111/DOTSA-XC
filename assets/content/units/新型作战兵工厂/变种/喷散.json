@@ -1,0 +1,67 @@
+{
+	"type": "mech",
+	"name": "喷射",
+	"description": "快速发射子弹",
+	"details":"装备了2门散弹枪,并且拥有强大的耐打性",
+    "speed": 1.6,
+    "hitSize": 14,
+		"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":2200},
+	"ammoCapacity": 700
+    "ammoResupplyAmount":1,
+    "health": 3000,
+    "armor": 50,
+    "drag": 0.2,
+    "rotateSpeed": 2.5,
+    "itemCapacity": 30,
+        "targetAir":true,  
+    "targetGround":true,
+  "weapons": [
+    {
+     "name": "喷散1",
+	    "reload": 30,
+     "recoil": 2,
+     "x": 6, 
+     "y": 1.5, 
+     "rotate": false,
+     "inaccuracy": 0,
+     "mirror": true,
+     "shoot": {
+       "type": "ShootSpread",
+       "shots": 12,
+       "shotDelay": 0,
+       "spread": 2
+     },
+     "shootSound": "冲击",
+     "alternate": true,
+     "ejectEffect": "casing1",
+     "bullet":{
+        "maxRange": 200,
+        "shrinkY": 0.3,
+	       "damage": 35,	  
+	       "speed": 9,
+        "splashDamageRadius": 10,
+        "splashDamage": 15,
+	       "lifetime": 21,
+	       "width": 11,	 
+        "height": 18,
+        "shootEffect": "shootBig",
+        "smokeEffect": "shootBigSmoke"
+        "frontColor":"90ECFFFF"
+	    "hitColor":"90ECFFFF"
+	    "backColor":"90ECFFFF"
+	    	"hitEffect": {
+            "type": "WaveEffect",
+            "lifetime": 10,
+            "sizeFrom": 1,
+            "sizeTo": 20,
+            "strokeFrom": 1,
+            "strokeTo": 0,
+            "colorFrom": "90ECFFFF",
+            "colorTo": "90ECFFFF"
+        },
+	     }
+    }
+  ]
+}

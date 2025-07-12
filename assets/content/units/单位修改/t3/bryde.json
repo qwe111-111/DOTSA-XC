@@ -1,0 +1,82 @@
+{
+    "health": 2100,
+    "details": "...",
+    "weapons": [
+        {
+            "name": "日蚀2",
+            "reload": 90,
+            "x": 0,
+            "y": -3.5,
+            "shootY": 8,
+            "recoil": 3,
+            "mirror": false,
+            "rotate": true,
+            "rotateSpeed": 2,
+            "inaccuracy": 3,
+            "shake": 2,
+            "shoot": {
+                "shots": 3,
+                "shotDelay": 0.5
+            },
+            "ejectEffect": "casing3",
+            "shootSound": "artillery",
+            "bullet": {
+                "type": "ArtilleryBulletType",
+                "speed": 4,
+                "lifetime": 75,
+                "knockback": 0.9,
+                "status": "blasted",
+                "hitEffect": "massiveExplosion",
+                "despawnEffect": "flakExplosionBig",
+                "smokeEffect": "shootBig",
+                "splashDamage": 25,
+                "splashDamageRadius": 15,
+                "width": 12,
+                "height": 16,
+                "fragBullets": 5,
+                "fragLifeMin": 0.5,
+                "fragBullet": {
+                    "type": "ArtilleryBulletType",
+                    "despawnEffect": "blastExplosion",
+                    "status": "blasted",
+                    "width": 8,
+                    "height": 9,
+                    "splashDamageRadius": 35,
+                    "splashDamage": 28,
+                    "lifetime": 10,
+                    "speed": 3
+                }
+            }
+        },
+        {
+            "name": "棱鱼1",
+            "reload": 10,
+            "shootY": 6,
+            "x": 8.5,
+            "y": -9,
+            "rotate": true,
+            "rotateSpeed": 8,
+            "inaccuracy": 5,
+            "ejectEffect": "casing2",
+            "shootSound": "missile",
+            "alternate": true,
+            "shoot": {
+                "shots": 6,
+                "shotDelay": 2
+            },
+            "bullet": {
+                "type": "MissileBulletType",
+                "damage": 21,
+                "speed": 4.3,
+                "lifetime": 70,
+                "trailEffect": "smoke",
+                "splashDamage": 21,
+                "splashDamageRadius": 12,
+                "width": 8,
+                "height": 8,
+                "hitEffect": "flakExplosion",
+                "despawnEffect": "explosion"
+            }
+        }
+    ]
+}

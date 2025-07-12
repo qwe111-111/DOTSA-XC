@@ -1,0 +1,48 @@
+{
+	"type": "AttributeCrafter",
+	"health": 1200,
+	"name": "极致硅厂",
+	"description": "隔壁大硅馋哭了",
+	"outputItem": "silicon/155",
+	"itemCapacity": 13000,
+	"size": 8,
+	"hasPower": true,
+	"hasLiquids": false,
+	"hasItems": true,
+	"craftTime": 160,
+	"updateEffect": "none",
+	"craftEffect": "smeltsmoke",
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+			"DrawFlame"
+            ]
+    },
+	"consumes": {
+		"power": 80,
+			"items": [
+				"sand/55",
+				"coal/50",
+				"pyratite/24",
+				"blast-compound/15"
+			]
+		
+	},
+	"requirements": [
+		"graphite/2250",
+		"thorium/1325",
+		"silicon/730",
+		"钢铁/360",
+		"硬化钢铁/225",
+		"钢合金/125",
+		"surge-alloy/355",
+		"pyratite/225",
+		"中级协议许可证/2"
+	],
+   
+	"category": "crafting",
+	"researchCostMultiplier": 0.45,
+	"ambientSound": "smelter",
+	"research": "大型硅炉"
+}

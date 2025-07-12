@@ -1,0 +1,84 @@
+{
+    "type": "flying",
+    "name": "突袭",
+    "description": "？",
+    "details": "？",
+    "speed": 3,
+    "flying": true,
+    "turnCursor": true,
+    "engineOffset": 8,
+    "targetAir": true,
+    "targetGround": true,
+    "engineSize": 3,
+    "hitSize": 8,
+    "health": 1200,
+    "armor": 5,
+    "rotateSpeed": 3,
+    "itemCapacity": 0,
+    "research": "新型作战兵工厂",
+    "rotateShooting": false,
+    "weapons": [
+        {
+            "name": "突袭1",
+            "display": true,
+            "reload": 98,
+            "x": -3,
+            "y": 2,
+            "shootY": 4,
+            "rotate": true,
+            "rotateSpeed": 2.2,
+            "top": true,
+            "recoil": 3,
+            "inaccuracy": 2,
+            "cooldownTime": 100,
+            "alternate": true,
+            "mirror": true,
+            "shootSound": "shockBlast",
+            "shake": 2,
+            "bullet": {
+                "frontColor": "B5FFECFF",
+                "backColor": "B5FFECFF",
+                "trailLength": 18,
+                "trailWidth": 2,
+                "trailColor": "B5FFECFF",
+                "damage": 34,
+                "lifetime": 34,
+                "speed": 10,
+                "width": 11,
+                "height": 36,
+                "hitEffect": {
+                    "type": "ParticleEffect",
+                    "particles": 15,
+                    "line": true,
+                    "strokeFrom": 3,
+                    "strokeTo": 0,
+                    "lenFrom": 16,
+                    "lenTo": 0,
+                    "length": 90,
+                    "baseLength": 0,
+                    "lifetime": 10,
+                    "colorFrom": "B5FFECFF",
+                    "colorTo": "B5FFECFF",
+                    "cone": 150
+                },
+                "shootEffect": {
+                    "type": "multiEffect",
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 6,
+                            "length": 50,
+                            "lifetime": 36,
+                            "lightColor": "B5FFECFF",
+                            "cone": 20,
+                            "colorFrom": "B5FFECFF",
+                            "colorTo": "B5FFECFF",
+                            "sizeFrom": 3,
+                            "sizeTo": 0
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

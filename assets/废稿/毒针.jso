@@ -1,0 +1,114 @@
+{
+    "type": "PowerTurret",
+    "name": "毒针",
+    "unitSort": "weakest",
+    "health": 2050,
+    "description": "向指定位置四周释放子弹",
+    "size": 4,
+    "reload": 360,
+    "range": 710,
+    "recoilTime": 180,
+    "recoil": 3,
+    "canOverdrive": false,
+    "xRand": 4,
+    "consumes": {
+        "power": 20,
+        "coolant": {
+            "amount": 0.36,
+            "optional": true
+        }
+    },
+    "shootY": 0,
+    "shootSound": "FJ1",
+    "targetGround": true,
+    "targetAir": true,
+    "inaccuracy": 2,
+    "shake": 3,
+    "shootCone": 20,
+    "rotateSpeed": 3,
+    "shootType": {
+        "type": "pointBulletType",
+        "speed": 600,
+        "trailEffect": "none",
+        "despawnEffect": "none",
+        "hitEffect": "none",
+        "fragBullets": 120,
+        "fragBullet": {
+            "lifetime": 40,
+            "damage": 70,
+            "collides": false,
+            "speed": 30,
+            "sprite": "改进工业-飞剑",
+            "trailLength": 40,
+            "trailWidth": 2,
+            "width": 15,
+            "height": 50,
+            "trailColor": "FFFFFF88",
+            "trailChance": 1,
+            "trailInterval": 16,
+            "homingPower": 1,
+            "homingRange": 30,
+            "bulletInterval": 30,
+            "intervalBullet": {
+                "damage": 30,
+                "lifetime": 10,
+                "speed": 30,
+                "sprite": "改进工业-飞剑",
+                "trailLength": 40,
+                "trailWidth": 2,
+                "width": 15,
+                "height": 50,
+                "trailColor": "FFFFFF88",
+                "trailChance": 1,
+                "trailInterval": 16,
+                "homingPower": 1,
+                "homingRange": 30
+            },
+            "trailEffect": {
+                "type": "ParticleEffect",
+                "particles": 3,
+                "length": 16,
+                "baseLength": 1,
+                "lifetime": 30,
+                "colorFrom": "E3E3E380",
+                "colorTo": "E3E3E380",
+                "sizeFrom": 3,
+                "sizeTo": 0
+            },
+            "hitEffect": {
+                "type": "ParticleEffect",
+                "line": true,
+                "particles": 3,
+                "lifetime": 30,
+                "interp": "circleOut",
+                "offset": 56,
+                "length": 90,
+                "lightColor": "ff7048",
+                "strokeFrom": 2,
+                "strokeTo": 0,
+                "lenFrom": 8,
+                "lenTo": 2,
+                "colorFrom": "E3E3E380",
+                "colorTo": "E3E3E380"
+            }
+        }
+    },
+    "requirements": [
+        "copper/380",
+        "lead/380",
+        "titanium/155",
+        "graphite/180",
+        "silicon/300",
+        "钢铁/200",
+        "硬化钢铁/150"
+    ],
+    "category": "turret",
+    "research": {
+        "parent": "刺发",
+        "requirements": [
+            "silicon/4000",
+            "钢铁/2500",
+            "graphite/3500"
+        ]
+    }
+}

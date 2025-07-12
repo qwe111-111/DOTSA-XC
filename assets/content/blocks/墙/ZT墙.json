@@ -1,0 +1,18 @@
+{
+  "type": "Wall",
+  "name": "ZT墙",
+  "description": "抛弃闪电伤害换来高甲厚血",
+  "armor": 60,
+  "lightningChance": 0,
+  "lightningDamage": 0,
+  "lightningLength": 0,
+  "health": 4600,
+  "size": 1,
+  "insulated": false,
+  "absorbLasers": false,
+  "requirements": [
+    "碳纤维/6"
+  ],
+  "category": "defense",
+  "research": "强化钢铁墙"
+}

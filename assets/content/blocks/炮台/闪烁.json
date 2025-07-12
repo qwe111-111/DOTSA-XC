@@ -1,0 +1,63 @@
+{
+    "type": "PowerTurret",
+    "name": " 闪烁",
+    "description": "释放闪电攻击敌人",
+    "health": 1600,
+    "reload": 15,
+    "shootCone": 180,
+    "rotateSpeed": 2,
+    "hasLiquids": true,
+    "targetAir": true,
+    "targetGround": true,
+    "range": 300,
+    "shootEffect": {
+        "type": "ParticleEffect",
+        "particles": 4,
+        "length": 45,
+        "baseLength": 0,
+        "lifetime": 40,
+        "line": true,
+        "lenFrom": 8,
+        "lenTo": 18,
+        "strokeFrom": 2,
+        "strokeTo": 0,
+        "colorFrom": "ffffff",
+        "colorTo": "ffffff",
+        "cone": 360
+    },
+    "recoil": 0.5,
+    "size": 3,
+    "shoot": {
+        "type": "ShootSpread",
+        "shots": 20
+    },
+    "inaccuracy": 0,
+    "shootSound": "spark",
+    "shootY": 6,
+    "shootX": 0,
+    "shootType": {
+        "buildingDamageMultiplier": 0.01,
+        "type": "LightningBulletType",
+        "damage": 20,
+        "lightningLength": 50,
+        "collidesAir": true
+    },
+    "consumes": {
+        "power": 10.5,
+        "coolant": {
+            "amount": 0.1,
+            "optional": true
+        }
+    },
+    "requirements": [
+        "graphite/200",
+        "silicon/185",
+        "thorium/145",
+        "silicon/85",
+        "钢铁/155"
+    ],
+    "category": "turret",
+    "research": "豚击",
+    "researchCostMultiplier": 1,
+    "canOverdrive": false
+}

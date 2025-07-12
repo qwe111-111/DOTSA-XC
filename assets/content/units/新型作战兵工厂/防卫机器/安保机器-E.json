@@ -1,0 +1,65 @@
+{
+	"type": "mech",
+	"name": "安保机器",
+    "description": "释放一堆导弹",
+	"speed": 0.5,
+	"drag": 0.05,
+	"accel": 0.1,
+	"rotateSpeed": 3,
+	"ammoType": {
+		"type": "PowerAmmoType",
+		"totalPower": 100
+	},
+	"ammoCapacity": 150,
+	"hitSize": 20,
+	"flying": false,
+	"faceTarget": true,
+	"drawMinimap": true,
+	"health": 28000,
+	"research": {
+	"parent":"防卫兵工厂"
+	}
+	 "researchCostMultiplier": 3,
+	"armor": 25,
+	"engineOffset": 8,
+	"engineSize": 2,
+	"itemCapacity": 5,
+	"immunities": [
+	"freezing"
+	"错误"
+	],
+		"abilities": [
+		{
+      "type":"ForceFieldAbility",
+      "radius": 00,
+      "regen": 8,
+      "max": 15000,
+      "cooldown": 210
+    }
+	]
+	"weapons": [
+		{
+		"name": "机器6",
+			"reload": 200,
+			"x": -12.5,
+			"y": 0.5,
+			"rotate": false,
+			"inaccuracy": 12,
+	"shoot": {
+        "shots": 6,
+        "shotDelay": 2
+      },
+			"shootCone": 60,
+			"alternate": true,
+			"shootSound": "missileLaunch",
+			"shake": 5,
+			"bullet": {
+				"keepVelocity": false,
+				"speed": 0,
+				"shootEffect": "none",
+				"smokeEffect": "shootSmallFlame",
+				"spawnUnit": "防卫导弹"
+			}
+	},
+	]
+}

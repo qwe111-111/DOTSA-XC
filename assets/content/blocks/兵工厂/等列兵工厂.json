@@ -1,0 +1,119 @@
+{
+    "type": "UnitFactory",
+    "name": "等列兵工厂",
+    "category": "units",
+    "description":"[yellow]可以直接生产三级单位",
+    "research": {
+	"parent": "exponential-reconstructor",
+	"requirements": [
+	    "copper/500",
+        "lead/500",
+        "silicon/450",
+        "titanium/245"
+        "钢铁/160"
+        "graphite/520"
+        "硬化钢铁/90"
+	    ]
+	},
+    "requirements": [
+        "graphite/120",
+        "silicon/200",
+        "钢铁/400"
+        "phase-fabric/120"
+        "titanium/190"
+        "thorium/165"
+       
+    ],
+    "health" : 2200,
+    "armor":6,
+    "plans": [
+          {
+            "unit": "fortress",
+            "time": 300.00,
+            "requirements": [ 
+            "silicon/30",
+            "graphite/20"
+            ]
+        },{
+            "unit": "spiroct",
+            "time": 300.00,
+            "requirements": [ 
+            "silicon/30",
+            "钢铁/15",
+            ]
+        },{
+            "unit": "quasar",
+            "time": 300.00,
+            "requirements": [
+            "silicon/30",
+            "graphite/20",
+            ]
+        },
+        {
+            "unit": "zenith",
+            "time": 300.00,
+            "requirements": [
+            "silicon/20",
+            "graphite/10",
+            ]
+        },
+        {
+            "unit": "mega",
+            "time": 300.00,
+            "requirements": [
+            "silicon/20",
+            "graphite/10",
+            ]
+        },
+        {
+            "unit": "bryde",
+            "time": 300.00,
+            "requirements": [
+            "silicon/20",
+            "graphite/10",
+            ]
+        },
+        {
+            "unit": "cyerce",
+            "time": 300.00,
+            "requirements": [
+            "silicon/20",
+            "graphite/10",
+            ]
+        },
+        {
+            "unit": "被迫者",
+            "time": 500.00,
+            "requirements": [
+            "silicon/10",
+            "graphite/20",
+            "钢铁/15"
+            "titanium/20"
+            ]
+        },
+        {
+            "unit": "重坦",
+            "time": 500.00,
+            "requirements": [
+            "silicon/20",
+            "graphite/10",
+            "钢铁/20"
+            "thorium/25"
+            ]
+        },
+        {
+            "unit": "角士",
+            "time": 500.00,
+            "requirements": [ 
+            "silicon/55",
+            "graphite/70"
+            "钢铁/35"
+            "硬化钢铁/20"
+            ]
+        },
+    ],
+    "size": 5,
+    "consumes": {
+        "power": 8
+    }
+}

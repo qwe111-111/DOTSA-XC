@@ -1,0 +1,23 @@
+{
+    "name": "一级辐射：黎明",
+    "color": "a900ff",
+    "effectChance": 2,
+    "damageMultiplier": 1,
+    "healthMultiplier": 0.95,
+    "speedMultiplier": 0.95,
+    "reloadMultiplier": 0.95,
+    "effect": {
+        "type": "ParticleEffect",
+        "particles": 3,
+        "baseLength": 2,
+        "length": 5,
+        "lifetime": 4,
+        "spin": 1,
+        "interp": "fastSlow",
+        "region": "改进工业-天气特效",
+        "sizeFrom": 1,
+        "sizeTo": 1,
+        "colorFrom": "a900ff",
+        "colorTo": "ffffff"
+    }
+}

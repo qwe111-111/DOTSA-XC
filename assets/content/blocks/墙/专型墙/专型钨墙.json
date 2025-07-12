@@ -1,0 +1,20 @@
+{
+  "type": "Wall",
+  "name": "专型钨墙",
+  "description": "更为坚固",
+  "armor": 15,
+  "lightningChance": 0,
+  "lightningDamage": 0,
+  "lightningLength": 0,
+  "health": 3700,
+  "size": "3",
+  "insulated": false,
+  "absorbLasers": false,
+    "placeableLiquid": true,
+  "requirements": [
+    "tungsten/55"
+  ],
+  "category": "defense",
+  "researchCostMultiplier": 0.4,
+  "research": "tungsten-wall-large"
+}

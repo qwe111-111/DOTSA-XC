@@ -1,0 +1,12 @@
+{
+    "description": "此地资源匮乏，因此本地驻军稀少且防御薄弱，作为始发地区再合适不过",
+	"map": "交错山区.msav",
+	"localizedName": "1交错山区"
+	"captureWave": 30,
+	"planet": "克斯特",
+	"sector": 1,
+	"difficulty": 1,
+	"research": "planetaryTerminal",
+	"alwaysUnlocked": false,
+	"addStartingItems": true,
+}

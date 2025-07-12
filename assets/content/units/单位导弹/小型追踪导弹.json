@@ -1,0 +1,53 @@
+{
+    "type": "missile",
+    "template": "MissileUnitType",
+    "outlineColor": "383848",
+    "name": "小型追踪导弹",
+    "homingDelay": 45,
+    "speed": 8,
+    "lifetime": 60,
+    "rotateSpeed": 5,
+    "loopSoundVolume": 0.03,
+    "deathSound": "explosionbig",
+    "hidden": true,
+    "missileAccelTime": 6,
+    "hitSize": 8,
+    "health": 250,
+    "armor": 3,
+    "fogRadius": 8,
+    "engineColor": "84F491",
+    "trailColor": "E0AB66FF",
+    "trailLength": 5,
+    "engineLayer": 110,
+    "engineOffset": 8,
+    "engineSize": 4,
+    "maxRange": 30,
+    "immunities": [],
+    "weapons": [
+        {
+            "name": "小型追踪导弹",
+            "x": 0,
+            "y": 0,
+            "reload": 1,
+            "mirror": false,
+            "rotate": true,
+            "shake": 5,
+            "shootSound": "none",
+            "shootOnDeath": true,
+            "bullet": {
+                "collides": false,
+                "instantDisappear": true,
+                "ammoMultiplier": 1,
+                "hitSound": "titanExplosion",
+                "hitSoundVolume": 4,
+                "killShooter": true,
+                "splashDamageRadius": 66,
+                "splashDamage": 70,
+                "hitShake": 15,
+                "shootEffect": "none",
+                "smokeEffect": "none",
+                "despawnEffect": "none"
+            }
+        }
+    ]
+}

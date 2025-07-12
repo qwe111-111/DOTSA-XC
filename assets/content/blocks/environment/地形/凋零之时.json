@@ -1,0 +1,10 @@
+{
+	"type": "TreeBlock",
+	"name": "凋零之时",
+	"solid": true,
+	"breakable":false
+	"alwaysReplace":false;
+	"clipSize":40,
+	"customShadow":true
+	"shadowOffset":-7
+}

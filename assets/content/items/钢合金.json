@@ -1,0 +1,13 @@
+{
+    "name": "钢合金",
+    "description": "？",
+    "details": "？",
+    "color": "FFFFFFFF",
+    "cost": 2,
+    "hardness": 0,
+    "explosiveness": 0,
+    "radioactivity": 0,
+    "charge": 2.3,
+    "flammability": 0,
+    "research": "硬化钢铁"
+}

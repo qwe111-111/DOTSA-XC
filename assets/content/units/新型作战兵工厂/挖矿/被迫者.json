@@ -1,0 +1,74 @@
+{
+    "type": "flying",
+    "name": "库里",
+    "description": "血量低下的廉价辅助单位，能修复单位和建筑",
+    "ammoCapacity": 10,
+    "research": {
+        "parent": "等列兵工厂"
+    },
+    "speed": 5,
+    "flying": true,
+    "engineOffset": 12,
+    "engineSize": 3,
+    "hitSize": 16,
+    "targetAir": true,
+    "health": 640,
+    "armor": 20,
+    "mineSpeed": 8,
+    "mineTier": 5,
+    "buildSpeed": 3,
+    "rotateSpeed": 8,
+    "itemCapacity": 150,
+    "abilities": [
+        {
+            "type": "RepairFieldAbility",
+            "amount": 200,
+            "reload": 500,
+            "range": 30
+        }
+    ],
+    "weapons": [
+        {
+            "reload": 15,
+            "x": 0,
+            "y": 2.75,
+            "shootY": 0,
+            "controllable": false,
+            "autoTarget": true,
+            "rotate": true,
+            "rotateSpeed": 8,
+            "mirror": false,
+            "type": "RepairBeamWeapon",
+            "beamWidth": 0.4,
+            "repairSpeed": 2.5,
+            "laserColor": "84F491FF",
+            "healColor": "84F491FF",
+            "bullet": {
+                "maxRange": 80
+            }
+        },
+        {
+            "name": "none",
+            "type": "RepairBeamWeapon",
+            "widthSinMag": 0.11,
+            "reload": 15,
+            "x": 0,
+            "y": 2.75,
+            "rotate": false,
+            "beamWidth": 0.7,
+            "shootCone": 40,
+            "mirror": false,
+            "repairSpeed": 6,
+            "fractionRepairSpeed": 0.04,
+            "laserColor": "84F491FF",
+            "healColor": "84F491FF ",
+            "targetUnits": false,
+            "targetBuildings": true,
+            "autoTarget": false,
+            "controllable": true,
+            "bullet": {
+                "maxRange": 80
+            }
+        }
+    ]
+}

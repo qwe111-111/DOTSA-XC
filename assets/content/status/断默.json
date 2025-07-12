@@ -1,0 +1,12 @@
+{
+    "name": "断默",
+    "damageMultiplier": 0.9,
+    "healthMultiplier": 1,
+    "speedMultiplier": 0.8,
+    "reloadMultiplier": 0.9,
+    "damage": 2,
+    "permanent": true,
+    "reactive": false,
+    "color": "EDC346FF",
+    "effectChance": 3
+}

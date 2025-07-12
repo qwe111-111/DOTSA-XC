@@ -1,0 +1,17 @@
+{
+"name":"高级溢流门"
+    "description":"？",
+	"type": "OverflowGate",
+	"health": 150,
+	"size": 1,
+	"speed": 0.1,
+	"speedBoost": 0.20,
+	"requirements": [
+	"电路/10",
+	"钢铁/6"
+	],
+	"category": "distribution",
+	"research": "高级分类器"
+	"researchCostMultiplier": 0.2,
+	    "canOverdrive": false,
+}

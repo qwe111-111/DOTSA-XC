@@ -1,0 +1,69 @@
+{
+    "type": "mech",
+    "name": "锐化",
+    "description": "？",
+    "immunities": [],
+    "speed": 0.7,
+    "hitSize": 8,
+    "ammoType": {
+        "type": "PowerAmmoType",
+        "totalPower": 2200
+    },
+    "ammoCapacity": 700,
+    "ammoResupplyAmount": 1,
+    "health": 7500,
+    "armor": 20,
+    "drag": 0.2,
+    "rotateSpeed": 2.5,
+    "itemCapacity": 30,
+    "targetAir": true,
+    "targetGround": true,
+    "abilities": [
+        {
+            "type": "StatusFieldAbility",
+            "duration": 300,
+            "reload": 500,
+            "range": 20,
+            "applyEffect": "none",
+            "activeEffect": "none",
+            "effect": "X号强化"
+        }
+    ],
+    "weapons": [
+        {
+            "name": "锐化1",
+            "reload": 53,
+            "x": 7,
+            "y": 1,
+            "rotate": false,
+            "mirror": true,
+            "inaccuracy": 0,
+            "shootSound": "flame",
+            "alternate": true,
+            "ejectEffect": "casing1",
+            "shoot": {
+                "type": "ShootAlternate",
+                "shots": 5
+            },
+            "bullet": {
+                "type": "MissileBulletType",
+                "hitSize": 10,
+                "hitEffect": "blastExplosion",
+                "shootEffect": "shootBig",
+                "smokeEffect": "blastExplosion",
+                "speed": 8,
+                "lifetime": 31,
+                "damage": 109,
+                "status": "破甲",
+                "collidesAir": true,
+                "collidesGround": true,
+                "makeFire": true,
+                "weaveScale": 4,
+                "weaveMag": 2,
+                "incendAmount": 3,
+                "incendSpread": 2,
+                "incendChance": 1
+            }
+        }
+    ]
+}

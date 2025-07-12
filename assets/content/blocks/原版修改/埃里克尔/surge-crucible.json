@@ -1,0 +1,15 @@
+{
+    "outputItem": {
+        "item": "surge-alloy",
+        "amount": 10
+    },
+    "hasPower": true,
+    "hasItems": true,
+    "craftTime": 60,
+    "canOverdrive": true,
+    "heatRequirement": 5,
+    "craftEffect": "surgeCruciSmoke",
+    "consumes": {
+        "power": 1
+    }
+}

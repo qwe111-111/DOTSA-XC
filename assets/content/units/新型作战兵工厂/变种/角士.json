@@ -1,0 +1,79 @@
+{
+	"type": "mech",
+	"name": "角士",
+	"description": "具有强大的火力,但攻击范围十分有限，因此护甲十分高",
+	"details":"变种单位",
+    "speed": 0.55,
+    "hitSize": 14,
+	"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":2200},
+	"ammoCapacity": 700
+    "ammoResupplyAmount":1,
+    "health": 3000,
+    "armor": 20,
+    "drag": 0.2,
+    "rotateSpeed": 2.5,
+    "itemCapacity": 30,
+    "targetAir":true,  
+    "targetGround":true,
+    "abilities": [
+    {
+      "type":"ForceFieldAbility",
+      "radius": 00,
+      "regen": 40,
+      "max": 1200,
+      "cooldown": 800
+    }
+    ]
+	"weapons":[{
+		"name": "角士2",
+			"reload": 50,
+			"x": -6,
+			"y": 1.5,
+			"rotate": true,
+			"mirror": false,
+			"inaccuracy": 0,
+			"shootCone": 60,
+			"alternate": true,
+			"shootSound": "missileLaunch",
+			"shake": 0.5,
+			"bullet": {
+				"keepVelocity": false,
+				"speed": 0,
+				"shootEffect": "none",
+				"smokeEffect": "shootSmallFlame",
+				"spawnUnit": "小型追踪导弹"
+			}
+		},
+	{	"name": "角士1",	
+		"reload":3,
+        "x": 6,  "y": 1.5, 
+        "rotate": false,
+        "inaccuracy": 0,
+        "mirror":false,
+		"shoot":{
+        "shots": 8,
+        "shotDelay": 60,
+        "type": "ShootAlternate",
+        "barrels": 4,
+        "spread": 1
+    },
+		"shootSound": "pew",
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"bullet":{
+	    "damage":22,	  
+	    "speed":10,
+	    "splashDamageRadius": 10
+        "splashDamage": 25,
+	    "lifetime":25,
+	    "width":5,	 
+	    "height":10
+	}	}
+]
+   	"research": {
+	"parent":"新型作战兵工厂"
+	}
+    "researchCostMultiplier": 10
+}

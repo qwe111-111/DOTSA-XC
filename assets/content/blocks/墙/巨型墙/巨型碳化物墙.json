@@ -1,0 +1,20 @@
+{
+  "type": "Wall",
+  "name": "巨型碳化物墙",
+  "description": "提高耐久",
+  "armor": 30,
+  "lightningChance": 0.2,
+  "lightningDamage": 50,
+  "lightningLength": 4,
+  "chanceDeflect":20
+  "health": 10000,
+  "size": 4,
+  "insulated": false,
+  "absorbLasers": true,
+  "placeableLiquid": true,
+  "requirements": [
+    "carbide/106"
+  ],
+  "category": "defense",
+  "research": "专型碳化物墙"
+}

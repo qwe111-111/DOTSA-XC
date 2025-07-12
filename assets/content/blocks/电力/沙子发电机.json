@@ -1,0 +1,20 @@
+{
+	"type": "ThermalGenerator",
+	"name": "沙子发电机",
+	"description": "水力发电机的表哥",
+	"size": 2,
+	"health": 300,
+	"hasPower": true,
+	"hasItems": true,
+    "generateEffect":"reactorsmoke"
+	"attribute":"oil"
+	"powerProduction": 0.5
+	"maxHeatBoost":2.5
+	"requirements": [
+		{"item": "copper", "amount": 50},
+		{ "item": "钢铁", "amount": 35 },
+		{ "item": "graphite", "amount": 40 },
+	],
+	"category": "power",
+	"research": "水力发电机"
+}

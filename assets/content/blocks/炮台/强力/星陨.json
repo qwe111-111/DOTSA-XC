@@ -1,0 +1,292 @@
+{
+    "type": "ItemTurret",
+    "name": "星陨",
+    "unitSort": "strongest",
+    "buildVisibility": "sandboxOnly",
+    "health": 14800,
+    "size": 6,
+    "reload": 500,
+    "range": 1000,
+    "fogRadiusMultiplier": 0.16,
+    "recoilTime": 180,
+    "recoil": 4,
+    "shootSound": "respawn",
+    "insulated": true,
+    "absorbLasers": true,
+    "shootWarmupSpeed": 0.08,
+    "warmupMaintainTime": 600,
+    "minWarmup": 0.9,
+    "ammoPerShot": 32,
+    "maxAmmo": 32,
+    "shootY": 8,
+    "targetGround": true,
+    "targetAir": true,
+    "canOverdrive": false,
+    "accurateDelay": false,
+    "inaccuracy": 0,
+    "rotateSpeed": 1.25,
+    "shootCone": 360,
+    "ammoTypes": {
+        "surge-alloy": {
+            "lifetime": 10,
+            "speed": 0,
+            "hittable": false,
+            "reflectable": false,
+            "ammoMultiplier": 1,
+            "fragBullets": 1,
+            "fragRandomSpread": 0,
+            "fragBullet": {
+                "lifetime": 10,
+                "speed": 0,
+                "hittable": false,
+                "reflectable": false,
+                "ammoMultiplier": 1,
+                "spawnBullets": [
+                    {
+                        "instantDisappear": true,
+                        "fragBullets": 6,
+                        "fragRandomSpread": 80,
+                        "fragBullet": {
+                            "instantDisappear": true,
+                            "spawnUnit": "陨石"
+                        }
+                    }
+                ]
+            },
+            "shootEffect": {
+                "type": "MultiEffect",
+                "effects": [
+                    {
+                        "type": "ParticleEffect",
+                        "particles": 32,
+                        "interp": "fastSlow",
+                        "sizeFrom": 12,
+                        "sizeTo": 0,
+                        "length": 125,
+                        "baseLength": 0,
+                        "lifetime": 123,
+                        "colorFrom": "A9D8FFFF",
+                        "colorTo": "FFFFFF",
+                        "cone": 40
+                    },
+                    {
+                        "type": "WaveEffect",
+                        "lifetime": 22,
+                        "sizeFrom": 0,
+                        "sizeTo": 100,
+                        "strokeFrom": 18,
+                        "strokeTo": 0,
+                        "colorFrom": "A9D8FFFF80",
+                        "colorTo": "FFFFFF80"
+                    }
+                ]
+            },
+            "smokeEffect": {
+                "type": "MultiEffect",
+                "effects": [
+                    {
+                        "type": "ParticleEffect",
+                        "particles": 25,
+                        "interp": "fastSlow",
+                        "sizeInterp": "pow3In",
+                        "sizeFrom": 9,
+                        "sizeTo": 0,
+                        "length": -88,
+                        "baseLength": 0,
+                        "lifetime": 65,
+                        "colorFrom": "A9D8FFFF",
+                        "colorTo": "A9D8FFFF",
+                        "cone": 35
+                    },
+                    {
+                        "type": "ParticleEffect",
+                        "particles": 16,
+                        "interp": "fastSlow",
+                        "sizeInterp": "pow3In",
+                        "sizeFrom": 12,
+                        "sizeTo": 0,
+                        "length": -88,
+                        "baseLength": 0,
+                        "lifetime": 65,
+                        "colorFrom": "A9D8FFFF",
+                        "colorTo": "A9D8FFFF",
+                        "cone": 35
+                    }
+                ]
+            }
+        },
+        "钢铁": {
+            "type": "pointBulletType",
+            "trailEffect": "none",
+            "despawnEffect": "none",
+            "hitEffect": {
+                "type": "MultiEffect",
+                "effects": [
+                    {
+                        "type": "ParticleEffect",
+                        "line": true,
+                        "particles": 15,
+                        "lifetime": 50,
+                        "interp": "circleOut",
+                        "offset": 30,
+                        "length": 120,
+                        "lightColor": "BEDDE8FF",
+                        "strokeFrom": 24,
+                        "strokeTo": 0,
+                        "lenFrom": 10,
+                        "lenTo": 10,
+                        "colorFrom": "BEDDE8FF",
+                        "colorTo": "BEDDE8FF"
+                    },
+                    {
+                        "type": "ParticleEffect",
+                        "particles": 12,
+                        "sizeFrom": 8,
+                        "sizeInterp": "pow5In",
+                        "sizeTo": 0,
+                        "length": 55,
+                        "baseLength": 2,
+                        "lifetime": 15,
+                        "colorFrom": "BEDDE8FF",
+                        "colorTo": "BEDDE8FF",
+                        "cone": 45
+                    },
+                    {
+                        "type": "waveEffect",
+                        "lifetime": 60,
+                        "sizeFrom": 82,
+                        "sizeTo": 0,
+                        "strokeFrom": 5,
+                        "strokeTo": 0,
+                        "colorFrom": "BEDDE8FF",
+                        "colorTo": "BEDDE8FF"
+                    }
+                ]
+            },
+            "reloadMultiplier": 2.2,
+            "speed": 13,
+            "lifetime": 80,
+            "damage": 1200,
+            "pierce": true,
+            "pierceArmor": true,
+            "trailColor": "BEDDE8FF",
+            "width": 8,
+            "trailLength": 8,
+            "trailWidth": 2,
+            "smokeEffect": {
+                "type": "ParticleEffect",
+                "particles": 3,
+                "sizeFrom": 8,
+                "sizeInterp": "pow5In",
+                "sizeTo": 0,
+                "length": 55,
+                "baseLength": 2,
+                "lifetime": 15,
+                "colorFrom": "BEDDE8FF",
+                "colorTo": "BEDDE8FF",
+                "cone": 45
+            },
+            "splashDamage": 780,
+            "status": "破甲",
+            "statusDuration": 180,
+            "splashDamageRadius": 60,
+            "fragSpread": 120,
+            "fragRandomSpread": 45,
+            "fragLifeMin": 0.8,
+            "fragLifeMax": 1.4,
+            "fragBullets": 16,
+            "fragBullet": {
+                "splashDamage": 560,
+                "splashDamageRadius": 60,
+                "status": "破甲",
+                "statusDuration": 180,
+                "speed": 13,
+                "lifetime": 16,
+                "collides": false,
+                "width": 0,
+                "height": 0,
+                "hitShake": 6,
+                "hitSound": "plasmaboom",
+                "hitEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "waveEffect",
+                            "lifetime": 15,
+                            "sizeFrom": 50,
+                            "sizeTo": 130,
+                            "strokeFrom": 4,
+                            "strokeTo": 0,
+                            "colorFrom": "BEDDE8FF",
+                            "colorTo": "BEDDE8FF"
+                        },
+                        {
+                            "type": "waveEffect",
+                            "lifetime": 15,
+                            "sizeFrom": 130,
+                            "sizeTo": 50,
+                            "strokeFrom": 4,
+                            "strokeTo": 0,
+                            "colorFrom": "BEDDE8FF",
+                            "colorTo": "BEDDE8FF"
+                        },
+                        {
+                            "type": "waveEffect",
+                            "lifetime": 10,
+                            "sizeFrom": 0,
+                            "sizeTo": 200,
+                            "strokeFrom": 4,
+                            "strokeTo": 0,
+                            "colorFrom": "BEDDE8FF",
+                            "colorTo": "BEDDE8FF"
+                        },
+                        {
+                            "type": "particleEffect",
+                            "particles": 24,
+                            "line": true,
+                            "length": 150,
+                            "lifetime": 30,
+                            "interp": "pow5Out",
+                            "sizeInterp": "smoother",
+                            "lenFrom": 56,
+                            "lenTo": 4,
+                            "strokeFrom": 4,
+                            "strokeTo": 1,
+                            "colorFrom": "BEDDE8FF",
+                            "colorTo": "BEDDE8FF"
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 16,
+                            "interp": "fastSlow",
+                            "sizeInterp": "pow3In",
+                            "sizeFrom": 12,
+                            "sizeTo": 0,
+                            "length": 88,
+                            "baseLength": 0,
+                            "lifetime": 65,
+                            "colorFrom": "BEDDE8FF",
+                            "colorTo": "BEDDE8FF"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "breakable": false,
+    "rebuildable": false,
+    "requirements": [
+        "surge-alloy/400",
+        "硬化钢铁/500",
+        "silicon/900",
+        "graphite/750",
+        "钢合金/345",
+        "电路/425",
+        "复合材料/325",
+        "钴/125",
+        "钢铁/1000"
+    ],
+    "category": "turret",
+    "research": "穿行",
+    "researchCostMultiplier": 0.2
+}

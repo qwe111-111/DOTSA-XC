@@ -1,0 +1,66 @@
+{
+    "type": "GenericCrafter",
+    "name": "孢子压缩室-液压型",
+    "description": "？",
+    "details": "？",
+    "itemCapacity": 80,
+    "outputLiquid": {
+		"liquid": "oil",
+		"amount": 0.74
+	},
+    "liquidCapacity": 30,
+    "health": 1000,
+    "size": 3,
+    "hasPower": true,
+    "hasLiquids": true,
+    "hasItems": true,
+    "craftTime": 55,
+    "updateEffect": [
+	{
+	"type":"hitEmpSpark"
+	"particles":9
+	"sizeFrom":5
+	"sizeTo":0
+	"length":15
+	"baseLength":5
+	"colorFrom":"BF92F9FF"
+	"colorTo":"ffffff"
+	"lifetime":20
+	"cone":360
+	},
+	]
+    "drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+				"type": "DrawPistons",
+				"sinMag": 2
+			},
+			"DrawDefault",
+			{
+				"type": "DrawLiquidRegion",
+				"drawLiquid": "oil"
+			}			
+		]
+	},
+    "consumes": {
+        "power": 2.13,
+        "liquid":"water/0.2"
+        "items": [
+            "spore-pod/2",
+        ],
+    },
+    "requirements": [
+        "metaglass/300",
+        "plastanium/150",
+        "silicon/150"
+    ],
+    "category": "crafting",
+    "research": {
+        "parent": "spore-press"
+    }
+}

@@ -1,0 +1,50 @@
+{
+	"name": "分级联络协议拷贝室",
+	"type": "Separator",
+	"health": 5000,
+	"size": 5,
+	"canOverdrive": false,
+	"rebuildable": true,
+	"squareSprite": true,
+	"hasLiquids": true,
+	"researchCostMultiplier": 0.5,
+	"results": [
+		"初级协议许可证/3",
+	    "中级协议许可证/2",
+    	"高级协议许可证/1",
+    	"终级协议许可证/1"
+	],
+	"itemCapacity": 150,
+	"liquidCapacity": 100,
+	"craftTime": 60,
+	"consumes": {
+		"power": 250,
+		"liquid": "液态氮/1.6"
+	},
+	"drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            },
+            {
+                "type": "DrawLiquidTile",
+                "drawLiquid": "液态氮"
+            },
+            "DrawDefault"
+        ]
+    },
+	"requirements": [        
+	    "lead/150",
+		"graphite/75",
+		"metaglass/110",
+		"thorium/120",
+		"高级协议许可证/1",
+		"钴/100",
+		"钢合金/40"
+	],
+	"buildCostMultiplier": 2.5,
+	"category": "effect",
+	"research": "高级协议准许室"
+}

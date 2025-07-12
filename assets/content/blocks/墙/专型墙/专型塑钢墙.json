@@ -1,0 +1,20 @@
+{
+  "type": "Wall",
+  "name": "专型塑钢墙",
+  "description": "更为坚固",
+  "armor": 14,
+  "lightningChance": 0,
+  "lightningDamage": 0,
+  "lightningLength": 0,
+  "chanceDeflect":10
+  "health": 4500,
+  "size": "3",
+  "insulated": true,
+  "absorbLasers": true,
+    "placeableLiquid": true,
+  "requirements": [
+    "plastanium/55"
+  ],
+  "category": "defense",
+  "research": "专型钍墙"
+}

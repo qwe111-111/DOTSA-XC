@@ -1,0 +1,31 @@
+{
+"type": "ImpactReactor",
+"name":"巨浪合金发电站"
+"description":"合金多到没处用了是吧？钢合金满了吗就用"
+"size":5
+"health":1520
+"liquidCapacity":50
+"hasLiquids": true
+"liquidBoostIntensity":50
+"powerProduction":800
+"consumes": {
+  "power":30
+  "liquid":{
+    "liquid":"cryofluid"
+    "amount":"1"
+    "booster":false
+  }
+  "items": {
+    "items": [
+    { "item": "surge-alloy", "amount": "1"}
+    ],
+  }
+},
+"requirements": [
+{"item": "surge-alloy", "amount": 600}
+{"item": "复合材料", "amount": 400}
+{"item": "thorium", "amount": 700}
+],
+"category": "power",
+"research":"高效热量发电机"
+}

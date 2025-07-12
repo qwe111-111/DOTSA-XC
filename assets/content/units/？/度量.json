@@ -1,0 +1,193 @@
+{
+    "type": "flying",
+    "name": "度量",
+    "description": "诶wc，以后再也不画这种贴图了",
+    "details": "叠叠块",
+    "speed": 3.5,
+    "flying": true,
+    "engineOffset": 14,
+    "targetAir": true,
+    "targetGround": true,
+    "engineSize": 3,
+    "trailLength": 16,
+    "trailColor": "BEDDE8FF",
+    "engineColor": "BEDDE8FF",
+    "hitSize": 22,
+    "health": 17600,
+    "armor": 15,
+    "rotateSpeed": 7,
+    "itemCapacity": 0,
+    "abilities": [
+        {
+            "type": "StatusFieldAbility",
+            "duration": 120,
+            "reload": 150,
+            "range": 60,
+            "applyEffect": "none",
+            "activeEffect": {
+                "type": "WaveEffect",
+                "lifetime": 20,
+                "sizeFrom": 0,
+                "sizeTo": 60,
+                "strokeFrom": 1.3,
+                "strokeTo": 0,
+                "colorFrom": "BEDDE8FF",
+                "colorTo": "BEDDE8FF"
+            },
+            "effect": "愈合"
+        },
+        {
+            "type": "StatusFieldAbility",
+            "duration": 200,
+            "reload": 500,
+            "range": 0,
+            "applyEffect": {
+                "type": "ParticleEffect",
+                "particles": 8,
+                "line": true,
+                "sizeFrom": 9,
+                "sizeTo": 0,
+                "length": 53,
+                "baseLength": 20,
+                "lifetime": 22,
+                "colorFrom": "BEDDE8FF",
+                "colorTo": "BEDDE8FF",
+                "cone": 360
+            },
+            "activeEffect": {
+                "type": "WaveEffect",
+                "lifetime": 45,
+                "sides": 4,
+                "rotation": 90,
+                "sizeFrom": 0,
+                "sizeTo": 25,
+                "strokeFrom": 2,
+                "strokeTo": 0,
+                "colorFrom": "BEDDE8FF",
+                "colorTo": "BEDDE8FF"
+            },
+            "effect": "X号强化"
+        }
+    ],
+    "weapons": [
+        {
+            "name": "度量1",
+            "x": 0,
+            "shootWarmupSpeed": 0.13,
+            "minWarmup": 0.9,
+            "reload": 48,
+            "shootStatus": "shielded",
+            "shootStatusDuration": 50,
+            "shoot": {
+                "shots": 4,
+                "shotDelay": 3,
+                "type": "ShootPattern",
+                "firstShotDelay": 14
+            },
+            "inaccuracy": 1.1,
+            "mirror": false,
+            "rotate": false,
+            "shootSound": "laser",
+            "shootY": 6,
+            "bullet": {
+                "type": "BasicBulletType",
+                "speed": 10,
+                "recoil": 1.1,
+                "lifetime": 30,
+                "width": 12,
+                "height": 15,
+                "damage": 32,
+                "status": "破甲",
+                "hitSize": 20,
+                "shrinkY": 0,
+                "knockback": 9,
+                "frontColor": "BEDDE8FF",
+                "backColor": "BEDDE8FF",
+                "trailLength": 6,
+                "trailWidth": 2.25,
+                "trailColor": "BEDDE8FF",
+                "splashDamageRadius": 45,
+                "splashDamage": 85,
+                "hitShake": 2,
+                "chargeEffect": {
+                    "type": "WaveEffect",
+                    "interp": "circleOut",
+                    "lifetime": 14,
+                    "sizeFrom": 28,
+                    "sizeTo": 0,
+                    "strokeFrom": 0,
+                    "strokeTo": 1.25,
+                    "colorFrom": "BEDDE8FF",
+                    "colorTo": "BEDDE8FF"
+                },
+                "trailInterval": 1,
+                "trailRotation": true,
+                "trailEffect": {
+                    "type": "ParticleEffect",
+                    "particles": 3,
+                    "interp": "pow10Out",
+                    "line": true,
+                    "lenFrom": 18,
+                    "lenTo": 0,
+                    "strokeFrom": 1.5,
+                    "strokeTo": 1,
+                    "length": -45,
+                    "baseLength": 0,
+                    "lifetime": 40,
+                    "colorFrom": "BEDDE8FF",
+                    "colorTo": "BEDDE8FF",
+                    "cone": 13
+                },
+                "smokeEffect": {
+                    "type": "ParticleEffect",
+                    "particles": 9,
+                    "interp": "pow10Out",
+                    "line": true,
+                    "lenFrom": 18,
+                    "lenTo": 0,
+                    "strokeFrom": 1.5,
+                    "strokeTo": 1,
+                    "length": 45,
+                    "baseLength": 0,
+                    "lifetime": 40,
+                    "colorFrom": "BEDDE8FF",
+                    "colorTo": "BEDDE8FF",
+                    "cone": 13
+                },
+                "hitEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 6,
+                            "sizeFrom": 4,
+                            "sizeTo": 0,
+                            "length": 40,
+                            "baseLength": 8,
+                            "lifetime": 35,
+                            "colorFrom": "BEDDE8FF",
+                            "colorTo": "FFFFFF"
+                        },
+                        {
+                            "type": "WaveEffect",
+                            "lifetime": 18,
+                            "sizeFrom": 1,
+                            "sizeTo": 70,
+                            "strokeFrom": 3,
+                            "strokeTo": 0,
+                            "colorFrom": "BEDDE8FF",
+                            "colorTo": "BEDDE8FF"
+                        }
+                    ]
+                },
+                "despawnEffect": "none",
+                "ammoMultiplier": 6,
+                "lightningDamage": 16,
+                "lightning": 6,
+                "lightningColor": "BEDDE8FF",
+                "lightningLength": 6,
+                "lightningLengthRand": 4
+            }
+        }
+    ]
+}

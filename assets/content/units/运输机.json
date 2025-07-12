@@ -1,0 +1,24 @@
+{
+	"type":"tether",//空军
+	"flying":true,//飞行
+	"playerControllable":false,//玩家可以操控
+	"isEnemy":false,
+    "allowedInPayloads":false,
+    "logicControllable":false,
+	"controller": "CargoAI",//ai
+	"engineSize":2.5,//引擎尺寸
+	"engineOffset":7,//引擎偏移
+	"name":"运输机",//名字
+	"hitSize":14,//大小
+	"health":500,//血量
+	"armor":0,//防御
+	"speed":2,//速度
+	"accel":0.09,//加速
+	"drag":0.08,//拖曳
+	"rotateSpeed":8,//转头速度
+	"itemCapacity":1000,//物品容量
+	"canDrown":false,//能否被淹死
+	"buildSpeed":0,//建筑倍率
+	"fogRadius":0.25,//迷雾揭示范围
+	"hidden":"true"//隐藏
+}

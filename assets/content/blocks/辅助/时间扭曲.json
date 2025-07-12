@@ -1,0 +1,49 @@
+{
+    "name": "时间扭曲",
+    "description": "？",
+    "type": "OverdriveProjector",
+    "health": 300,
+    "size": 2,
+    "range": 120,
+    "reload": 50,
+    "speedBoostPhase": 1.5,
+    "phaseRangeBoost": 100,
+    "speedBoost": 1.75,
+    "consumes": {
+        "power": 0.5,
+        "items": {
+            "items": [
+                {
+                    "item": "电路",
+                    "amount": 1
+                }
+            ],
+            "booster": true,
+            "optional": true
+        }
+    },
+    "requirements": [
+        {
+            "item": "copper",
+            "amount": 120
+        },
+        {
+            "item": "graphite",
+            "amount": 100
+        },
+        {
+            "item": "silicon",
+            "amount": 60
+        },
+        {
+            "item": "钢铁",
+            "amount": 100
+        },
+        {
+            "item": "电路",
+            "amount": 25
+        }
+    ],
+    "category": "effect",
+    "research": "overdrive-projector"
+}

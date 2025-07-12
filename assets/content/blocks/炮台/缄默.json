@@ -1,0 +1,109 @@
+{
+    "type": "PowerTurret",
+    "size": 2,
+    "name": "缄默",
+    "health": 1280,
+    "description": "....",
+    "reload": 120,
+    "range": 420,
+    "recoilAmount": 0,
+    "targetAir": true,
+    "targetGround": true,
+    "shootCone": 25,
+    "restitution": 0.04,
+    "rotateSpeed": 3,
+    "category": "turret",
+    "shootSound": "laser",
+    "consumes": {
+        "power": 2
+    },
+    "requirements": [
+        {
+            "item": "copper",
+            "amount": 90
+        },
+        {
+            "item": "lead",
+            "amount": 30
+        },
+        {
+            "item": "silicon",
+            "amount": 25
+        }
+    ],
+    "shootType": {
+        "type": "BasicBulletType",
+        "width": 9,
+        "height": 18,
+        "damage": 85,
+        "splashDamageRadius": 15,
+        "splashDamage": 45,
+        "buildingDamageMultiplier": 0.2,
+        "trailLength": 10,
+        "trailWidth": 2,
+        "trailColor": "D1EFFFFF",
+        "status": "unmoving",
+        "statusDuration": 60,
+        "despawnHit": true,
+        "speed": 14,
+        "lifetime": 30,
+        "shootEffect": {
+            "type": "ParticleEffect",
+            "line": true,
+            "particles": 5,
+            "lifetime": 20,
+            "interp": "circleOut",
+            "offset": 30,
+            "length": 32,
+            "lightColor": "D1EFFFFF",
+            "strokeFrom": 2,
+            "strokeTo": 0,
+            "lenFrom": 5,
+            "lenTo": 0,
+            "colorFrom": "D1EFFFFF",
+            "colorTo": "D1EFFFFF"
+        },
+        "hitEffect": {
+            "type": "MultiEffect",
+            "effects": [
+                {
+                    "type": "ParticleEffect",
+                    "particles": 9,
+                    "sizeFrom": 10,
+                    "sizeTo": 0,
+                    "length": 55,
+                    "baseLength": 15,
+                    "lifetime": 25,
+                    "colorFrom": "D1EFFFFF",
+                    "colorTo": "D1EFFFFF"
+                },
+                {
+                    "type": "WaveEffect",
+                    "lifetime": 15,
+                    "sizeFrom": 0,
+                    "sizeTo": 25,
+                    "strokeFrom": 3,
+                    "strokeTo": 0,
+                    "colorFrom": "D1EFFFFF",
+                    "colorTo": "D1EFFFFF"
+                },
+                {
+                    "type": "ParticleEffect",
+                    "particles": 8,
+                    "interp": "pow10Out",
+                    "line": true,
+                    "lenFrom": 18,
+                    "lenTo": 0,
+                    "strokeFrom": 1.5,
+                    "strokeTo": 1,
+                    "length": -45,
+                    "baseLength": 0,
+                    "lifetime": 40,
+                    "colorFrom": "D1EFFFFF",
+                    "colorTo": "D1EFFFFF",
+                    "cone": 13
+                }
+            ]
+        }
+    }
+}

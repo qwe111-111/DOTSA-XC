@@ -1,0 +1,17 @@
+{
+    "type": "floor",
+    "name": "废水沟",
+    "description": "...",
+    "details": "...",
+    "requiresWater": false,
+    "status": "缓慢",
+    "statusDuration": 90,
+    "cacheLayer": "water",
+    "albedo": 0.9,
+    "shallow": false,
+    "drownTime": 1,
+    "isLiquid": true,
+    "liquidDrop": "废水",
+    "liquidMultiplier": 1,
+    "variants": 4
+}

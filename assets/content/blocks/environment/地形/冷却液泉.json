@@ -1,0 +1,17 @@
+{
+    "type": "floor",
+    "name": "冷却液泉",
+    "description": "...",
+    "details": "...",
+    "requiresWater": false,
+    "status": "freezing",
+    "statusDuration": 90,
+    "cacheLayer": "water",
+    "albedo": 0.9,
+    "shallow": false,
+    "drownTime": 1,
+    "isLiquid": true,
+    "liquidDrop": "冷却液",
+    "liquidMultiplier": 1,
+    "variants": 3
+}

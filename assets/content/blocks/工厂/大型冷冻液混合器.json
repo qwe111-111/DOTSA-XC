@@ -1,0 +1,49 @@
+{
+	"type": "GenericCrafter",
+	"name": "冷冻液凝合机",
+	"description": "T2冷混"
+	"health": 1420,
+	"outputLiquid": {
+		"liquid": "cryofluid",
+		"amount": 1
+	},
+	"itemCapacity": 14,
+	"size": 3,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+				"type": "DrawLiquidTile",
+				"drawLiquid": "cryofluid"
+			},
+			"DrawDefault"
+		]
+	},
+	"hasItems": true,
+	"hasLiquids": true,
+	"outputsLiquid": true,
+	"hasPower": true,
+	"liquidCapacity": 60,
+	"craftTime": 60,
+	"updateEffect": "freezing",
+	"consumes": {
+		"power": 4,
+		"items": [
+			"titanium/1"
+		],
+		"liquid": "water/0.2"
+	},
+	"requirements": [
+		"thorium/150",
+		"metaglass/40",
+		"silicon/40",
+		"钢铁/80",
+		"初级协议许可证/1"
+	],
+	"category": "crafting",
+	"research": "cryofluid-mixer"
+}

@@ -1,0 +1,12 @@
+{
+    "description": "清扫完山区驻军后，入侵计划的第一步得已完成，接下来就是逐渐向外扩张，抢占土地，搜刮资源…但扩张计划需要工业的支持，而工业器械需要大量的水资源支持，于是，经检测，发现此地拥有一个大湖…占领此处",
+	"map": "冰封湖畔.msav",
+	"localizedName": "2冰封湖畔"
+	"captureWave": 100,
+	"planet": "克斯特",
+	"sector": 281,
+	"difficulty": 2,
+	"research": "交错山区",
+	"alwaysUnlocked": false,
+	"addStartingItems": true,
+}

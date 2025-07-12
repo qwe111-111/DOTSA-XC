@@ -1,0 +1,106 @@
+{
+    "type": "ItemTurret",
+    "name": "K13",
+    "description": "霞弹枪，前期性价比很高",
+    "size": 2,
+    "health": 1000,
+    "ammoPerShot": 5,
+    "shootSound": "shootAltLong",
+    "range": 248,
+    "reload": 30,
+    "inaccuracy": 6,
+    "ammoUseEffect": "casing2",
+    "rotateSpeed": 1.6,
+    "maxAmmo": 60,
+    "targetAir": true,
+    "targetGround": true,
+    "coolantMultiplier": 2,
+    "canOverdrive": true,
+    "heatColor": "turretHeat",
+    "consumes": {
+        "coolant": {
+            "amount": 0.1,
+            "optional": true
+        }
+    },
+    "shoot": {
+        "type": "ShootSpread",
+       "shots": 16,
+       "shotDelay": 0,
+       "spread": 2
+    },
+    "ammoTypes": {
+        "copper": {
+            "speed": 8,
+            "damage": 24,
+            "width": 11,
+            "height": 18,
+            "lifetime": 30,
+            "ammoMultiplier": 4
+        },
+        "graphite": {
+            "speed": 8,
+            "reloadMultiplier": 1.4,
+            "damage": 30,
+            "width": 11,
+            "height": 18,
+            "lifetime": 30,
+            "ammoMultiplier": 6
+        },
+        "lead": {
+            "speed": 8,
+            "damage": 13,
+            "width": 11,
+            "splashDamageRadius": 30,
+            "splashDamage": 8,
+            "height": 18,
+            "ammoMultiplier": 4,
+            "lifetime": 30,
+            "fragBullets": 4,
+            "fragBullet": {
+                "speed": 10,
+                "damage": 9,
+                "lifetime": 1
+            }
+        },
+        "thorium": {
+            "speed": 8,
+            "damage": 45,
+            "width": 11,
+            "height": 18,
+            "lifetime": 30,
+            "ammoMultiplier": 3,
+            "splashDamageRadius": 26,
+            "splashDamage": 14,
+            "knockback": 3
+        },
+        "titanium": {
+            "speed": 8,
+            "damage": 34,
+            "width": 11,
+            "height": 18,
+            "lifetime": 30,
+            "status": "shocked",
+            "ammoMultiplier": 4,
+            "statusDuration": 360,
+            "lightningDamage": 7,
+            "lightning": 3,
+            "lightningLength": 7
+        }
+    },
+    "requirements": [
+        "copper/80",
+        "lead/75",
+        "graphite/25"
+    ],
+    "category": "turret",
+    "research": {
+        "requirements": [
+            "copper/70",
+            "silicon/50",
+            "钢铁/40",
+            "graphite/50"
+        ],
+        "parent": "重机枪"
+    }
+}

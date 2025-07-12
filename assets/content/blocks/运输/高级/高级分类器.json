@@ -1,0 +1,17 @@
+{
+"name":"高级分类器"
+    "description": "？",
+	"type": "Sorter",
+	"health": 240,
+	"size": 1,
+	"speed": 1
+	"speedBoost": 1,
+	"requirements": [
+	"电路/14",
+	"钢铁/6"
+	],
+	"category": "distribution",
+	"research": "高级路由器"
+	"researchCostMultiplier": 0.2,
+	    "canOverdrive": false,
+}

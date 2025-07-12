@@ -1,0 +1,78 @@
+{
+    "type": "UnitFactory",
+    "name": "特殊工厂",
+    "category": "units",
+    "description":"特级兵种，可理解为美苏时期军备竞赛的稀奇玩意",
+    "research": {
+	"parent": "防卫兵工厂",
+	"requirements": [
+	    "copper/52000",
+        "lead/2000",
+        "silicon/450",
+        "钢铁/245"
+	    ]
+	},
+    "requirements": [
+        "copper/80",
+        "lead/80",
+        "silicon/100",
+        "titanium/45"
+    ],
+    "health" : 2200,
+    "armor":20,
+    "plans": [
+        {
+            "unit": "肃正机体",
+            "time": 10800,
+            "requirements": [ 
+            "silicon/312",
+            "钢铁/210",
+            "graphite/100"
+            "硬化钢铁/124"
+            "phase-fabric/97"
+            "surge-alloy/159"
+            ]
+        }
+        {
+            "unit": "雷天使",
+            "time": 720,
+            "requirements": [ 
+            "silicon/30",
+            "thorium/46"
+            "titanium/58"
+            "钢铁/55",
+            "surge-alloy/35"
+            "graphite/50"
+            "硬化钢铁/35"
+            ]
+        }
+        {
+            "unit": "角士",
+            "time": 600,
+            "requirements": [ 
+            "silicon/47",
+            "titanium/21"
+            "钢铁/60",
+            "graphite/30"
+            ]
+        }
+        {
+            "unit": "激发",
+            "time": 660,
+            "requirements": [ 
+            "silicon/30",
+            "thorium/46"
+            "titanium/58"
+            "钢铁/55",
+            "电路/25"
+            "surge-alloy/35"
+            "graphite/50"
+            "硬化钢铁/35"
+            ]
+        }
+    ],
+    "size": 3,
+    "consumes": {
+        "power": 3.50
+    }
+}

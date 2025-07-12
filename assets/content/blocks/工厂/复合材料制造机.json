@@ -1,0 +1,37 @@
+{
+    "type": "GenericCrafter",
+    "name": "复合材料制造机",
+    "description": "？",
+    "details": "？ ",
+    "itemCapacity": 40,
+    "outputItem": "复合材料/2",
+    "liquidCapacity": 30,
+    "health": 780,
+    "size": 3,
+    "hasPower": true,
+    "hasLiquids": true,
+    "hasItems": true,
+    "craftTime": 60,
+    "updateEffect": "none",
+    "consumes": {
+        "power": 4,
+        "items": [
+            "silicon/1",
+            "graphite/1",
+            "metaglass/1",
+            "plastanium/1"
+        ]
+    },
+    "requirements": [
+        "钢铁/100",
+        "电路/80",
+        "metaglass/300",
+        "graphite/250",
+        "plastanium/150",
+        "phase-fabric/40"
+    ],
+    "category": "crafting",
+    "research": {
+        "parent": "锻钢厂"
+    }
+}

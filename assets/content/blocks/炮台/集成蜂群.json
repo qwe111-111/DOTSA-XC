@@ -1,0 +1,116 @@
+{
+  "type": "ItemTurret",
+  "health": 1900,
+  "size": 3,
+  "name":"集成蜂群",
+  "description": "火力不足恐惧症这下是真好了",
+  "reload": 3,
+  "range": 578,
+  "recoil": 2,
+  "shake": 4,
+  "inaccuracy": 10,
+  "shoot": {
+    "type": "ShootAlternate",
+    "barrels": 6,
+    "spread": 4,
+    "shots": 3
+  },
+  "rotateSpeed": 6,
+        "consumes": {
+	"coolant":
+	{"amount":0.1,
+	"optional":true
+	}  
+	},
+  "shootSound": "missile",
+  "ammoTypes": {
+    "blast-compound": {
+      "type": "MissileBulletType",
+      "speed": 9.8,
+      "damage": 48,
+      "status": "blasted",
+      "statusDuration": 70,
+      "width": 7,
+      "height": 18,
+      "shootEffect": "shootBig",
+      "smokeEffect": "blastExplosion",
+      "lifetime": 60,
+      "pierce": false,
+      "hitSize": 4,
+      "homingPower": 0.0667,
+      "homingRange": 250,
+      "weaveScale": 8,
+      "weaveMag": 2,
+      "incendAmount": 8,
+      "incendSpread": 4,
+      "incendChance": 1
+      	"fragBullet": {
+			"type": "PointBulletType",
+			"trailEffect": "none",
+			"despawnEffect": "flakExplosion",
+			"splashDamageRadius": 30,
+			"splashDamage": 35,
+			"speed": 20,
+			"lifetime": 1
+		}
+    },
+    "plastanium": {
+      "type": "MissileBulletType",
+      "speed": 9.8,
+      "damage": 50,
+      "width": 7,
+      "height": 18,
+      "shootEffect": "shootBig",
+      "smokeEffect": "none",
+      "hitEffect": "plasticExplosion",
+      "despawnEffect": "plasticExplosion",
+      "pierce": false,
+      "lifetime": 60,
+      "homingPower": 0.0667,
+      "homingRange": 250,
+      "frontColor": "9CB664FF",
+      "backColor": "EDF2A8FF",
+      "trailColor": "9CB664FF",
+      "weaveScale": 8,
+      "weaveMag": 2,
+      "splashDamageRadius": 80,
+      "splashDamage": 10
+    },
+    "surge-alloy": {
+      "type": "MissileBulletType",
+      "speed": 9.8,
+      "damage": 70,
+      "width": 7,
+      "height": 18,
+      "shootEffect": "shootBig",
+      "hitEffect": "flakExplosion",
+      "smokeEffect": "none",
+      "pierce": false,
+      "lifetime": 60,
+      "homingPower": 0.0667,
+      "homingRange": 250,
+      "frontColor": "F3E979FF",
+      "backColor": "ECD36FFF",
+      "trailColor": "ECD36FFF",
+      "weaveScale": 8,
+      "weaveMag": 2,
+      "splashDamageRadius": 40,
+      "splashDamage": 18,
+      "lightning": 7,
+      "lightningDamage": 12,
+      "lightningLength": 6,
+      "lightningCone": 360,
+      "lightningLengthRand": 11
+    }
+  },
+  "requirements": [
+    "graphite/450",
+    "silicon/600",
+    "titanium/500",
+    "钢铁/250",
+    "硬化钢铁/155",
+    "plastanium/600"
+  ],
+  "category": "turret",
+  "research": "swarmer"
+}

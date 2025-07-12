@@ -1,0 +1,116 @@
+{
+    "type": "ItemTurret",
+    "name": "先虚",
+    "description": "...",
+    "details": "......",
+    "squareSprite": false,
+    "size": 3,
+    "health": 2100,
+    "heatColor": "84F491FF",
+    "cooldownTime": 30,
+    "range": 430,
+    "rotateSpeed": 2,
+    "reload": 15,
+    "inaccuracy": 4,
+    "recoil": 1.5,
+    "targetGround": false,
+    "smokeEffect": "shootBigSmoke",
+    "shake": 2,
+    "shootSound": "plasmadrop",
+    "research": "垠影",
+    "shoot": {
+        "type": "ShootMulti",
+        "source": {
+            "shots": 2,
+            "shotDelay": 15
+        },
+        "dest": [
+            {
+                "type": "ShootHelix",
+                "scl": 10,
+                "mag": 2.2
+            }
+        ]
+    },
+    "canOverdrive": false,
+    "shootWarmupSpeed": 0.02,
+    "warmupMaintainTime": 80,
+    "minWarmup": 0.88,
+    "ammoTypes": {
+        "phase-fabric": {
+            "type": "massiveExplosion",
+            "speed": 2.1,
+            "lifetime": 90,
+            "drag": -0.019,
+            "status": "错误",
+            "statusDuration": 66,
+            "homingDelay": 33,
+            "homingPower": 0.0422,
+            "homingRange": 60,
+            "damage": 44,
+            "splashDamageRadius": 65,
+            "splashDamage": 46,
+            "ammoMultiplier": 1,
+            "sprite": "circle-bullet",
+            "shrinkY": 0,
+            "trailLength": 20,
+            "trailWidth": 4,
+            "trailColor": "84F491FF",
+            "frontColor": "FFFFFF",
+            "backColor": "84F491FF",
+            "width": 8,
+            "height": 8,
+            "hitSound": "plasmaboom",
+            "hitEffect": {
+                "type": "MultiEffect",
+                "effects": [
+                    {
+                        "type": "waveEffect",
+                        "lifetime": 15,
+                        "sizeFrom": 0,
+                        "sizeTo": 50,
+                        "strokeFrom": 4,
+                        "strokeTo": 0,
+                        "colorFrom": "84F491FF",
+                        "colorTo": "84F491FF"
+                    },
+                    {
+                        "type": "particleEffect",
+                        "particles": 24,
+                        "line": true,
+                        "length": 50,
+                        "lifetime": 30,
+                        "interp": "pow5Out",
+                        "sizeInterp": "smoother",
+                        "lenFrom": 6,
+                        "lenTo": 0,
+                        "strokeFrom": 3,
+                        "strokeTo": 1,
+                        "colorFrom": "84F491FF",
+                        "colorTo": "84F491FF"
+                    },
+                    {
+                        "type": "ExplosionEffect",
+                        "lifetime": 30,
+                        "waveStroke": 8,
+                        "waveLife": 15,
+                        "waveRadBase": 0,
+                        "waveColor": "EEC591",
+                        "waveRad": 66,
+                        "smokes": 8,
+                        "smokeColor": "84F491FF",
+                        "sparkColor": "84F491FF",
+                        "sparks": 8,
+                        "sparkRad": 70,
+                        "sparkStroke": 2.6,
+                        "sparkLen": 26
+                    }
+                ]
+            }
+        }
+    },
+    "category": "turret",
+    "requirements": [
+        "钢铁/400"
+    ]
+}

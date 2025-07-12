@@ -1,0 +1,56 @@
+{
+    "type": "PowerTurret",
+    "name": "脉冲",
+    "description": "点射激光",
+    "size": 2,
+    "requirements": [
+        "titanium/145",
+        "thorium/120",
+        "graphite/95",
+        "silicon/75",
+        "钢铁/60"
+    ],
+    "consumes": {
+        "power": 5
+    },
+    "research": "arc",
+    "health": 880,
+    "reload": 20,
+    "rotateSpeed": 5,
+    "inaccuracy": 0,
+    "recoil": 1,
+    "restitution": 0.06,
+    "targetAir": true,
+    "targetGround": true,
+    "range": 300,
+    "shootType": {
+        "type": "PointBulletType",
+        "speed": 240,
+        "damage": 215,
+        "status": "burning",
+        "statusDuration": 240,
+        "ammoMultiplier": 1,
+        "pierce": true,
+        "lifetime": 5,
+        "hitEffect": "hitMeltdown",
+        "shootEffect": "none",
+        "smokeEffect": "none",
+        "trailSpacing": 10,
+        "trailEffect": {
+            "particles": 1,
+            "length": 0.0001,
+            "baselength": 0,
+            "lifetime": 15,
+            "line": true,
+            "lenFrom": 12,
+            "lenTo": 12,
+            "strokeFrom": 2,
+            "strokeTo": 0,
+            "colorFrom": "a9d8ff",
+            "colorTo": "a9d8ff",
+            "cone": 0
+        }
+    },
+    "category": "turret",
+    "shootSound": "none"
+}

@@ -1,0 +1,85 @@
+{
+    "type": "flying",
+    "name": "追寻",
+    "description": "？",
+    "details": "？",
+    "speed": 5.6,
+    "flying": true,
+    "turnCursor": true,
+    "targetAir": true,
+    "targetGround": true,
+    "engineSize": 4,
+    "hitSize": 22,
+    "health": 8000,
+    "armor": 15,
+    "rotateSpeed": 3,
+    "itemCapacity": 0,
+    "rotateShooting": false,
+    "weapons": [
+        {
+            "name": "追寻1",
+            "display": true,
+            "reload": 200,
+            "x": 0,
+            "y": 1,
+            "shootY": 0,
+            "rotate": true,
+            "rotateSpeed": 2.2,
+            "top": true,
+            "recoil": 3,
+            "inaccuracy": 4,
+            "cooldownTime": 100,
+            "alternate": true,
+            "shootSound": "shockBlast",
+            "shoot": {
+                "shots": 2,
+                "shotDelay": 3
+            },
+            "bullet": {
+                "frontColor": "B4FFFFFF",
+                "backColor": "74CADDFF",
+                "trailLength": 18,
+                "trailWidth": 2,
+                "trailColor": "B4FFFFFF",
+                "damage": 60,
+                "lifetime": 44,
+                "speed": 5,
+                "splashDamage": 45,
+                "splashDamageRadius": 20,
+                "width": 11,
+                "height": 36,
+                "hitEffect": {
+                    "type": "multiEffect",
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "line": true,
+                            "particles": 15,
+                            "lifetime": 30,
+                            "interp": "circleOut",
+                            "offset": 30,
+                            "length": 90,
+                            "lightColor": "ff7048",
+                            "strokeFrom": 4,
+                            "strokeTo": 0,
+                            "lenFrom": 10,
+                            "lenTo": 10,
+                            "colorFrom": "B4FFFFFF",
+                            "colorTo": "B4FFFFFF"
+                        },
+                        {
+                            "type": "waveEffect",
+                            "lifetime": 30,
+                            "sizeFrom": 0,
+                            "sizeTo": 22,
+                            "strokeFrom": 4,
+                            "strokeTo": 2,
+                            "colorFrom": "B4FFFFFF",
+                            "colorTo": "74CADDFF"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

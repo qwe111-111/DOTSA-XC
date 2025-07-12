@@ -1,0 +1,114 @@
+{
+    "type": "missile",
+    "template": "MissileUnitType",
+    "name": "绿导弹",
+    "speed": 13,
+    "lifetime": 160,
+    "rotateSpeed": 4.2,
+    "loopSoundVolume": 0.03,
+    "hidden": true,
+    "missileAccelTime": 30,
+    "homingDelay": 10,
+    "hitSize": 8,
+    "health": 1280,
+    "fogRadius": 8,
+    "engineColor": "D8F18CFF",
+    "trailColor": "D8F18CFF",
+    "trailLength": 15,
+    "engineLayer": 110,
+    "engineOffset": 15,
+    "engineSize": 4,
+    "maxRange": 30,
+    "abilities": [
+        {
+            "type": "MoveEffectAbility",
+            "effect": {
+                   "type": "ParticleEffect",
+                   "line": true,
+                   "particles": 4,
+                   "lifetime": 30,
+                   "offset": 50,
+                   "length": 25,
+                   "cone": -360,
+                   "lenFrom": 4,
+                   "lenTo": 0,
+                   "colorFrom": "D8F18CFF",
+                   "colorTo": "92B258FF"
+                },
+            "interval": 1,
+            "rotateEffect": true,
+            "y": -8
+        }
+    ],
+    "weapons": [
+        {
+            "name": "自爆",
+            "x": 0,
+            "reload": 60,
+            "mirror": false,
+            "rotate": true,
+            "shake": 10,
+            "shootSound": "none",
+            "shootOnDeath": true,
+            "shootCone": 360,
+            "bullet": {
+                "collides": false,
+                "instantDisappear": true,
+                "ammoMultiplier": 1,
+                "hitSound": "titanExplosion",
+                "killShooter": true,
+                "collidesGround": false,
+                "splashDamageRadius": 80,
+                "splashDamage": 240,
+                "status": "slow",
+                "hitShake": 10,
+                "knockback": 5,
+                "shootEffect": "none",
+                "smokeEffect": "none",
+                "despawnEffect": "none",
+                "hitColor": "D8F18CFF",
+                "hitEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        "titanExplosion",
+                        "titanSmoke",
+                        {
+                            "type": "WaveEffect",
+                            "lifetime": 30,
+                            "sizeFrom": 0,
+                            "sizeTo": 12,
+                            "strokeFrom": 5,
+                            "strokeTo": 0,
+                            "colorFrom": "D8F18CFF",
+                            "colorTo": "92B258FF"
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 10,
+                            "sizeFrom": 8,
+                            "sizeTo": 0,
+                            "length": 50,
+                            "baseLength": 5,
+                            "lifetime": 30,
+                            "colorFrom": "D8F18CFF",
+                            "colorTo": "92B258FF"
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 1,
+                            "baseLength": 0,
+                            "length": 0,
+                            "lifetime": 60,
+                            "spin": 36,
+                            "region": "改进工业-星",
+                            "sizeFrom": 40,
+                            "sizeTo": 0,
+                            "colorFrom": "D8F18CFF",
+                            "colorTo": "92B258FF"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "reload": 6,
+    "range": 372,
+    "ammoPerShot": 2,
+    "ammoTypes": {
+        "graphite": {
+            "damage": 51,
+            "speed": 14,
+            "lifetime": 25,
+            "width": 17,
+            "height": 28,
+            "reloadMultiplier": 1.4,
+            "pierceCap": 2
+        },
+        "thorium": {
+            "damage": 68,
+            "speed": 14,
+            "lifetime": 25,
+            "width": 17,
+            "height": 28,
+            "pierceCap": 4
+        },
+        "surge-alloy": {
+            "damage": 76,
+            "speed": 14,
+            "lifetime": 25,
+            "width": 17,
+            "height": 28,
+            "pierceCap": 6,
+            "lightning": 3,
+            "lightningLength": 10,
+            "lightningDamage": 25
+        },
+        "pyratite": {
+            "damage": 62,
+            "speed": 14,
+            "lifetime": 25,
+            "width": 17,
+            "height": 28,
+            "frontColor": "FFA153",
+            "backColor": "FFA153",
+            "pierceCap": 2,
+            "status": "burning"
+        }
+    }
+}

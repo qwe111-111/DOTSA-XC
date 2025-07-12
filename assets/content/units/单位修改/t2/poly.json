@@ -1,0 +1,38 @@
+{
+    "details": "？",
+    "buildSpeed": 1,
+    "range": 140,
+    "weapons": [
+        {
+            "name": "幻型1",
+            "reload": 70,
+            "top": false,
+            "x": 4,
+            "y": -3.5,
+            "rotate": false,
+            "inaccuracy": 5,
+            "shootSound": "missile",
+            "shoot": {
+                "shots": 4,
+                "shotDelay": 1
+            },
+            "alternate": true,
+            "bullet": {
+                "type": "MissileBulletType",
+                "healPercent": 5,
+                "frontColor": "FFFFFF",
+                "backColor": "97FFA8",
+                "trailColor": "97FFA8",
+                "damage": 18,
+                "hitEffect": "none",
+                "hitSound": "none",
+                "despawnEffect": "none",
+                "collidesTeam": true,
+                "speed": 4,
+                "lifetime": 56,
+                "width": 9,
+                "height": 10
+            }
+        }
+    ]
+}

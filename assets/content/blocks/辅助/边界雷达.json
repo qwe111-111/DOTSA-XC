@@ -1,0 +1,20 @@
+{
+    "type": "Radar",
+    "name": "边界雷达",
+    "description": "勘察黑暗迷雾",
+    "details": "？",
+    "size": 2,
+    "health": 600,
+    "canOverdrive": true,
+    "fogRadius": 35,
+    "requirements": [
+        "copper/50",
+        "lead/35",
+        "silicon/40"
+    ],
+    "consumes": {
+        "power": 0.6
+    },
+    "category": "effect",
+    "research": "克斯特World"
+}

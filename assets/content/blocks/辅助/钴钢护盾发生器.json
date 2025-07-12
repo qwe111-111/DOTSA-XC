@@ -1,0 +1,29 @@
+{
+    "name": "钴钢立场发生器",
+    "description": "...",
+    "type": "forceProjector",
+    "health": 16000,
+    "size": 6,
+    "armor": 100,
+    "buildCostMultiplier": 1,
+    "hasItems": false,
+    "hasPower": true,
+    "hasLiquids": true,
+    "radius": 250,
+    "shieldHealth": 50000,
+    "phaseRadiusBoost": 0,
+    "phaseShieldBoost": 0,
+    "hasBoost": false,
+    "cooldownNormal": 19.9,
+    "cooldownLiquid": 26.6,
+    "cooldownBrokenBase": 35,
+    "consumes": {},
+    "requirements": [
+        "钴/320",
+        "钴钢/140",
+        "钢合金/180",
+        "高级协议许可证/1"
+    ],
+    "category": "effect",
+    "research": "钢铁护盾发生器"
+}

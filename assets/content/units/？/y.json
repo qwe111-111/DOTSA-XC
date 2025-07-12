@@ -1,0 +1,236 @@
+{
+    "type": "mech",
+    "name": "y",
+    "description": "？",
+    "speed": 0.89,
+    "hitSize": 25,
+    "ammoType": {
+        "type": "PowerAmmoType",
+        "totalPower": 2200
+    },
+    "ammoCapacity": 700,
+    "ammoResupplyAmount": 1,
+    "health": 11200,
+    "armor": 18,
+    "drag": 0.2,
+    "rotateSpeed": 2.5,
+    "targetAir": true,
+    "targetGround": true,
+    "itemCapacity": 20,
+    "weapons": [
+        {
+            "name": "y1",
+            "reload": 48,
+            "x": 14,
+            "y": 0,
+            "shoot": {
+                "shots": 2,
+                "shotDelay": 9,
+                "type": "ShootBarrel"
+            },
+            "shootStatus": "shocked",
+            "shootStatusDuration": 25,
+            "cooldownTime": 100,
+            "rotate": false,
+            "recoil": 6,
+            "mirror": true,
+            "inaccuracy": 0.5,
+            "shootSound": "largeCannon",
+            "shake": 8,
+            "bullet": {
+                "type": "BasicBulletType",
+                "damage": 142,
+                "status": "freezing",
+                "statusDuration": 30,
+                "splashDamageRadius": 85,
+                "splashDamage": 68,
+                "ammoMultiplier": 1,
+                "sprite": "circle-bullet",
+                "shrinkY": 0,
+                "trailLength": 10,
+                "trailWidth": 4,
+                "trailColor": "BEDDE8FF",
+                "frontColor": "FFFFFF",
+                "backColor": "BEDDE8FF",
+                "width": 13,
+                "height": 13,
+                "hitSound": "plasmaboom",
+                "hitEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "WaveEffect",
+                            "lifetime": 20,
+                            "sizeFrom": 0,
+                            "sizeTo": 85,
+                            "strokeFrom": 3,
+                            "strokeTo": 1,
+                            "colorFrom": "BEDDE8FF",
+                            "colorTo": "BEDDE8FF"
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 8,
+                            "sizeFrom": 7,
+                            "sizeTo": 0,
+                            "interp": "pow5Out",
+                            "sizeInterp": "pow5In",
+                            "length": 70,
+                            "baseLength": 10,
+                            "lifetime": 45,
+                            "colorFrom": "BEDDE8FF",
+                            "colorTo": "BEDDE8FF",
+                            "cone": 360
+                        }
+                    ]
+                },
+                "despawnEffect": "bigShockwave",
+                "speed": 24,
+                "lifetime": 18,
+                "chargeEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "WaveEffect",
+                            "lifetime": 50,
+                            "sizeFrom": 60,
+                            "sizeTo": 0,
+                            "strokeFrom": 0,
+                            "strokeTo": 2,
+                            "colorFrom": "FFFFFF",
+                            "colorTo": "BEDDE8FF"
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 8,
+                            "sizeFrom": 0,
+                            "sizeTo": 2,
+                            "length": 80,
+                            "baseLength": -80,
+                            "lifetime": 45,
+                            "colorFrom": "FFFFFF",
+                            "colorTo": "BEDDE8FF",
+                            "cone": 360
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 1,
+                            "sizeFrom": 0,
+                            "sizeTo": 6,
+                            "length": 0,
+                            "baseLength": -0,
+                            "lifetime": 51,
+                            "colorFrom": "FFFFFF",
+                            "colorTo": "BEDDE8FF",
+                            "cone": 360
+                        }
+                    ]
+                },
+                "fragBullets": 8,
+                "fragBullet": {
+                    "trailEffect": "none",
+                    "hitEffect": {
+                        "type": "ParticleEffect",
+                        "particles": 3,
+                        "sizeFrom": 3,
+                        "sizeTo": 0,
+                        "length": 18,
+                        "baseLength": 0,
+                        "lifetime": 20,
+                        "colorFrom": "BEDDE8FF",
+                        "colorTo": "BEDDE8FF",
+                        "cone": 360
+                    },
+                    "despawnEffect": "none",
+                    "sprite": "circle-bullet",
+                    "status": "unmoving",
+                    "statusDuration": 6,
+                    "shrinkY": 0,
+                    "trailLength": 2,
+                    "trailWidth": 1.88,
+                    "trailColor": "BEDDE8FF",
+                    "frontColor": "BEDDE8FF",
+                    "backColor": "BEDDE8FF",
+                    "damage": 8,
+                    "splashDamageRadius": 16,
+                    "splashDamage": 16,
+                    "speed": 20,
+                    "lifetime": 10
+                },
+                "spawnBullets": [
+                    {
+                        "type": "BasicBulletType",
+                        "damage": 180,
+                        "splashDamageRadius": 45,
+                        "splashDamage": 90,
+                        "makeFire": true,
+                        "trailLength": 4,
+                        "trailWidth": 1.5,
+                        "trailColor": "BEDDE8FF",
+                        "frontColor": "BEDDE8FF",
+                        "backColor": "BEDDE8FF",
+                        "width": 8,
+                        "height": 26,
+                        "status": "burning",
+                        "statusDuration": 180,
+                        "speed": 40,
+                        "lifetime": 5,
+                        "ammoMultiplier": 1,
+                        "hitEffect": {
+                            "type": "MultiEffect",
+                            "effects": [
+                                {
+                                    "type": "ParticleEffect",
+                                    "particles": 16,
+                                    "sizeFrom": 6,
+                                    "sizeTo": 0,
+                                    "length": 35,
+                                    "baseLength": 10,
+                                    "lifetime": 25,
+                                    "colorFrom": "BEDDE8FF",
+                                    "colorTo": "BEDDE8FF",
+                                    "cone": 360
+                                },
+                                {
+                                    "type": "WaveEffect",
+                                    "lifetime": 15,
+                                    "sizeFrom": 1,
+                                    "sizeTo": 30,
+                                    "strokeFrom": 3,
+                                    "strokeTo": 0,
+                                    "colorFrom": "BEDDE8FF",
+                                    "colorTo": "BEDDE8FF"
+                                }
+                            ]
+                        },
+                        "despawnEffect": "none",
+                        "shootEffect": {
+                            "type": "ParticleEffect",
+                            "particles": 7,
+                            "sizeFrom": 2,
+                            "sizeTo": 0,
+                            "interp": "pow5Out",
+                            "sizeInterp": "pow5In",
+                            "length": 33,
+                            "baseLength": 0,
+                            "lifetime": 55,
+                            "colorFrom": "FFFFFF",
+                            "colorTo": "BEDDE8FF",
+                            "cone": 16
+                        },
+                        "smokeEffect": {
+                            "type": "WaveEffect",
+                            "lifetime": 20,
+                            "sizeFrom": 0,
+                            "sizeTo": 60,
+                            "strokeFrom": 2,
+                            "strokeTo": 0,
+                            "colorFrom": "BEDDE8FF",
+                            "colorTo": "BEDDE8FF"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

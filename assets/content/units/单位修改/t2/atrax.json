@@ -1,0 +1,37 @@
+{
+    "health": 820,
+    "armor": 5,
+    "weapons": [
+        {
+            "name": "毒蛛1",
+            "top": false,
+            "shootY": 3,
+            "reload": 46,
+            "ejectEffect": "none",
+            "recoil": 1,
+            "x": 7,
+            "y": 0,
+            "rotate": false,
+            "inaccuracy": 8,
+            "shootSound": "flame",
+            "shoot": {
+                "shots": 8,
+                "shotDelay": 4
+            },
+            "bullet": {
+                "type": "LiquidBulletType",
+                "drag": 0.009,
+                "shootEffect": "shootSmall",
+                "collidesAir": false,
+                "liquid": "slag",
+                "lifetime": 60,
+                "speed": 3,
+                "knockback": 0.8,
+                "statusDuration": 600,
+                "status": "melting",
+                "damage": 15
+            }
+        },
+        null
+    ]
+}

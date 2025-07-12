@@ -1,0 +1,14 @@
+{
+    "health": 200,
+    "brightness": 0.5,
+    "radius": 50,
+    "buildCostMultiplier": 0.5,
+    "consumes": {
+        "power": 0.1
+    },
+    "requirements": [
+        "lead/30",
+        "钢铁/5",
+        "metaglass/20"
+    ]
+}

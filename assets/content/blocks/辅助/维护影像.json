@@ -1,0 +1,33 @@
+{
+    "name": "维护影像",
+    "description": "更实用！",
+    "type": "MendProjector",
+    "health": 1800,
+    "size": 3,
+    "range": 200,
+    "reload": 110,
+    "healPercent": 25,
+    "consumes": {
+        "power": 15,
+        "items": {
+            "items": [
+                {
+                    "item": "surge-alloy",
+                    "amount": 1
+                }
+            ],
+            "booster": true,
+            "optional": true
+        }
+    },
+    "requirements": [
+        "钢合金/40",
+        "硬化钢铁/80",
+        "surge-alloy/120"
+    ],
+    "category": "effect",
+    "research": "超速再生",
+    "alwaysUnlocked": false,
+    "phaseRangeBoost": 400,
+    "phaseBoost": 200
+}

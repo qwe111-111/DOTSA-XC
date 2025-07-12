@@ -1,0 +1,165 @@
+{
+	"type": "flying",
+	"name": "袭击",
+	"description": "别小瞧它",
+    "details":"...",
+	"speed":2.5,	
+	"drag":0.05,
+	"accel":0.1,
+	"rotateSpeed":8,
+	"itemCapacity": 50,
+	"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":100
+	},
+	"ammoCapacity": 300,
+    "health": 5000,
+	"hitSize":16, 
+	"research": "铁血级工厂",
+	"flying": true,
+    //"faceTarget": false,
+	//"circleTarget": false,
+	"armor":15
+	"engineSize": 5,
+	"engineOffset": 10,
+	"itemCapacity": 0,
+		"weapons":[
+	/*{
+	"name": "袭击1",	
+	"minShootVelocity": 1.5,
+	"reload": 60, 
+  "shoot":{
+  "shots":3,
+  "type": "ShootBarrel",
+        "barrels": [
+        0,0,-6,
+        0,0,0,
+        0,0,6,
+        ]
+  }
+	"x": -5,  "y": 0,
+	"ignoreRotation":true,
+	"rotate": true,
+	"shootCone":120,
+	"inaccuracy": 8,
+	"mirror": true,
+	"shootSound": "none",
+	  "bullet":{
+      "speed": 4
+      "lifetime": 40
+      "damage":48
+      "splashDamageRadius":12
+	  "splashDamage":54
+      "width": 7
+      "shrinkY":0
+      "height": 7
+	"despawnEffect":"none",
+    "hitEffect":"flakExplosionBig",
+	"smokeEffect":"shootBigSmoke"
+	"fragBullets": 6,
+		"fragBullet": {
+			"type": "PointBulletType",
+			"trailEffect": "none",
+			"hitEffect": "flakExplosion",
+	        "despawnEffect": "flakExplosion",
+			"splashDamageRadius": 30,
+			"splashDamage": 65,
+			"status": "blasted",
+			"speed": 20,
+			"lifetime": 3
+}
+	        "frontColor": "FFFFFF",
+		    "backColor": "D4816BFF",
+		    "trailLength": 18,
+		    "trailWidth": 2,
+	      	"trailColor": "D4816BFF",
+	      	"damage": 34
+	      	"lifetime": 34
+	      	"speed": 10
+	      	"width": 11,
+			"height": 36,
+			"hitEffect": {
+			"type": "ParticleEffect",
+			"particles": 15,
+			"line": true,
+			"strokeFrom": 3,
+			"strokeTo": 0,
+			"lenFrom": 16,
+	     	"lenTo": 0,
+			"length": 90,
+			"baseLength": 0,
+			"lifetime": 10,
+	    	"colorFrom": "EFE1BBFF",
+			"colorTo": "EFE1BBFF",
+			"cone": 150
+			},
+},
+}*/
+{	"name": "袭击2",	
+			"name": "none",
+			"reload": 180,
+			"x": 0,
+			"y": 1,
+			"ignoreRotation": true,
+			"rotate": false,
+			"mirror":false,
+			"shootCone": 60,
+			"inaccuracy": 0,
+			"shootSound": "none",
+      "targetGround": true,
+			"bullet": {
+        "recoil": -5,
+        "absorbable": false,
+        "collidesTiles": false,
+        "pierce": true,
+        "lifetime": 12,
+        "speed":12,
+        "bulletInterval": 20,
+        "intervalBullets": 1,
+        "intervalVelocityMax": 1,
+        "intervalVelocityMin": 1,
+        "intervalAngle": 0,
+        "intervalRandomSpread": 0,
+        "intervalBullet": {
+          "lifetime": 24,
+          "knockback": 24,
+          "collidesTiles": false,
+          "collidesGround": false,
+          "absorbable": false,
+          "speed":0,
+          "pierce": true,
+          "bulletInterval": 1,
+          "intervalBullets": 1,
+          "intervalRandomSpread": 360,
+          "intervalSpread": 10,
+          "intervalAngle": 90,
+          "damage":55,
+          "intervalBullet": {
+              "type": "BombBulletType",
+              "splashDamage": 24,
+              "damage":21,
+			      	"splashDamageRadius": 40,
+			      	"status": "blasted",
+		      		"lifetime": 45,
+				      "width": 9,
+		      		"height": 15,
+			      	"shootEffect": "none",
+			      	"smokeEffect": "none",
+			      	"hitEffect": "flakExplosion",
+			      	"despawnEffect": "flakExplosion"
+              "fragBullets": 5,
+              "fragVelocityMax": 1,
+              "fragVelocityMin": 0,
+              "fragBullet": {
+                  "damage":16,
+                  "speed": 4,
+                  "lifetime": 10,
+                  "width": 3,
+                  "height": 6,
+              }
+	      		}
+        }
+			}
+		}
+	    ]
+}

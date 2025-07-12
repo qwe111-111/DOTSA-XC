@@ -1,0 +1,154 @@
+{
+    "type": "ItemTurret",
+    "description": "？",
+    "name": "铭刻",
+    "size": 6,
+    "armor": 45,
+    "health": 10760,
+    "range": 880,
+    "ammoPerShot": 5,
+    "reload": 104,
+    "targetAir": true,
+    "targetGround": true,
+    "maxAmmo": 80,
+    "recoil": 3.6,
+    "rotateSpeed": 3.5,
+    "canOverdrive": false,
+    "moveWhileCharging": false,
+    "shake": 15,
+    "shootWarmupSpeed": 0.08,
+    "minWarmup": 0.03,
+    "research": {
+        "parent": "时",
+        "requirements": [
+            "钢合金/1550",
+            "surge-alloy/2250",
+            "复合材料/1750",
+            "钴/1050",
+            "钴钢/850",
+            "电路/1950",
+            "phase-fabric/2550"
+        ]
+    },
+    "requirements": [
+        "钢合金/155",
+        "surge-alloy/225",
+        "复合材料/175",
+        "钴/105",
+        "钴钢/85",
+        "电路/195",
+        "phase-fabric/255"
+    ],
+    "shoot": {
+        "shots": 6,
+        "shotDelay": 2,
+        "type": "ShootAlternate",
+        "barrels": 2,
+        "spread": 19
+    },
+    "shootSound": "matter",
+    "chargeSound": "grinding",
+    "ammoTypes": {
+        "surge-alloy": {
+            "hitSoundVolume": 2,
+            "hitSound": "largeExplosion",
+            "scaleLife": true,
+            "trailParam": 1,
+            "trailLength": 18,
+            "trailWidth": 4,
+            "trailColor": "FFE176FF",
+            "statusDuration": 150,
+            "ammoMultiplier": 2,
+            "status": "毁灭",
+            "trailChance": 1,
+            "trailInterval": 25,
+            "trailEffect": {
+                "type": "ParticleEffect",
+                "line": true,
+                "particles": 4,
+                "lifetime": 30,
+                "offset": 50,
+                "length": 125,
+                "cone": -360,
+                "lenFrom": 4,
+                "lenTo": 0,
+                "colorFrom": "FFE176FF",
+                "colorTo": "FFE176FF"
+            },
+            "absorbable": false,
+            "splashDamage": 765,
+            "damage": 1785,
+            "collides": false,
+            "scaledSplashDamage": true,
+            "splashDamageRadius": 65,
+            "height": 10,
+            "width": 10,
+            "spin": 0,
+            "hitShake": 12,
+            "speed": 15,
+            "hitSize": 40,
+            "lifetime": 300,
+            "buildingDamageMultiplier": 0.7,
+            "shrinkX": 0,
+            "shrinkY": 0,
+            "frontColor": "FFE176FF",
+            "backColor": "FFE176FF",
+            "hitEffect": {
+                "type": "MultiEffect",
+                "effects": [
+                    {
+                        "type": "ParticleEffect",
+                        "particles": 7,
+                        "sizeFrom": 21,
+                        "sizeTo": 0,
+                        "length": 120,
+                        "lifetime": 45,
+                        "lightOpacity": 0,
+                        "interp": "circleOut",
+                        "sizeInterp": "pow5In",
+                        "colorFrom": "FFE176FF",
+                        "colorTo": "FFE176FF",
+                        "cone": 360
+                    },
+                    {
+                        "type": "WaveEffect",
+                        "lifetime": 50,
+                        "sizeFrom": 0,
+                        "sizeTo": 110,
+                        "strokeFrom": 4,
+                        "strokeTo": 0,
+                        "colorFrom": "FFE176FF",
+                        "colorTo": "FFE176FF"
+                    }
+                ]
+            },
+            "shootEffect": {
+                "type": "MultiEffect",
+                "effects": [
+                    {
+                        "type": "ParticleEffect",
+                        "particles": 5,
+                        "sizeFrom": 15,
+                        "sizeTo": 5,
+                        "length": 60,
+                        "lifetime": 25,
+                        "lightOpacity": 0,
+                        "interp": "circleOut",
+                        "sizeInterp": "pow5In",
+                        "colorFrom": "FFE176FF",
+                        "colorTo": "FFE176FF",
+                        "cone": 30
+                    }
+                ]
+            }
+        }
+    },
+    "consumes": {
+        "power": 10,
+        "coolant": {
+            "amount": 0.3,
+            "optional": true
+        }
+    },
+    "category": "turret"
+}

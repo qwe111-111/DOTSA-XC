@@ -1,0 +1,13 @@
+{
+    "name": "钢铁",
+    "description": "由数次锤打锻造成的金属，相较于生铁直造，使用钢铁所造的东西韧性更强，强度更高，广泛用于大多数的建造材料中",
+    "details": "？",
+    "color": "BEDDE8FF",
+    "cost": 1,
+    "hardness": 6,
+    "explosiveness": 0,
+    "radioactivity": 0,
+    "charge": 0,
+    "flammability": 0,
+    "research": "克斯特World"
+}

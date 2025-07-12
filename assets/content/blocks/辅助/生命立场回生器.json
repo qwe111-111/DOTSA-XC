@@ -1,0 +1,33 @@
+{
+    "name": "生命立场回生器",
+    "description": "区块修复",
+    "type": "MendProjector",
+    "health": 3800,
+    "size": 3,
+    "range": 8000,
+    "reload": 60,
+    "healPercent": 5,
+    "consumes": {
+        "power": 25,
+        "items": {
+            "items": [
+                {
+                    "item": "亚金",
+                    "amount": 1
+                }
+            ],
+            "booster": true,
+            "optional": true
+        }
+    },
+    "requirements": [
+        "钢合金/140",
+        "硬化钢铁/280",
+        "亚金/2"
+        "surge-alloy/320"
+    ],
+    "category": "effect",
+    "research": "维护影像",
+    "alwaysUnlocked": false,
+    "phaseBoost": 200
+}

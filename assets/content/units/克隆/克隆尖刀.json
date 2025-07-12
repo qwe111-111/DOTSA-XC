@@ -1,0 +1,86 @@
+{
+	"type": "mech",
+	"name": "克隆尖刀",
+    "description": "不断召唤克隆尖刀作战，十分难缠",
+	"details": "布什戈门",
+	"speed": 0.9,
+	"drag": 0.05,
+	"accel": 0.1,
+	"rotateSpeed": 10,
+	"ammoType": {
+		"type": "PowerAmmoType",
+		"totalPower": 100
+	},
+	"ammoCapacity": 150,
+	"hitSize": 6,
+	"flying": false,
+	"faceTarget": true,
+	"drawMinimap": true,
+	"health": 1800,
+	"armor": 10,
+	"engineOffset": 8,
+	"engineSize": 2,
+	"itemCapacity": 0,
+	"immunities": [
+	"freezing"
+	],
+	"research": "特殊工厂",
+	/*"requirements": {
+		"block": "air-factory",
+		"time": 1500,
+		"requirements": [
+			"titanium/15",
+			"silicon/20"]},*/
+	"weapons": [
+	        {
+            "name": "克隆尖刀1",
+            "reload": 10,
+            "x": 4,
+			"y": 1.5,
+            "rotate": false,
+            "top": false,
+            "inaccuracy": 0,
+            "shootSound": "shoot",
+            "alternate": true,
+            "ejectEffect": "casing1",
+            "bullet": {
+                "buildingDamageMultiplier": 0.8,
+                "damage": 20,
+                "status": "shocked",
+                "speed": 5,
+                "lifetime": 64,
+                "width": 8,
+                "height": 13
+                }
+            },
+            {
+			"name": "小型追踪导弹",
+			"reload": 300,
+			"x": 0,
+			"y": 0,
+			"rotate": true,
+			"mirror": false,
+			"inaccuracy": 0,
+			"shootCone": 60,
+			"alternate": true,
+			"shootSound": "missileLaunch",
+			"shake": 0.5,
+			"bullet": {
+				"keepVelocity": false,
+				"speed": 0,
+				"shootEffect": "none",
+				"smokeEffect": "shootSmallFlame",
+				"spawnUnit": "小型追踪导弹"
+			    }
+		    }
+    ]
+    "abilities": [
+        {
+        "type": "UnitSpawnAbility",
+        "unit": "克隆尖刀",
+        "spawnX": 0,
+        "spawnY": 0,
+        "spawnTime": 120
+        }
+    ]
+}

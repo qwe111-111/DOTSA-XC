@@ -1,0 +1,42 @@
+{
+    "name": "时间跃进器",
+    "description": "逐渐离谱",
+    "type": "OverdriveProjector",
+    "health": 600,
+    "size": 2,
+    "range": 300,
+    "reload": 50,
+    "speedBoostPhase": 2,
+    "phaseRangeBoost": 300,
+    "speedBoost": 3,
+    "consumes": {
+        "power": 5,
+        "items": {
+            "items": [
+                {
+                    "item": "钴",
+                    "amount": 1
+                }
+            ],
+            "booster": true,
+            "optional": true
+        }
+    },
+    "requirements": [
+        {
+            "item": "surge-alloy",
+            "amount": 180
+        },
+        {
+            "item": "钢合金",
+            "amount": 100
+        },
+        {
+            "item": "钴",
+            "amount": 60
+        }
+    ],
+    "category": "effect",
+    "research": "作弊",
+    "alwaysUnlocked": false
+}

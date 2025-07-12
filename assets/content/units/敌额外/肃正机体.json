@@ -1,0 +1,126 @@
+{
+    "type": "mech",
+    "name": "肃正机体",
+    "description": "克斯特人对标克隆尖刀的强大单位",
+    "hitSize": 12,
+    "canDrown": false,
+    "armor": 10,
+    "speed": 1.8,
+    "rotateSpeed": 3,
+    "health": 7480,
+    "mechStepParticles": true,
+    //"mechFrontSway": 1.2,
+    //"mechSideSway": 0.8,
+    "ammoType": "graphite",
+    "ammoCapacity": 350,
+    "abilities": [
+        {
+            "type": "UnitSpawnAbility",
+            "unit": "肃正机体",
+            "spawnX": 0,
+            "spawnY": 0,
+            "spawnTime": 360
+        },
+        {
+            "type": "ShieldArcAbility",
+            "radius": 42,
+            "width": 9,
+            "max": 4000,
+            "regen": 30,
+            "cooldown": 500,
+            "angle": 130,
+            "angleOffset": 0
+        }
+    ],
+    "weapons": [
+        {
+            "name": "肃正穿甲炮",
+            "recoil": 2.5,
+            "shake": 3,
+            "x": 15,
+            "y": 0,
+            "reload": 4,
+            "ejectEffect": "casing4",
+            "shootSound": "bang",
+            "parts": [
+                {
+                    "type": "ShapePart",
+                    "x": -15,
+                    "y": -11,
+                    "hollow": true,
+                    "shapes": 3,
+                    "radiusTo": 8,
+                    "color": "FCF9A9B3",
+                    "progress": "warmup",
+                    "layer": 110
+                }
+            ],
+            "bullet": {
+                "type": "basicBulletType",
+                "sprite": "missile-large",
+                "damage": 87,
+                "width": 8,
+                "height": 12,
+                "knockback": 1,
+                "trailColor": "FCF9A9B3",
+                "trailParam": 2,
+                "trailWidth": 2,
+                "trailLength": 8,
+                "pierceCap": 2,
+                "pierce": true,
+                "pierceBuilding": true,
+                "intervalRandomSpread": 0,
+                "intervalBullets": 1,
+                "bulletInterval": 1,
+                "intervalAngle": 180,
+                "intervalSpread": 0,
+                "fragVelocityMin": 8,
+                "fragVelocityMax": 8,
+                "intervalBullet": {
+                    "damage": 5,
+                    "type": "LightningBulletType",
+                    "lightningLength": 3,
+                    "lightningLengthRand": 3,
+                    "lightningColor": "FCF9A9B3",
+                    "lightColor": "FFFFFFFF",
+                    "status": "shocked",
+                    "statusDuration": 30,
+                    "collidesAir": false,
+                    "hittable": false,
+                    "ammoMultiplier": 1,
+                    "lifetime": 5,
+                    "hitEffect": "none"
+                },
+                "hitEffect": "blastExplosion",
+                "speed": 30,
+                "lifetime": 12,
+                "splashDamage": 25,
+                "splashDamageRadius": 35
+            }
+        },
+        {
+            "type": "RepairBeamWeapon",
+            "name": "希望",
+            "x": 0,
+            "y": -3,
+            "shootY": 8,
+            "reload": 1,
+            "recoil": 1,
+            "shake": 0,
+            "mirror": true,
+            "rotate": true,
+            "rotateSpeed": 3,
+            "laserColor": "FFD37FFF",
+            "controllable": false,
+            "autoTarget": true,
+            "alternate": false,
+            "beamWidth": 1,
+            "pulseRadius": 10,
+            "pulseStroke": 2,
+            "repairSpeed": 0.7,
+            "bullet": {
+                "maxRange": 150
+            }
+        }
+    ]
+}

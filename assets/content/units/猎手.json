@@ -1,0 +1,118 @@
+{
+	"type": "flying",
+	"name": "猎手",
+	"description": "？",
+	"details": "？"
+    "speed": 3,
+	"flying": true,
+	"turnCursor":true,
+	"engineOffset": 8,
+	"targetAir": true, 
+	"targetGround":true,
+	"engineSize": 6,
+    "hitSize": 22,
+    "health": 10800,
+    "armor": 55,
+    "rotateSpeed": 3,
+    "itemCapacity": 0,
+    "research":"特殊工厂",
+    "rotateShooting": false,
+    "abilities": [
+		{
+			"type": "StatusFieldAbility",
+			"duration": 300,
+			"reload": 500,
+			"range": 40,
+			"applyEffect": "none",
+			"activeEffect": "none",
+			"effect": "overdrive"
+		},
+    ]
+    "weapons":[ 
+    {
+    "name": "猎手1",
+			"display": true,
+			"reload": 300,
+			"x": -8,
+			"y": 5,
+			"shootY": 0,
+			"rotate": true,
+			"rotateSpeed": 2.2,
+			"top": true,
+			"recoil": 3,
+			"inaccuracy": 2,
+			"cooldownTime": 100,
+			"alternate": true,
+		    "shootY": 4,
+			"shoot": {
+			"shots": 44,
+			"shotDelay": 3,
+			},
+			"mirror": true,
+			"shootSound": "shockBlast",
+			"shake": 2,
+			"bullet": {
+		    "frontColor": "FFFFFF",
+		    "backColor": "D4816BFF",
+		    "trailLength": 18,
+		    "trailWidth": 2,
+	      	"trailColor": "D4816BFF",
+	      	"damage":60
+	      	"lifetime": 74
+	      	"speed": 7
+	      	"splashDamage": 45,
+	        "splashDamageRadius": 20,
+	      	"width": 11,
+			"height": 36,
+			"hitEffect": {
+			"type": "MultiEffect",
+			"effects": [
+			{
+			"type": "ParticleEffect",
+			"particles": 15,
+			"line": true,
+			"strokeFrom": 3,
+			"strokeTo": 0,
+			"lenFrom": 16,
+	     	"lenTo": 0,
+			"length": 90,
+			"baseLength": 0,
+			"lifetime": 10,
+	    	"colorFrom": "D4816BFF",
+			"colorTo": "D4816BFF",
+			"cone": 150
+			},
+			{
+			"type": "WaveEffect",
+			"lifetime": 70,
+			"sizeFrom": 2,
+			"sizeTo": 10,
+			"strokeFrom": 1,
+			"strokeTo": 0,
+			"colorFrom": "D4816BFF",
+			"colorTo": "D4816BFF"
+			}
+			]
+			}
+		 "shootEffect": {
+          "type": "multiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 15,
+           	  "line": true,
+              "length": 35,
+              "lifetime": 11,
+              "lightColor": "D4816BFF",
+              "cone": 20,
+              "colorFrom": "D4816BFF",
+              "colorTo": "D4816BFF",
+              "sizeFrom": 3,
+              "sizeTo": 0
+            },
+          ]
+        },
+			}
+			}
+			]
+}

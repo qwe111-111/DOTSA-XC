@@ -1,0 +1,36 @@
+{
+    "name": "超速再生",
+    "description": "小范围的快速修复",
+    "type": "MendProjector",
+    "health": 250,
+    "size": 2,
+    "range": 80,
+    "reload": 1,
+    "healPercent": 0.1,
+    "consumes": {
+        "power": 3,
+        "items": {
+            "items": [
+                {
+                    "item": "电路",
+                    "amount": 1
+                }
+            ],
+            "booster": true,
+            "optional": true
+        }
+    },
+    "requirements": [
+        "钢铁/150",
+        "硬化钢铁/65",
+        "copper/150",
+        "lead/150",
+        "titanium/150",
+        "silicon/100"
+    ],
+    "category": "effect",
+    "research": "基础修复器",
+    "alwaysUnlocked": false,
+    "phaseRangeBoost": 35,
+    "phaseBoost": 0.2
+}

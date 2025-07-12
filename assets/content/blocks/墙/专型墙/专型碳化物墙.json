@@ -1,0 +1,20 @@
+{
+  "type": "Wall",
+  "name": "专型碳化物墙",
+  "description": "更为坚固",
+  "armor": 20,
+  "lightningChance": 0.2,
+  "lightningDamage": 50,
+  "lightningLength": 4,
+  "chanceDeflect":20
+  "health": 5000,
+  "size": 3,
+  "insulated": false,
+  "absorbLasers": true,
+  "placeableLiquid": true,
+  "requirements": [
+    "carbide/55"
+  ],
+  "category": "defense",
+  "research": "carbide-wall"
+}
