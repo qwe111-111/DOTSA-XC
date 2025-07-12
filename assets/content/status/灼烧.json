@@ -1,0 +1,11 @@
+{
+    "name": "灼烧",
+    "damageMultiplier": 1,
+    "healthMultiplier": 1,
+    "speedMultiplier": 0.9,
+    "reloadMultiplier": 0.9,
+    "damage": 1,
+    "permanent": true,
+    "reactive": false,
+    "color": "EDC346FF"
+}

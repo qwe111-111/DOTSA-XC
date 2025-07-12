@@ -1,0 +1,14 @@
+{
+    "name": "动能模块",
+    "type": "Wall",
+    "health": 8000,
+    "size": 3,
+    "buildCostMultiplier": 0.8,
+    "requirements": [
+        "plastanium/200",
+        "surge-alloy/200",
+        "钢合金/60"
+    ],
+    "category": "defense",
+    "research": "模块厂"
+}

@@ -1,0 +1,101 @@
+{
+    "type": "mech",
+    "name": "小电爬",
+    "controller": "SuicideAI",
+    "description": "？",
+    "details": "?",
+    "speed": 1.83,
+    "hitSize": 8,
+    "ammoType": {
+        "type": "PowerAmmoType",
+        "totalPower": 2000
+    },
+    "health": 1100,
+    "armor": 8,
+    "drag": 0.2,
+    "rotateSpeed": 2.1,
+    "itemCapacity": 5,
+    "targetAir": true,
+    "faceTarget": true,
+    "targetGround": true,
+    "canBoost": false,
+    //"hidden": true,
+    "weapons": [
+        {
+            "name": "自杀",
+            "reload": 1,
+            "x": 0,
+            "y": 0,
+            "rotate": true,
+            "shootCone": 360,
+            "ejectEffect": "none",
+            "shootSound": "explosionbig",
+            "mirror": false,
+            "inaccuracy": 0,
+            "alternate": true,
+            "top": false,
+            "shootOnDeath": true,
+            "maxRange": 10,
+            "bullet": {
+                "type": "EmpBulletType",
+                "timeIncrease": 1.55,
+                "powerDamageScl": 1.25,
+                "unitDamageScl": 0.83,
+                "healPercent": 1.2,
+                "splashDamageRadius": 60,
+                "killShooter": true,
+                "instantDisappear": true,
+                "collidesTiles": false,
+                "collides": false,
+                "splashDamage": 158,
+                "status": "electrified",
+                "statusDuration": 150,
+                "speed": 1,
+                "lifetime": 1,
+                "hitEffect": "massiveExplosion",
+                "despawnEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 18,
+                            "sizeFrom": 6,
+                            "sizeTo": 0,
+                            "length": 45,
+                            "baseLength": 3,
+                            "lifetime": 35,
+                            "colorFrom": "84F491FF",
+                            "colorTo": "84F491FF",
+                            "cone": 360
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 32,
+                            "line": true,
+                            "sizeFrom": 9,
+                            "sizeTo": 0,
+                            "length": 53,
+                            "baseLength": 20,
+                            "lifetime": 22,
+                            "colorFrom": "84F491FF",
+                            "colorTo": "84F491FF",
+                            "cone": 360
+                        },
+                        {
+                            "type": "WaveEffect",
+                            "lifetime": 15,
+                            "sizeFrom": 0,
+                            "sizeTo": 42,
+                            "strokeFrom": 4,
+                            "strokeTo": 0,
+                            "colorFrom": "84F491FF",
+                            "colorTo": "84F491FF"
+                        }
+                    ]
+                },
+                "width": 0,
+                "height": 0
+            }
+        }
+    ]
+}

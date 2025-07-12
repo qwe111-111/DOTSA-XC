@@ -1,0 +1,44 @@
+{
+    "type": "GenericCrafter",
+    "health": 2200,
+    "name": "筑元体生产厂",
+    "description": "？",
+    "outputItem": "筑元体/4",
+    "itemCapacity": 100,
+    "size": 4,
+    "hasPower": true,
+    "hasLiquids": false,
+    "hasItems": true,
+    "craftTime": 155,
+    "updateEffect": {
+        "type": "WaveEffect",
+        "sides": 4,
+        "lifetime": 60,
+        "sizeFrom": 0,
+        "sizeTo": 3,
+        "strokeFrom": 2,
+        "strokeTo": 0,
+        "rotation": 90,
+        "colorFrom": "FFD6BAFF",
+        "colorTo": "FFD6BAFF"
+    },
+    "consumes": {
+        "power": 5,
+        "items": [
+            "电路/3",
+            "复合材料/2",
+            "surge-alloy/3"
+        ]
+    },
+    "requirements": [
+        "graphite/140",
+        "硬化钢铁/120",
+        "titanium/250",
+        "phase-fabric/180",
+        "surge-alloy/125",
+        "钢铁/210"
+    ],
+    "category": "crafting",
+    "ambientSound": "smelter",
+    "research": "复合材料制造机"
+}

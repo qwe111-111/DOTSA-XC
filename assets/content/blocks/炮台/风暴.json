@@ -1,0 +1,174 @@
+{
+    "type": "PowerTurret",
+    "name": "风暴",
+    "description": "倾泻子弹",
+    "details": "...",
+    "size": 3,
+    "requirements": [
+        {
+            "item": "graphite",
+            "amount": 150
+        },
+        {
+            "item": "钢铁",
+            "amount": 120
+        },
+        {
+            "item": "thorium",
+            "amount": 80
+        }
+    ],
+    "consumes": {
+        "power": 30
+    },
+    "research": "固风",
+    "health": 1850,
+    "ammoPerShot": 1,
+    "reload": 3.2,
+    "cooldownTime": 90,
+    "rotateSpeed": 3.5,
+    "inaccuracy": 8,
+    "recoil": 2,
+    "recoilTime": 60,
+    "linearWarmup": true,
+    "shootWarmupSpeed": 0.033,
+    "minWarmup": 0.99,
+    "shake": 4,
+    "targetInterval": 0,
+    "targetAir": true,
+    "targetGround": true,
+    "range": 360,
+    "shootType": {
+        "type": "BasicBulletType",
+        "speed": 11.5,
+        "damage": 57.5,
+        "splashDamage": 32,
+        "splashDamageRadius": 12,
+        "lifetime": 30,
+        "ammoMultiplier": 1,
+        "impact": true,
+        "knockback": 0.8,
+        "status": "burning",
+        "statusDuration": 31,
+        "hitSize": 16,
+        "height": 18,
+        "width": 12,
+        "frontColor": "FFFFFF",
+        "backColor": "ea8878",
+        "sprite": "shell",
+        "trailLength": 12,
+        "trailWidth": 2.5,
+        "trailSinScl": 1.4,
+        "trailSinMag": 0.4,
+        "trailColor": "ea8878",
+        "despawnEffect": "none",
+        "fragBullets": 2,
+        "fragRandomSpread": 3,
+        "fragVelocityMin": 0.4,
+        "fragBullet": {
+            "type": "BasicBulletType",
+            "removeAfterPierce": false,
+            "collideTerrain": true,
+            "pierceBuilding": true,
+            "collidesAir": false,
+            "despawnShake": 1,
+            "pierce": true,
+            "hitShake": 1,
+            "impact": true,
+            "height": 18,
+            "width": 12,
+            "buildingDamageMultiplier": 0.16,
+            "pierceDamageFactor": 0.75,
+            "splashDamageRadius": 16,
+            "splashDamage": 36,
+            "pierceCap": 3,
+            "lifetime": 8,
+            "damage": 18,
+            "speed": 11,
+            "frontColor": "FFFFFF",
+            "backColor": "ea8878",
+            "sprite": "shell",
+            "trailLength": 12,
+            "trailWidth": 2.5,
+            "trailSinScl": 1.4,
+            "trailSinMag": 0.4,
+            "trailColor": "ea8878",
+            "hitEffect": {
+                "type": "MultiEffect",
+                "effects": [
+                    {
+                        "type": "waveEffect",
+                        "interp": "circleOut",
+                        "lifetime": 12,
+                        "sizeFrom": 4,
+                        "sizeTo": 12,
+                        "strokeFrom": 8,
+                        "strokeTo": 1,
+                        "colorFrom": "ea8878",
+                        "colorTo": "ea8878"
+                    },
+                    {
+                        "type": "particleEffect",
+                        "length": 8,
+                        "particles": 4,
+                        "lifetime": 60,
+                        "interp": "pow5Out",
+                        "sizeFrom": 6,
+                        "sizeTo": 0,
+                        "sizeInterp": "smoother",
+                        "colorFrom": "ea88787f",
+                        "colorTo": "ea88787f"
+                    }
+                ]
+            },
+            "lightColor": "fff8e8",
+            "lightOpacity": 0.7,
+            "lightRadius": 21
+        },
+        "hitEffect": {
+            "type": "MultiEffect",
+            "effects": [
+                {
+                    "type": "waveEffect",
+                    "interp": "circleOut",
+                    "lifetime": 12,
+                    "sizeFrom": 4,
+                    "sizeTo": 12,
+                    "strokeFrom": 8,
+                    "strokeTo": 1,
+                    "colorFrom": "ea8878",
+                    "colorTo": "ea8878"
+                },
+                {
+                    "type": "particleEffect",
+                    "length": 8,
+                    "particles": 4,
+                    "lifetime": 60,
+                    "interp": "pow5Out",
+                    "sizeFrom": 6,
+                    "sizeTo": 0,
+                    "sizeInterp": "smoother",
+                    "colorFrom": "ea88787f",
+                    "colorTo": "ea88787f"
+                }
+            ]
+        }
+    },
+    "category": "turret",
+    "shootSound": "laser",
+    "shootEffect": {
+        "type": "particleEffect",
+        "particles": 6,
+        "region": "white",
+        "lifetime": 30,
+        "offset": 45,
+        "cone": 45,
+        "length": 18,
+        "sizeFrom": 4,
+        "sizeTo": 0.5,
+        "colorFrom": "ea8878",
+        "colorTo": "ea8878"
+    },
+    "smokeEffect": "none",
+    "shootCone": 10
+}

@@ -1,0 +1,18 @@
+{
+    "name": "复合路由器",
+    "type": "PayloadRouter",
+    "health": 643,
+    "size": 3,
+    "canOverdrive": true,
+    "moveTime": 30,
+    "outputsPayload": true,
+    "outputFacing": false,
+    "payloadLimit": 5,
+    "requirements": [
+        "silicon/20",
+        "复合材料/13",
+        "钢铁/20"
+    ],
+    "category": "units",
+    "research": "复合荷载传送带"
+}

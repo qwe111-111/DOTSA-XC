@@ -1,0 +1,276 @@
+{
+    "type": "flying",
+    "name": "守护者",
+    "description": "未知能量体,构造不详",
+    "details": "...",
+    "controller": "GroundAI",
+    "speed": 3,
+    "drag": 0.1,
+    "accel": 0.1,
+    "rotateSpeed": 2,
+    "range": 500,
+    "ammoType": {
+        "type": "PowerAmmoType",
+        "totalPower": 100
+    },
+    "ammoCapacity": 20,
+    "hitSize": 30,
+    "immunities": [
+        "blasted",
+        "burning",
+        "electrified",
+        "freezing",
+        "melting",
+        "disarmed",
+        "sapped",
+        "shocked",
+        "slow",
+        "tarred",
+        "unmoving",
+        "wet",
+        "spore-slowed",
+        "corroded",
+        "缓慢",
+        "错误",
+        "侵蚀",
+        "灼烧",
+        "伤口",
+        "毁灭",
+        "断默",
+        "混乱",
+        "失效"
+    ],
+    "buildSpeed": 50,
+    "flying": true,
+    "faceTarget": true,
+    "drawMinimap": true,
+    "health": 300000,
+    "armor": 30,
+    "engineColor": "F3E979FF",
+    "engineOffset": 5,
+    "engineSize": 0,
+    "itemCapacity": 0,
+    "pickupUnits": false,
+    "vulnerableWithPayloads": true,
+    "parts": [
+        {
+            "type": "RegionPart",
+            "layer": 110,
+            "colorTo": "F3E979FF",
+            "color": "F3E979FF",
+            "outline": false,
+            "suffix": "-glow"
+        },
+        {
+            "type": "ShapePart",
+            "stroke": 4,
+            "strokeTo": 4,
+            "color": "F3E979FF",
+            "circle": true,
+            "hollow": true,
+            "radius": 60,
+            "radiusTo": 0,
+            "layer": 110
+        },
+        {
+            "type": "ShapePart",
+            "stroke": 4,
+            "strokeTo": 4,
+            "color": "F3E979FF",
+            "circle": true,
+            "hollow": true,
+            "radius": 99,
+            "radiusTo": 99,
+            "layer": 110
+        },
+        {
+            "type": "HaloPart",
+            "y": 0,
+            "radius": 10,
+            "radiusTo": 10,
+            "progress": 0.9,
+            "tri": true,
+            "hollow": true,
+            "layer": 110,
+            "color": "F3E979FF",
+            "haloRotateSpeed": 0.7,
+            "haloRadius": 20,
+            "haloRadiusTo": 20,
+            "stroke": 10,
+            "strokeTo": 10,
+            "shapes": 4,
+            "triLengthTo": 60,
+            "triLength": 60
+        },
+        {
+            "type": "ShapePart",
+            "stroke": 10,
+            "strokeTo": 10,
+            "color": "F3E979FF",
+            "circle": true,
+            "hollow": true,
+            "radius": 20,
+            "radiusTo": 20,
+            "layer": 110
+        },
+        {
+            "type": "ShapePart",
+            "progress": "warmup",
+            "y": 3,
+            "sides": 3,
+            "color": "F3E979FF",
+            "rotateSpeed": 0,
+            "stroke": 1,
+            "strokeTo": 1,
+            "circle": true,
+            "hollow": false,
+            "radius": 6,
+            "radiusTo": 6,
+            "layer": 110
+        }
+    ],
+    "abilities": [
+        {
+            "type": "RepairFieldAbility",
+            "amount": 5500,
+            "reload": 500,
+            "range": 120
+        },
+        {
+            "type": "RepairFieldAbility",
+            "amount": 1200,
+            "reload": 250,
+            "range": 300
+        },
+        {
+            "type": "RegenAbility",
+            "percentAmount": 0.25
+        }
+    ],
+    "weapons": [
+        {
+            "name": "未知除光",
+            "type": "PointDefenseWeapon",
+            "x": 0,
+            "y": 6,
+            "rotate": true,
+            "shootSound": "lasercharge2",
+            "recoil": 0,
+            "rotateSpeed": 99,
+            "reload": 1,
+            "targetInterval": 4,
+            "targetSwitchInterval": 4,
+            "shoot": {
+                "shots": 5
+            },
+            "bullet": {
+                "speed": 40,
+                "lifetime": 10,
+                "shootEffect": "none",
+                "hitEffect": {
+                    "type": "ParticleEffect",
+                    "particles": 6,
+                    "line": true,
+                    "length": 85,
+                    "baseLength": 0,
+                    "lifetime": 25,
+                    "colorFrom": "FFFFFF",
+                    "colorTo": "FEEBB3"
+                },
+                "maxRange": 488,
+                "damage": 660
+            }
+        },
+        {
+            "name": "未知除光",
+            "type": "PointDefenseWeapon",
+            "x": 0,
+            "y": 6,
+            "rotate": true,
+            "shootSound": "lasercharge2",
+            "recoil": 0,
+            "rotateSpeed": 99,
+            "reload": 1,
+            "targetInterval": 4,
+            "targetSwitchInterval": 4,
+            "shoot": {
+                "shots": 5
+            },
+            "bullet": {
+                "speed": 40,
+                "lifetime": 10,
+                "shootEffect": "none",
+                "hitEffect": {
+                    "type": "ParticleEffect",
+                    "particles": 6,
+                    "line": true,
+                    "length": 85,
+                    "baseLength": 0,
+                    "lifetime": 25,
+                    "colorFrom": "FFFFFF",
+                    "colorTo": "FEEBB3"
+                },
+                "maxRange": 488,
+                "damage": 660
+            }
+        },
+        {
+            "name": "未知激光",
+            "x": 0,
+            "y": 0,
+            "rotate": true,
+            "shootSound": "lasercharge2",
+            "recoil": 0,
+            "rotateSpeed": 1.5,
+            "reload": 10,
+            "targetInterval": 4,
+            "targetSwitchInterval": 4,
+            "bullet": {
+                "type": "PointLaserBulletType",
+                "damage": 600,
+                "sprite": "改进工业-光束",
+                "lifetime": 30,
+                "speed": 0,
+                "shake": 0.4,
+                "buildingDamageMultiplier": 0.5,
+                "color": "F3E979FF",
+                "ammoMultiplier": 1,
+                "beamEffect": {
+                    "type": "multiEffect",
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 6,
+                            "lifetime": 56,
+                            "length": 40,
+                            "sizeFrom": 3.5,
+                            "sizeTo": 0,
+                            "interp": "circleOut",
+                            "colorFrom": "F3E979FF",
+                            "colorTo": "F3E979FF"
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "line": true,
+                            "particles": 5,
+                            "lifetime": 55,
+                            "length": 75,
+                            "cone": 360,
+                            "lenFrom": 8,
+                            "lenTo": 0,
+                            "colorFrom": "F3E979FF",
+                            "colorTo": "F3E979FF"
+                        }
+                    ]
+                },
+                "damageInterval": 5,
+                "status": "毁灭",
+                "statusDuration": 30,
+                "beamEffectInterval": 3,
+                "beamEffectSize": 3.5,
+                "oscScl": 8,
+                "oscMag": 0.3
+            }
+        }
+    ]
+}

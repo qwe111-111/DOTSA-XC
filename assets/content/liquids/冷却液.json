@@ -1,0 +1,11 @@
+{
+    "name": "冷却液",
+    "type": "liquids",
+    "description": "冷冻液的替代品",
+    "color": "AAD8F0FF",
+    "flammability": 0,
+    "temperature": -1.2,
+    "heatCapacity": 1.2,
+    "viscosity": 0.2,
+    "explosiveness": 0
+}

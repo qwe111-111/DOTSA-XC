@@ -1,0 +1,12 @@
+{
+    "name": "审判",
+    "damageMultiplier": 3,
+    "healthMultiplier": 3,
+    "speedMultiplier": 3,
+    "reloadMultiplier": 3,
+    "damage": -3,
+    "permanent": false,
+    "reactive": false,
+    "color": "FFFFFF",
+    "effectChance": 1
+}

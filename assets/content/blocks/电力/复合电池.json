@@ -1,0 +1,111 @@
+{
+    "type": "battery",
+    "name": "复合电池",
+    "description": "被催毁时向四周释放电性磁弹",
+    "details": "...",
+    "size": 2,
+    "health": 2000,
+    "requirements": [
+        "silicon/400",
+        "硬化钢铁/100",
+        "钢铁/200",
+        "graphite/350",
+        "复合材料/200"
+    ],
+    "destroyBullet": {
+        "absorbable": false,
+        "damage": 0,
+        "speed": 0,
+        "lifetime": 170,
+        "hitEffect": {
+            "type": "MultiEffect",
+            "effects": [
+                {
+                    "type": "ParticleEffect",
+                    "particles": 9,
+                    "sizeFrom": 15,
+                    "sizeTo": 0,
+                    "length": 55,
+                    "baseLength": 20,
+                    "lifetime": 60,
+                    "colorFrom": "585858",
+                    "colorTo": "585858"
+                },
+                {
+                    "type": "ParticleEffect",
+                    "particles": 9,
+                    "sizeFrom": 15,
+                    "sizeTo": 8,
+                    "length": 55,
+                    "baseLength": 20,
+                    "lifetime": 60,
+                    "colorFrom": "585858",
+                    "colorTo": "585858"
+                }
+            ]
+        },
+        "fragLifeMin": 0.5,
+        "fragBullets": 8,
+        "fragBullet": {
+            "absorbable": false,
+            "damage": 131,
+            "splashDamage": 79,
+            "splashDamageRadius": 22,
+            "buildingDamageMultiplier": 1.3,
+            "speed": 21,
+            "lifetime": 8,
+            "trailColor": "B3FFFFFF",
+            "trailLength": 1.65,
+            "trailWidth": 0.75,
+            "shrinkY": 0,
+            "shrinkX": 0,
+            "width": 6,
+            "height": 13,
+            "frontColor": "B3FFFFFF",
+            "backColor": "7ED6D1FF",
+            "collides": false,
+            "collidesAir": true,
+            "collidesGround": true,
+            "hitEffect": {
+                "type": "multiEffect",
+                "effects": [
+                    {
+                        "type": "particleEffect",
+                        "lifetime": 30,
+                        "length": 32,
+                        "particles": 8,
+                        "sizeFrom": 2,
+                        "sizeTo": 1,
+                        "colorFrom": "B3FFFFFF",
+                        "colorTo": "B3FFFFFF"
+                    },
+                    {
+                        "type": "particleEffect",
+                        "lifetime": 24,
+                        "length": 0,
+                        "particles": 1,
+                        "sizeFrom": 16,
+                        "sizeTo": 16,
+                        "colorFrom": "B3FFFFFF",
+                        "colorTo": "7ED6D1FF"
+                    },
+                    {
+                        "type": "waveEffect",
+                        "lifetime": 10,
+                        "sizeFrom": 16,
+                        "sizeTo": 16,
+                        "strokeFrom": 2,
+                        "strokeTo": 0,
+                        "colorFrom": "B3FFFFFF",
+                        "colorTo": "B3FFFFFF"
+                    }
+                ]
+            }
+        }
+    },
+    "consumes": {
+        "powerBuffered": 500000
+    },
+    "category": "power",
+    "research": "钍反应堆-改进"
+}

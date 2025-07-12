@@ -1,0 +1,29 @@
+{
+    "type": "Drill",
+    "name": "巨型铜制钻头",
+    "description": "更快的开采基础矿物",
+    "details": "性价比",
+    "size": 4,
+    "health": 800,
+    "itemCapacity": 30,
+    "liquidCapacity": 20,
+    "tier": 2,
+    "buildtime": 6,
+    "drillTime": 400,
+    "rotateSpeed": 4,
+    "drawMineltem": true,
+    "liquidBoostIntensity": 1.5,
+    "consumes": {
+        "liquid": {
+            "liquid": "water",
+            "amount": 0.12,
+            "optional": true,
+            "booster": true
+        }
+    },
+    "requirements": [
+        "copper/24"
+    ],
+    "category": "production",
+    "research": "pneumatic-drill"
+}

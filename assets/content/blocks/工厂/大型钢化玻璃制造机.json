@@ -1,0 +1,39 @@
+{
+    "type": "GenericCrafter",
+    "name": "大型钢化玻璃制造机",
+    "description": "这是玻璃厂？",
+    "outputItem": "metaglass/7",
+    "size": 3,
+    "hasPower": true,
+    "hasLiquids": false,
+    "hasItems": true,
+    "craftTime": 85,
+    "itemCapacity": 18,
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            "DrawDefault",
+            "DrawFlame"
+        ]
+    },
+    "craftEffect": "smeltsmoke",
+    "consumes": {
+        "power": 2,
+        "items": [
+            "sand/5",
+            "lead/5"
+        ]
+    },
+    "requirements": [
+        "lead/90",
+        "电路/80",
+        "钢铁/120",
+        "硬化钢铁/75",
+        "graphite/75",
+        "metaglass/110",
+        "thorium/65"
+    ],
+    "category": "crafting",
+    "ambientSound": "smelter",
+    "research": "kiln"
+}

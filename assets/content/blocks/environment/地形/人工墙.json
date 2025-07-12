@@ -1,0 +1,22 @@
+{
+    "type": "StaticWall",
+    "buildVisibility": "sandboxOnly",
+    "name": "人工墙",
+    "description": "可以让你在地上铺置环境墙,但无法拆除",
+    "details": "陆军:“是不是丸不起(红温)”",
+    "variants": 1,
+    "useColor": true,
+    "hasColor": true,
+    "emitLight": false,
+    "lightRadius": 0,
+    "requirements": [
+        "graphite/100",
+        "copper/200",
+        "lead/100",
+        "silicon/30"
+    ],
+    "lightColor": "CB4D4DFF",
+    "playerUnmineable": false,
+    "category": "effect",
+    "research": "作弊"
+}

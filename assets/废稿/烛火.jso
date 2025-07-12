@@ -1,0 +1,112 @@
+{
+	"type": "PowerTurret",
+	"name": "烛火",
+	 "description": "......",
+    "details": "......",
+	"targetAir": true,
+	"targetGround": true,
+	"health": 750,
+	"size": 3,
+	"canOverdrive": false,
+	"shootSound": "laser",
+	"shake": 1.5,
+	"inaccuracy": 1,
+	"recoil": 1,
+	"xRand": 0.1,
+	"recoilTime": 60,
+	"heatColor": "EAA678FF",
+	"shootEffect": {
+		"type": "ParticleEffect",
+		"particles": 7,
+		"sizeFrom": 3,
+		"sizeTo": 0,
+		"length": 40,
+		"baseLength": 0,
+		"lifetime": 30,
+		"colorFrom": "EAA678FF",
+		"colorTo": "EAA678FF",
+		"cone": 50
+	},
+	"shootType": {
+		"height": 25,
+		"width": 14,
+		"damage": 70,
+		"status":"shocked"
+		"statusDuration": 60,
+		"speed": 13,
+		"shoot": {
+        "firstShotDelay": 30
+        }
+		"lifetime": 28,
+		"splashDamageRadius": 24,
+		"splashDamage": 30,
+		"buildingDamageMultiplier": 0.5,
+		"frontColor": "EAA678FF",
+		"backColor": "EAA678FF",
+		"trailLength": 20,
+		"trailWidth": 1.5,
+		"trailColor": "EAA678FF",
+		"hitSound": "plasmaboom",
+		"despawnEffect": "none",
+		"hitEffect": {
+			"type": "MultiEffect",
+			"effects": [
+				{
+					"type": "ParticleEffect",
+					"particles": 5,
+					"sizeFrom": 9,
+					"sizeTo": 0,
+					"length": 0,
+					"baseLength": 48,
+					"lifetime": 35,
+					"colorFrom": "EAA678FF",
+					"colorTo": "EAA678FF"
+				},
+				{
+					"type": "ParticleEffect",
+					"particles": 4,
+					"line": true,
+					"strokeFrom": 3,
+					"strokeTo": 0,
+					"lenFrom": 15,
+					"lenTo": 0,
+					"length": 53,
+					"baseLength": 0,
+					"lifetime": 15,
+					"colorFrom": "EAA678FF",
+					"colorTo": "EAA678FF"
+				},
+				{
+					"type": "WaveEffect",
+					"lifetime": 25,
+					"sizeFrom": 0,
+					"sizeTo": 44,
+					"strokeFrom": 3,
+					"strokeTo": 0,
+					"colorFrom": "EAA678FF",
+					"colorTo": "EAA678FF"
+				}
+			]
+		}
+	},
+	"consumes": {
+		"power": 3,
+		"coolant":{
+			"optional": false
+		}
+	},
+	"reload": 90,
+	"rotateSpeed": 8,
+	"range": 350,
+	"category": "turret",
+	"research": {
+		"parent": "重机枪",
+	},
+	"researchCostMultiplier": 0.4,
+	"requirements": [
+		"copper/80"
+		"titanium/50",
+		"silicon/35",
+		"钢铁/40",
+	]
+}

@@ -1,0 +1,19 @@
+{
+    "type": "Conduit",
+    "name": "钢铁导管",
+    "description": "快速运输液体",
+    "health": 200,
+    "liquidCapacity": 100,
+    "liquidPressure": 100,
+    "insulated": true,
+    "requirements": [
+        {
+            "item": "钢铁",
+            "amount": 1
+        }
+    ],
+    "category": "liquid",
+    "research": {
+        "parent": "简易导管"
+    }
+}

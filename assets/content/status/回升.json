@@ -1,0 +1,10 @@
+{
+    "name": "回升",
+    "color": "97FFA8",
+    "damage": -20,
+    "healthMultiplier": 1,
+    "speedMultiplier": 1,
+    "effectChance": 1,
+    "permanent": false,
+    "reactive": false
+}

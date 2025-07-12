@@ -1,0 +1,187 @@
+{	
+    "type":"mech",
+    "name":"无畏",
+    "description":"",
+    "hitSize":16,
+    "canDrown":false,
+    "armor":30,
+    "speed":0.66
+    "rotateSpeed": 2
+    "health":12000,
+    "mechStepParticles":true,
+    "mechFrontSway":2.2,
+    "mechSideSway":0.8,
+	"ammoType":"graphite",
+    "ammoCapacity": 350,
+	"research":"风暴级工厂",
+    "weapons": [
+			{
+			"name": "无畏1",
+			"reload": 45,
+			"x": -6,
+			"y": 0,
+			"mirror": false
+			"shootY":4,
+			"rotate": true,
+			"alternate": true,
+			"rotateSpeed": 5,
+			"shake": 1,
+			"shootSound": "shockBlast",
+			"bullet": {
+				"type": "PointBulletType",
+				"trailEffect": {
+					"type": "ParticleEffect",
+					"particles": 1,
+					"length": 0,
+					"baseLength": 1,
+					"lifetime": 10,
+					"line": true,
+					"randLength": false,
+					"lenFrom": 10,
+					"lenTo": 10,
+					"strokeFrom": 3.5,
+					"strokeTo": 0,
+					"colorFrom": "90ECFFFF",
+					"colorTo": "90ECFFFF",
+					"cone": 0
+				},
+				"trailSpacing": 9,
+				"smokeEffect": "bigShockwave",
+				"shootEffect": {
+					"type": "ParticleEffect",
+					"particles": 1,
+					"sizeFrom": 7,
+					"sizeTo": 0,
+					"length": 0,
+					"baseLength": 0,
+					"lifetime": 11,
+					"colorFrom": "90ECFFFF",
+					"colorTo": "90ECFFFF"
+				},
+				"speed": 30,
+				"lifetime": 16,
+				"statusDuration": 180,
+				"status":"shocked"
+				"buildingDamageMultiplier": 1.5
+				"damage":78,
+				"splashDamageRadius": 52,
+				"splashDamage": 189,
+				"hitShake": 1,
+				"hitSound": "plasmaboom",
+				"hitEffect": {
+					"type": "MultiEffect",
+					"effects": [
+						{
+							"type": "ParticleEffect",
+							"particles": 9,
+							"sizeFrom": 15,
+							"sizeTo": 0,
+							"length": 20,
+							"baseLength": 28,
+							"lifetime": 25,
+							"colorFrom": "90ECFFFF80",
+							"colorTo": "90ECFFFF00"
+						},
+						{
+							"type": "ParticleEffect",
+							"particles": 22,
+							"line": true,
+							"strokeFrom": 2,
+							"strokeTo": 0,
+							"lenFrom": 32,
+							"lenTo": 0,
+							"length": 83,
+							"baseLength": 0,
+							"lifetime": 22,
+							"colorFrom": "90ECFFFF",
+							"colorTo": "90ECFFFF"
+						},
+						{
+							"type": "WaveEffect",
+							"lifetime": 15,
+							"sizeFrom": 0,
+							"sizeTo": 52,
+							"strokeFrom": 5,
+							"strokeTo": 0,
+							"colorFrom": "90ECFFFF",
+							"colorTo": "90ECFFFF"
+						},
+						{
+							"type": "ParticleEffect",
+							"particles": 1,
+							"sizeFrom": 8,
+							"sizeTo": 0,
+							"length": 0,
+							"baseLength": 0,
+							"lifetime": 35,
+							"colorFrom": "90ECFFFF",
+							"colorTo": "90ECFFFF"
+						}
+					]
+				},
+				"despawnEffect": "none",
+				"fragBullets": 3,
+				"fragBullet": {
+					"type": "PointBulletType",
+					"trailSpacing": 9,
+					"trailEffect": {
+						"type": "ParticleEffect",
+						"particles": 1,
+						"length": 0,
+						"baseLength": 1,
+						"lifetime": 8,
+						"line": true,
+						"randLength": false,
+						"lenFrom": 10,
+						"lenTo": 10,
+						"strokeFrom": 2,
+						"strokeTo": 0,
+						"colorFrom": "90ECFFFF",
+						"colorTo": "90ECFFFF",
+						"cone": 0
+					},
+					"lifetime": 10,
+					"speed": 15,
+					"statusDuration": 60,
+					"buildingDamageMultiplier": 2,
+					"splashDamageRadius": 16,
+					"splashDamage": 100,
+					"damage":136,
+					"hitShake": 6,
+					"hitSound": "laser",
+					"hitEffect": {
+						"type": "MultiEffect",
+						"effects": [
+							{
+								"type": "ParticleEffect",
+								"particles": 1,
+								"sizeFrom": 5,
+								"sizeTo": 0,
+								"length": 0,
+								"baseLength": 0,
+								"lifetime": 11,
+								"colorFrom": "90ECFFFF",
+								"colorTo": "90ECFFFF"
+							},
+							{
+								"type": "ParticleEffect",
+								"particles": 22,
+								"line": true,
+								"strokeFrom": 1,
+								"strokeTo": 0,
+								"lenFrom": 18,
+								"lenTo": 0,
+								"length": 33,
+								"baseLength": 2,
+								"lifetime": 10,
+								"colorFrom": "90ECFFFF",
+								"colorTo": "90ECFFFF"
+							}
+						]
+					},
+					"despawnEffect": "none"
+				}
+			}
+		},
+	]
+}

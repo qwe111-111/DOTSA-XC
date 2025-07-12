@@ -1,0 +1,60 @@
+
+	"lightningDamage":7,
+			//闪电伤害
+			"lightning":3,
+			//闪电数量
+            "lightningLength":6,
+            //闪电长度
+            
+                "lead":{//子弹
+"type":"BasicBulletType",//基础子弹
+"width":8,//子弹宽
+"height":20,//子弹长
+"lifetime":24,//存在时间，帧
+"speed":10,//初速度
+"damage":11,//伤害
+"ammoMultiplier":1,//装填倍数
+
+	"fragBullets":2,//分裂子弹数量
+            "fragBullet":{
+            "speed":10,//速度
+            "damage":6,//伤害
+            "lifetime":24//存在时间
+            
+            "reloadMultiplier": 1.4,//开火倍率，1.4倍
+            "knockback":1,//击退
+            "splashDamageRadius": 36,//溅射范围，8=1格
+            "splashDamage": 80,//溅射伤害
+        },
+        
+        "type": "PointBulletType",//击中立即造成伤害,点射
+        
+        "statusDuration":360,//效果持续时间.60=1秒
+        burning燃烧
+        freeing冻结
+        shocked电击
+        
+        	"pierce":"true",//穿透
+			"pierceCap":5,//最多穿透5个单位
+        
+        "rangeChange":0,//8=1格，特定子弹增加的范围
+        
+            "maxAmmo":200,//最大弹药量
+    "ammoPerShot":2,//每发消耗多少子弹
+    "killShooter": true,//可以理解成发射子弹后一秒马上炸
+    
+    "requirements": [//研究花费
+	"silicon/600",
+	"钢铁/300"
+	"graphite/400"]
+	
+	"researchCostMultiplier": 0.4,//默认研究花费的100倍，这里应该是40倍
+	  "researchCost": [
+	  ""
+	  ""
+	  ""
+	  ]
+	  具体的研究消耗
+	  
+	
+	

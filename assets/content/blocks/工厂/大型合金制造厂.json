@@ -1,0 +1,43 @@
+{
+	"type": "AttributeCrafter",
+	"health": 1200,
+	"name": "大型合金制造机",
+	"description": "？",
+	"outputItem": "surge-alloy/15",
+	"itemCapacity": 500,
+	"size": 4,
+	"hasPower": true,
+	"hasLiquids": false,
+	"hasItems": true,
+	"craftTime": 160,
+	"updateEffect": "none",
+	"craftEffect": "smeltsmoke",
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+			"DrawFlame"
+            ]
+    },
+	"consumes": {
+		"power": 10,
+			"items": [
+				"硬化钢铁/8"
+				"thorium/9"
+				"silicon/12"
+				"titanium/16"
+			]
+		
+	},
+	"requirements": [
+		"thorium/140",
+		"surge-alloy/100",
+		"电路/80",
+		"钢铁/100",
+		"silicon/150",
+		"硬化钢铁/70"
+	],
+	"category": "crafting",
+	"ambientSound": "smelter",
+	"research": "alloy-smelter"
+}

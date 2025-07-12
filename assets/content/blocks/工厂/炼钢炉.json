@@ -1,0 +1,40 @@
+{
+    "type": "GenericCrafter",
+    "name": "炼钢炉",
+    "description": "？",
+    "details": "？",
+    "itemCapacity": 20,
+    "liquidCapacity": 30,
+    "health": 1000,
+    "size": 2,
+    "hasPower": true,
+    "hasLiquids": true,
+    "hasItems": true,
+    "craftTime": 30,
+    "updateEffect": "none",
+    "consumes": {
+        "power":0.5,
+        "items": [
+            "copper/1"
+            "lead/1"
+        ],
+    },
+    "outputItem": {
+        "item": "钢铁",
+        "amount": "2"
+    },
+    "requirements": [
+        "copper/40"
+        "lead/50"
+    ],
+    "category": "crafting",
+    "research": {
+		"parent": "克斯特World",
+		"objectives": [
+			"lead",
+			"copper"
+        ]
+				"type": "SectorComplete",
+				"preset": "frozenforest"
+	}
+}

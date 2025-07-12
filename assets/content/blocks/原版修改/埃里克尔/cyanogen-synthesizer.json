@@ -1,0 +1,13 @@
+{
+    "outputLiquid": "cyanogen/0.9",
+    "itemCapacity": 90,
+    "craftTime": 60,
+    "liquidCapacity": 600,
+    "consumes": {
+        "liquid": {
+            "liquid": "water",
+            "amount": 0.5
+        }
+    },
+    "canOverdrive": true
+}

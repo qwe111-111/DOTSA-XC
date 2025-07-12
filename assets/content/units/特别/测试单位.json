@@ -1,0 +1,18 @@
+{
+    "type": "flying",
+    "name": "测试单位",
+    "description": "？",
+    "details": "？",
+    "speed": 0.75,
+    "flying": true,
+    "engineOffset": 13,
+    "targetAir": true,
+    "targetGround": true,
+    "engineSize": 4,
+    "engineColor": "B5FFECFF",
+    "hitSize": 32,
+    "health": 2147483647,
+    "armor": 2147483647,
+    "rotateSpeed": 1.5,
+    "itemCapacity": 20
+}

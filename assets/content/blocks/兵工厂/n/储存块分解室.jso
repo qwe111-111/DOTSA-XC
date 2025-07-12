@@ -1,0 +1,25 @@
+{
+     "type": "PayloadDeconstructor",
+     "name": "储存块分解室",
+     "health": 2316,
+     "canOverdrive": true,
+     "size": 5,
+     "deconstructSpeed": 2.5,
+     
+     "consumes": {
+		"power": 12,
+	                }
+     
+     "requirements": [
+		"silicon/200",
+		"surge-alloy/100",
+		"plastanium/230",
+		"titanium/132",
+		"钢铁/246",
+		"titanium/86",
+		"metaglass/89",
+],
+		
+	"category": "units",
+	"research": "复合路由器",
+}

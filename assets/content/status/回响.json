@@ -1,0 +1,13 @@
+{
+    "name": "回响",
+    "description": "...",
+    "details": "...",
+    "damageMultiplier": 0.75,
+    "healthMultiplier": 0.8,
+    "speedMultiplier": 0.8,
+    "reloadMultiplier": 0.9,
+    "damage": 8,
+    "permanent": false,
+    "reactive": false,
+    "color": "000000"
+}

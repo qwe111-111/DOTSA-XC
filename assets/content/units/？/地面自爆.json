@@ -1,0 +1,124 @@
+{
+    "type": "legs",
+    "name": "破墙",
+    "description": "？",
+    "speed": 1.65,
+    "hitSize": 10,
+    "health": 2560,
+    "faceTarget": true,
+    "armor": 20,
+    "targetAir": false,
+    "rotateSpeed": 3,
+    "legCount": 6,
+    "legLength": 15.1,
+    "legGroupSize": 2,
+    "lockLegBase": true,
+    "legContinuousMove": true,
+    "legExtension": -2,
+    "legBaseOffset": 3,
+    "legMaxLength": 1.1,
+    "legMinLength": 0.2,
+    "legLengthScl": 0.95,
+    "legForwardScl": 0.9,
+    "legMoveSpace": 1,
+    "allowLegStep": true,
+    "hovering": true,
+    "weapons": [
+        {
+            "name": "自杀",
+            "minWarmup": 0.95,
+            "shootWarmupSpeed": 0.05,
+            "shootOnDeath": false,
+            "reload": 150,
+            "shootCone": 180,
+            "ejectEffect": "none",
+            "shootSound": "explosionbig",
+            "x": 0,
+            "y": 0,
+            "shootY": 0,
+            "mirror": false,
+            "recoil": 0,
+            "parts": [
+                {
+                    "type": "ShapePart",
+                    "circle": true,
+                    "hollow": true,
+                    "radius": 80,
+                    "color": "D8F18CFF",
+                    "colorTo": "D8F18CFF",
+                    "stroke": 0,
+                    "strokeTo": 1,
+                    "radiusTo": 80,
+                    "progress": "warmup",
+                    "layer": 0.01
+                },
+                {
+                    "type": "ShapePart",
+                    "circle": true,
+                    "hollow": false,
+                    "radius": 0,
+                    "color": "D8F18CFF",
+                    "colorTo": "D8F18CFF",
+                    "radiusTo": 84.22,
+                    "progress": "warmup",
+                    "layer": 0.01
+                }
+            ],
+            "bullet": {
+                "collidesTiles": false,
+                "collides": false,
+                "hitEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 12,
+                            "sizeFrom": 6,
+                            "sizeTo": 0,
+                            "baseLength": 8,
+                            "length": 55,
+                            "lifetime": 50,
+                            "lightOpacity": 0,
+                            "interp": "circleOut",
+                            "sizeInterp": "pow5In",
+                            "colorFrom": "D8F18CFF",
+                            "colorTo": "D8F18CFF",
+                            "cone": 360
+                        },
+                        {
+                            "type": "waveEffect",
+                            "lifetime": 30,
+                            "sizeFrom": 0,
+                            "sizeTo": 60,
+                            "strokeFrom": 4,
+                            "strokeTo": 0,
+                            "colorFrom": "D8F18CFF",
+                            "colorTo": "D8F18CFF"
+                        },
+                        {
+                            "type": "waveEffect",
+                            "lifetime": 30,
+                            "sizeFrom": 60,
+                            "sizeTo": 0,
+                            "strokeFrom": 4,
+                            "strokeTo": 0,
+                            "colorFrom": "D8F18CFF",
+                            "colorTo": "D8F18CFF"
+                        }
+                    ]
+                },
+                "smokeEffect": "none",
+                "rangeOverride": 30,
+                "shootEffect": "none",
+                "speed": 0,
+                "splashDamageRadius": 80,
+                "instantDisappear": true,
+                "splashDamage": 1200,
+                "killShooter": true,
+                "hittable": false,
+                "collidesAir": true,
+                "scaleSplashDamage": false
+            }
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "health": 32000,
+    "speed": 0.6,
+    "armor": 18,
+    "canBoost": false,
+    "weapons": [
+        {
+            "name": "权杖1",
+            "mirror": true,
+            "x": 6,
+            "y": 3,
+            "top": true,
+            "rotate": false,
+            "reload": 20,
+            "shootSound": "pew",
+            "inaccuracy": 3,
+            "alternate": true,
+            "ignoreRotation": false,
+            "shoot": {
+                "shots": 2,
+                "shotDelay": 3
+            },
+            "bullet": {
+                "speed": 6,
+                "lifetime": 30,
+                "damage": 30,
+                "width": 6,
+                "height": 10
+            }
+        },
+        {
+            "name": "mount-weapon",
+            "mirror": true,
+            "x": -6,
+            "y": -3,
+            "top": true,
+            "rotate": false,
+            "reload": 60,
+            "shootSound": "pew",
+            "inaccuracy": 4,
+            "alternate": true,
+            "ignoreRotation": false,
+            "shoot": {
+                "shots": 4,
+                "shotDelay": 2
+            },
+            "bullet": {
+                "speed": 7.5,
+                "lifetime": 30,
+                "damage": 18,
+                "width": 8,
+                "height": 16
+            }
+        },
+        {
+            "name": "权杖2",
+            "mirror": true,
+            "x": 15,
+            "y": 2,
+            "top": true,
+            "rotate": false,
+            "reload": 10,
+            "shake": 1.5,
+            "shootSound": "shootBig",
+            "inaccuracy": 0,
+            "alternate": true,
+            "ignoreRotation": false,
+            "shoot": {
+                "shots": 2,
+                "shotDelay": 5
+            },
+            "bullet": {
+                "speed": 10,
+                "lifetime": 20,
+                "damage": 60,
+                "width": 10,
+                "height": 16,
+                "lightningColor": "FFE865FF",
+                "lightning": 3,
+                "lightningLength": 10,
+                "lightningDamage": 25
+            }
+        }
+    ]
+}

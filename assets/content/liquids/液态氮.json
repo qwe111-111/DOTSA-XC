@@ -1,0 +1,12 @@
+{
+    "name": "液态氮",
+    "type": "liquids",
+    "description": "不会真有人想供给炮台用吧？",
+    "details": "无法用于炮台冷却",
+    "color": "66FFE3FF",
+    "flammability": 0,
+    "temperature": -5.9,
+    "heatCapacity": 3.6,
+    "viscosity": 0.25,
+    "explosiveness": 0
+}

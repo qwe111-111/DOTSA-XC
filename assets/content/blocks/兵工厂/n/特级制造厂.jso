@@ -1,0 +1,46 @@
+{
+    "type": "UnitAssembler",
+    "name": "特级制造厂",
+    "category": "units",
+    "liquidCapacity": 76,
+    "canOverdrive": true,
+    "description": "?",
+    "research": "储存块压缩室",
+    "requirements": [
+        "copper/214",
+        "lead/269",
+        "silicon/149",
+        "titanium/245",
+        "高级电路/213",
+        "纳米/341",
+        "复合材料/423",
+        "电路/513"
+    ],
+    "health": 3216,
+    "areaSize": 15,
+    "droneType": "组装无人机",
+    "plans": [
+        {
+            "unit": "颂歌",
+            "time": 3600,
+            "requirements": [
+                "改进工业-基础修复器/4",
+                "改进工业-大型钢墙/18",
+                "改进工业-脉冲/4",
+                "改进工业-连发机枪/6",
+                "改进工业-钢铁护盾发生器/3",
+                "改进工业-镭射/3",
+                "改进工业-豚击/3",
+                "改进工业-铁锋/2"
+            ]
+        }
+    ],
+    "size": 5,
+    "consumes": {
+        "power": 12,
+        "liquid": {
+            "liquid": "cryofluid",
+            "amount": 2.67
+        }
+    }
+}

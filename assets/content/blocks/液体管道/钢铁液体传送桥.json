@@ -1,0 +1,13 @@
+{
+    "type": "LiquidBridge",
+    "name": "钢铁液体传送桥",
+    "description": "跨越地形传输液体",
+    "health": 270,
+    "range": 12,
+    "liquidCapacity": 15,
+    "requirements": [
+        "钢铁/12"
+    ],
+    "category": "liquid",
+    "research": "钢铁导管"
+}

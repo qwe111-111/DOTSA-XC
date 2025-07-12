@@ -1,0 +1,12 @@
+{
+    "name": "红温",
+    "damageMultiplier": 10,
+    "healthMultiplier": 0.1,
+    "speedMultiplier": 1,
+    "reloadMultiplier": 2,
+    "damage": 0,
+    "permanent": false,
+    "reactive": false,
+    "color": "C93B3BFF",
+    "effectChance": 1
+}

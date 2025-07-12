@@ -1,0 +1,41 @@
+{
+	"type": "GenericCrafter",
+	"health": 1200,
+	"name": "钴钢融合机",
+	"description": "？",
+	"outputItem": "钴钢/2",
+	"itemCapacity": 100,
+	"size": 5,
+	"hasPower": true,
+	"hasLiquids": false,
+	"hasItems": true,
+	"craftTime": 160,
+	"updateEffect": "none",
+	"craftEffect": "smeltsmoke",
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+			"DrawFlame"
+            ]
+    },
+	"consumes": {
+		"power": 15,
+			"items": [
+				"钴/3",
+				"钢合金/2"
+			]
+	},
+	"requirements": [
+		"surge-alloy/140",
+		"phase-fabric/250",
+		"钴/250",
+		"硬化钢铁/150",
+		"钢合金/70"
+	],
+    "attribute": "heat",
+    "baseEfficiency": 1,
+	"category": "crafting",
+	"ambientSound": "smelter",
+	"research": "钴提炼机"
+}

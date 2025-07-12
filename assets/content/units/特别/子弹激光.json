@@ -1,0 +1,98 @@
+{
+    "type": "missile",
+    "name": "激光",
+    "description": "？",
+    "details": "...",
+    "envEnabled": -1,
+    "shadowElevationScl": 3.2,
+    "lifetime": 2,
+    "speed": 0,
+    "hidden": true,
+    "rotateSpeed": 360,
+    "range": "8192",
+    "maxRange": "8192",
+    "engineSize": 0,
+    "drawBody": false,
+    "drawCell": false,
+    "weapons": [
+        {
+            "x": 0,
+            "mirror": false,
+            "shootOnDeath": true,
+            "controllable": false,
+            "shootCone": 360,
+            "shootSound": "beam",
+            "shake": 0,
+            "bullet": {
+                "type": "ContinuousLaserBulletType",
+                "damage": 50,
+                "knockback": 1,
+                "status": "electrified",
+                "statusDuration": 120,
+                "width": 6,
+                "length": 285,
+                "colors": [
+                    "97FFA890",
+                    "97FFA880",
+                    "97FFA8"
+                ],
+                "hitEffect": {
+                    "type": "ParticleEffect",
+                    "particles": 5,
+                    "line": true,
+                    "strokeFrom": 2,
+                    "strokeTo": 0,
+                    "lenFrom": 18,
+                    "lenTo": 18,
+                    "length": 1,
+                    "baseLength": 8,
+                    "lifetime": 8,
+                    "colorFrom": "97FFA8",
+                    "colorTo": "97FFA8",
+                    "cone": 80
+                },
+                "lifetime": 420,
+                "shake": 1,
+                "collidesTeam": true,
+                "largeHit": false,
+                "healPercent": 0.5,
+                "despawnEffect": "smokeCloud",
+                "shootEffect": "shootHeal",
+                "smokeEffect": "none",
+                "incendChance": 0.03,
+                "incendSpread": 8,
+                "incendAmount": 1,
+                "spawnBullets": [
+                    {
+                        "type": "LightningBulletType",
+                        "damage": 50,
+                        "lightningColor": "97FFA8",
+                        "hitColor": "97FFA8",
+                        "lightningLength": 20,
+                        "lightningLengthRand": 8,
+                        "healPercent": 2,
+                        "collidesTeam": true,
+                        "hitEffect": "hitLancer",
+                        "despawnEffect": "none",
+                        "status": "electrified",
+                        "statusDuration": 120
+                    },
+                    {
+                        "type": "LightningBulletType",
+                        "damage": 50,
+                        "lightningColor": "97FFA8",
+                        "hitColor": "97FFA8",
+                        "lightningLength": 20,
+                        "lightningLengthRand": 8,
+                        "healPercent": 2,
+                        "collidesTeam": true,
+                        "hitEffect": "hitLancer",
+                        "despawnEffect": "none",
+                        "status": "electrified",
+                        "statusDuration": 120
+                    }
+                ]
+            }
+        }
+    ]
+}

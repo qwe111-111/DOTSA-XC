@@ -1,0 +1,55 @@
+{
+	"type": "missile",//导弹
+	"template": "MissileUnitType",//导弹模板
+	"outlineColor":"383848",//边框颜色
+	"name": "标准型导弹",//名字
+	"homingDelay": 30,//追踪范围
+	"speed": 8,//单位速度
+	"lifetime": 110,//存在时间
+	"rotateSpeed": 5,//旋转速度
+	"loopSoundVolume": 1,//声音音量
+	"deathSound": "explosionbig",//死亡音效
+	"hidden": true,//隐藏
+	"missileAccelTime": 10,//导弹加速时间
+	"hitSize": 8,//单位大小
+	"health": 1500,//血量
+	"armor": 3,//护甲
+	"fogRadius": 48,//烟雾半径
+	"engineColor": "84F491",//引擎颜色
+	"trailColor": "E0AB66FF",//尾焰颜色
+	"trailLength": 35,//尾焰存在时间
+	"engineLayer": 110,//引擎图层
+	"engineOffset": 8,//引擎位置
+	"engineSize": 4,//引擎大小
+	"maxRange": 30,//最大范围
+	"immunities": [
+	],//免疫
+	"weapons": [		
+	{
+			"name": "自爆",
+			"x": 0,
+			"y": 0,
+			"reload": 250,
+			"mirror": false,
+			"rotate": true,
+			"shake": 15,
+			"shootSound": "none",
+			"shootOnDeath": true,
+			"bullet": {
+				"collides":false,
+				"instantDisappear": true,
+				"ammoMultiplier": 3,
+				"hitSound": "titanExplosion",
+				"hitSoundVolume": 8,
+				"killShooter": true,
+				"splashDamageRadius": 70,
+				"splashDamage": 700,
+				"hitShake": 55,
+				"healPercent": 5,
+				"shootEffect": "none",
+				"smokeEffect": "none",
+				"despawnEffect": "none",
+        }
+    }
+	]//武器
+}

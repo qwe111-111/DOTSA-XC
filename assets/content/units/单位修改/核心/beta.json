@@ -1,0 +1,36 @@
+{
+    "health": 400,
+    "mineSpeed": 10,
+    "mineTier": 2,
+    "drag": 0.15,
+    "buildSpeed": 1.25,
+    "speed": 7.5,
+    "range": 210,
+    "faceTarget": false,
+    "weapons": [
+        {
+            "name": "贝塔1",
+            "reload": 10,
+            "x": 2.8,
+            "y": 1,
+            "rotate": true,
+            "rotateSpeed": 9,
+            "inaccuracy": 0,
+            "shoot": {
+                "shots": 3,
+                "shotDelay": 2
+            },
+            "shootSound": "pew",
+            "alternate": true,
+            "ejectEffect": "casing1",
+            "bullet": {
+                "buildingDamageMultiplier": 0.01,
+                "damage": 20,
+                "speed": 6,
+                "lifetime": 40,
+                "width": 9,
+                "height": 14
+            }
+        }
+    ]
+}

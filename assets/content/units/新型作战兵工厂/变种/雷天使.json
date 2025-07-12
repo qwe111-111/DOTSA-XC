@@ -1,0 +1,92 @@
+{
+	"type": "mech",
+	"name": "雷天使",
+	"description": "手拿雷光",
+    "speed": 1.6,
+    "hitSize": 14,
+		"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":2200},
+	"ammoCapacity": 700
+    "ammoResupplyAmount":1,
+    "health": 7000,
+    "armor": 25,
+    "drag": 0.2,
+    "rotateSpeed": 2.5,
+    "itemCapacity": 30,
+    "targetAir":true,  
+    "research":"特殊工厂",
+    "targetGround":true,
+    	"abilities": [
+    	{
+      "type":"ForceFieldAbility",
+      "radius": 00,
+      "regen": 25,
+      "max": 3000,
+      "cooldown": 25
+    }
+    {
+			"type": "StatusFieldAbility",
+			"duration": 300,
+			"reload": 500,
+			"range": 20,
+			"applyEffect": "none",
+			"activeEffect": "none",
+			"effect": "overdrive"
+		},
+    ]
+      	"weapons":[{
+      "name": "雷天使1",
+      "x": 10,
+      "y": 0,
+      "shootX": 0,
+      "shootY": 10,
+      "reload": 20,
+      "cooldownTime": 60,
+      "top": false,
+      "ejectEffect": "casing3",
+      "shootSound": "shotgun",
+      "shake": 5,
+      "recoil": 4,
+      "baseRotation": 5,
+      "shootCone": 30,
+      "shoot": {
+        "type": "ShootSpread",
+        "shots": 3,
+        "spread": 15,
+        "shotDelay": 0
+      },
+      "bullet": {
+        "type": "ShrapnelBulletType",
+        "length": 100,
+        "recoil": 0.4,
+        "damage": 185,
+        "width": 18,
+        "serrationLenScl": 1,
+        "serrationSpaceOffset": 18,
+        "serrationFadeOffset": 0,
+        "serrations": 6,
+        "serrationWidth": 3,
+        "fromColor": "D3FFFFFF",
+        "toColor": "D3FFFFFF",
+        "shootEffect": "sparkShoot",
+        "smokeEffect": "sparkShoot",
+        "knockback": 1
+        "hitEffect": {
+					"type": "ParticleEffect",
+					"line": true,
+					"particles": 7,
+					"lifetime": 15,
+					"length": 25,
+					"cone": -360,
+					"strokeFrom": 2.5,
+					"strokeTo": 0,
+					"lenFrom": 4,
+					"lenTo": 0,
+					"colorFrom": "D3FFFFFF",
+					"colorTo": "D3FFFFFF"
+				}
+      }
+    }
+    ]
+}

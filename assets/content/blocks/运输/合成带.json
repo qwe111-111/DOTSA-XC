@@ -1,0 +1,13 @@
+{
+	"type": "Conveyor",
+	"name": "合成带",
+	"health": 45,
+	"requirements": [
+		"copper/1",
+		"lead/1"
+	],
+	"category": "distribution",
+	"research":"克斯特World",
+	"speed": 0.08,
+	"displayedSpeed": 8
+}

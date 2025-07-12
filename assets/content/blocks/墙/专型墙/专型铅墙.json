@@ -1,0 +1,19 @@
+{
+  "type": "Wall",
+  "name": "专型铅墙",
+  "description": "更为坚固",
+  "armor": 5,
+  "lightningChance": 0,
+  "lightningDamage": 0,
+  "lightningLength": 0,
+  "health": 2000,
+  "size": "3",
+  "insulated": false,
+  "absorbLasers": false,
+    "placeableLiquid": true,
+  "requirements": [
+    "lead/55"
+  ],
+  "category": "defense",
+  "research": "专型铜墙"
+}

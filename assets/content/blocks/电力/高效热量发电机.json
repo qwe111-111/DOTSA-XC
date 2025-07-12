@@ -1,0 +1,30 @@
+{
+	"type": "ThermalGenerator",
+	"name": "高效热量发电机",
+	"size": 3,
+	"health": 1500,
+	"powerProduction": 10,
+	"generateEffect": "redgeneratespark",
+	"effectChance": 0.06,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawFade",
+				"scale": 10
+			}
+		]
+	},
+	"requirements": [
+		"graphite/250",
+		"钢铁/110",
+		"titanium/230",
+		"silicon/240"
+	],
+	"floating": true,
+	"ambientSound": "hum",
+	"attribute": "heat",
+	"category": "power",
+	"research": "自循环水电机"
+}

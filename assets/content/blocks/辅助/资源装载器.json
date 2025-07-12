@@ -1,0 +1,11 @@
+{
+    "health": 500,
+    "size": 2,
+    "buildVisibility": "sandboxOnly",
+    "hasItems": true,
+    "confugurable": true,
+    "description": "从周围建筑内提取物品并放入核心",
+    "name": "资源装载器",
+    "requirements": [],
+    "category": "effect"
+}

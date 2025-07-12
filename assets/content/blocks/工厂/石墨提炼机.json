@@ -1,0 +1,38 @@
+{
+    "type": "GenericCrafter",
+    "name": "石墨提炼机",
+    "description": "？",
+    "details": "？",
+    "itemCapacity": 20,
+    "liquidCapacity": 30,
+    "health": 1000,
+    "size": 2,
+    "hasPower": true,
+    "hasLiquids": true,
+    "hasItems": true,
+    "craftTime": 60,
+    "updateEffect": "none",
+    "consumes": {
+        "items": [
+        "coal/6"
+        ],
+    },
+    "outputItem": {
+        "item": "graphite",
+        "amount": "4"
+    },
+    "requirements": [
+        "copper/50",
+        "lead/45",
+        "graphite/55"
+    ],
+    "category": "crafting",
+    "research": {
+		"parent": "graphite-press",
+		"objectives": [
+			"graphite",
+        ]
+				"type": "SectorComplete",
+				"preset": "frozenforest"
+	}
+}

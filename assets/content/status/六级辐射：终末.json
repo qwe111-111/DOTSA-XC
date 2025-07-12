@@ -1,0 +1,23 @@
+{
+    "name": "六级辐射：终末",
+    "color": "590b80",
+    "effectChance": 2,
+    "damageMultiplier": 1,
+    "healthMultiplier": 0.6,
+    "speedMultiplier": 0.6,
+    "reloadMultiplier": 0.6,
+    "effect": {
+        "type": "ParticleEffect",
+        "particles": 2,
+        "baseLength": 1,
+        "length": 4,
+        "lifetime": 3,
+        "spin": 1,
+        "interp": "fastSlow",
+        "region": "改进工业-天气特效",
+        "sizeFrom": 2,
+        "sizeTo": 1,
+        "colorFrom": "590b80",
+        "colorTo": "ffffff"
+    }
+}

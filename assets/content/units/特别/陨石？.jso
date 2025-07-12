@@ -1,0 +1,82 @@
+{
+    "type": "flying",
+    "name": "陨石？",
+    "description": "...",
+    "speed": 10,
+    "flying": true,
+    "hitSize": 12,
+    "targetAir": true,
+    "health": 9999,
+    "armor": 9999,
+    "itemCapacity": 550,
+    "commandLimit": 1000,
+    "trailColor": "A9D8FFFF",
+    "trailLength": 35,
+    "weapons": [
+        {
+            "x": 0,
+            "y": 0,
+            "reload": 1,
+            "mirror": false,
+            "rotate": true,
+            "shake": 10,
+            "shootSound": "none",
+            "shootOnDeath": true,
+            "shootCone": 360,
+            "bullet": {
+                "collides": false,
+                "instantDisappear": true,
+                "ammoMultiplier": 1,
+                "hitSound": "titanExplosion",
+                "hitSoundVolume": 6,
+                "splashDamageRadius": 3500,
+                "splashDamage": 1500,
+                "pierceArmor": true,
+                "buildingDamageMultiplier": 0.5,
+                "hitShake": 80,
+                "smokeEffect": "none",
+                "despawnEffect": "none",
+                "hitEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 26,
+                            "sizeFrom": 30,
+                            "sizeTo": 0,
+                            "length": 196,
+                            "baseLength": 56,
+                            "interp": "pow10Out",
+                            "sizeInterp": "pow10Out",
+                            "lifetime": 120,
+                            "colorFrom": "A9D8FFFF",
+                            "colorTo": "A9D8FFFF00"
+                        },
+                        {
+                            "type": "WaveEffect",
+                            "lifetime": 80,
+                            "interp": "circleOut",
+                            "sizeFrom": 0,
+                            "sizeTo": 256,
+                            "strokeFrom": 10,
+                            "strokeTo": 0,
+                            "colorFrom": "A9D8FFFF",
+                            "colorTo": "A9D8FFFF"
+                        },
+                        {
+                            "type": "WaveEffect",
+                            "lifetime": 120,
+                            "interp": "circleOut",
+                            "sizeFrom": 0,
+                            "sizeTo": 2000,
+                            "strokeFrom": 10,
+                            "strokeTo": 0,
+                            "colorFrom": "A9D8FFFF",
+                            "colorTo": "A9D8FFFF"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "canOverdrive": true,
+    "consumes": {
+        "power": 1
+    },
+    "outputLiquids": [
+        "ozone/0.8",
+        "hydrogen/0.8"
+    ],
+    "requirements": [
+        {
+            "item": "beryllium",
+            "amount": 240
+        },
+        {
+            "item": "silicon",
+            "amount": 325
+        }
+    ],
+    "craftTime": 60
+}

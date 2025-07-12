@@ -1,0 +1,21 @@
+{
+    "type": "SolarGenerator",
+    "name": "高级太阳能板",
+    "description": "我觉得我可以",
+    "size": 3,
+    "health": 500,
+    "powerProduction": 4.5,
+    "requirements": [
+        {
+            "item": "硬化钢铁",
+            "amount": 50
+        },
+        {
+            "item": "钢铁",
+            "amount": 100
+        }
+    ],
+    "category": "power",
+    "research": "沙子发电机",
+    "alwaysUnlocked": true
+}

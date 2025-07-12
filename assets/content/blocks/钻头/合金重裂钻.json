@@ -1,0 +1,65 @@
+{
+    "type": "BurstDrill",
+    "name": "钢合金钻",
+    "description": "z...zzz....zzz",
+    "tier": 20,
+    "health": 3680,
+    "drillTime": 60,
+    "arrowSpacing": 6,
+    "itemCapacity": 300,
+    "fogRadius": 20,
+    "shake": 16,
+    "arrowOffset": 0,
+    "arrowglowColor": "D1EFFFFF",
+    "glowColor": "D1EFFFFF",
+    "size": 6,
+    "research": "blast-drill",
+    "category": "production",
+    "consumes": {
+        "power": 4,
+        "liquid": {
+            "liquid": "冷却液",
+            "amount": 0.32
+        }
+    },
+    "arrows": 4,
+    "requirements": [
+        "thorium/400",
+        "silicon/340",
+        "钢合金/120",
+        "高级电路/165",
+        "surge-alloy/210"
+    ],
+    "drillEffect": {
+        "type": "MultiEffect",
+        "effects": [
+            {
+                "type": "WaveEffect",
+                "lifetime": 80,
+                "sizeFrom": 0,
+                "sides": 4,
+                "radius": 90,
+                "sizeTo": 120,
+                "strokeFrom": 5,
+                "strokeTo": 0,
+                "colorFrom": "D1EFFFFF",
+                "colorTo": "D1EFFFFF",
+                "interp": "pow5Out"
+            },
+            {
+                "type": "ParticleEffect",
+                "line": true,
+                "lifetime": 20,
+                "baseLength": 24,
+                "length": 120,
+                "lenFrom": 30,
+                "lenTo": 0,
+                "strokeFrom": 2,
+                "strokeTo": 0,
+                "colorFrom": "D1EFFFFF",
+                "colorTo": "D1EFFFFF",
+                "interp": "pow5In"
+            }
+        ]
+    }
+}

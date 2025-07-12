@@ -1,0 +1,95 @@
+{
+    "type": "legs",
+    "name": "乱影",
+    "description": "？",
+    "armor": 50,
+    "speed": 0.7,
+    "drag": 0.1,
+    "rotateSpeed": 3,
+    "hitSize": 16,
+    "health": 7810,
+    "stepShake": 0,
+    "shadowElevation": 0.2,
+    "legCount": 4,
+    "legLength": 18,
+    "legGroupSize": 4,
+    "lockLegBase": true,
+    "legContinuousMove": true,
+    "alwaysShootWhenMoving": true,
+    "legExtension": -5,
+    "legBaseOffset": 5,
+    "legMaxLength": 1.1,
+    "legMinLength": 0.2,
+    "legLengthScl": 0.95,
+    "legForwardScl": 0.7,
+    "legMoveSpace": 1,
+    "legSplashDamage": 5,
+    "legSplashRange": 10,
+    "drownTimeMultiplier": 5,
+    "hovering": true,
+    "allowLegStep": true,
+    "range": 60,
+    "outlineColor": "383848",
+    "groundLayer": 70,
+    "research": "等列兵工厂",
+    "weapons": [
+        {
+            "name": "乱影1",
+            "mirror": true,
+            "shootCone": 5,
+            "rotate": true,
+            "shootY": 10,
+            "recoil": 0.5,
+            "x": 7,
+            "y": 0,
+            "cooldownTime": 32,
+            "reload": 3,
+            "shootSound": "mgsvGatling",
+            "bullet": {
+                "damage": 31,
+                "speed": 13,
+                "height": 20,
+                "width": 6,
+                "shrinkY": 0,
+                "frontColor": "ffffff",
+                "backColor": "F3E979FF",
+                "hitColor": "F3E979FF",
+                "hitEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        "hitBulletColor",
+                        {
+                            "type": "SeqEffect",
+                            "effects": [
+                                {
+                                    "type": "WaveEffect",
+                                    "lightColor": "F3E979FF",
+                                    "colorTo": "F3E979FF",
+                                    "sizeTo": 16,
+                                    "sides": 4,
+                                    "strokeFrom": 4,
+                                    "lifetime": 5
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "status": "破甲",
+                "statusDuration": 20,
+                "despawnEffect": "hitBulletColor",
+                "shootColor": "F3E979FF",
+                "despawnColor": "F3E979FF",
+                "lifetime": 26,
+                "shootEffect": "shootBigColor",
+                "smokeEffect": "colorSpark",
+                "knockback": 4,
+                "pierceCap": 3,
+                "pierce": true,
+                "pierceBuilding": false,
+                "pierceArmor": true,
+                "buildingDamageMultiplier": 1.4,
+                "lightColor": "F3E979FF"
+            }
+        }
+    ]
+}

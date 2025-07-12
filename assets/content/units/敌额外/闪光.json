@@ -1,0 +1,66 @@
+{
+	"type": "flying",
+	"name": "闪光",
+    "description": "？"	
+	"speed":2.5,
+	"drag": 0.05,
+	"accel": 0.1,
+	"rotateSpeed": 10,
+	"ammoType": {
+		"type": "PowerAmmoType",
+		"totalPower": 100
+	},
+	"ammoCapacity": 300,
+	"hitSize": 16,
+	"buildSpeed": 2.5,
+	"flying": true,
+	"faceTarget": true,
+	"drawMinimap": true,
+	"health": 6500,
+	"armor": 10
+	"engineOffset": 5,
+	"engineSize": 2,
+	"itemCapacity": 120,
+	"weapons": [
+		{
+			"name": "none",
+			"display": true,
+			"reload": 76,
+			"x": 0,
+			"y": -2,
+			"shootY": 4,
+			"rotate": false,
+			"rotateSpeed": 2.2,
+			"top": true,
+			"recoil": 0,
+			"inaccuracy": 0,
+			"cooldownTime": 100,
+			"alternate": true,
+			"mirror": false,
+			"shootSound": "shockBlast",
+			"shake": 2,
+			"bullet": {
+				"type": "LaserBulletType",
+				"layer": 60,
+				"damage": 343
+				"shootEffect": "bigShockwave",
+				"sideAngle": 45,
+				"sideWidth": 1.5,
+				"sideLength": 45,
+				"recoil": 7,
+				"colors": [
+					"B8FFD7FF",
+					"84F491FF",
+					"FFFFFF"
+				],
+				"width": 32,
+				"length": 250,
+				"fragAngle": 0,
+				"fragRandomSpread": 0,
+				"fragLifeMin": 1,
+				"fragVelocityMin": 0.88,
+				"buildingDamageMultiplier": 0.01,
+			}
+		},
+	]
+}

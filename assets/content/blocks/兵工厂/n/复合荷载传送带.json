@@ -1,0 +1,17 @@
+{
+    "type": "PayloadConveyor",
+    "name": "复合荷载传送带",
+    "health": 936,
+    "size": 3,
+    "canOverdrive": true,
+    "requirements": [
+        "silicon/19",
+        "复合材料/10",
+        "钢铁/19"
+    ],
+    "moveTime": 30,
+    "moveForce": 140,
+    "payloadLimit": 5,
+    "category": "units",
+    "research": "特殊工厂"
+}

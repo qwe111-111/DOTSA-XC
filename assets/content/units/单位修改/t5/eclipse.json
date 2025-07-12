@@ -1,0 +1,242 @@
+{
+    "health": 43200,
+    "armor": 34,
+    "abilities": [
+        {
+            "type": "StatusFieldAbility",
+            "duration": 300,
+            "reload": 500,
+            "range": 40,
+            "applyEffect": "none",
+            "activeEffect": "none",
+            "effect": "overclock"
+        },
+        {
+            "type": "StatusFieldAbility",
+            "duration": 300,
+            "reload": 500,
+            "range": 50,
+            "applyEffect": "none",
+            "activeEffect": "none",
+            "effect": "overdrive"
+        },
+        {
+            "type": "StatusFieldAbility",
+            "duration": 300,
+            "reload": 500,
+            "range": 20,
+            "applyEffect": "none",
+            "activeEffect": "none",
+            "effect": "boss"
+        }
+    ],
+    "research": "antumbra",
+    "weapons": [
+        {
+            "name": "日蚀2",
+            "reload": 90,
+            "x": -10,
+            "y": 0,
+            "rotate": true,
+            "rotateSpeed": 1.5,
+            "inaccuracy": 4,
+            "alternate": true,
+            "shake": 3,
+            "shoot": {
+                "shots": 4,
+                "shotDelay": 6
+            },
+            "shootSound": "laser",
+            "bullet": {
+                "type": "LaserBulletType",
+                "speed": 10,
+                "damage": 141,
+                "splashDamage": 60,
+                "splashDamageRadius": 16,
+                "lifetime": 30,
+                "ammoMultiplier": 1,
+                "lenght": 8,
+                "width": 2,
+                "trailSpacing": 10,
+                "colors": [
+                    "D86E56FF",
+                    "FFA05CFF",
+                    "FFFFFF"
+                ],
+                "trailEffect": {
+                    "particles": 1,
+                    "length": 0,
+                    "lifetime": 45,
+                    "sizeFrom": 2,
+                    "sizeTo": 0,
+                    "colorFrom": "D86E56FF",
+                    "colorTo": "FFA05CFF",
+                    "cone": 0
+                },
+                "hitEffect": {
+                    "type": "multiEffect",
+                    "effects": [
+                        {
+                            "type": "particleEffect",
+                            "lifetime": 30,
+                            "length": 32,
+                            "particles": 8,
+                            "sizeFrom": 2,
+                            "sizeTo": 1,
+                            "colorFrom": "D86E56FF",
+                            "colorTo": "D86E56FF"
+                        },
+                        {
+                            "type": "particleEffect",
+                            "lifetime": 24,
+                            "length": 0,
+                            "particles": 1,
+                            "sizeFrom": 16,
+                            "sizeTo": 16,
+                            "colorFrom": "D86E56FF",
+                            "colorTo": "FFA05CFF"
+                        },
+                        {
+                            "type": "waveEffect",
+                            "lifetime": 10,
+                            "sizeFrom": 16,
+                            "sizeTo": 16,
+                            "strokeFrom": 2,
+                            "strokeTo": 0,
+                            "colorFrom": "D86E56FF",
+                            "colorTo": "D86E56FF"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "日蚀1",
+            "reload": 50,
+            "x": 18,
+            "y": 10,
+            "rotate": true,
+            "rotateSpeed": 1.5,
+            "inaccuracy": 0,
+            "alternate": true,
+            "shake": 3,
+            "shootSound": "laser",
+            "bullet": {
+                "type": "LaserBulletType",
+                "damage": 195,
+                "sideAngle": 20,
+                "sideWidth": 1,
+                "sideLength": 88,
+                "smokeEffect": "bigShockwave",
+                "colors": [
+                    "D86E56FF",
+                    "FFA05CFF",
+                    "FFFFFF"
+                ],
+                "width": 25,
+                "length": 360,
+                "status": "melting",
+                "statusDuration": 90
+            }
+        },
+        {
+            "name": "日蚀1",
+            "reload": 90,
+            "x": 14,
+            "y": -15,
+            "rotate": true,
+            "rotateSpeed": 1.5,
+            "inaccuracy": 0,
+            "alternate": true,
+            "shake": 3,
+            "shootSound": "laser",
+            "bullet": {
+                "type": "LaserBulletType",
+                "damage": 215,
+                "sideAngle": 20,
+                "sideWidth": 1,
+                "sideLength": 118,
+                "smokeEffect": "bigShockwave",
+                "colors": [
+                    "D86E56FF",
+                    "FFA05CFF",
+                    "FFFFFF"
+                ],
+                "width": 25,
+                "length": 400,
+                "status": "melting",
+                "statusDuration": 90
+            }
+        },
+        {
+            "name": "日蚀3",
+            "mirror": true,
+            "x": 24,
+            "y": 2,
+            "top": true,
+            "rotate": false,
+            "reload": 10,
+            "shake": 3,
+            "shootSound": "shootBig",
+            "inaccuracy": 0,
+            "alternate": true,
+            "ignoreRotation": false,
+            "shoot": {
+                "shots": 3,
+                "shotDelay": 0.5
+            },
+            "bullet": {
+                "speed": 10,
+                "lifetime": 20,
+                "damage": 32,
+                "width": 10,
+                "shrinkY": 0,
+                "height": 16,
+                "fragBullets": 4,
+                "fragRandomSpread": 30,
+                "fragBullet": {
+                    "damage": 54,
+                    "width": 10,
+                    "height": 10,
+                    "pierce": true,
+                    "pierceBuilding": true,
+                    "pierceCap": 3,
+                    "speed": 16,
+                    "lifetime": 10,
+                    "hitSound": "explosion",
+                    "hitEffect": "flakExplosion",
+                    "splashDamage": 34,
+                    "splashDamageRadius": 16
+                }
+            }
+        },
+        {
+            "name": "日蚀4",
+            "mirror": true,
+            "x": 2,
+            "y": 14,
+            "top": true,
+            "rotate": true,
+            "reload": 10,
+            "shake": 3,
+            "shootSound": "shootBig",
+            "inaccuracy": 14,
+            "alternate": true,
+            "ignoreRotation": false,
+            "shoot": {
+                "shots": 15,
+                "shotDelay": 2
+            },
+            "bullet": {
+                "speed": 7,
+                "lifetime": 40,
+                "damage": 18,
+                "splashDamage": 12,
+                "splashDamageRadius": 10,
+                "width": 10,
+                "shrinkY": 0,
+                "height": 16
+            }
+        }
+    ]
+}

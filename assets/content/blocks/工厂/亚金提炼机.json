@@ -1,0 +1,74 @@
+{
+    "type": "GenericCrafter",
+    "name": "亚金提炼机",
+    "description": "生产出无敌的亚金",
+    "details": "整个星球上最贵的金属工厂",
+    "itemCapacity": 10000,
+    "liquidCapacity": 10000,
+    "health": 2000,
+    "size": 6,
+    "hasPower": true,
+    "hasLiquids": true,
+    "hasItems": true,
+    "craftTime": 900,
+    "canOverdrive": false,
+    "updateEffect": {
+        "type": "ParticleEffect",
+        "particles": 6,
+        "length": 36,
+        "baseLength": 0,
+        "lifetime": 12,
+        "line": true,
+        "lenFrom": 12,
+        "lenTo": 6,
+        "strokeFrom": 3,
+        "strokeTo": 0,
+        "cone": 360
+    },
+    "consumes": {
+        "power": 9999,
+        "items": [
+            "钴/10",
+            "钴钢/4",
+            "碳纤维/5",
+            "钢合金/10",
+            "硬化钢铁/20",
+            "复合材料/15",
+            "钢铁/30",
+            "纳米/20"
+        ],
+        "liquids": [
+            {
+                "liquid": "cryofluid",
+                "amount": "6"
+            },
+            {
+                "liquid": "冷却液",
+                "amount": "3.4"
+            },
+            {
+                "liquid": "液态氮",
+                "amount": "1.1"
+            }
+        ]
+    },
+    "outputItem": {
+        "item": "亚金",
+        "amount": "3"
+    },
+    "requirements": [
+        "电路/240",
+        "高级电路/180",
+        "钴钢/150",
+        "钴/280",
+        "碳纤维/125",
+        "钢合金/240",
+        "硬化钢铁/420",
+        "钢铁/700",
+        "终级协议许可证/1",
+        "复合材料/340",
+        "纳米/420"
+    ],
+    "category": "crafting",
+    "research": "碳纤维制造机"
+}

@@ -1,0 +1,120 @@
+{
+    //"type": "mech",
+    "name": "卫戌",
+    "description": "？",
+    "details": "?",
+    "speed": 0.76,
+    "hitSize": 21,
+    "ammoType": {
+        "type": "PowerAmmoType",
+        "totalPower": 3000
+    },
+    "health": 24400,
+    "armor": 15,
+    "rotateSpeed": 1.4,
+    "itemCapacity": 30,
+    "targetAir": true,
+    "targetGround": true,
+    "abilities": [
+        {
+            "type": "ShieldRegenFieldAbility",
+            "reload": 300,
+            "amount": 300,
+            "range": 30,
+            "max": 1200
+        },
+        {
+            "type": "RepairFieldAbility",
+            "amount": 5,
+            "reload": 480,
+            "range": 30,
+            "healEffect": "heal",
+            "activeEffect": "healWaveDynamic",
+            "parentizeEffects": true
+        }
+    ],
+    "weapons": [
+        {
+            "name": "卫戌1",
+            "reload": 96,
+            "x": 19,
+            "y": 0,
+            "rotate": false,
+            "shootY": 3.5,
+            "inaccuracy": 1.6,
+            "mirror": true,
+            "shootSound": "小炮",
+            "alternate": true,
+            "shoot": {
+                "type": "ShootSpread",
+                "shotDelay": 2,
+                "shots": 3
+            },
+            "ejectEffect": {
+                "type": "ParticleEffect",
+                "particles": 1,
+                "sizeFrom": 0,
+                "sizeTo": 3,
+                "length": 0,
+                "baseLength": 0,
+                "lifetime": 20,
+                "colorFrom": "BF92F9FF",
+                "colorTo": "BF92F9FF"
+            },
+            "bullet": {
+                "type": "BasicBulletType",
+                "sprite": "shell",
+                "damage": 100,
+                "splashDamageRadius": 15,
+                "splashDamage": 33,
+                "speed": 10,
+                "ignoreRotation": true,
+                "lifetime": 20,
+                "hitSize": 16,
+                "height": 18,
+                "width": 12,
+                "status": "破甲",
+                "statusDuration": 30,
+                "trailColor": "BF92F9FF",
+                "trailWidth": 1.5,
+                "trailLength": 5,
+                "lightColor": "BF92F9FF",
+                "frontColor": "BF92F9FF",
+                "backColor": "665C9FFF",
+                "hitColor": "665C9FFF",
+                "fragRandomSpread": 0,
+                "fragBullets": 1,
+                "fragBullet": {
+                    "type": "LaserBulletType",
+                    "length": 200,
+                    "width": 25,
+                    "damage": 240,
+                    "targetGround": false,
+                    "status": "破甲",
+                    "statusDuration": 90,
+                    "colors": [
+                        "BF92F9FF",
+                        "665C9FFF",
+                        "FFFFFF"
+                    ],
+                    "hitEffect": {
+                        "type": "ParticleEffect",
+                        "line": true,
+                        "particles": 15,
+                        "lifetime": 30,
+                        "interp": "circleOut",
+                        "offset": 30,
+                        "length": 50,
+                        "lightColor": "BF92F9FF",
+                        "strokeFrom": 4,
+                        "strokeTo": 0,
+                        "lenFrom": 10,
+                        "lenTo": 10,
+                        "colorFrom": "BF92F9FF",
+                        "colorTo": "BF92F9FF"
+                    }
+                }
+            }
+        }
+    ]
+}

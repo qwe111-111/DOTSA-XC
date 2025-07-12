@@ -1,0 +1,71 @@
+{
+    "type": "mech",
+    "name": "战锤",
+    "details": "？",
+    "health": 800,
+    "armor": 5,
+    "speed": 0.62,
+    "range": 65,
+    "weapons": [
+        {
+            "name": "战锤1",
+            "reload": 9,
+            "shootY": 2,
+            "rotate": false,
+            "inaccuracy": 0,
+            "alternate": true,
+            "top": false,
+            "shootSound": "flame",
+            "ejectEffect": "none",
+            "shoot": {
+                "shots": 2
+            },
+            "cooldownTime": 120,
+            "bullet": {
+                "type": "BulletType",
+                "lifetime": 10,
+                "speed": 5,
+                "knockback": 0.42,
+                "damage": 19,
+                "ammoMultiplier": 3,
+                "incendAmount": 1,
+                "incendSpread": 11,
+                "incendChance": 0.2,
+                "hittable": false,
+                "absorbable": false,
+                "pierce": true,
+                "makeFire": true,
+                "pierceBuilding": true,
+                "pierceCap": 2,
+                "shootEffect": "shootPyraFlame",
+                "smokeEffect": {
+                    "type": "ParticleEffect",
+                    "particles": 5,
+                    "line": true,
+                    "strokeFrom": 2.4,
+                    "strokeTo": 0,
+                    "lenFrom": 46,
+                    "lenTo": 8,
+                    "length": 146,
+                    "baseLength": 0,
+                    "lifetime": 22,
+                    "colorFrom": "FFFFFF",
+                    "colorTo": "FFE176FF",
+                    "cone": 10
+                },
+                "hitEffect": {
+                    "type": "ParticleEffect",
+                    "particles": 8,
+                    "lifetime": 15,
+                    "sizeFrom": 5,
+                    "sizeTo": 0,
+                    "colorFrom": "FF8C00",
+                    "colorTo": "FF8C00"
+                },
+                "despawnEffect": "none",
+                "statusDuration": 360,
+                "status": "burning"
+            }
+        }
+    ]
+}

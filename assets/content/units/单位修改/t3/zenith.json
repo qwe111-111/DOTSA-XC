@@ -1,0 +1,74 @@
+{
+    "type": "flying",
+    "description": "增强",
+    "speed": 1.5,
+    "drag": 0.05,
+    "accel": 0.1,
+    "rotateSpeed": 6,
+    "ammoCapacity": 0,
+    "hitSize": 20,
+    "flying": true,
+    "faceTarget": true,
+    "range": 160,
+    "health": 3800,
+    "armor": 5,
+    "research": "horizon",
+    "itemCapacity": 30,
+    "weapons": [
+        {
+            "name": "苍穹1",
+            "chargeSound": "plasma-drop-boom",
+            "soundPitchMin": 1,
+            "soundPitchMax": 1,
+            "mirror": true,
+            "x": 7,
+            "y": 0,
+            "reload": 120,
+            "rotate": true,
+            "inaccuracy": 10,
+            "shootStatusDuration": 50,
+            "shootStatus": "slow",
+            "top": false,
+            "shootSound": "missile",
+            "shoot": {
+                "shots": 8,
+                "shotDelay": 5,
+                "firstShotDelay": 36
+            },
+            "bullet": {
+                "type": "MissileBulletType",
+                "chargeEffect": [
+                    {
+                        "type": "WaveEffect",
+                        "lifetime": 30,
+                        "sizeFrom": 100,
+                        "sizeTo": 8,
+                        "strokeFrom": 6,
+                        "strokeTo": 2,
+                        "colorFrom": "f7bf8e",
+                        "colorTo": "e04e4e"
+                    },
+                    {
+                        "type": "WaveEffect",
+                        "startDelay": 24,
+                        "lifetime": 18,
+                        "sizeFrom": 8,
+                        "sizeTo": 100,
+                        "strokeFrom": 6,
+                        "strokeTo": 2,
+                        "colorFrom": "f7bf8e",
+                        "colorTo": "e04e4e"
+                    }
+                ],
+                "damage": 21,
+                "status": "blasted",
+                "splashDamageRadius": 48,
+                "splashDamage": 28,
+                "speed": 4.4,
+                "lifetime": 36,
+                "width": 8,
+                "height": 8
+            }
+        }
+    ]
+}

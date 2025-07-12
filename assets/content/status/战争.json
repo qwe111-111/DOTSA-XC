@@ -1,0 +1,11 @@
+{
+    "name": "战争",
+    "damageMultiplier": 3.5,
+    "healthMultiplier": 2,
+    "speedMultiplier": 0.8,
+    "reloadMultiplier": 0.5,
+    "damage": -1.5,
+    "permanent": true,
+    "reactive": false,
+    "color": "EDC346FF"
+}

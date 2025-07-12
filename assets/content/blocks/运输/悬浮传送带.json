@@ -1,0 +1,16 @@
+{
+	"type": "Conveyor",
+	"name": "电路传送带",
+	"description":"？"
+	"details": "？"
+	"health": 45,
+	"requirements": [
+		"电路/1",
+		"钢铁/2",
+	],
+	"category": "distribution",
+	"research":"conveyor",
+	"speed": 0.6,
+	"bridgeReplacement": "高级连接器"
+	"displayedSpeed": 60
+}

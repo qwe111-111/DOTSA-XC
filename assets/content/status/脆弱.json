@@ -1,0 +1,12 @@
+{
+    "name": "脆弱",
+    "damageMultiplier": 0.8,
+    "healthMultiplier": 0.8,
+    "speedMultiplier": 0.8,
+    "reloadMultiplier": 0.8,
+    "damage": 1,
+    "permanent": false,
+    "reactive": false,
+    "color": "EDC346FF",
+    "effectChance": 3
+}

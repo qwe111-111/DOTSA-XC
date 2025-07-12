@@ -1,0 +1,39 @@
+{
+	"type": "UnitAssembler",
+	"name": "跃迁军备厂",
+	"size": 16,
+	"liquidCapacity": 120,
+	"consumes": {
+		"power": 1200,
+		"liquid": {
+			"liquid": "冷却液",
+			"amount": 4
+		}
+	},
+	"areaSize": 40,
+	"plans": [
+		{
+			"unit": "大狰狞",
+			"time": 28800,
+			"requirements": [
+				"改进工业-动能模块/1",
+				"改进工业-装甲模块/1",
+				
+			]
+		}
+	],
+	"droneType": "组装无人机",
+	"requirements": [
+		"钢铁/8000",
+		"silicon/6000",
+		"纳米/5000",
+		"plastanium/5000",
+		"钢合金/3000",
+		"钴/3000",
+		"碳纤维/1200",
+		"筑元体/2020"
+	],
+	"category": "units",
+	"canOverdrive": false,
+	"research": "模块厂"
+}

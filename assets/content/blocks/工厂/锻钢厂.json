@@ -1,0 +1,41 @@
+{
+    "type": "GenericCrafter",
+    "name": "锻钢厂",
+    "description": "不断捶打变为硬化钢铁",
+    "details": "蘑菇锭？",
+    "itemCapacity": 20,
+    "liquidCapacity": 30,
+    "health": 1200,
+    "size": 2,
+    "hasPower": true,
+    "hasLiquids": true,
+    "hasItems": true,
+    "craftTime": 60,
+    "updateEffect": "none",
+    "consumes": {
+        "power":1.2,
+        "items": [
+            "钢铁/2"
+        ],
+    },
+    "outputItem": {
+        "item": "硬化钢铁",
+        "amount": "1"
+    },
+    "requirements": [
+        "钢铁/20",
+        "copper/30",
+        "lead/50",
+        "titanium/30"
+    ],
+    "category": "crafting",
+    "research": {
+		"parent": "炼钢炉",
+		"objectives": [
+			"钢铁",
+			"titanium"
+        ]
+				"type": "SectorComplete",
+				"preset": "frozenforest"
+	}
+}

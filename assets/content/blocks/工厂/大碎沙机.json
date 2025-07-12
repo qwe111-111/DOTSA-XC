@@ -1,0 +1,55 @@
+{
+    "type": "GenericCrafter",
+    "name": "大型碎沙机",
+    "description": "？",
+    "details": "？",
+    "itemCapacity": 40,
+    "outputItem": "sand/4",
+    "liquidCapacity": 55,
+    "health": 780,
+    "craftSound": "rain",
+    "size": 2,
+    "hasPower": true,
+    "hasLiquids": true,
+    "hasItems": true,
+    "craftTime": 25,
+    "updateEffect": "none",
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            "DrawDefault",
+            {
+                "type": "DrawRegion",
+                "suffix": "-转",
+                "spinSprite": true,
+                "rotateSpeed": 4
+            }
+        ]
+    },
+    "craftEffect": {
+        "type": "ParticleEffect",
+        "particles": 4,
+        "baseLength": 2,
+        "length": 11,
+        "region": "改进工业-方块",
+        "lifetime": 20,
+        "sizeFrom": 10,
+        "sizeTo": 0,
+        "colorFrom": "FFFFFFB8",
+        "colorTo": "FFFFFFB8"
+    },
+    "consumes": {
+        "power": 1.1,
+        "items": [
+            "scrap/3"
+        ]
+    },
+    "requirements": [
+        "silicon/20",
+        "钢铁/35"
+    ],
+    "category": "crafting",
+    "research": {
+        "parent": "pulverizer"
+    }
+}

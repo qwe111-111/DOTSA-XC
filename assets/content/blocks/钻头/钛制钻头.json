@@ -1,0 +1,29 @@
+{
+    "type": "Drill",
+    "name": "钛制钻头",
+    "description": "钛钻海不加水我直接原地去世",
+    "details": "十分给力，激光？谁啊？",
+    "size": 2,
+    "health": 350,
+    "itemCapacity": 30,
+    "liquidCapacity": 30,
+    "tier": 4,
+    "drillTime": 260,
+    "rotateSpeed": 2,
+    "drawMineltem": true,
+    "liquidBoostIntensity": 2,
+    "consumes": {
+        "liquid": {
+            "liquid": "water",
+            "amount": 0.2,
+            "optional": true,
+            "booster": true
+        }
+    },
+    "requirements": [
+        "titanium/8",
+        "钢铁/2"
+    ],
+    "category": "production",
+    "research": "pneumatic-drill"
+}

@@ -1,0 +1,82 @@
+{
+    "type": "ItemTurret",
+    "name": "爆光",
+    "description": "雷光升级",
+    "health": 4460,
+    "size": 4,
+    "reload": 60,
+    "range": 325,
+    "maxAmmo": 60,
+    "recoilTime": 30,
+    "recoil": 3,
+    "consumes": {
+        "coolant": {
+            "amount": 0.3,
+            "optional": true
+        }
+    },
+    "shoot": {
+        "shots": 5,
+        "shotDelay": 0
+    },
+    "ammoPerShot": 4,
+    "shootSound": "shotgun",
+    "targetGround": true,
+    "targetAir": true,
+    "inaccuracy": 0,
+    "shake": 3,
+    "shootCone": 20,
+    "ammoTypes": {
+        "titanium": {
+            "speed": 0,
+            "damage": 160,
+            "knockback": 0.05,
+            "lifetime": 32,
+            "width": 20,
+            "length": 320,
+            "height": 9,
+            "type": "ShrapnelBulletType",
+            "ammoMultiplier": 2,
+            "shootEffect": "shootSmall"
+        },
+        "thorium": {
+            "speed": 0,
+            "damage": 210,
+            "knockback": 0.05,
+            "lifetime": 32,
+            "width": 20,
+            "length": 320,
+            "height": 9,
+            "type": "ShrapnelBulletType",
+            "ammoMultiplier": 2,
+            "shootEffect": "shootSmall"
+        }
+    },
+    "rotateSpeed": 3,
+    "requirements": [
+        {
+            "item": "graphite",
+            "amount": 300
+        },
+        {
+            "item": "silicon",
+            "amount": 250
+        },
+        {
+            "item": "metaglass",
+            "amount": 300
+        },
+        {
+            "item": "phase-fabric",
+            "amount": 120
+        },
+        {
+            "item": "surge-alloy",
+            "amount": 250
+        }
+    ],
+    "category": "turret",
+    "research": {
+        "parent": "雷枪"
+    }
+}

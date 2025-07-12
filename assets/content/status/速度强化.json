@@ -1,0 +1,14 @@
+{
+    "name": "速度强化",
+    "description": "...",
+    "details": "...",
+    "damageMultiplier": 1,
+    "healthMultiplier": 1,
+    "speedMultiplier": 2.5,
+    "reloadMultiplier": 1,
+    "damage": 0,
+    "buildSpeedMultiplier": 0,
+    "permanent": false,
+    "reactive": false,
+    "color": "EDC346FF"
+}

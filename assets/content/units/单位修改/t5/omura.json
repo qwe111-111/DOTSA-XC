@@ -1,0 +1,107 @@
+{
+	"health": 48000,
+	"abilities": [
+    {
+			"type": "StatusFieldAbility",
+			"duration": 300,
+			"reload": 500,
+			"range": 0,
+			"applyEffect": "none",
+			"activeEffect": "none",
+			"effect": "boss"
+		},
+		]
+	"weapons":[
+	{	
+	"name": "海神1",
+	"reload": 180,  
+	"x": 0,  "y": 0, 
+	"shootY":10,
+	"cooldownTime": 90,
+	"rotate": true,
+	"rotateSpeed":4,
+	"mirror":false,
+	"inaccuracy": 0,
+	"shootSound":"railgun",
+	"shake":8,
+	"bullet":{	
+	"type":"RailBulletType",
+	"buildingDamageMultiplier":0.75,
+	"damage":3500,
+	"pierce": true,	
+	"pierceBuilding":true,
+	"pierceEffect":"railHit",
+	"pointEffect":"railTrail",
+	"hitEffect":"massiveExplosion",
+	"shootEffect":"railShoot",
+	"smokeEffect":"smokeCloud",
+	"pierceDamageFactor":0.75,
+	"length":784,
+	"despawnEffect":"bigShockwave"
+	}	
+	}
+	{
+    "name": "王座2",
+    "shootY": 11,
+    "recoil": 5,
+    "shake": 5,
+    "x": -21.5,
+    "rotate": true,
+    "y": -12,
+    "reload": 7.5,
+    "ejectEffect": "casing4",
+    "shootSound": "bang",
+    "bullet": {
+        "type": "BasicBulletType",
+        "removeAfterPierce": false,
+        "collideTerrain": true,
+        "despawnShake": 5,
+        "pierce": true,
+        "hitShake": 5,
+        "height": 38,
+        "width": 14,
+        "buildingDamageMultiplier": 0.32,
+        "pierceDamageFactor": 1.25,
+        "splashDamageRadius": 13,
+        "fragRandomSpread": 45,
+        "fragVelocityMin": 0.4,
+        "splashDamage": 55,
+        "fragBullets": 3,
+        "fragLifeMin": 0,
+        "lifetime": 20.5,
+        "pierceCap": 10,
+        "damage": 125,
+        "speed": 19,
+        "hitEffect": "blastExplosion",
+        "shootEffect": "shootBig",
+        "lightColor": "fff8e8",
+        "lightOpacity": 0.7,
+        "lightRadius": 52
+    },
+    "fragBullet": {
+        "type": "BasicBulletType",
+        "removeAfterPierce": false,
+        "collideTerrain": true,
+        "pierceBuilding": true,
+        "collidesAir": false,
+        "despawnShake": 1,
+        "pierce": true,
+        "hitShake": 1,
+        "height": 10,
+        "width": 10,
+        "buildingDamageMultiplier": 0.16,
+        "pierceDamageFactor": 0.75,
+        "splashDamageRadius": 26,
+        "splashDamage": 36,
+        "pierceCap": 3,
+        "lifetime": 20,
+        "damage": 32,
+        "speed": 5,
+        "hitEffect": "flakExplosion",
+        "lightColor": "fff8e8",
+        "lightOpacity": 0.7,
+        "lightRadius": 21
+    }
+}
+	]
+}

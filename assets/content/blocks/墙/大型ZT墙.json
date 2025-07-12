@@ -1,0 +1,18 @@
+{
+    "type": "Wall",
+    "name": "大型ZT墙",
+    "description": "具有极高的耐久度和防护能力，但造价较高",
+    "armor": 100,
+    "lightningChance": 0,
+    "lightningDamage": 0,
+    "lightningLength": 0,
+    "health": 15500,
+    "size": "2",
+    "insulated": false,
+    "absorbLasers": false,
+    "requirements": [
+        "碳纤维/12"
+    ],
+    "category": "defense",
+    "research": "碳纤维墙"
+}

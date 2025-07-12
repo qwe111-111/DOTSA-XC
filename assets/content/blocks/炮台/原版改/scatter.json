@@ -1,0 +1,54 @@
+{
+    "targetAir": true,
+    "targetGround": true,
+    "ammoTypes": {
+        "lead": {
+            "damage": 8,
+            "lifetime": 60,
+            "ammoMultiplier": 5,
+            "shootEffect": "Fx.shootSmall",
+            "width": 6,
+            "height": 8,
+            "hitEffect": "Fx.flakExplosion",
+            "splashDamage": 21,
+            "splashDamageRadius": 12,
+            "reloadmultiplier": 1.5
+        },
+        "scrap": {
+            "damage": 6,
+            "lifetime": 60,
+            "ammoMultiplier": 5,
+            "shootEffect": "Fx.shootSmall",
+            "width": 6,
+            "height": 8,
+            "hitEffect": "Fx.flakExplosion",
+            "splashDamage": 25,
+            "splashDamageRadius": 10,
+            "reloadmultiplier": 0.8
+        },
+        "metaglass": {
+            "damage": 8,
+            "lifetime": 60,
+            "ammoMultiplier": 5,
+            "shootEffect": "Fx.shootSmall",
+            "width": 6,
+            "height": 8,
+            "hitEffect": "Fx.flakExplosion",
+            "splashDamage": 28,
+            "splashDamageRadius": 14,
+            "reloadmultiplier": 1.2
+        },
+        "钢铁": {
+            "damage": 11,
+            "lifetime": 60,
+            "ammoMultiplier": 4,
+            "shootEffect": "Fx.shootSmall",
+            "width": 6,
+            "height": 8,
+            "hitEffect": "Fx.flakExplosion",
+            "splashDamage": 48,
+            "splashDamageRadius": 21,
+            "reloadmultiplier": 1.5
+        }
+    }
+}

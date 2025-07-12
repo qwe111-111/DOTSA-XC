@@ -1,0 +1,20 @@
+{
+    "name": "强化钢铁墙",
+    "description": "前期十分抗打",
+    "armor": 35,
+    "lightningChance": 0.15,
+    "lightningDamage": 35,
+    "lightningLength": 15,
+    "health": 7000,
+    "size": 2,
+    "insulated": true,
+    "absorbLasers": true,
+    "requirements": [
+        "硬化钢铁/14",
+        "钢铁/24",
+        "电路/6",
+        "phase-fabric/12"
+    ],
+    "category": "defense",
+    "research": "大型钢墙"
+}

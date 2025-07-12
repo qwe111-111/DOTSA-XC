@@ -1,0 +1,41 @@
+{
+	"type": "GenericCrafter",
+	"health": 4500,
+	"name": "ZT制造机",
+	"description": "缩小了占地面积，制造[red]ZT合金",
+	"outputItem": "碳纤维/3",
+	"itemCapacity": 100,
+	"size": 3,
+	"hasPower": true,
+	"hasLiquids": false,
+	"hasItems": true,
+	"craftTime": 240,
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+			"DrawFlame"
+            ]
+    },
+	"consumes": {
+		"power": 10,
+			"items": [
+				"复合材料/6",
+				"silicon/8",
+				"phase-fabric/7",
+				"硬化钢铁/8",
+				"钢铁/13"
+			]
+	    "liquid": "water/2.3"
+	},
+	"requirements": [
+		"复合材料/140",
+		"surge-alloy/250",
+		"钴钢/250",
+		"钢合金/70",
+		"高级电路/70"
+	],
+	"category": "crafting",
+	"ambientSound": "smelter",
+	"research": "复合材料制造机"
+}

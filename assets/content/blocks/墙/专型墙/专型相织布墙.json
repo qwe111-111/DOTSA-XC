@@ -1,0 +1,19 @@
+{
+  "type": "Wall",
+  "name": "专型相织布墙",
+  "description": "更为坚固",
+  "armor": 17,
+  "lightningChance": 0,
+  "lightningDamage": 0,
+  "lightningLength": 0,
+  "health": 5000,
+  "size": "3",
+  "insulated": true,
+  "absorbLasers": true,
+    "placeableLiquid": true,
+  "requirements": [
+    "phase-fabric/55"
+  ],
+  "category": "defense",
+  "research": "专型塑钢墙"
+}

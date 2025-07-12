@@ -1,0 +1,16 @@
+{
+    "name": "轻型轨桥",
+    "description": "有着较远的连接距离和运输速度，实用？",
+    "type": "DuctBridge",
+    "requirements": [
+        {
+            "item": "titanium",
+            "amount": 5
+        }
+    ],
+    "health": 120,
+    "speed": 10,
+    "range": 9,
+    "category": "distribution",
+    "research": "轻型轨道"
+}

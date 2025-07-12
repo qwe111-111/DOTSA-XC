@@ -1,0 +1,22 @@
+{
+    "type": "BaseShield",
+    "name": "自生能量护场墙",
+    "description": "可以很好的拦截袭击",
+    "size": 2,
+    "armor": 3,
+    "health": 5000,
+    "powerProduction": 5,
+    "insulated": true,
+    "absorbLasers": true,
+    "placeableLiquid": true,
+    "radius": 10,
+    //"sides":6,调整盾的边数
+    "requirements": [
+        {
+            "item": "钢合金",
+            "amount": "10"
+        }
+    ],
+    "category": "defense",
+    "research": "大型钢墙"
+}

@@ -1,0 +1,97 @@
+{
+    "type": "UnitFactory",
+    "name": "防卫兵工厂",
+    "category": "units",
+    "description": "...",
+    "research": {
+        "parent": "克斯特World",
+        "requirements": [
+            "copper/500",
+            "lead/500",
+            "silicon/450",
+            "titanium/245",
+            "电路/225",
+            "高级电路/75",
+            "复合材料/125",
+            "surge-alloy/175"
+        ]
+    },
+    "requirements": [
+        "copper/500",
+        "lead/500",
+        "silicon/450",
+        "titanium/245",
+        "电路/225",
+        "高级电路/75",
+        "复合材料/125",
+        "surge-alloy/175"
+    ],
+    "health": 3500,
+    "armor": 10,
+    "plans": [
+        {
+            "unit": "安保机器",
+            "time": 600.00,
+            "requirements": [
+                "电路/30",
+                "高级电路/20",
+                "复合材料/45",
+                "surge-alloy/25"
+            ]
+        },
+        {
+            "unit": "安保机器-B",
+            "time": 600.00,
+            "requirements": [
+                "电路/30",
+                "高级电路/20",
+                "复合材料/45",
+                "surge-alloy/25"
+            ]
+        },
+        {
+            "unit": "安保机器-C",
+            "time": 600.00,
+            "requirements": [
+                "电路/30",
+                "高级电路/20",
+                "复合材料/45",
+                "surge-alloy/25"
+            ]
+        },
+        {
+            "unit": "安保机器-D",
+            "time": 600.00,
+            "requirements": [
+                "电路/30",
+                "高级电路/20",
+                "复合材料/45",
+                "surge-alloy/25"
+            ]
+        },
+        {
+            "unit": "安保机器-E",
+            "time": 600.00,
+            "requirements": [
+                "电路/30",
+                "高级电路/20",
+                "复合材料/45",
+                "surge-alloy/25"
+            ]
+        },
+        {
+            "unit": "安保机器-F",
+            "time": 600.00,
+            "requirements": [
+                "电路/30",
+                "高级电路/20",
+                "复合材料/45",
+                "surge-alloy/25"
+            ]
+        }
+    ],
+    "size": 5,
+    "consumes": {
+        "power": 15
+    }
+}

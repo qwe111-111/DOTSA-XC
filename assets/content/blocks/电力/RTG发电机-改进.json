@@ -1,0 +1,47 @@
+{
+    "type": "ConsumeGenerator",
+    "name": "RTG发电机-改进",
+    "description": "？",
+    "size": 3,
+    "health": 1000,
+    "hasItems": true,
+    "hasLiquids": true,
+    "liquidCapacity": 50,
+    "itemCapacity": 50,
+    "outputsPower": true,
+    "powerProduction": 30.5,
+    "itemDuration": 60,
+    "consumes": {
+        "itemFlammable": {},
+        "itemExplode": {},
+        "liquid": "water/0.6"
+    },
+    "items": {
+        "items": [
+            {
+                "item": "thorium",
+                "amount": 1
+            }
+        ]
+    },
+    "requirements": [
+        {
+            "item": "titanium",
+            "amount": 120
+        },
+        {
+            "item": "silicon",
+            "amount": 150
+        },
+        {
+            "item": "plastanium",
+            "amount": 40
+        },
+        {
+            "item": "phase-fabric",
+            "amount": 40
+        }
+    ],
+    "category": "power",
+    "research": "rtg-generator"
+}

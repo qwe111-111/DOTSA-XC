@@ -1,0 +1,39 @@
+{
+    "type": "ThermalGenerator",
+    "name": "冰冻发电机",
+    "description": "？:",
+    "size": 2,
+    "health": 1200,
+    "hasPower": true,
+    "hasItems": true,
+    "itemDuration": 80,
+    "liquidCapacity": 60,
+    "generateEffect": "reactorsmoke",
+    "attribute": "water",
+    "powerProduction": 10,
+    "maxHeatBoost": 6,
+    "requirements": [
+        {
+            "item": "titanium",
+            "amount": 70
+        },
+        {
+            "item": "lead",
+            "amount": 80
+        },
+        {
+            "item": "silicon",
+            "amount": 50
+        },
+        {
+            "item": "thorium",
+            "amount": 60
+        },
+        {
+            "item": "metaglass",
+            "amount": 50
+        }
+    ],
+    "category": "power",
+    "research": "高效热量发电机"
+}

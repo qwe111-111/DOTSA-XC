@@ -1,0 +1,16 @@
+{
+    "type":"PowerNode",
+    "name":"巨浪合金节点",
+	"description":"你合金就那么多？",
+    "health":500,
+	"size":1,
+    "maxNodes":80,
+    "laserRange":80,
+	"research":"无中生电",
+	"requirements": [
+	{"item": "surge-alloy", "amount": 10},
+	],
+	"category":"power"
+	"researchCostMultiplier": 0.2,
+	    "canOverdrive": false,
+}

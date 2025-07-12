@@ -1,0 +1,32 @@
+{
+    "name": "老式抽水机",
+    "description": "十分简陋的抽水机",
+    "type": "SolidPump",
+    "category": "production",
+    "health": 240,
+    "size": 2,
+    "floating": true,
+    "hasPower": true,
+    "hasLiquids": true,
+    "liquidCapacity": 20,
+    "requirements": [
+        {
+            "item": "copper",
+            "amount": 10
+        },
+        {
+            "item": "lead",
+            "amount": 10
+        },
+        {
+            "item": "graphite",
+            "amount": 5
+        }
+    ],
+    "pumpAmount": 0.05,
+    "rotateSpeed": 0.8,
+    "result": "water",
+    "baseEfficiency": 1,
+    "attribute": "water",
+    "research": "钛制钻头"
+}

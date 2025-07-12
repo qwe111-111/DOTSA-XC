@@ -1,0 +1,51 @@
+{
+    "type": "UnitFactory",
+    "name": "新型作战兵工厂",
+    "category": "units",
+    "description": "[red]兵种大改造！",
+    "research": {
+        "parent": "克斯特World",
+        "requirements": [
+            "copper/500",
+            "lead/500",
+            "silicon/450",
+            "titanium/245"
+        ]
+    },
+    "requirements": [
+        "graphite/120",
+        "silicon/200"
+    ],
+    "health": 2200,
+    "armor": 0,
+    "plans": [
+        {
+            "unit": "突袭",
+            "time": 300.00,
+            "requirements": [
+                "silicon/30",
+                "graphite/20"
+            ]
+        },
+        {
+            "unit": "幸运",
+            "time": 300.00,
+            "requirements": [
+                "silicon/30",
+                "钢铁/15"
+            ]
+        },
+        {
+            "unit": "刀锋",
+            "time": 300.00,
+            "requirements": [
+                "silicon/30",
+                "graphite/20"
+            ]
+        }
+    ],
+    "size": 3,
+    "consumes": {
+        "power": 3.50
+    }
+}

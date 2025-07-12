@@ -1,0 +1,34 @@
+{
+    "type": "GenericCrafter",
+    "name": "初级协议准许室",
+    "description": "消耗电力及冷冻液，生产许可证",
+    "outputItem": "初级协议许可证/1",
+    "size": 3,
+    "hasPower": true,
+    "hasLiquids": false,
+    "hasItems": true,
+    "craftTime": 3000,
+    "itemCapacity": 18,
+    "craftEffect": "smeltsmoke",
+    "consumes": {
+        "power": 7.5,
+        "liquid": {
+            "liquid": "cryofluid",
+            "amount": 0.2,
+            "booster": false
+        }
+    },
+    "requirements": [
+        "lead/390",
+        "graphite/275",
+        "metaglass/310",
+        "thorium/265",
+        "钢铁/180",
+        "硬化钢铁/145",
+        "电路/155",
+        "surge-alloy/125"
+    ],
+    "category": "effect",
+    "ambientSound": "smelter",
+    "research": "克斯特World"
+}

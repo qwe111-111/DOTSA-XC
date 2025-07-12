@@ -1,0 +1,38 @@
+{
+    "type": "GenericCrafter",
+    "health": 2200,
+    "name": "纳米复刻机",
+    "description": "？",
+    "outputItem": "纳米/4",
+    "itemCapacity": 100,
+    "size": 4,
+    "hasPower": true,
+    "hasLiquids": false,
+    "hasItems": true,
+    "craftTime": 140,
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            "DrawDefault",
+            "DrawFlame"
+        ]
+    },
+    "consumes": {
+        "power": 5,
+        "items": [
+            "电路/3",
+            "silicon/2",
+            "钢铁/2"
+        ]
+    },
+    "requirements": [
+        "graphite/140",
+        "硬化钢铁/50",
+        "titanium/250",
+        "phase-fabric/100",
+        "钢铁/70"
+    ],
+    "category": "crafting",
+    "ambientSound": "smelter",
+    "research": "大型塑钢机"
+}

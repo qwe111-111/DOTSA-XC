@@ -1,0 +1,17 @@
+{
+	"name": "策反墙",
+	"description":"切断敌人的操控，将其变为我军"
+	"armor":6,
+	"lightningChance":0,
+	"lightningDamage":0,
+	"lightningLength":0,
+	"health":6400,
+	"size":2,
+	"insulated":true,
+	"absorbLasers":true,
+	"requirements": [
+		"钢合金/8"
+	],
+	"category": "defense",
+	"research": "作弊"
+}

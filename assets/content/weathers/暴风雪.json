@@ -1,0 +1,26 @@
+{
+    "name": "暴风雪",
+    "type": "ParticleWeather",
+    "particleRegion": "circle-small",
+    "drawNoise": true,
+    "statusGround": true,
+    "useWindVector": true,
+    "color": "E1E9F0FF",
+    "noiseColor": "E1E9F0FF",
+    "sizeMin": 2.5,
+    "sizeMax": 7,
+    "minAlpha": 0.2,
+    "maxAlpha": 1,
+    "density": 3000,
+    "baseSpeed": 19,
+    "force": 0.15,
+    "duration": 7,
+    "sound": "windhowl",
+    "soundVol": 0.8,
+    "status": "freezing",
+    "attrs": {
+        "light": -0.05,
+        "water": 1.15,
+        "heat": -0.5,
+    }
+}

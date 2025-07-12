@@ -1,0 +1,34 @@
+{
+    "type": "ThermalGenerator",
+    "name": "孢子发电机",
+    "description": "当放置在拥有孢子的地形时发电",
+    "size": 2,
+    "health": 150,
+    "hasPower": true,
+    "hasItems": true,
+    "itemDuration": 80,
+    "liquidCapacity": 60,
+    "generateEffect": "reactorsmoke",
+    "attribute": "spores",
+    "powerProduction": 8,
+    "requirements": [
+        {
+            "item": "lead",
+            "amount": 45
+        },
+        {
+            "item": "metaglass",
+            "amount": 30
+        },
+        {
+            "item": "graphite",
+            "amount": 30
+        },
+        {
+            "item": "silicon",
+            "amount": 15
+        }
+    ],
+    "category": "power",
+    "research": "水力发电机"
+}

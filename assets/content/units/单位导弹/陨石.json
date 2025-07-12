@@ -1,0 +1,155 @@
+{
+	"type": "missile",
+	"template": "MissileUnitType",
+	"name": "陨石",
+	"show":false,
+	"homingDelay": 90,
+	"speed": 10,
+	"lifetime": 320,
+	"rotateSpeed": 5,
+	"loopSoundVolume": 0.03,
+	"deathSound": "explosionbig",
+	"hidden": true,
+	"missileAccelTime": 100,
+	"hitSize": 18,
+	"health": 700,
+	"armor": 20,
+	"fogRadius": 8,
+	"engineColor": "A9D8FFFF",
+	"trailColor": "A9D8FFFF",
+	"trailLength": 35,
+	"engineLayer": 110,
+	"engineOffset": 8,
+	"engineSize": 4,
+	"maxRange": 30,
+	"weapons": [
+		{
+			"x": 0,
+			"y": 0,
+			"reload": 1,
+			"mirror": false,
+			"rotate": true,
+			"shake": 10,
+			"shootSound": "none",
+			"shootOnDeath": true,
+			"shootCone": 360,
+			"bullet": {
+				"collides":false,
+				"instantDisappear": true,
+				"ammoMultiplier": 1,
+				"hitSound": "titanExplosion",
+				"hitSoundVolume": 6,
+				"killShooter": true,
+				"splashDamageRadius": 210,
+				"splashDamage": 3496,
+			   "buildingDamageMultiplier": 0.1,
+				"hitShake": 80,
+				"shootEffect":  {
+					"type": "MultiEffect",
+					"effects": [
+						{
+							"type":"WrapEffect",
+							"effect":"massiveExplosion",
+							"color":"A9D8FFFF"
+						},
+						{
+							"type":"WrapEffect",
+							"effect":"scatheExplosion",
+							"color":"A9D8FFFF"
+						}
+					]},
+				"smokeEffect": "none",
+				"despawnEffect": "none",
+				"hitEffect": {
+					"type": "MultiEffect",
+					"effects": [
+						{
+							"type": "ParticleEffect",
+							"particles": 26,
+							"sizeFrom": 30,
+							"sizeTo": 0,
+							"length": 196,
+							"baseLength": 56,
+							"interp": "pow10Out",
+							"sizeInterp": "pow10Out",
+							"lifetime": 120,
+							"colorFrom": "A9D8FFFF",
+							"colorTo": "A9D8FFFF00"
+						},
+						{
+							"type": "WaveEffect",
+							"lifetime": 80,
+							"interp": "circleOut",
+							"sizeFrom": 0,
+							"sizeTo": 256,
+							"strokeFrom": 10,
+							"strokeTo": 0,
+							"colorFrom": "A9D8FFFF",
+							"colorTo": "A9D8FFFF"
+						},
+						{
+							"type": "WaveEffect",
+							"lifetime": 120,
+							"interp": "circleOut",
+							"sizeFrom": 0,
+							"sizeTo": 2000,
+							"strokeFrom": 10,
+							"strokeTo": 0,
+							"colorFrom": "A9D8FFFF",
+							"colorTo": "A9D8FFFF"
+						}
+					]
+				},
+				"fragBullets": 5,
+				"fragLifeMax": 1,
+				"fragLifeMin": 0.5,
+				"fragVelocityMax": 1,
+				"fragVelocityMin": 0.4,
+				"fragBullet": {
+					"type": "ArtilleryBulletType",
+					"speed": 10,
+					"drag": 0.016,
+					"lifetime": 5,
+					"collidesAir": true,
+					"sprite": "circle"
+					"frontColor": "A9D8FFFF",
+					"backColor": "A9D8FFFF",
+					"trailColor": "A9D8FFFF",
+					"trailLength": 16,
+					"trailWidth": 3.4,
+					"splashDamage": 940,
+					"splashDamageRadius": 160,
+					"buildingDamageMultiplier": 0.05,
+					"hitEffect": "none",
+					"despawnEffect": {
+						"type": "MultiEffect",
+						"effects": [
+							{
+								"type": "WaveEffect",
+								"interp": "circleOut",
+								"lifetime": 22,
+								"sizeFrom": 10,
+								"sizeTo": 48,
+								"strokeFrom": 6,
+								"strokeTo": 0,
+								"colorFrom": "A9D8FFFF",
+								"colorTo": "A9D8FFFF"
+							},
+							{
+								"type": "ParticleEffect",
+								"interp": "circleOut",
+								"sizeInterp": "pow10Out",
+								"sizeFrom": 12,
+								"sizeTo": 8,
+								"baseLength": 10,
+								"length": 48,
+								"colorFrom": "A9D8FFFF",
+								"colorTo": "A9D8FFFF"
+							}
+						]
+					}
+				}
+			}
+		}
+	]
+}

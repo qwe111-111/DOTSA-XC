@@ -1,0 +1,250 @@
+{
+    "localizedName": "冲击爬爬堆",
+    "type": "legs",
+    "speed": 0.9,
+    "drag": 0.1,
+    "hitSize": 30,
+    "rotateSpeed": 3,
+    "health": 8100,
+    "armor": 8,
+    "legStraightness": 0.3,
+    "stepShake": 0.5,
+    "legCount": 6,
+    "legLength": 22,
+    "lockLegBase": true,
+    "legContinuousMove": true,
+    "legExtension": -3,
+    "legBaseOffset": 14,
+    "legMaxLength": 1.1,
+    "legMinLength": 0.2,
+    "legLengthScl": 0.95,
+    "legForwardScl": 1,
+    "legGroupSize": 3,
+    "rippleScale": 0.2,
+    "legMoveSpace": 1,
+    "allowLegStep": true,
+    "hovering": true,
+    "legPhysicsLayer": false,
+    "shadowElevation": 0.25,
+    "groundLayer": 74,
+    "targetAir": true,
+    "itemCapacity": 10,
+    "immunities": [
+        "freezing",
+        "electrified"
+    ],
+    "lightColor": "ff361b",
+    "deathSound": "none",
+    "loopSound": "pulse",
+    "loopSoundVolume": 0.12,
+    "envDisabled": 0,
+    "deathExplosionEffect": "none",
+    "canDrown": false,
+    "parts": [
+        {
+            "type": "RegionPart",
+            "suffix": "-bottom",
+            "layer": 73.99
+        },
+        {
+            "type": "RegionPart",
+            "suffix": "-shell",
+            "layer": 75,
+            "outline": false
+        }
+    ],
+    "weapons": [
+        {
+            "name": "impact-blaster-explosion",
+            "shootOnDeath": true,
+            "reload": 150,
+            "controllable": false,
+            "autoTarget": false,
+            "shootCone": 180,
+            "ejectEffect": "none",
+            "shootSound": "explosionbig",
+            "x": 0,
+            "y": 0,
+            "shootY": 0,
+            "mirror": false,
+            "bullet": {
+                "collidesTiles": false,
+                "collides": false,
+                "hitEffect": "none",
+                "smokeEffect": "none",
+                "rangeOverride": 30,
+                "shootEffect": "impactReactorExplosion",
+                "speed": 0,
+                "splashDamageRadius": 160,
+                "instantDisappear": true,
+                "splashDamage": 7500,
+                "killShooter": true,
+                "hittable": false,
+                "status": "blasted",
+                "statusDuration": 60,
+                "hitShake": 16,
+                "despawnShake": 16,
+                "collidesAir": true,
+                "scaleSplashDamage": true
+            }
+        },
+        {
+            "name": "impact-blaster-plasma-",
+            "alwaysShooting": true,
+            "controllable": false,
+            "rotate": false,
+            "reload": 49,
+            "x": 0,
+            "y": 0,
+            "mirror": false,
+            "shootSound": "none",
+            "ejectEffect": "none",
+            "noAttack": true,
+            "display": false,
+            "recoil": 0,
+            "bullet": {
+                "damage": 0,
+                "speed": 0,
+                "lifetime": 1,
+                "instantDisappear": true,
+                "shootEffect": "none",
+                "smokeEffect": "none",
+                "despawnEffect": "none",
+                "hitEffect": "none"
+            },
+            "parts": [
+                {
+                    "type": "RegionPart",
+                    "suffix": "0",
+                    "progress": "reload",
+                    "moveRot": -360,
+                    "mirror": false,
+                    "color": "ffd37f99",
+                    "colorTo": "ffd37f99",
+                    "layer": 74.96,
+                    "outline": false,
+                    "blending": "additive",
+                    "xScl": 0.9,
+                    "yScl": 0.9
+                }
+            ]
+        },
+        {
+            "name": "impact-blaster-plasma-",
+            "alwaysShooting": true,
+            "controllable": false,
+            "rotate": false,
+            "reload": 38,
+            "x": 0,
+            "y": 0,
+            "mirror": false,
+            "shootSound": "none",
+            "ejectEffect": "none",
+            "noAttack": true,
+            "display": false,
+            "recoil": 0,
+            "bullet": {
+                "damage": 0,
+                "speed": 0,
+                "lifetime": 1,
+                "instantDisappear": true,
+                "shootEffect": "none",
+                "smokeEffect": "none",
+                "despawnEffect": "none",
+                "hitEffect": "none"
+            },
+            "parts": [
+                {
+                    "type": "RegionPart",
+                    "suffix": "1",
+                    "progress": "reload",
+                    "moveRot": -360,
+                    "mirror": false,
+                    "color": "ff361b99",
+                    "colorTo": "ff361b99",
+                    "layer": 74.97,
+                    "outline": false,
+                    "blending": "additive"
+                }
+            ]
+        },
+        {
+            "name": "impact-blaster-plasma-",
+            "alwaysShooting": true,
+            "controllable": false,
+            "rotate": false,
+            "reload": 31,
+            "x": 0,
+            "y": 0,
+            "mirror": false,
+            "shootSound": "none",
+            "ejectEffect": "none",
+            "noAttack": true,
+            "display": false,
+            "recoil": 0,
+            "bullet": {
+                "damage": 0,
+                "speed": 0,
+                "lifetime": 1,
+                "instantDisappear": true,
+                "shootEffect": "none",
+                "smokeEffect": "none",
+                "despawnEffect": "none",
+                "hitEffect": "none"
+            },
+            "parts": [
+                {
+                    "type": "RegionPart",
+                    "suffix": "2",
+                    "progress": "reload",
+                    "moveRot": -360,
+                    "mirror": false,
+                    "color": "ffd06bee",
+                    "colorTo": "ffd06bee",
+                    "layer": 74.98,
+                    "outline": false,
+                    "blending": "additive"
+                }
+            ]
+        },
+        {
+            "name": "impact-blaster-plasma-",
+            "alwaysShooting": true,
+            "controllable": false,
+            "rotate": false,
+            "reload": 23,
+            "x": 0,
+            "y": 0,
+            "mirror": false,
+            "shootSound": "none",
+            "ejectEffect": "none",
+            "noAttack": true,
+            "display": false,
+            "recoil": 0,
+            "bullet": {
+                "damage": 0,
+                "speed": 0,
+                "lifetime": 1,
+                "instantDisappear": true,
+                "shootEffect": "none",
+                "smokeEffect": "none",
+                "despawnEffect": "none",
+                "hitEffect": "none"
+            },
+            "parts": [
+                {
+                    "type": "RegionPart",
+                    "suffix": "3",
+                    "progress": "reload",
+                    "moveRot": -360,
+                    "mirror": false,
+                    "color": "ffffff",
+                    "colorTo": "ffffff",
+                    "layer": 74.99,
+                    "outline": false,
+                    "blending": "additive"
+                }
+            ]
+        }
+    ]
+}

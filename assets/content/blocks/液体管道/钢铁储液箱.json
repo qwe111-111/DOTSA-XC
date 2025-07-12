@@ -1,0 +1,14 @@
+{
+    "type": "LiquidRouter",
+    "name": "钢铁储液箱",
+    "description": "替换了流体储罐的钛制架构，将材质更换为更加坚硬的钢铁，使得承受能力更上一层楼"
+    "absorbLasers":true,
+    "size": 4,
+    "health": 3600,
+    "liquidCapacity": 6000,    
+    "requirements": [
+        "钢铁/70"
+    ],
+    "category": "liquid",
+    "research": "liquid-tank"
+}

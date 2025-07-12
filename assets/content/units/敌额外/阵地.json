@@ -1,0 +1,129 @@
+{
+	"type": "tank",
+	"name": "阵地",
+	"description": "？",
+	"template": "ErekirUnitType",
+	"squareShape": true,
+	"omniMovement": false,
+	"rotateMoveFirst": false,
+	"rotateSpeed": 2,
+	"speed": 1.01,
+	"hitSize": 11,
+	"ammoCapacity": 700
+    "ammoResupplyAmount":3,/*弹药补给倍率 */
+	"health": 8800,
+	"armor": 15,
+	"drag": 0.08,
+	"accel": 0.3,
+	"reflectable":true,//这颗子弹是否能反射出来。
+	"absorbable":true,//这种子弹是否能被护盾吸收。
+	"itemCapacity": 5,
+	"treadPullOffset": 3,
+	"crushDamage":0.5
+	"weapons": [
+		{
+			"name": "阵地1",
+			"reload": 8,
+			"recoil": 2,
+			"x": 7,
+			"y": -4,
+			"rotate": true,
+			"mirror": false,
+			"inaccuracy": 0.5,
+			"ejectEffect": "casing1"
+			"alternate": false,
+			"ignoreRotation": true,
+			"bullet": {
+				"damage": 20,
+				"speed": 8.5,
+				"lifetime": 25,
+				"width": 5,
+				"height": 11
+				"trailLength": 6,
+		        "trailWidth": 1,
+	      	    "trailColor": "EA8878FF",
+	      	    }
+	      	    }
+	      	    {
+      "name": "阵地2",
+      "x": 0,
+      "y": 0,
+      "ejectEffect": "casing4",
+      "mirror": false,
+      "inaccuracy": 2,
+      "top": true,
+      "rotate": true,
+      "rotateSpeed": 2.5,
+      "shake": 4,
+      "cooldownTime": 60,
+      "reload": 125,
+      "recoil": 4,
+      "shootSound": "mediumCannon",
+      "bullet": {
+        "type": "basicBulletType",
+        "status": "灼烧",
+        "damage":246,
+        "height": 16,
+        "width": 9,
+        "shrinkX": 0,
+        "shrinkY": 0,
+        "speed": 8,
+        "splashDamage": 206,
+        "splashDamageRadius": 30,
+        "lifetime": 35,
+        "hitEffect": {
+          "type": "multiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "line": true,
+              "particles": 15,
+              "lifetime": 30,
+              "interp": "circleOut",
+              "offset": 30,
+              "length": 50,
+              "lightColor": "ff7048",
+              "strokeFrom": 4,
+              "strokeTo": 0,
+              "lenFrom": 10,
+              "lenTo": 10,
+              "colorFrom": "D4816BFF",
+              "colorTo": "BA6156FF"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 16,
+              "length": 55,
+              "baseLength": 10,
+              "lifetime": 100,
+              "lightColor": "ff7048",
+              "interp": "circleOut",
+              "cone": 360,
+              "colorFrom": "D4816BFF",
+              "colorTo": "BA6156FF",
+              "sizeFrom": 6,
+              "sizeTo": 2
+            },
+            {
+              "type": "WaveEffect",
+              "lifetime": 30,
+              "sizeFrom": 0,
+              "sizeTo": 40,
+              "strokeFrom": 3,
+              "strokeTo": 0,
+              "colorFrom": "D4816BFF",
+              "colorTo": "BA6156FF"
+            }
+          ]
+        },
+        "despawnHit": true,
+        "trailParam": 5,
+        "trailLength": 19,
+        "trailWidth": 2.6,
+        "trailColor": "D4816BFF",
+        "backColor": "D4816BFF",
+        "frontColor": "BA6156FF"
+      }
+    }
+    ]
+}

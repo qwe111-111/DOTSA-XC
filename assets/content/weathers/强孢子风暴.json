@@ -1,0 +1,27 @@
+{
+    "name": "强孢子风暴",
+    "type": "ParticleWeather",
+    "particleRegion": "circle-small",
+    "drawNoise": true,
+    "statusGround": true,
+    "useWindVector": true,
+    "color": "#7457ce",
+    "noiseColor": "#7457ce",
+    "sizeMin": 2.5,
+    "sizeMax": 7,
+    "minAlpha": 0.2,
+    "maxAlpha": 1,
+    "density": 3000,
+    "baseSpeed": 6,
+    "force": 0.15,
+    "duration": 7,
+    "sound": "windhowl",
+    "soundVol": 0.8,
+    "status": "spore-slowed",
+    "attrs": {
+        "light": -0.25,
+        "water": 0,
+        "heat": 0,
+        "spores": 2
+    }
+}

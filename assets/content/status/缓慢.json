@@ -1,0 +1,11 @@
+{
+    "name": "缓慢",
+    "damageMultiplier": 1,
+    "healthMultiplier": 1,
+    "speedMultiplier": 0.8,
+    "reloadMultiplier": 1,
+    "damage": 0,
+    "permanent": false,
+    "reactive": false,
+    "color": "EDC346FF"
+}

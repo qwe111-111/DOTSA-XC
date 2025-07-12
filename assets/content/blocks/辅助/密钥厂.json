@@ -1,0 +1,32 @@
+{
+    "type": "GenericCrafter",
+    "name": "密钥制造所",
+    "description": "？",
+    "outputItem": "密钥/1",
+    "size": 4,
+    "canOverdrive": false,
+    "hasPower": true,
+    "hasLiquids": false,
+    "hasItems": true,
+    "craftTime": 8000,
+    "itemCapacity": 5,
+    "craftEffect": "smeltsmoke",
+    "consumes": {
+        "power": 1250
+    },
+    "requirements": [
+        "钢铁/780",
+        "硬化钢铁/645",
+        "复合材料/580",
+        "高级电路/355",
+        "钢合金/235",
+        "碳纤维/155",
+        "初级协议许可证/25",
+        "中级协议许可证/15",
+        "高级协议许可证/10",
+        "终级协议许可证/3"
+    ],
+    "category": "effect",
+    "ambientSound": "smelter",
+    "research": "克斯特World"
+}

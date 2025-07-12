@@ -1,0 +1,35 @@
+{
+    "name": "基础修复器",
+    "description": "又称战备修复器",
+    "type": "MendProjector",
+    "health": 350,
+    "size": 2,
+    "range": 120,
+    "reload": 180,
+    "healPercent": 12,
+    "consumes": {
+        "power": 2,
+        "items": {
+            "items": [
+                {
+                    "item": "钢铁",
+                    "amount": 1
+                }
+            ],
+            "booster": true,
+            "optional": true
+        }
+    },
+    "requirements": [
+        "copper/85",
+        "lead/95",
+        "graphite/105",
+        "silicon/85",
+        "钢铁/65"
+    ],
+    "category": "effect",
+    "research": "mend-projector",
+    "alwaysUnlocked": false,
+    "phaseRangeBoost": 75,
+    "phaseBoost": 2
+}

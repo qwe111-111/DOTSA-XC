@@ -1,0 +1,20 @@
+{
+    "type": "Wall",
+    "name": "装甲纤维墙",
+    "description": "具有巨大的护甲和血量",
+    "armor": 300,
+    "lightningChance": 0,
+    "lightningDamage": 0,
+    "lightningLength": 0,
+    "health": 45500,
+    "size": "2",
+    "insulated": false,
+    "absorbLasers": false,
+    "requirements": [
+        "碳纤维/24",
+        "钴钢/12",
+        "钢合金/12"
+    ],
+    "category": "defense",
+    "research": "大型碳纤维墙"
+}

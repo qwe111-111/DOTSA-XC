@@ -1,0 +1,75 @@
+                波特效     {
+                    "type": "waveEffect",
+                    "lifetime": 30,
+                    "sizeFrom": 42,
+                    "sizeTo": 42,
+                    "strokeFrom": 2,
+                    "strokeTo": 0,
+                    "colorFrom": "88A4FFFF",
+                    "colorTo": "88A4FFFF"
+                    
+                    "interp": "circleOut",//可能是圆型扩散？
+                    "startDelay": 250,//延迟
+                }
+                粒子特效    {
+					"type": "ParticleEffect",
+					"particles": 20,
+					"sizeFrom": 16,
+					"sizeTo": 0,
+					"sizeInterp": "pow5In",
+					"interp": "pow10Out",
+					"layer": 16,
+					"length": 30,
+					"baseLength": 8,
+					"lifetime": 24,
+					"colorFrom": "88A4FFFF",
+					"colorTo": "88A4FFFF"
+					
+					"sizeInterp": "pow10In",
+                    "interp": "pow5Out"//两个不知道
+				},
+		线形粒子    {
+                   "type": "ParticleEffect",
+                   "line": true,
+                   "particles": 10,
+                   "lifetime": 30,
+                   "offset": 50,
+                   "length": 55,
+                   "baseLength": 1,
+                   "cone": -360,
+                   "lenFrom": 4,
+                   "lenTo": 0,
+                   "colorFrom": "FF6464FF",
+                   "colorTo": "C93B3BFF"
+                },
+        多重命中    "hitEffect": {
+                 "type": "multiEffect",
+                 "effects": [
+                 {
+                 "type": "ParticleEffect",
+                 "line": true,
+                 "particles": 15,
+                 "lifetime": 30,
+                 "interp": "circleOut",
+                 "offset": 30,
+                 "length": 50,
+                 "lightColor": "88A4FFFF",
+                 "strokeFrom": 4,
+                 "strokeTo": 0,
+                 "lenFrom": 10,
+                 "lenTo": 10,
+                 "colorFrom": "88A4FFFF",
+                 "colorTo": "88A4FFFF"
+                  },
+                  {
+                    "type": "waveEffect",
+                    "lifetime": 30,
+                    "sizeFrom": 42,
+                    "sizeTo": 42,
+                    "strokeFrom": 2,
+                    "strokeTo": 0,
+                    "colorFrom": "88A4FFFF",
+                    "colorTo": "88A4FFFF"
+                }
+                ]
+                }

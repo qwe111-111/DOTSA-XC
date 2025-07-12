@@ -1,0 +1,63 @@
+{
+    "reload": 16,
+    "ammoTypes": {
+        "copper": {
+            "type": "BasicBulletType",
+            "speed": 2.5,
+            "damage": 10.5,
+            "width": 7,
+            "height": 9,
+            "lifetime": 60,
+            "ammoMultiplier": 3
+        },
+        "graphite": {
+            "type": "BasicBulletType",
+            "speed": 2.5,
+            "damage": 21,
+            "width": 9,
+            "height": 12,
+            "reloadMultiplier": 0.85,
+            "ammoMultiplier": 4,
+            "lifetime": 60
+        },
+        "silicon": {
+            "type": "BasicBulletType",
+            "speed": 2.5,
+            "damage": 15,
+            "width": 7,
+            "height": 9,
+            "homingPower": 0,
+            "reloadMultiplier": 1.5,
+            "ammoMultiplier": 5,
+            "lifetime": 60
+        },
+        "钢铁": {
+            "type": "BasicBulletType",
+            "speed": 2.5,
+            "damage": 16,
+            "width": 7,
+            "height": 9,
+            "backColor": "BEDDE8FF",
+            "frontColor": "BEDDE8FF",
+            "splashDamageRadius": 6,
+            "splashDamage": 5,
+            "reloadMultiplier": 1,
+            "ammoMultiplier": 5,
+            "lifetime": 60
+        },
+        "硬化钢铁": {
+            "type": "BasicBulletType",
+            "speed": 2.5,
+            "damage": 9,
+            "width": 7,
+            "height": 9,
+            "backColor": "6899A6FF",
+            "frontColor": "6899A6FF",
+            "splashDamageRadius": 12,
+            "splashDamage": 25,
+            "reloadMultiplier": 0.8,
+            "ammoMultiplier": 5,
+            "lifetime": 60
+        }
+    }
+}

@@ -1,0 +1,35 @@
+    {
+    "type": "HeatProducer"
+    "name": "重型电热器"
+    "description": "更强，更快，更物美价廉的制热机"
+    "health": 950,
+    "size": 3,
+    "canOverdrive": true
+    "craftTime": 120,
+    "heatOutput": 20,
+    "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+    "DrawDefault"
+    {
+	"type": "DrawHeatInput",
+	"suffix":"-heat"
+	}
+    {
+    "type":"DrawHeatOutput"
+    },    
+	]
+	        }
+    "consumes": {
+        "power": 30,
+    },
+    "requirements": [
+        "thorium/80",
+        "钢铁/60",
+        "silicon/120"
+        "copper/71"
+        "metaglass/55"
+    ],
+    "category": "crafting",
+    "research": "便携式热传导器"           
+    }

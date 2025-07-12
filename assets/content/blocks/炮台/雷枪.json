@@ -1,0 +1,62 @@
+{
+    "type": "PowerTurret",
+    "Name": "雷枪",
+    "squareSprite": false,
+    "description": "？",
+    "size": 3,
+    "health": 3200,
+    "range": 320,
+    "reload": 60,
+    "shootSound": "laser",
+    "rotateSpeed": 5,
+    "shake": 2,
+    "outlineColor": "212121",
+    "shootY": -1,
+    "targetAir": true,
+    "targetGround": true,
+    "recoil": 2,
+    "consumes": {
+        "power": 6,
+        "coolant": {
+            "amount": 0.5,
+            "optional": true
+        }
+    },
+    "liquidCapacity": 60,
+    "coolantMultiplier": 1,
+    "shootType": {
+        "type": "LaserBulletType",
+        "length": 330,
+        "width": 7,
+        "hitSize": 8,
+        "damage": 222,
+        "lifetime": 40,
+        "status": "shocked",
+        "lightningSpacing": 15,
+        "lightningLength": 3,
+        "lightningDelay": 0.1,
+        "lightningLengthRand": 1,
+        "lightningDamage": 77,
+        "lightningColor": "a9d8ff",
+        "lightningAngleRand": 60,
+        "hitEffect": "hitLancer",
+        "ammoMultiplier": 1,
+        "knockback": 0.3,
+        "pierceCap": 8,
+        "collidesAir": true,
+        "sideAngle": 10,
+        "sideWidth": 1,
+        "sideLength": 5
+    },
+    "requirements": [
+        "硬化钢铁/240",
+        "钢铁/320",
+        "phase-fabric/80",
+        "silicon/300"
+    ],
+    "category": "turret",
+    "research": {
+        "parent": "脉冲",
+        "researchCostMultiplier": 40
+    }
+}

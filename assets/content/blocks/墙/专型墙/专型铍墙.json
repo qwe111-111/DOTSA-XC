@@ -1,0 +1,20 @@
+{
+  "type": "Wall",
+  "name": "专型铍墙",
+  "description": "更为坚固",
+  "armor": 10,
+  "lightningChance": 0,
+  "lightningDamage": 0,
+  "lightningLength": 0,
+  "health": 2800,
+  "size": "3",
+  "insulated": false,
+  "absorbLasers": false,
+    "placeableLiquid": true,
+  "requirements": [
+    "beryllium/55"
+  ],
+  "category": "defense",
+  "researchCostMultiplier": 0.4,
+  "research": "beryllium-wall-large"
+}

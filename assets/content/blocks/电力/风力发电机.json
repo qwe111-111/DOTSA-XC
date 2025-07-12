@@ -1,0 +1,38 @@
+{
+    "type": "ConsumeGenerator",
+    "name": "风力发电机",
+    "description": "绿色环保无污染",
+    "details": "我铜铅呢？",
+    "category": "power",
+    "requirements": [
+        "copper/30",
+        "lead/30"
+    ],
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            "DrawDefault",
+            {
+                "type": "DrawRegion",
+                "suffix": "-rotator",
+                "spinSprite": true,
+                "rotateSpeed": 3
+            }
+        ]
+    },
+    "size": 1,
+    "health": 100,
+    "itemCapacity": 0,
+    "hasLiquids": false,
+    "powerProduction": 0.5,
+    "alwaysUnlocked": true,
+    "itemDuration": 140.00,
+    "consumes": {},
+    "research": {
+        "parent": "steam-generator",
+        "requirements": [
+            "copper/500",
+            "lead/500"
+        ]
+    }
+}

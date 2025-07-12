@@ -1,0 +1,115 @@
+{
+    "type": "mech",
+    "name": "丝印",
+    "description": "？",
+    "speed": 0.85,
+    "hitSize": 26,
+    "ammoType": {
+        "type": "PowerAmmoType",
+        "totalPower": 2200
+    },
+    "ammoCapacity": 700,
+    "ammoResupplyAmount": 1,
+    "health": 9600,
+    "armor": 16,
+    "drag": 0.2,
+    "rotateSpeed": 2.5,
+    "targetAir": true,
+    "targetGround": true,
+    "itemCapacity": 20,
+    "abilities": [
+        {
+            "type": "StatusFieldAbility",
+            "duration": 300,
+            "reload": 600,
+            "range": 0,
+            "applyEffect": {
+					"type": "ParticleEffect",
+					"particles": 6,
+					"sizeFrom": 8,
+					"sizeTo": 0,
+					"sizeInterp": "pow5In",
+					"interp": "pow10Out",
+					"layer": 16,
+					"length": 42,
+					"baseLength": 20,
+					"lifetime": 24,
+					"colorFrom": "D8F18CFF",
+					"colorTo": "D8F18CFF"
+					},
+            "activeEffect": "overdriveWave",
+            "effect": "振奋"
+        }
+        ]
+    "weapons": [
+        {
+            "name": "丝印1",
+            "reload": 76,
+            "x": 13.5,
+            "y": 0,
+            "shoot": {
+                "shots": 1,
+                "shotDelay": 8,
+                "type": "ShootBarrel"
+            },
+            "cooldownTime": 80,
+            "rotate": false,
+            "recoil": 6,
+            "mirror": true,
+            "inaccuracy": 0.5,
+            "shootSound": "railgun",
+            "shake": 2,
+            "bullet": {
+                "type": "RailBulletType",
+                "damage": 250,
+                "buildingDamageMultiplier": 0.5,
+                "incendAmount": 2,
+                "incendSpread": 3,
+                "incendChance": 0.07,
+                "makeFire": true,
+                "fragRandomSpread": 30,
+                "pierce": true,
+                "pierceBuilding": true,
+                "backColor": "D8F18CFF",
+                "frontColor": "ffffff",
+                "pierceDamageFactor": 0,
+                "length": 500,
+                "width": 11,
+                "pierceEffect": "railHit",
+                "pointEffect": "railTrail",
+                "hitEffect": "massiveExplosion",
+                "despawnEffect": "bigShockwave",
+                "shootEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "line": true,
+                            "particles": 6,
+                            "cone": 360,
+                            "lifetime": 16,
+                            "baseLength": 6,
+                            "length": 20,
+                            "lenFrom": 3,
+                            "lenTo": 3,
+                            "strokeFrom": 1.2,
+                            "strokeTo": 0,
+                            "colorFrom": "D8F18CFF",
+                            "colorTo": "92B258FF"
+                        },
+                        {
+                            "type": "WaveEffect",
+                            "lifetime": 10,
+                            "sizeFrom": 2,
+                            "sizeTo": 60,
+                            "strokeFrom": 10,
+                            "strokeTo": 0,
+                            "colorFrom": "ffffff",
+                            "colorTo": "ffffff"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

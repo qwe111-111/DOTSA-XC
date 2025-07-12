@@ -1,0 +1,26 @@
+{
+    "name": "破甲",
+    "damageMultiplier": 1,
+    "healthMultiplier": 0.9,
+    "speedMultiplier": 0.95,
+    "reloadMultiplier": 1,
+    "damage": 0,
+    "permanent": false,
+    "reactive": false,
+    "color": "989AA4FF",
+    "effectChance": 1,
+    "effect": {
+        "type": "ParticleEffect",
+        "line": true,
+        "particles": 3,
+        "lifetime": 24,
+        "offset": 50,
+        "length": 15,
+        "baseLength": 4,
+        "cone": -360,
+        "lenFrom": 2,
+        "lenTo": 0,
+        "colorFrom": "DEDEDEFF",
+        "colorTo": "AAAAAAFF"
+    }
+}

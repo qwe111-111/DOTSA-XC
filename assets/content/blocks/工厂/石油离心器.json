@@ -1,0 +1,49 @@
+{
+    "type": "GenericCrafter",
+    "name": "石油离心器",
+    "outputItem": "coal/5",
+    "health": 1300,
+    "size": 4,
+    "craftTime": 57,
+    "itemCapacity": 50,
+    "liquidCapacity": 50,
+    "ambientSound": "smelter",
+    "canOverdrive": true,
+    "ambientSoundVolume": 0.06,
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            "DrawDefault",
+            {
+                "type": "DrawRegion",
+                "suffix": "-旋转组件A",
+                "spinSprite": true,
+                "rotateSpeed": 5
+            },
+            {
+                "type": "DrawRegion",
+                "suffix": "-旋转组件B",
+                "spinSprite": true,
+                "rotateSpeed": -5
+            },
+            {
+                "type": "DrawFlame",
+                "flameColor": "EDF3A9FF"
+            }
+        ]
+    },
+    "consumes": {
+        "power": 8,
+        "liquid": "oil/0.46"
+    },
+    "requirements": [
+        "silicon/55",
+        "titanium/60",
+        "graphite/65"
+    ],
+    "hasPower": true,
+    "hasLiquids": false,
+    "hasItems": true,
+    "category": "crafting",
+    "research": "coal-centrifuge"
+}

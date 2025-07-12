@@ -1,0 +1,18 @@
+{
+"name":"高级路由器"
+    "description": "？",
+	"type": "Router",
+	"health": 120,
+	"size": 1,
+	"speed": 1
+	"itemCapacity": 3,
+	"speedBoost": 1
+	"requirements": [
+	"电路/10",
+	"钢铁/5"
+	],
+	"category": "distribution",
+	"research": "高级连接器"
+	"researchCostMultiplier": 0.2,
+	    "canOverdrive": false,
+}

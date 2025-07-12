@@ -1,0 +1,42 @@
+{
+    "name": "自动钻井",
+    "description": "能够选择你要挖掘的矿物，但造价昂贵.......................[red]what ？",
+    "health": 2100,
+    "size": 3,
+    "hasPower": true,
+    "hasItems": true,
+    "hasliquids": true,
+    "canOverdrive": false,
+    "liquidCapacity": 120,
+    "itemCapacity": 50,
+    "requirements": [
+        "copper/3200",
+        "lead/3150",
+        "silicon/1200",
+        "graphite/1750",
+        "硬化钢铁/820",
+        "纳米/580",
+        "钢合金/360",
+        "碳纤维/80",
+        "surge-alloy/320",
+        "高级协议许可证/2"
+    ],
+    "category": "production",
+    "research": "合金重裂钻",
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            "DrawDefault",
+            {
+                "type": "DrawRegion",
+                "suffix": "-转",
+                "spinSprite": true,
+                "rotateSpeed": 12
+            },
+            {
+                "type": "DrawRegion",
+                "suffix": "-top"
+            }
+        ]
+    }
+}

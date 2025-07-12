@@ -1,0 +1,133 @@
+{
+    "type": "mech",
+    "name": "雷击",
+    "description": "？",
+    "immunities": [
+        "shocked",
+        "electrified",
+        "unmoving",
+        "缓慢",
+        "破甲"
+    ],
+    "speed": 0.9,
+    "hitSize": 18,
+    "health": 5200,
+    "rotateSpeed": 2.1,
+    "ammoType": "surge-alloy",
+    "ammoCapacity": 300,
+    "targetAir": false,
+    "itemCapacity": 30,
+    "targetGround": true,
+    "armor": 20,
+    "weapons": [
+        {
+            "name": "雷击1",
+            "reload": 66,
+            "x": -6,
+            "y": 0,
+            "inaccuracy": 5,
+            "shootSound": "blaster",
+            "ejectEffect": "casing1",
+            "rotate": false,
+            "baseRotation": 0,
+            "minWarmup": 0.99,
+            "shootCone": 15,
+            "rotationLimit": 0,
+            "mirror": false,
+            "bullet": {
+                "type": "LaserBulletType",
+                "chargeEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        "lancerLaserCharge",
+                        "lancerLaserChargeBegin"
+                    ]
+                },
+                "colors": [
+                    "92ABFFFF",
+                    "92ABFFFF",
+                    "FFFFFF"
+                ],
+                "status": "unmoving",
+                "statusDuration": 46,
+                "pierceBuilding": true,
+                "collidesGround": true,
+                "collidesAir": true,
+                "despawnEffect": "none",
+                "lightningSpacing": 25,
+                "lightningLength": 6,
+                "lightningDelay": 0.6,
+                "lightningLengthRand": 1,
+                "lightningAngleRand": 8,
+                "lightningDamage": 86,
+                "lightningColor": "92ABFFFF",
+                "damage": 154,
+                "pierceDamageFactor": 0.4,
+                "ammoMultiplier": 1,
+                "pierce": true,
+                "width": 6,
+                "length": 182,
+                "lifetime": 30
+            }
+        },
+        {
+            "name": "雷击2",
+            "x": 6,
+            "y": 0,
+            "reload": 120,
+            "shootSound": "missile",
+            "inaccuracy": 0,
+            "mirror": false,
+            "shoot": {
+                "type": "ShootSpread",
+                "firstShotDelay": 100,
+                "shots": 1
+            },
+            "bullet": {
+                "type": "BasicBulletType",
+                "damage": 60,
+                "splashDamageRadius": 25,
+                "splashDamage": 80,
+                "ammoMultiplier": 1,
+                "frontColor": "92ABFFFF",
+                "backColor": "92ABFFFF",
+                "length": 1,
+                "recoil": 2,
+                "shrinkY": 0,
+                "sprite": "circle",
+                "width": 5,
+                "height": 5,
+                "hitEffect": "bigShockwave",
+                "despawnEffect": "bigShockwave",
+                "speed": 5,
+                "lifetime": 45,
+                "lightningColor": "92ABFFFF",
+                "lightning": 15,
+                "lightningLength": 15,
+                "lightningDamage": 73,
+                "statusDuration": 360,
+                "hitSound": "spark",
+                "chargeEffect": {
+                    "type": "MultiEffect",
+                    "lifetime": 150,
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 16,
+                            "sizeFrom": 0,
+                            "sizeTo": 3,
+                            "length": 35,
+                            "baseLength": -35,
+                            "lifetime": 100,
+                            "colorFrom": "FFFFFF",
+                            "colorTo": "92ABFFFF",
+                            "cone": 360,
+                            "useRotation": true,
+                            "spin": 180
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

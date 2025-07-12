@@ -1,0 +1,80 @@
+{
+    "type": "PowerTurret",
+    "name": "凝冰",
+    "description": "凝聚一发带有冻结的子弹",
+    "details": "我超 冰！",
+    "targetAir": false,
+    "targetGround": true,
+    "health": 800,
+    "size": 2,
+    "heatColor": "turretHeat",
+    "shootSound": "laser",
+    "shake": 0.2,
+    "inaccuracy": 3,
+    "recoil": 3,
+    "range": 300,
+    "canOverdrive": false,
+    "shoot": {
+        "shots": 3,
+        "spread": 4
+    },
+    "recoilTime": 35,
+    "shootType": {
+        "type": "BasicBulletType",
+        "damage": 13,
+        "frontColor": "87CEEB",
+        "backColor": "87CEEB",
+        "width": 11,
+        "height": 18,       
+        "trailLength": 2,
+        "trailWidth": 1.3,
+        "trailColor": "87CEEB",
+        "pierce": false,
+        "status": "freezing",
+        "statusDuration": 10,
+        "speed": 12,
+        "lifetime": 25,
+        "ammoMultiplier": 1,
+        "hitEffect": {
+            "type": "WaveEffect",
+            "lifetime": 8,
+            "sizeFrom": 0,
+            "sizeTo": 2,
+            "strokeFrom": 1,
+            "strokeTo": 0,
+            "colorFrom": "FFFFFF",
+            "colorTo": "87CEEB"
+        },
+        "despawnEffect": {
+            "type": "ParticleEffect",
+            "lifetime": 8,
+            "sizeFrom": 0,
+            "sizeTo": 2,
+            "strokeFrom": 1,
+            "strokeTo": 0,
+            "colorFrom": "FFFFFF",
+            "colorTo": "87CEEB"
+        }
+    },
+    /*"shootEffect": {
+        "type": "ParticleEffect",
+        "lifetime": 8,
+        "sizeFrom": 0,
+        "sizeTo": 8,
+        "strokeFrom": 1,
+        "strokeTo": 0,
+        "colorFrom": "FFFFFF",
+        "colorTo": "87CEEB"
+    },*/
+    "requirements": [
+        "copper/80",
+        "lead/50",
+        "graphite/40",
+        "silicon/15"
+    ],
+    "category": "turret",
+    "research": {
+		"parent": "寒刺",
+		"researchCostMultiplier":2
+		},
+}

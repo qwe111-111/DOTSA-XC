@@ -1,0 +1,17 @@
+{
+    "type": "floor",
+    "name": "锈蚀水潭",
+    "description": "...",
+    "details": "...",
+    "requiresWater": false,
+    "status": "侵蚀",
+    "statusDuration": 90,
+    "cacheLayer": "water",
+    "albedo": 0.9,
+    "shallow": false,
+    "drownTime": 1,
+    "isLiquid": true,
+    "liquidDrop": "锈蚀水",
+    "liquidMultiplier": 1,
+    "variants": 6
+}

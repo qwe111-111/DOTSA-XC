@@ -1,0 +1,45 @@
+{
+    "name": "物品折越台",
+    "description": "不会从旁边输出，只能用连接给建筑物品",
+    "buildVisibility": "sandboxOnly",
+    "size": 2,
+    "health": 200,
+    "update": true,
+    "solid": true,
+    "hasItems": true,
+    "configurable": true,
+    "category": "distribution",
+    "drawer": [
+        {
+            "type": "DrawRegion"
+        },
+        {
+            "type": "DrawTurret",
+            "parts": [
+                {
+                    "type": "ShapePart",
+                    "rotation": 22.5,
+                    "layer": 100,
+                    "hollow": true,
+                    "sides": 8,
+                    "radius": 5,
+                    "radiusTo": 0,
+                    "color": "bf92f8",
+                    "colorTo": "90a2fc",
+                    "stroke": 0.5,
+                    "strokeTo": 0,
+                    "progress": {
+                        "type": "warmup",
+                        "op": "sin",
+                        "scl": 40,
+                        "mag": 1
+                    }
+                }
+            ]
+        }
+    ],
+    "requirements": [
+        "钢铁/24"
+    ],
+    "research": "duo"
+}

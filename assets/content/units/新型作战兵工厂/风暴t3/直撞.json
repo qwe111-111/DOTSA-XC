@@ -1,0 +1,78 @@
+{	
+    "type":"tank",
+    "name":"直撞",
+    "description":"大运货车",
+    "hitSize":34,
+    "canDrown":false,
+    "armor":50,
+    "speed":1,
+    "rotateSpeed": 4.5,
+    "health":11900,
+    "treadFrames": 18,
+    "treadPullOffset": 8,
+	"ammoType":"graphite",
+	"immunities": [
+	"slow","缓慢","freezing","unmoving"
+	]
+    "ammoCapacity": 350,
+	"research":"风暴级工厂",
+	  "crushDamage": 5.5
+	  "abilities": [
+    {
+			"type": "StatusFieldAbility",
+			"duration": 180,
+			"reload": 500,
+			"range": 0,
+			"applyEffect": "none",
+			"activeEffect": "none",
+			"effect": "速度强化"
+		},
+			{
+			"type": "ArmorPlateAbility",
+			"healthMultiplier": 2
+		}
+		]
+	"weapons": [
+		{
+  "nane": "冲刺"
+    "x": 0
+    "y": 0
+    "mirror": false
+    "shootSound": "pulseBlast"
+    "reload": 160
+    "bullet": {
+      "type": "RailBulletType"
+      "damage": 800
+      "length": 80
+      "recoil": -100
+      "shootEffect": "none"
+      "smokeEffect": "none"
+      "pierceEffect": [
+        {
+          "type": "ParticleEffect"
+          "particles": 6
+          "line": true
+          "lifetime": 5
+          "length": 5
+          "lenFrom": 3
+          "lenTo": 0
+          "strokeFrom": 1
+          "strokeTo": 0
+          "colorFrom": "ffd37f"
+          "colorTo": "ffd37f"
+        }
+        {
+          "type": "WaveEffect"
+          "sizeFrom": 0
+          "sizeTo": 7
+          "lifetime": 10
+          "strokeFrom": 1.5
+          "strokeTo": 0
+          "colorFrom": "ffd37f"
+          "colorTo": "ffd37f"
+        }
+      ]
+    }
+  }
+  ]
+}

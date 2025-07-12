@@ -1,0 +1,11 @@
+{
+    "name": "废水",
+    "type": "liquids",
+    "description": "不可用",
+    "color": "4D4D4DFF",
+    "flammability": 0,
+    "temperature": 12,
+    "heatCapacity": 24,
+    "viscosity": 1,
+    "explosiveness": 0
+}

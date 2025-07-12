@@ -1,0 +1,24 @@
+{
+	"type":"ConsumeGenerator",
+	"name":"水力发电机",
+	"description": "如名",
+	"size":2,
+	"explodeOnFull":false,
+	"rebuildable":true
+	"health":240,
+	"liquidCapacity":0,
+	"placeableLiquid":true,
+	"requiresWater":true,
+	"hasLiquids":true,
+	"powerProduction":10,
+	"outputsLiquid": false,
+	"requirements": [
+		"钢铁/30",
+		"graphite/30",
+		"硬化钢铁/10"
+		],
+        "category": "power",
+        "research": {
+	"parent": "冰冻发电机"
+},
+}

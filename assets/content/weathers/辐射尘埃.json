@@ -1,0 +1,21 @@
+{
+	"name": "辐射尘埃",
+	"type": "ParticleWeather",
+	"attrs":{"spores": -0.5},
+	"particleRegion": "改进工业-天气特效",
+	"color": "5d177cde",
+	"useWindVector": false,
+	"minAlpha": 0.8,
+	"maxAlpha": 0.15,
+	"sizeMax": 10,
+	"sizeMin": 3,
+	"density": 2400,
+	"opacityMultiplier": 0.4,
+	"baseSpeed": 2.3,
+	"yspeed": -0.8,
+	"xspeed": -0.02,
+	"force": 0,
+	"duration": 7,
+	"statusDuration": 10,
+	"status": "一级辐射：黎明"
+}

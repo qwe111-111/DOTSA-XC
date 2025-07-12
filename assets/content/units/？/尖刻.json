@@ -1,0 +1,91 @@
+{
+    "type": "flying",
+    "name": "尖刻",
+    "description": "？",
+    "details": "？",
+    "speed": 1.85,
+    "flying": true,
+    "engineOffset": 5.5,
+    "targetAir": true,
+    "targetGround": true,
+    "engineSize": 2.7,
+    "hitSize": 12,
+    "health": 3800,
+    "armor": 5,
+    "rotateSpeed": 3,
+    "itemCapacity": 10,
+    "weapons": [
+        {
+            "name": "尖刻1",
+            "shootSound": "blaster",
+            "y": -0.5,
+            "x": 4,
+            "top": true,
+            "mirror": true,
+            "reload": 36,
+            "baseRotation": -35,
+            "shootCone": 360,
+            "bullet": {
+                "type": "BasicBulletType",
+                "damage": 35,
+                "speed": 6,
+                "homingPower": 0.19,
+                "homingDelay": 4,
+                "width": 7,
+                "height": 12,
+                "lifetime": 30,
+                "hitColor": "FFFFFFFF",
+                "backColor": "DCDDE3FF",
+                "trailColor": "DCDDE3FF",
+                "frontColor": "FFFFFFFF",
+                "trailWidth": 1.5,
+                "trailLength": 5,
+                "hitEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "colorFrom": "FFFFFFFF",
+                            "colorTo": "DCDDE3FF",
+                            "particles": 3,
+                            "lifetime": 24,
+                            "randLength": true,
+                            "cone": 360,
+                            "length": 6,
+                            "baseLength": 2,
+                            "useRotation": true,
+                            "line": true,
+                            "strokeFrom": 1,
+                            "strokeTo": 0,
+                            "lenFrom": 4,
+                            "lenTo": 1
+                        },
+                        {
+                            "type": "WaveEffect",
+                            "interp": "circleOut",
+                            "lifetime": 30,
+                            "sizeFrom": 0,
+                            "sizeTo": 8,
+                            "strokeFrom": 2,
+                            "strokeTo": 0,
+                            "colorFrom": "FFFFFFFF",
+                            "colorTo": "DCDDE3FF"
+                        }
+                    ]
+                },
+                "despawnEffect": {
+                    "type": "ParticleEffect",
+                    "particles": 2,
+                    "sizeFrom": 2,
+                    "sizeTo": 0,
+                    "length": 0,
+                    "baseLength": 0,
+                    "lifetime": 26,
+                    "colorFrom": "FFFFFFFF",
+                    "colorTo": "DCDDE3FF",
+                    "cone": 360
+                }
+            }
+        }
+    ]
+}

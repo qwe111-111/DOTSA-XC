@@ -1,0 +1,39 @@
+{
+    "type": "missile",
+    "template": "MissileUnitType",
+    "outlineColor": "FFFFFFF",
+    "name": "应龙导弹",
+    "homingDelay": 0,
+    "homingPower": 0,
+    "homingRange": 0,
+    "speed": 0,
+    "lifetime": 0,
+    "rotateSpeed": 0,
+    "deathSound": "none",
+    "hidden": true,
+    "missileAccelTime": 100,
+    "hitSize": 10,
+    "health": 100,
+    "armor": 0,
+    "fogRadius": 8,
+    "engineColor": "CCFFFFFF",
+    "engineLayer": 110,
+    "engineOffset": 8,
+    "engineSize": 4,
+    "maxRange": 30,
+    "immunities": [
+        "freezing",
+        "slow",
+        "unmoving"
+    ],
+    "abilities": [
+        {
+            "type": "SpawnDeathAbility",
+            "unit": "spiroct",
+            "amount": 2,
+            "randAmount": 3,
+            "spread": 10,
+            "faceOutwards": true
+        }
+    ]
+}

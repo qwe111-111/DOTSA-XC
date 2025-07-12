@@ -1,0 +1,118 @@
+{
+    "type": "flying",
+    "name": "重爆",
+    "description": "诶wc，以后再也不画这种贴图了",
+    "details": "叠叠块",
+    "speed": 5,
+    "flying": true,
+    "engineOffset": 9,
+    "targetAir": true,
+    "targetGround": true,
+    "engineSize": 3,
+    "trailLength": 16,
+    "trailColor": "D8F18CFF",
+    "engineColor": "D8F18CFF",
+    "hitSize": 12,
+    "health": 4600,
+    "armor": 55,
+    "rotateSpeed": 7,
+    "itemCapacity": 20,
+    "parts": [
+        {
+            "type": "HoverPart",
+            "x": 6,
+            "y": 0,
+            "mirror": true,
+            "radius": 14,
+            "phase": 0,
+            "stroke": 0,
+            "minStroke": 0,
+            "layerOffset": -0.001,
+            "color": "D8F18CFF",
+            "sides": 4
+        }
+    ],
+    "weapons": [
+        {
+            "name": "自杀",
+            "reload": 1,
+            "x": 0,
+            "y": 0,
+            "rotate": true,
+            "shootCone": 360,
+            "ejectEffect": "none",
+            "shootSound": "explosionbig",
+            "mirror": false,
+            "inaccuracy": 0,
+            "alternate": true,
+            "top": false,
+            "shootOnDeath": true,
+            "bullet": {
+                "damage": 110,
+                "buildingDamageMultiplier": 1.8,
+                "killShooter": true,
+                "splashDamageRadius": 60,
+                "instantDisappear": true,
+                "collides": false,
+                "splashDamage": 225,
+                "status": "electrified",
+                "statusDuration": 150,
+                "speed": 1,
+                "lifetime": 1,
+                "smokeEffect": {
+                    "type": "ParticleEffect",
+                    "particles": 10,
+                    "sizeFrom": 8,
+                    "interp": "pow5Out",
+                    "sizeInterp": "pow10In",
+                    "sizeTo": 0,
+                    "length": 60,
+                    "baseLength": 0,
+                    "lifetime": 125,
+                    "colorFrom": "D8F18CFF",
+                    "colorTo": "D8F18CFF"
+                },
+                "hitEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 12,
+                            "sizeFrom": 6,
+                            "sizeTo": 0,
+                            "baseLength": 8,
+                            "length": 55,
+                            "lifetime": 50,
+                            "lightOpacity": 0,
+                            "interp": "circleOut",
+                            "sizeInterp": "pow5In",
+                            "colorFrom": "D8F18CFF",
+                            "colorTo": "D8F18CFF",
+                            "cone": 360
+                        },
+                        {
+                            "type": "waveEffect",
+                            "lifetime": 30,
+                            "sizeFrom": 0,
+                            "sizeTo": 60,
+                            "strokeFrom": 4,
+                            "strokeTo": 0,
+                            "colorFrom": "D8F18CFF",
+                            "colorTo": "D8F18CFF"
+                        },
+                        {
+                            "type": "waveEffect",
+                            "lifetime": 30,
+                            "sizeFrom": 60,
+                            "sizeTo": 0,
+                            "strokeFrom": 4,
+                            "strokeTo": 0,
+                            "colorFrom": "D8F18CFF",
+                            "colorTo": "D8F18CFF"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

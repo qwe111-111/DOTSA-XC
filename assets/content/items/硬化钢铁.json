@@ -1,0 +1,13 @@
+{
+    "name": "硬化钢铁",
+    "description": "对钢铁进行了二次加工，使得性能更加优良，密度的提升让防御更加强悍",
+    "details": "蘑菇锭:)",
+    "color": "6899A6FF",
+    "cost": 3,
+    "hardness": 7,
+    "explosiveness": 0,
+    "radioactivity": 0,
+    "charge": 0,
+    "flammability": 0,
+    "research": "钢铁"
+}

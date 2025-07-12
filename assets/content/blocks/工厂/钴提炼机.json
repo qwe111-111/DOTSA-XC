@@ -1,0 +1,30 @@
+{
+    "type": "GenericCrafter",
+    "health": 1200,
+    "name": "钴提炼机",
+    "description": "...",
+    "outputItem": "钴/1",
+    "itemCapacity": 100,
+    "size": 4,
+    "hasPower": true,
+    "hasLiquids": false,
+    "hasItems": true,
+    "craftTime": 90,
+    "updateEffect": "none",
+    "consumes": {
+        "power": 10,
+        "items": [
+            "钴矿/2"
+        ]
+    },
+    "requirements": [
+        "钴矿/150",
+        "钢铁/80",
+        "初级协议许可证/1",
+        "复合材料/30",
+        "silicon/60"
+    ],
+    "category": "crafting",
+    "ambientSound": "smelter",
+    "research": "钢合金融炼机"
+}

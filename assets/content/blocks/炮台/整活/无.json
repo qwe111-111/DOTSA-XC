@@ -1,0 +1,54 @@
+{
+    "type": "PowerTurret",
+    "name": "360激光",
+    "description": "？",
+    "unitSort": "strongest",
+    "health": 14800,
+    "size": 5,
+    "reload": 100,
+    "category": "turret",
+    "range": 600,
+    "fogRadiusMultiplier": 0.16,
+    "recoilTime": 180,
+    "recoil": 4,
+    "shootSound": "missileLaunch",
+    "insulated": true,
+    "absorbLasers": true,
+    "shootWarmupSpeed": 0.08,
+    "warmupMaintainTime": 600,
+    "minWarmup": 0.9,
+    "shootType": {
+        "trailEffect": "none",
+        "type": "pointBulletType",
+        "lifetime": 60,
+        "speed": 10,
+        "hittable": false,
+        "absorable": false,
+        "reflectable": false,
+        "fragBullets": 1,
+        "fragRandomSpread": 0,
+        "fragBullet": {
+            "lifetime": 10,
+            "speed": 0,
+            "hittable": false,
+            "absorable": false,
+            "reflectable": false,
+            "ammoMultiplier": 1,
+            "spawnBullets": [
+                {
+                    "instantDisappear": true,
+                    "fragBullets": 360,
+                    "fragVelocityMin": 1,
+                    "fragLifeMin": 1,
+                    "fragLifeMax": 1,
+                    "fragRandomSpread": 360,
+                    "fragSpread": 1,
+                    "fragBullet": {
+                        "instantDisappear": true,
+                        "spawnUnit": "子弹激光"
+                    }
+                }
+            ]
+        }
+    }
+}

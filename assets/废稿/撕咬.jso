@@ -1,0 +1,131 @@
+{
+    "type": "ItemTurret",
+    "name": "撕咬",
+    "description": "？",
+    "size": 5,
+    "health": 3490,
+    "ammoPerShot": 1,
+    "range": 500,
+    "minRange": 30,
+    "recoil": 3,
+    "reload": 45,
+    "inaccuracy": 4,
+    "velocityRnd": 0.2,
+    "ammoUseEffect": "casing3Double",
+    "heatColor": "#FFFFFFFF",
+    "shoot": {
+        "type": "ShootBarrel",
+        "shots": 8,
+        "spread": 0
+    },
+    "consumes": {
+        "coolant": {
+            "amount": 0.75,
+            "optional": true
+        }
+    },
+    "rotatespeed": 4,
+    "maxAmmo": 50,
+    "targetAir": false,
+    "targetGround": true,
+    "canOverdrive": false,
+    "coolantMultiplier": 2,
+    "shootSound": "artillery",
+    "ammoTypes": {
+        "钢合金": {
+            "type": "ArtilleryBulletType",
+            "knockback": 1,
+            "lifetime": 90,
+            "damage": 140,
+            "width": 15,
+            "homingRange": 80,
+            "homingPower": 0.13,
+            "height": 15,
+            "speed": 9,
+            "ammoMultiplier": 8,
+            "status": "伤口",
+            "statusDuration": 120,
+            "splashDamageRadius": 55,
+            "splashDamage": 380,
+            "backColor": "FFFFFFFF",
+            "frontColor": "FFFFFFFF",
+            "hitColor": "FFFFFFFF",
+            "trailColor": "FFFFFFFF",
+            "hitEffect": {
+                "type": "WaveEffect",
+                "lifetime": 10,
+                "sizeFrom": 1,
+                "sizeTo": 8,
+                "strokeFrom": 1,
+                "strokeTo": 8,
+                "colorFrom": "FFFFFFFF",
+                "colorTo": "FFFFFF7E"
+            }
+        },
+        "silicon": {
+            "type": "ArtilleryBulletType",
+            "knockback": 1,
+            "lifetime": 90,
+            "damage": 70,
+            "width": 15,
+            "homingRange": 80,
+            "homingPower": 0.13,
+            "height": 15,
+            "speed": 9,
+            "ammoMultiplier": 8,
+            "splashDamageRadius": 32,
+            "splashDamage": 180,
+            "backColor": "FFFFFFFF",
+            "frontColor": "FFFFFFFF",
+            "hitColor": "FFFFFFFF",
+            "trailColor": "FFFFFFFF",
+            "hitEffect": {
+                "type": "WaveEffect",
+                "lifetime": 10,
+                "sizeFrom": 1,
+                "sizeTo": 8,
+                "strokeFrom": 1,
+                "strokeTo": 8,
+                "colorFrom": "FFFFFFFF",
+                "colorTo": "FFFFFF7E"
+            }
+        },
+        "钢铁": {
+            "type": "ArtilleryBulletType",
+            "knockback": 1,
+            "lifetime": 90,
+            "damage": 70,
+            "width": 15,
+            "height": 15,
+            "speed": 9,
+            "ammoMultiplier": 8,
+            "statusDuration": 120,
+            "splashDamageRadius": 36,
+            "splashDamage": 80,
+            "backColor": "FFFFFFFF",
+            "frontColor": "FFFFFFFF",
+            "hitColor": "FFFFFFFF",
+            "trailColor": "FFFFFFFF",
+            "hitEffect": {
+                "type": "WaveEffect",
+                "lifetime": 10,
+                "sizeFrom": 1,
+                "sizeTo": 8,
+                "strokeFrom": 1,
+                "strokeTo": 8,
+                "colorFrom": "FFFFFFFF",
+                "colorTo": "FFFFFF7E"
+            }
+        }
+    },
+    "requirements": [
+        "graphite/180",
+        "silicon/140",
+        "plastanium/135",
+        "thorium/150",
+        "钢合金/100"
+    ],
+    "category": "turret",
+    "research": "ripple",
+    "parent": "铁锋"
+}

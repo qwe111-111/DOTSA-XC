@@ -1,0 +1,16 @@
+{
+    "name": "亚金",
+    "description": "你能制造的最坚硬的金属",
+    "details": "？",
+    "color": "FFD37FFF",
+    "cost": 1,
+    "hardness": 10000,
+    "explosiveness": 0,
+    "radioactivity": 0,
+    "charge": 0,
+    "flammability": 0,
+    "frames": 7,
+    "transitionFrames": 4,
+    "frameTime": 2,
+    "research": "碳纤维"
+}

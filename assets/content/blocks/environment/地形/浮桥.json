@@ -1,0 +1,15 @@
+{
+    "type": "floor",
+    "name": "浮桥",
+    "description": "可以放置在水上",
+    "details": "海军:女娲",
+    "buildVisibility": "sandboxOnly",
+    "requiresWater": true,
+    "placeableLiquid": true,
+    "variants": 0,
+    "requirements": [
+        "钢铁/20"
+    ],
+    "category": "effect",
+    "research": "作弊"
+}

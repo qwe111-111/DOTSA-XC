@@ -1,0 +1,31 @@
+{
+    "name": "庇佑者的加护",
+    "description": "这就是你想要的",
+    "type": "forceProjector",
+    "health": 15000,
+    "size": 8,
+    "armor": 100,
+    "buildCostMultiplier": 1,
+    "hasItems": false,
+    "hasPower": true,
+    "hasLiquids": true,
+    "radius": 420,
+    "shieldHealth": 7200000,
+    "phaseRadiusBoost": 0,
+    "phaseShieldBoost": 0,
+    "hasBoost": false,
+    "cooldownNormal": 29,
+    "cooldownLiquid": 15,
+    "cooldownBrokenBase": 35,
+    "consumes": {},
+    "requirements": [
+        "钴/400",
+        "钴钢/240",
+        "碳纤维/100",
+        "钢合金/140",
+        "亚金/2",
+        "终级协议许可证/3"
+    ],
+    "category": "effect",
+    "research": "钴钢护盾发生器"
+}

@@ -1,0 +1,44 @@
+    {
+    "type": "HeatProducer"
+    "name": "重型矿渣制热器"
+    "health": 1600,
+    "size": 4,
+    "canOverdrive": true
+    "craftTime": 240,
+    "heatOutput": 70,
+    "liquidCapacity": 200,
+    "drawer": {
+    "type": "DrawMulti",
+    "drawers": [		
+	{
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            },
+            {
+                "type": "DrawLiquidTile",
+                "drawLiquid": "slag"
+            },
+            "DrawDefault"
+    {
+	"type": "DrawHeatInput",
+	"suffix":"-heat"
+	},	
+    {
+    "type":"DrawHeatOutput"
+    },    
+	]
+	}
+	
+    "consumes": {
+        "liquid": "slag/3"
+    },
+    "requirements": [
+        "thorium/70",
+        "钢铁/134",
+        "silicon/110"
+        "copper/81"
+        "metaglass/35"
+    ],
+    "category": "crafting",
+    "research": "便携式热传导器"           
+    }

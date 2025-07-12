@@ -1,0 +1,76 @@
+{
+	"type": "PowerTurret",
+	"name": "火刺",
+	"targetAir": true,
+	"targetGround": true,
+	"fogRadiusMultiplier": 0.45,
+	"health": 3800,
+	"size": 6,
+	"shootSound": "JG1",
+	"shake": 0.5,
+	"shootCone": 270,
+	"inaccuracy": 1.2,
+	"recoil": 3,
+	"cooldownTime": 20,
+	"shootY": 0,
+	"coolantMultiplier": 1,
+	"velocityRnd": 0.2,
+	"canOverdrive": false,
+	"reload": 12,
+	"xRand": 1.5,
+	"shoot": {
+		"shots": 6,
+		"shotDelay": 4,
+		"type": "ShootBarrel",
+		"barrels": [
+		5.5,22.25,0,
+		-5.5,22.25,0,
+		16,21.25,0,
+		-16,21.25,0
+		]
+	},
+	"shootType": {
+	        "type": "ContinuousLaserBulletType",
+            "pierce": true,
+            "speed": 5,
+            "width": 2.5,
+            "height": 85.75,
+            "lifetime": 85,
+            "damage": 200,
+            "hitShake": 3,
+            "knockback": 0.5,
+            "hitEffect": 0,
+            "shootEffect": "shootSmall",
+            "smokeEffect": "shootSmallSmoke",
+            "hitEffect": {
+            "type": "MultiEffect",
+            "effects": [
+                {
+            "type": "ParticleEffect",
+			"particles": 15,
+			"line": true,
+			"strokeFrom": 3,
+			"strokeTo": 0,
+			"lenFrom": 10,
+			"lenTo": 0,
+			"length": 50,
+			"baseLength": 0,
+			"lifetime": 10,
+			"colorFrom": "FF9C5AFF",
+			"colorTo": "FFFFFF",
+			"cone": 60
+                }
+                ]
+                }
+        }
+	"consumes": {
+		"power": 80,
+		"coolant": {
+			"amount": 2,
+			"optional": true
+		}
+	},
+	"rotateSpeed": 2.6,
+	"range": 516,
+	"category": "turret",
+}

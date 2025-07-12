@@ -1,0 +1,144 @@
+{
+    "type": "PowerTurret",
+    "name": "卫士",
+    "description": "...",
+    "health": 8980,
+    "size": 6,
+    "category": "turret",
+    "range": 880,
+    "heatColor": "66ccff",
+    "shootSound": "laser",
+    "reload": 180,
+    "shoot": {
+        "type": "ShootMulti",
+        "source": {
+            "type": "ShootPattern",
+            "shots": 3,
+            "shotDelay": 8
+        },
+        "dest": [
+            {
+                "type": "ShootHelix",
+                "mag": 7,
+                "scl": 2.25
+            },
+            {
+                "type": "ShootPattern",
+                "shots": 3,
+                "shotDelay": 0
+            }
+        ]
+    },
+    "shootEffect": {
+        "type": "ParticleEffect",
+        "particles": 4,
+        "sizeFrom": 10,
+        "sizeTo": 0,
+        "length": 0,
+        "baseLength": 0,
+        "lifetime": 55,
+        "colorFrom": "96c8c8",
+        "colorTo": "96c8c8",
+        "cone": 0
+    },
+    "shootType": {
+        "type": "BasicBulletType",
+        "ammoMultiplier": 1,
+        "sprite": "改进工业-星",
+        "frontColor": "96c8c8",
+        "backColor": "96c8c8",
+        "width": 40,
+        "height": 40,
+        "shrinkY": 0,
+        "trailColor": "649696",
+        "trailWidth": 3.25,
+        "trailLength": 18,
+        "lifetime": 80,
+        "speed": 10,
+        "damage": 385,
+        "statusDuration": 120,
+        "status": "回响",
+        "pierce": true,
+        "pierceBuilding": true,
+        "splashDamage": 560,
+        "splashDamageRadius": 50,
+        "buildingDamageMultiplier": 0.7,
+        "despawnEffect": {
+            "type": "multiEffect",
+            "lifetime": 30,
+            "effects": [
+                {
+                    "type": "ParticleEffect",
+                    "colorFrom": "B3FFFF",
+                    "colorTo": "000000",
+                    "particles": 6,
+                    "lifetime": 30,
+                    "cone": 0,
+                    "length": 0,
+                    "sizeFrom": 8,
+                    "sizeTo": 0
+                },
+                {
+                    "type": "WaveEffect",
+                    "lifetime": 45,
+                    "colorFrom": "B3FFFF",
+                    "colorTo": "000000",
+                    "sizeFrom": 15,
+                    "sizeTo": 80,
+                    "strokeFrom": 15,
+                    "strokeTo": 0
+                },
+                {
+                    "type": "ParticleEffect",
+                    "particles": 25,
+                    "sizeInterp": "pow5Out",
+                    "interp": "pow5In",
+                    "sizeFrom": 0,
+                    "sizeTo": 4,
+                    "length": 100,
+                    "baseLength": -100,
+                    "lifetime": 60,
+                    "colorFrom": "B3FFFF",
+                    "colorTo": "000000"
+                }
+            ],
+            "smokeEffect": {
+                "type": "ParticleEffect",
+                "particles": 10,
+                "sizeFrom": 8,
+                "interp": "pow5Out",
+                "sizeInterp": "pow10In",
+                "sizeTo": 0,
+                "length": 60,
+                "baseLength": 0,
+                "lifetime": 125,
+                "colorFrom": "B3FFFF",
+                "colorTo": "000000"
+            },
+            "despawnEffect": {
+                "type": "ParticleEffect",
+                "particles": 15,
+                "sizeFrom": 3,
+                "sizeTo": 0,
+                "length": 100,
+                "baseLength": 0,
+                "lifetime": 10,
+                "colorFrom": "B3FFFF",
+                "colorTo": "000000",
+                "cone": 60
+            }
+        }
+    },
+    "requirements": [
+        "titanium/200",
+        "plastanium/305",
+        "surge-alloy/245",
+        "钢合金/140",
+        "钴/120",
+        "电路/145",
+        "复合材料/110",
+        "高级电路/90",
+        "高级协议许可证/2"
+    ],
+    "research": "穿行"
+}

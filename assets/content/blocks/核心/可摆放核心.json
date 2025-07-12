@@ -1,0 +1,17 @@
+{
+    "name": "前线核心",
+    "description": "解除了核心数目限制，可以[yellow]随地摆放",
+    "requirements": [
+        "copper/500",
+        "lead/500",
+        "钢铁/500"
+    ],
+    "unitType": "西塔",
+    "health": 7500,
+    "itemCapacity": 7500,
+    "size": 3,
+    "unitCapModifier": 15,
+    "category": "effect",
+    "alwaysUnlocked": true,
+    "research": "core-shard"
+}

@@ -1,0 +1,77 @@
+{
+    "type": "LiquidTurret",
+    "name": "灭火器",
+    "description": "灭火专用",
+    "health": 900,
+    "size": 1,
+    "armor": 2,
+    "reload": 30,
+    "range": 200,
+    "recoil": 0,
+    "outlineColor": "212121",
+    "shootSound": "shootLiquid",
+    "inaccuracy": 0,
+    "maxAmmo": 300,
+    "liquidCapacity": 300,
+    "shootCone": 360,
+    "shoot": {
+        "type": "ShootSpread",
+        "shots": 360
+    },
+    "ammoTypes": {
+        "water": {
+            "type": "LiquidBulletType",
+            "liquid": "water",
+            "lifetime": 50,
+            "speed": 4.2,
+            "puddleSize": 8,
+            "orbSize": 4,
+            "knockback": 1,
+            "statusDuration": 600,
+            "status": "wet",
+            "damage": 0.1
+        },
+        "oil": {
+            "type": "LiquidBulletType",
+            "liquid": "oil",
+            "lifetime": 50,
+            "speed": 4.2,
+            "puddleSize": 8,
+            "orbSize": 4,
+            "knockback": 1,
+            "statusDuration": 60,
+            "status": "burning",
+            "hitEffect": "flakExplosion",
+            "damage": 0.1
+        },
+        "slag": {
+            "type": "LiquidBulletType",
+            "liquid": "slag",
+            "lifetime": 50,
+            "speed": 4.2,
+            "puddleSize": 8,
+            "orbSize": 4,
+            "knockback": 1,
+            "statusDuration": 600,
+            "status": "melting",
+            "damage": 3
+        },
+        "cryofluid": {
+            "type": "LiquidBulletType",
+            "liquid": "cryofluid",
+            "lifetime": 50,
+            "speed": 4.2,
+            "puddleSize": 8,
+            "orbSize": 4,
+            "statusDuration": 600,
+            "knockback": 1,
+            "status": "freezing",
+            "damage": 0.1
+        }
+    },
+    "requirements": [
+        "metaglass/100"
+    ],
+    "category": "turret",
+    "research": "重机枪"
+}

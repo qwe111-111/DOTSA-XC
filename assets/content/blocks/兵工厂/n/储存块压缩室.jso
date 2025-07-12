@@ -1,0 +1,35 @@
+{
+	"type": "Constructor",//类型
+	"name": "储存块压缩室",//名字
+	"health": 2145,//生命
+	"canOverdrive": false,//可否超速
+	"minBlockSize": 1,//最小合成物大小
+	"maxBlockSize": 4,//最大合成物大小
+	"size": 5,//本体大小
+	"buildSpeed": 150,//合成时间
+	"filter":[
+	       "基础修复器"
+	       "大型钢墙"
+	       "钢铁护盾发生器"
+	       "连发机枪"
+	       "脉冲"
+	       "镭射"
+	       "豚击"
+	       "铁锋"
+	],
+	                
+	"consumes": {
+		"power": 19,
+	},
+	"requirements": [
+		"silicon/480",
+		"surge-alloy/250",
+		"plastanium/160",
+		"titanium/260",
+		"钢铁/100",
+		"titanium/340"
+		"metaglass/200"
+	],
+	"category": "units",
+	"research": "复合路由器"
+	}

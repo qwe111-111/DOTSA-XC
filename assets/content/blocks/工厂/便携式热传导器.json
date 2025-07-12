@@ -1,0 +1,29 @@
+{
+    "name": "便携式热传导器",
+    "health": 300,
+    "description": "简化原有热传导庞杂的结构，采用导热系数更好的材料，使得体积缩小50%",
+    "type": "HeatConductor",
+    "size": 2,
+    "researchCostMultiplier": 10,
+    "regionRotated1": 1,
+    "requirements": [
+        "钢铁/20",
+        "silicon/15",
+        "titanium/11"
+    ],
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            "DrawDefault",
+            {
+                "type": "DrawHeatInput",
+                "suffix": "-heat"
+            },
+            {
+                "type": "DrawHeatOutput"
+            }
+        ]
+    },
+    "category": "crafting",
+    "research": "克斯特World"
+}

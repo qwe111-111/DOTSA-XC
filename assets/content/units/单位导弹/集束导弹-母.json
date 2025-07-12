@@ -1,0 +1,88 @@
+{
+    "type": "missile",
+    "template": "MissileUnitType",
+    "outlineColor": "383848",
+    "name": "集束导弹-母",
+    "homingDelay": 9,
+    "homingPower": 2.5,
+    "homingRange": 66,
+    "speed": 9,
+    "lifetime": 180,
+    "rotateSpeed": 10,
+    "loopSoundVolume": 0.03,
+    "deathSound": "explosionbig",
+    "hidden": true,
+    "missileAccelTime": 100,
+    "hitSize": 10,
+    "health": 9100,
+    "armor": 35,
+    "fogRadius": 8,
+    "engineColor": "CCFFFFFF",
+    "engineLayer": 110,
+    "engineOffset": 8,
+    "engineSize": 4,
+    "maxRange": 30,
+    "immunities": [
+        "freezing",
+        "slow",
+        "unmoving"
+    ],
+    "weapons": [
+        {
+            "name": "集束导弹-母",
+            "x": 0,
+            "y": 0,
+            "reload": 1,
+            "mirror": false,
+            "rotate": true,
+            "shake": 5,
+            "shootSound": "none",
+            "shootOnDeath": true,
+            "bullet": {
+                "collides": false,
+                "instantDisappear": true,
+                "ammoMultiplier": 1,
+                "hitSound": "titanExplosion",
+                "hitSoundVolume": 4,
+                "killShooter": true,
+                "splashDamageRadius": 66,
+                "splashDamage": 1250,
+                "hitShake": 15,
+                "shootEffect": "none",
+                "smokeEffect": "none",
+                "despawnEffect": "none",
+                "hitEffect": {
+                    "type": "multiEffect",
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "line": true,
+                            "particles": 15,
+                            "lifetime": 45,
+                            "interp": "circleOut",
+                            "offset": 33,
+                            "length": 134,
+                            "lightColor": "CCFFFFFF",
+                            "strokeFrom": 4,
+                            "strokeTo": 0,
+                            "lenFrom": 15,
+                            "lenTo": 19,
+                            "colorFrom": "CCFFFFFF",
+                            "colorTo": "4EDCF9FF"
+                        },
+                        {
+                            "type": "waveEffect",
+                            "lifetime": 90,
+                            "sizeFrom": 0,
+                            "sizeTo": 65,
+                            "strokeFrom": 5,
+                            "strokeTo": 0,
+                            "colorFrom": "CCFFFFFF",
+                            "colorTo": "4EDCF9FF"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

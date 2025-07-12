@@ -1,0 +1,9 @@
+{
+    "name": "液体装卸器",
+    "description": "从周围方块卸载指定液体、气体。",
+    "requirements": [
+        "titanium/70",
+        "钢铁/55"
+    ],
+    "research": "钢铁导管"
+}

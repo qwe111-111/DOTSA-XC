@@ -1,0 +1,155 @@
+{
+	"type": "mech",
+	"name": "烈焰",
+	"description": "来感受一下来自烈焰的热情",
+	"immunities": [
+	"wet"
+	"burning"
+	"tarred"
+	],
+    "speed": 0.8,
+    "hitSize": 8,
+	"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":2200
+	},
+	"ammoCapacity": 700
+    "ammoResupplyAmount":1,/*弹药补给倍率 */
+    "health": 4900,
+    "armor": 25,
+    "drag": 0.2,
+    "rotateSpeed": 2.5,
+    "itemCapacity": 30,
+    "targetAir":true,  
+    "targetGround":true,
+	"weapons":[
+	{
+	"name": "烈焰1",	
+		"reload":3,
+        "x": 6,  "y": 1, 
+       "rotate": false,
+        "inaccuracy": 6,
+        "shootSound": "flame",
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"bullet":{
+			"type": "BulletType",
+			"hitSize":10,
+			"status": "burning",
+			"statusDuration": 180,
+			"speed": 8,
+			"lifetime": 11,
+			"damage":36
+			"splashDamageRadius":15,
+	        "splashDamage":40,
+			"ammoMultiplier": 3,
+			"collidesAir": true
+            "collidesGround": true
+            "makeFire": true,
+			"pierceCap": 6,
+			"incendChance": 0.5,
+			"incendSpread": 20,
+			"incendAmount": 5,
+			"incendAmount":2
+			"shootEffect": "shootPyraFlame",
+				"smokeEffect": {
+					"type": "ParticleEffect",
+					"particles": 5,
+					"line": true,
+					"strokeFrom": 2.4,
+					"strokeTo": 0,
+					"lenFrom": 46,
+					"lenTo": 8,
+					"length": 146,
+					"baseLength": 0,
+					"lifetime": 22,
+					"colorFrom": "CCFFFFFF",
+					"colorTo": "4EDCF9FF",
+					"cone": 10
+				},
+				"hitEffect": {
+					"type": "ParticleEffect",
+					"particles": 8,
+					"lifetime": 15,
+					"sizeFrom": 5,
+					"sizeTo": 0,
+					"colorFrom": "CCFFFFFF",
+					"colorTo": "CCFFFFFF"
+				}
+				}
+				}
+				{
+            "name":"烈焰2",
+            "chargeSound":"plasma-drop-boom",
+            "soundPitchMin":1,
+            "soundPitchMax":1,
+            "mirror":false,
+            "x": 0,
+			"y": 0,
+			"reload": 360,
+			"rotate": true,
+		    "inaccuracy": 2,
+            "shootStatusDuration":50,
+		    "shootStatus":"slow",
+			"top":false,
+            "shootSound": "missile",
+            "shoot":{
+                "shots":6,
+                "shotDelay":5,
+                "firstShotDelay":36
+            },
+			"bullet": {
+                "type": "BasicBulletType",
+                "chargeEffect":[
+                    {
+                        "type": "WaveEffect",
+                        "lifetime": 30,
+                        "sizeFrom": 40,
+                        "sizeTo": 8,
+                        "strokeFrom": 6,
+                        "strokeTo": 2,
+                        "colorFrom": "CCFFFFFF",
+                        "colorTo": "4EDCF9FF"
+                    },
+                    {
+                        "type": "WaveEffect",
+                        "startDelay":24,
+                        "lifetime": 18,
+                        "sizeFrom": 8,
+                        "sizeTo": 40,
+                        "strokeFrom": 6,
+                        "strokeTo": 2,
+                        "colorFrom": "CCFFFFFF",
+                        "colorTo": "4EDCF9FF"
+                    }
+                ],
+				"damage": 117,
+                "status": "tarred",
+                "splashDamageRadius":48,
+                "splashDamage":28,           
+                "speed": 4.4,
+				"lifetime": 36,
+                "width": 8,
+				"height": 8
+				"makeFire": false,
+				"pierceArmor":true,
+				"bulletInterval": 0.3,
+					"intervalBullets": 1,
+					"intervalBullet": {
+						"type": "FireBulletType",
+						"speed": 8,
+						"lifetime": 8,
+						"damage": 80,
+						"status": "tarred",
+						"statusDuration": 160,
+						"makeFire": true
+					}
+		},
+		}
+				]
+	"despawnEffect": "none"
+	"research": {
+	"parent":"铁血级工厂"
+	}
+	"researchCostMultiplier":2
+}

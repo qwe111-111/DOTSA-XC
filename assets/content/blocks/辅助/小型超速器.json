@@ -1,0 +1,18 @@
+{
+    "name": "小型超速器",
+    "type": "OverdriveProjector",
+    "health": 200,
+    "size": 1,
+    "range": 80,
+    "speedBoost": 1.25,
+    "phaseRangeBoost": 0,
+    "speedBoostPhase": 0,
+    "hasBoost": false,
+    "requirements": [
+        "copper/45",
+        "lead/30",
+        "silicon/50"
+    ],
+    "category": "effect",
+    "research": "mender"
+}

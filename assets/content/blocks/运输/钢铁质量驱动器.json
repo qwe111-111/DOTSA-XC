@@ -1,0 +1,40 @@
+{
+	"name": "钢铁质量驱动器",
+	"type": "MassDriver",
+	"size": 4,
+	"description": "？",
+	"hasItems": true,
+	"health": 1800,
+    "itemCapacity": 500,
+	"bulletSpeed": 8,
+	"reload": 100,
+	"range": 1600,
+	"shootSound": "artillery",
+	    "shootEffect": "instShoot",
+	    "smokeEffect": {
+		"type": "ParticleEffect",
+		"particles": 23,
+		"line": true,
+		"interp": "circleOut",
+		"sizeInterp": "circleOut",
+		"lenFrom": 35,
+		"lenTo": 5,
+		"strokeFrom": 5,
+		"strokeTo": 0,
+		"length": 80,
+		"lifetime": 100,
+		"colorFrom": "F8D58B",//较重色
+		"colorTo": "C8857060",
+		"cone": 15
+	    },
+	"consumes": {
+		"power": 11
+	},
+	"requirements": [
+		"电路/96",
+		"钢铁/213",
+		"硬化钢铁/35",
+	],
+	"research": "钢铁传送桥",
+	"category": "distribution"
+}

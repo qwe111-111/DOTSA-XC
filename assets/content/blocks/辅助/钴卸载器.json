@@ -1,0 +1,18 @@
+{
+    "health": 500,
+    "size": 1,
+    "speed": 0.6,
+    "solid": "true",
+    "update": "true",
+    "hasItems": "true",
+    "type": "Unloader",
+    "confugurable": "true",
+    "description": "快就对了",
+    "name": "卸载器",
+    "requirements": [
+        "silicon/50",
+        "钴/5"
+    ],
+    "category": "effect",
+    "research": "unloader"
+}

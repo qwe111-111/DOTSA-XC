@@ -1,0 +1,8 @@
+{
+	"health": 79420,
+	"armor": 54,
+	"ammoType": {
+		"type": "PowerAmmoType",
+		"totalPower": 5000
+	},
+}

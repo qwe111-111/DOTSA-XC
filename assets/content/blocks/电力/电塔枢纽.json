@@ -1,0 +1,28 @@
+{
+    "type": "PowerNode",
+    "name": "电力枢纽",
+    "description": "距离十分远",
+    "details": "哈？",
+    "size": 3,
+    "health": 760,
+    "maxNodes": 10,
+    "laserRange": 240,
+    "research": "高级太阳能板",
+    "hasPower": true,
+    "consumes": {
+        "powerBuffered": 1000
+    },
+    "consumesPower": true,
+    "outputsPower": true,
+    "requirements": [
+        "钢铁/75",
+        {
+            "item": "lead",
+            "amount": 75
+        },
+        "titanium/75",
+        "silicon/75",
+        "surge-alloy/75"
+    ],
+    "category": "power"
+}

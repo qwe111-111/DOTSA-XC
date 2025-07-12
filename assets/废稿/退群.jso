@@ -1,0 +1,54 @@
+{
+    "type": "PowerTurret",
+    "name": "退群",
+    "targetAir": true,
+    "description": "蓄力一段时间进行攻击",
+    "targetGround": true,
+    "health": 800,
+    "size": 2,
+    "shootSound": "pew",
+    "shake": 0,
+    "inaccuracy": 1,
+    "recoil": 1.5,
+    "recoilTime": 10,
+    "cooldownTime": 60,
+    "shootType": {
+        "type": "BasicBulletType",
+        "knockback": 3,
+        "speed":7,
+        "trailEffect": "none",
+        "hitEffect": "none",
+        "width": 6,
+        "height": 18,
+        "despawnEffect": "none",
+        "lifetime": 30,
+        "fragBullets": 4,
+        "fragBullet": {
+            "type": "FlakBulletType",
+            "splashDamageRadius": 12,
+            "splashDamage": 32,
+            "speed": 3,
+            "Damage": 25,
+            "width": 5,
+            "height": 5,
+            "lifetime": 1
+        }
+    },
+    "consumes": {
+        "power": 3,
+        "coolant": {
+            "amount": 0.2,
+            "optional": true
+        }
+    },
+    "reload": 21,
+    "rotateSpeed": 10,
+    "range": 220,
+    "category": "turret",
+    "research": "重机枪",
+    "requirements": [
+        "copper/85",
+        "lead/60",
+        "graphite/40"
+    ]
+}

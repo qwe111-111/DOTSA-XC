@@ -1,0 +1,23 @@
+{
+  "type": "MendProjector",
+  "name": "巨型孢子墙",
+  "description": "...",
+  "details":"..."
+  "armor":10,
+  "health": 8000,
+  "reload":120
+  "range":30
+  "phaseRangeBoost":0,
+  "buildCostMultiplier":0
+  "healPercent":2.5,
+  "size":4,
+  "insulated": false,
+  "absorbLasers": true,
+  "requirements": [
+    "spore-pod/106"
+  ],
+  "category": "defense",
+  "research": "专型孢子墙"
+  "rebuildable":true,
+  "insulated":true,
+}

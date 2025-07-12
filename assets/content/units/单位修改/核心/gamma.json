@@ -1,0 +1,85 @@
+{
+    "armor": 1,
+    "outlines": true,
+    "mineWalls": true,
+    "health": 700,
+    "speed": 9,
+    "buildSpeed": 1.5,
+    "mineSpeed": 5,
+    "mineTier": 3,
+    "generateIcons": false,
+    "targetFlags": [
+        "generator",
+        "reactor"
+    ],
+    "weapons": [
+        {
+            "name": "伽马1",
+            "x": 2.25,
+            "y": 2.5,
+            "top": false,
+            "rotate": false,
+            "shootX": 0,
+            "shootY": 4,
+            "reload": 15,
+            "ejectEffect": "casing1",
+            "shootSound": "pew",
+            "shoot": {
+                "shots": 5,
+                "shotDelay": 1
+            },
+            "inaccuracy": 2,
+            "bullet": {
+                "speed": 6.5,
+                "damage": 30,
+                "width": 6.5,
+                "height": 15,
+                "lifetime": 70,
+                "shootEffect": "shootSmall",
+                "smokeEffect": "shootSmallSmoke",
+                "buildingDamageMultiplier": 0.01,
+                "homingPower": 0.04
+            }
+        },
+        {
+            "name": "伽马2",
+            "x": 0,
+            "y": 0,
+            "reload": 79,
+            "rotate": false,
+            "top": false,
+            "inaccuracy": 1,
+            "shootSound": "shoot",
+            "alternate": true,
+            "ejectEffect": "casing2",
+            "shoot": {
+                "shots": 5,
+                "shotDelay": 1
+            },
+            "bullet": {
+                "buildingDamageMultiplier": 0.01,
+                "damage": 20,
+                "speed": 10,
+                "backColor": "FF8C00",
+                "frontColor": "FFB90F",
+                "trailColor": "FF8C00",
+                "lifetime": 50,
+                "width": 11,
+                "height": 18,
+                "hitEffect": {
+                    "type": "ParticleEffect",
+                    "line": true,
+                    "particles": 10,
+                    "lifetime": 30,
+                    "offset": 50,
+                    "length": 55,
+                    "cone": -360,
+                    "lenFrom": 4,
+                    "lenTo": 0,
+                    "colorFrom": "FF8C00",
+                    "colorTo": "FF8C00"
+                }
+            }
+        }
+    ]
+}

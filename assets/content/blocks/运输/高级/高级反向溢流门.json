@@ -1,0 +1,17 @@
+{
+"name":"高级反向溢流门"
+"description": "...",
+	"type": "OverflowGate",
+	"health": 120,
+	"size": 1,
+	"speed": 0.1
+	"speedBoost": 0.20,
+	"invert":true,
+	"requirements": [
+	"电路/2",
+	],
+	"category": "distribution",
+	"research": "高级连接器"
+	"researchCostMultiplier": 0.2,
+	    "canOverdrive": false,
+}

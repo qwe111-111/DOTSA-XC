@@ -1,0 +1,23 @@
+{
+    "type": "Conduit",
+    "name": "简易导管",
+    "description": "用缓慢的速度运输液体",
+    "health": 120,
+    "liquidCapacity": 1,
+    "liquidPressure": 1,
+    "insulated": true,
+    "requirements": [
+        {
+            "item": "lead",
+            "amount": 1
+        },
+        {
+            "item": "copper",
+            "amount": 2
+        }
+    ],
+    "category": "liquid",
+    "research": {
+        "parent": "简易泵"
+    }
+}

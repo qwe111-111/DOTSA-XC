@@ -1,0 +1,39 @@
+{
+    "health": 250,
+    "abilities": [
+        {
+            "type": "RepairFieldAbility",
+            "amount": 2.5,
+            "reload": 60,
+            "range": 30
+        }
+    ],
+    "weapons": [
+        {
+            "name": "巨像1",
+            "reload": 24,
+            "x": 4.5,
+            "y": -0.5,
+            "rotate": false,
+            "inaccuracy": 0,
+            "alternate": true,
+            "top": false,
+            "ejectEffect": "casing1",
+            "shoot": {
+                "shots": 4,
+                "shotDelay": 3
+            },
+            "bullet": {
+                "type": "LaserBoltBulletType",
+                "collideTerrain": true,
+                "collidesTeam": true,
+                "speed": 3.85,
+                "healPercent": 5,
+                "lifetime": 68,
+                "damage": 8,
+                "frontColor": "ffffff",
+                "backColor": "84f491"
+            }
+        }
+    ]
+}

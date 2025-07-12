@@ -1,0 +1,66 @@
+{
+    "type": "tank",
+    "name": "幸运",
+    "description": "...",
+    "squareShape": true,
+    "omniMovement": false,
+    "rotateMoveFirst": false,
+    "rotateSpeed": 4,
+    "speed": 0.8,
+    "hitSize": 8,
+    "ammoCapacity": 700,
+    "health": 2000,
+    "armor": 12,
+    "drag": 0.08,
+    "accel": 0.3,
+    "itemCapacity": 5,
+    "treadPullOffset": 3,
+    "crushDamage": 0.01,
+    "faceTarget": false,
+    "weapons": [
+        {
+            "name": "幸运1",
+            "reload": 90,
+            "recoil": 0,
+            "x": 0,
+            "y": 0,
+            "rotate": true,
+            "mirror": false,
+            "inaccuracy": 0.5,
+            "ejectEffect": "casing1",
+            "shootSound": "小炮",
+            "alternate": false,
+            "ignoreRotation": true,
+            "bullet": {
+                "damage": 42,
+                "speed": 3,
+                "despawnHit": true,
+                "trailLength": 7,
+                "trailWidth": 2,
+                "trailColor": "F3E979FF",
+                "lifetime": 60,
+                "width": 11,
+                "height": 18,
+                "hitEffect": {
+                    "type": "ParticleEffect",
+                    "particles": 15,
+                    "line": true,
+                    "strokeFrom": 3,
+                    "strokeTo": 0,
+                    "lenFrom": 9,
+                    "lenTo": 0,
+                    "length": 45,
+                    "baseLength": 0,
+                    "lifetime": 12,
+                    "colorFrom": "F3E979FF",
+                    "colorTo": "F3E979FF",
+                    "cone": 150
+                }
+            }
+        }
+    ],
+    "research": {
+        "parent": "新型作战兵工厂"
+    },
+    "researchCostMultiplier": 10
+}

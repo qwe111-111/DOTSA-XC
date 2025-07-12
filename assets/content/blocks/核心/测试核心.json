@@ -1,0 +1,27 @@
+{
+    "name": "测试核心",
+    "description": "测试专用",
+    "requirements": [],
+    "unitType": "emanate",
+    "health": 2147483647,
+    "itemCapacity": 999999,
+    "size": 3,
+    "unitCapModifier": 999999,
+    "buildVisibility": "sandboxOnly",
+    "breakEffect": [
+        {
+            "type": "waveEffect",
+            "lifetime": 35,
+            "sizeFrom": 0,
+            "sizeTo": 50,
+            "sides": 4,
+            "radius": 90,
+            "strokeFrom": 4,
+            "strokeTo": 0,
+            "colorFrom": "FFD37FFF",
+            "colorTo": "FFD37FFF"
+        }
+    ],
+    "category": "effect",
+    "alwaysUnlocked": true
+}
