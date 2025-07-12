@@ -2,7 +2,7 @@ package DOTSAXC;
 
 import static mindustry.type.ItemStack.with;
 
-import java.util.Locale.Category;
+import mindustry.type.Category;
 import mindustry.mod.Mod;
 
 public class DOTSAXCMod extends Mod {
